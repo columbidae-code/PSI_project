@@ -1,5 +1,4 @@
 var builder = WebApplication.CreateBuilder(args);
-builder.WebHost.UseUrls("http://localhost:5159");
 
 // Container services
 builder.Services.AddControllers();
