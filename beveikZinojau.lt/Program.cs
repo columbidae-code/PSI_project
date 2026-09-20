@@ -1,5 +1,4 @@
 var builder = WebApplication.CreateBuilder(args);
-builder.WebHost.UseUrls("http://localhost:5159");
 
 // Container services
 builder.Services.AddControllers();
@@ -9,7 +8,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp", policy =>
     {
-        policy.WithOrigins("http://localhost:5159") // Vite default port
+        policy.WithOrigins("http://localhost:5173") // Vite default port
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
