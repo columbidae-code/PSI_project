@@ -1,7 +1,7 @@
 # .NET Build output
 **/bin/
 **/obj/
-
+.vs/
 # Node.js dependencies & builds
 **/node_modules/
 **/dist/
