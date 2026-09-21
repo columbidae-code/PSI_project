@@ -12,7 +12,7 @@ function Register({ onClose }: RegisterClose) {
     const [password, setPassword] = useState('')
     const [repeatPassword, setRepeatPassword] = useState('')
 
-    const handleRegister = () => {
+    const handleRegister = async () => {
         if (password !== repeatPassword) {
             alert('Slaptažodžiai nesutampa')
             return
@@ -29,13 +29,18 @@ function Register({ onClose }: RegisterClose) {
         const url = '/api/register'
 
         // Sends the registration data to the backend as JSON
-        fetch(url, {
+        const response = await fetch(url, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
         })
+        const result = await response.json()
+        alert(result.message) // Displays the message received from the backend
+        if(result.ok) {
+            onClose()
+        }
     }
 
     return (

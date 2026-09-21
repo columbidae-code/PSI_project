@@ -10,7 +10,7 @@ function Login({ onClose }: LoginClose) {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
-    const handleLogin = () => {
+    const handleLogin = async () => {
 
         // Data that will be sent to the backend for authentication
         const data = {
@@ -22,13 +22,18 @@ function Login({ onClose }: LoginClose) {
         const url = '/api/login'
 
         // Sends the login data to the backend as JSON
-        fetch(url, {
+        const response = await fetch(url, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
         })
+        const result = await response.json()
+        alert(result.message) // Displays the message received from the backend
+        if(result.ok) {
+            onClose()
+        }
     }
 
     return (
