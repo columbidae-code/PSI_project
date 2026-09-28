@@ -19,7 +19,7 @@ namespace beveikZinojau.lt.Controllers
     {
         public bool Success { get; set; }
         public string Message { get; set; }
-        public string Username { get; set; }
+        public string? Username { get; set; }
     }
 
     public class StoredUser
@@ -33,25 +33,20 @@ namespace beveikZinojau.lt.Controllers
     [Route("api")]
     public class AuthController : ControllerBase
     {
-        // Mock database of users. 
-        //TODO: create a database and use it instead of this list.
-        private static List<StoredUser> users = new List<StoredUser>();
-
-        
-        static AuthController()
+        // TODO: Replace the temporary user list with a database.
+        private static readonly List<StoredUser> users = new()
         {
-            StoredUser testUser = new StoredUser();
-            testUser.Username = "test";
-            testUser.Email = "test@example.com";
-            testUser.Password = "1234";
-            users.Add(testUser);
-        }
+            new StoredUser
+            {
+                Username = "test",
+                Email = "test@example.com",
+                Password = "1234"
+            }
+        };
 
-        // This method runs when the frontend sends a POST request to /api/register
         [HttpPost("register")]
         public IActionResult Register([FromBody] RegisterRequest request)
         {
-
             bool usernameAlreadyExists = false;
 
             foreach (StoredUser existingUser in users)
@@ -64,53 +59,44 @@ namespace beveikZinojau.lt.Controllers
 
             if (usernameAlreadyExists)
             {
-                AuthResponse failResponse = new AuthResponse();
-                failResponse.Success = false;
-                failResponse.Message = "Username already exists";
-                return BadRequest(failResponse);
-            }
-            if (request.Username == null || request.Username.Trim() == "")
-            {
-                AuthResponse failResponse = new AuthResponse();
-                failResponse.Success = false;
-                failResponse.Message = "Username is required";
-                return BadRequest(failResponse);
-            }
-            if (request.Email == null || request.Email.Trim() == "")
-            {
-                AuthResponse failResponse = new AuthResponse();
-                failResponse.Success = false;
-                failResponse.Message = "Email is required";
-                return BadRequest(failResponse);
-            }
-            if (request.Password == null || request.Password.Trim() == "")
-            {
-                AuthResponse failResponse = new AuthResponse();
-                failResponse.Success = false;
-                failResponse.Message = "Password is required";
-                return BadRequest(failResponse);
+                return BadRequest(CreateResponse(false, "Username already exists"));
             }
 
-            // Only happens if username is free and all required fields are provided.
-            StoredUser newUser = new StoredUser();
-            newUser.Username = request.Username;
-            newUser.Email = request.Email;
-            newUser.Password = request.Password;
+            if (string.IsNullOrWhiteSpace(request.Username))
+            {
+                return BadRequest(CreateResponse(false, "Username is required"));
+            }
+
+            if (string.IsNullOrWhiteSpace(request.Email))
+            {
+                return BadRequest(CreateResponse(false, "Email is required"));
+            }
+
+            if (string.IsNullOrWhiteSpace(request.Password))
+            {
+                return BadRequest(CreateResponse(false, "Password is required"));
+            }
+
+            StoredUser newUser = new()
+            {
+                Username = request.Username,
+                Email = request.Email,
+                Password = request.Password
+            };
+
             users.Add(newUser);
 
-            AuthResponse successResponse = new AuthResponse();
-            successResponse.Success = true;
-            successResponse.Message = "Registration successful";
-            successResponse.Username = newUser.Username;
-            return Ok(successResponse);
+            return Ok(CreateResponse(
+                true,
+                "Registration successful",
+                newUser.Username
+            ));
         }
 
-        // This method runs when the frontend sends a POST request to /api/login
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginRequest request)
         {
-
-            StoredUser foundUser = null;
+            StoredUser? foundUser = null;
 
             foreach (StoredUser existingUser in users)
             {
@@ -125,18 +111,27 @@ namespace beveikZinojau.lt.Controllers
 
             if (foundUser == null)
             {
-                AuthResponse failResponse = new AuthResponse();
-                failResponse.Success = false;
-                failResponse.Message = "Invalid username or password";
-                return Unauthorized(failResponse);
+                return Unauthorized(CreateResponse(false, "Invalid username or password"));
             }
 
-            // Only happens if username and password are correct.
-            AuthResponse successResponse = new AuthResponse();
-            successResponse.Success = true;
-            successResponse.Message = "Login successful";
-            successResponse.Username = foundUser.Username;
-            return Ok(successResponse);
+            return Ok(CreateResponse(
+                true,
+                "Login successful",
+                foundUser.Username
+            ));
+        }
+
+        private static AuthResponse CreateResponse(
+            bool success,
+            string message,
+            string? username = null)
+        {
+            return new AuthResponse
+            {
+                Success = success,
+                Message = message,
+                Username = username
+            };
         }
     }
 }
