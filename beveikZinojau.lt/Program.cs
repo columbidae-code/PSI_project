@@ -1,4 +1,22 @@
+using beveikZinojau.lt.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//Connect to supabase
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(connectionString));
+
+//Identity services
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+{
+    options.Password.RequiredLength = 8;
+})
+.AddEntityFrameworkStores<AppDbContext>()
+.AddDefaultTokenProviders();
 
 // Container services
 builder.Services.AddControllers();
@@ -29,6 +47,8 @@ app.UseRouting();
 
 // Enable the CORS policy to allow React
 app.UseCors("AllowReactApp");
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
