@@ -13,7 +13,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 //Identity services
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 {
-    options.Password.RequiredLength = 8;
+    options.Password.RequiredLength = 12;
 })
 .AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders();
