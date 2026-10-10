@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using beveikZinojau.lt.Data;
@@ -11,9 +12,11 @@ using beveikZinojau.lt.Data;
 namespace beveikZinojau.lt.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20261006162214_CreatedQuestionTextTabel")]
+    partial class CreatedQuestionTextTabel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -213,16 +216,11 @@ namespace beveikZinojau.lt.Migrations
                     b.Property<string>("Difficulty")
                         .HasColumnType("text");
 
-                    b.Property<long?>("GameId")
-                        .HasColumnType("bigint");
-
                     b.Property<string>("QuestionText")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("GameId");
 
                     b.ToTable("QuestionTexts");
                 });
@@ -354,15 +352,6 @@ namespace beveikZinojau.lt.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("beveikZinojau.lt.Data.AppQuestionText", b =>
-                {
-                    b.HasOne("beveikZinojau.lt.Data.AppGame", "Game")
-                        .WithMany()
-                        .HasForeignKey("GameId");
-
-                    b.Navigation("Game");
                 });
 #pragma warning restore 612, 618
         }
