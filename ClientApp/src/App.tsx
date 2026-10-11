@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import GameMode from './pages/GameMode'
 import './App.css'
+
 
 function App() {
   const [showLogin, setShowLogin] = useState(false)
   const [showRegister, setShowRegister] = useState(false)
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
 
   return (
     <div>
@@ -40,22 +43,30 @@ function App() {
 
         <section className="categories" id="categories">
 
-          <div className="category-card">
+          <div className="category-card"
+            onClick={() => setSelectedCategory("Geografija")}
+          >
             <h2>Geografija</h2>
             <p>Šalys, miestai, vėliavos ir pasaulis</p>
           </div>
 
-          <div className="category-card">
+          <div className="category-card"
+            onClick={() => setSelectedCategory("Istorija")}
+          >
             <h2>Istorija</h2>
             <p>Įvykiai, datos ir istorinės asmenybės</p>
           </div>
 
-          <div className="category-card">
+          <div className="category-card"
+            onClick={() => setSelectedCategory("Lietuvių kalba")}
+          >
             <h2>Lietuvių kalba</h2>
             <p>Kirčiavimas ir gal dar kažkas???</p>
           </div>
 
-          <div className="category-card">
+          <div className="category-card"
+            onClick={() => setSelectedCategory("Matematika")}
+          >
             <h2>Matematika</h2>
             <p>Skaičiai, formulės ir loginiai uždaviniai</p>
           </div>
@@ -97,6 +108,13 @@ function App() {
       {showRegister && (
         <Register onClose={() => setShowRegister(false)} />
       )}
+
+      {selectedCategory && (
+        <GameMode
+          category={selectedCategory}
+          onClose={() => setSelectedCategory(null)} />
+      )}
+
     </div>
   )
 }
