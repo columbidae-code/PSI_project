@@ -1,10 +1,11 @@
 import { useState } from "react";
 
 type LoginClose = {
-  onClose: () => void;
-};
+  onClose: () => void
+  onLogin: (username: string) => void
+}
 
-function Login({ onClose }: LoginClose) {
+function Login({ onClose, onLogin }: LoginClose) {
   // Stores the values entered in the login form
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -28,8 +29,9 @@ function Login({ onClose }: LoginClose) {
     });
     const result = await response.json();
     alert(result.message); // Displays the message received from the backend
-    if (result.ok) {
-      onClose();
+    if (result.success) {
+      onLogin(result.username)
+      onClose()
     }
   };
 

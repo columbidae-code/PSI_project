@@ -9,13 +9,13 @@ public class GameHub : Hub
         _roomManager = roomManager;
     }
 
-    public async Task<string> CreateRoom(string username)
+    public async Task<string> CreateRoom(string username, string category)
     {
         Console.WriteLine(
             $"Creating room for {username}"
         );
 
-        var room = _roomManager.CreateRoom();
+        var room = _roomManager.CreateRoom(category);
 
         _roomManager.AddPlayer(
             room.Code,
@@ -40,9 +40,7 @@ public class GameHub : Hub
         return room.Code;
     }
 
-    public async Task<List<string>?> JoinRoom(
-        string roomCode,
-        string username)
+    public async Task<object?> JoinRoom(string roomCode, string username)
     {
         roomCode = roomCode.ToUpper();
 
@@ -88,7 +86,12 @@ public class GameHub : Hub
             $"{username} joined {roomCode}"
         );
 
-        return room.Players;
+        return new
+        {
+            room.Code,
+            room.Category,
+            room.Players
+        };
     }
 
     public async Task LeaveRoom(
