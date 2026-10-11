@@ -1,14 +1,124 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import connection from './signalR'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import GameMode from './pages/GameMode'
+import GameRoom from './pages/GameRoom'
 import './App.css'
 
+type RoomInfo = {
+  code: string
+  category: string
+  players: string[]
+}
 
 function App() {
   const [showLogin, setShowLogin] = useState(false)
   const [showRegister, setShowRegister] = useState(false)
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+  const [roomCode, setRoomCode] = useState<string | null>(null)
+  const [joinCode, setJoinCode] = useState("")
+  const [players, setPlayers] = useState<string[]>([])
+  const [showNamePopup, setShowNamePopup] = useState(false)
+  const [joinUsername, setJoinUsername] = useState("")
+  const [username, setUsername] = useState<string | null>(null)
+  const [nameAction, setNameAction] = useState<"create" | "join" | null>(null)
+
+  useEffect(() => {
+    if (connection.state === "Disconnected") {
+      connection.start()
+        .then(() => console.log("SignalR connected"))
+        .catch(error => console.log(error))
+    }
+  }, [])
+
+  useEffect(() => {
+    const handlePlayerJoined = (username: string) => {
+      setPlayers((players) => {
+        if (players.includes(username)) {
+          return players
+        }
+
+        return [...players, username]
+      })
+    }
+
+    connection.on("PlayerJoined", handlePlayerJoined)
+
+    return () => {
+      connection.off("PlayerJoined", handlePlayerJoined)
+    }
+  }, [])
+
+
+  async function createRoom() {
+    if (!selectedCategory) return
+
+    if (!username) {
+      setNameAction("create")
+      setShowNamePopup(true)
+      return
+    }
+
+    const code = await connection.invoke<string>(
+      "CreateRoom",
+      username,
+      selectedCategory
+    )
+
+    setPlayers([username])
+    setRoomCode(code)
+  }
+
+  async function handleJoinRoom(playerName: string) {
+    const room = await connection.invoke<RoomInfo | null>(
+      "JoinRoom",
+      joinCode,
+      playerName
+    )
+
+    if (room === null) {
+      alert("Kambarys nerastas")
+      return
+    }
+
+    setSelectedCategory(room.category)
+    setRoomCode(room.code)
+    setPlayers(room.players)
+    setShowNamePopup(false)
+  }
+
+  async function handleNameSubmit() {
+    if (joinUsername.trim() === "") return
+
+    if (nameAction === "join") {
+      await handleJoinRoom(joinUsername)
+    }
+
+    if (nameAction === "create") {
+      if (!selectedCategory) return
+
+      const code = await connection.invoke<string>(
+        "CreateRoom",
+        joinUsername,
+        selectedCategory
+      )
+
+      setPlayers([joinUsername])
+      setRoomCode(code)
+      setShowNamePopup(false)
+    }
+  }
+
+  if (roomCode && selectedCategory) {
+    return (
+      <GameRoom
+        category={selectedCategory}
+        roomCode={roomCode}
+        players={players}
+      />
+    )
+  }
 
   return (
     <div>
@@ -31,6 +141,8 @@ function App() {
           <button onClick={() => setShowRegister(true)}>
             Registruotis
           </button>
+
+
         </div>
       </header>
 
@@ -39,6 +151,27 @@ function App() {
         <div className="welcome">
           <h1>Beveik žinojau!</h1>
           <p>Pasirink kategoriją ir pasitikrink savo žinias</p>
+        </div>
+
+        <div className="join-room">
+          <input
+            type="text"
+            placeholder="Kambario kodas"
+            value={joinCode}
+            onChange={(e) => setJoinCode(e.target.value)}
+          />
+
+
+          <button onClick={() => {
+            if (username) {
+              handleJoinRoom(username)
+            } else {
+              setNameAction("join")
+              setShowNamePopup(true)
+            }
+          }}>
+            Prisijungti
+          </button>
         </div>
 
         <section className="categories" id="categories">
@@ -102,7 +235,10 @@ function App() {
       </main>
 
       {showLogin && (
-        <Login onClose={() => setShowLogin(false)} />
+        <Login
+          onClose={() => setShowLogin(false)}
+          onLogin={(username) => setUsername(username)}
+        />
       )}
 
       {showRegister && (
@@ -112,8 +248,41 @@ function App() {
       {selectedCategory && (
         <GameMode
           category={selectedCategory}
-          onClose={() => setSelectedCategory(null)} />
+          onClose={() => setSelectedCategory(null)}
+          onCreateRoom={createRoom} />
       )}
+
+      {showNamePopup && (
+        <div className="popup-background">
+          <div className="popup">
+
+            <button
+              className="close-button"
+              onClick={() => setShowNamePopup(false)}
+            >
+              &#10006;
+            </button>
+
+            <h2>Įvesk savo vardą</h2>
+
+            <input
+              type="text"
+              placeholder="Vardas"
+              value={joinUsername}
+              onChange={(e) => setJoinUsername(e.target.value)}
+            />
+
+            <button
+              className="submit-button"
+              onClick={handleNameSubmit}
+            >
+              Tęsti
+            </button>
+
+          </div>
+        </div>
+      )}
+
 
     </div>
   )

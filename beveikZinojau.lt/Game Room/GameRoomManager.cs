@@ -2,7 +2,7 @@ public class GameRoomManager
 {
     private readonly Dictionary<string, GameRoom> _rooms = new();
 
-    public GameRoom CreateRoom()
+    public GameRoom CreateRoom(string category)
     {
         string code;
 
@@ -14,7 +14,8 @@ public class GameRoomManager
 
         var room = new GameRoom
         {
-            Code = code
+            Code = code,
+            Category = category
         };
 
         _rooms.Add(code, room);

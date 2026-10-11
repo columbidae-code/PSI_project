@@ -339,3 +339,42 @@
 .game-mode-button h3 {
   color: var(--ferra);
 }
+
+.join-room {
+  display: flex;
+  justify-content: center;
+
+  margin: -20px auto 40px;
+}
+
+.join-room input {
+  width: 220px;
+  padding: 12px 15px;
+
+  border: 2px solid var(--bloom);
+  border-radius: 10px 0 0 10px;
+
+  font-size: 16px;
+  outline: none;
+}
+
+.join-room input:focus {
+  border-color: var(--mulberry);
+}
+
+.join-room button {
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 0 10px 10px 0;
+
+  background-color: var(--mulberry);
+  color: var(--white);
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.join-room button:hover {
+  background-color: var(--ferra);
+}
