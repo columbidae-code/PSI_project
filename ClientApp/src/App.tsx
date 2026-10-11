@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import './App.css'
+import Leaderboard from './Leaderboard'
 
 function App() {
   const [showLogin, setShowLogin] = useState(false)
@@ -87,6 +88,9 @@ function App() {
 
           </div>
         </section>
+
+        <Leaderboard />
+
 
       </main>
 
