@@ -2,6 +2,8 @@
 **/bin/
 **/obj/
 .vs/
+appsettings.json
+appsettings.Development.json
 # Node.js dependencies & builds
 **/node_modules/
 **/dist/
