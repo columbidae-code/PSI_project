@@ -5,7 +5,8 @@ import Register from './pages/Register'
 import GameMode from './pages/GameMode'
 import GameRoom from './pages/GameRoom'
 import './App.css'
-import Leaderboard from './Leaderboard'
+import Leaderboard from './pages/Leaderboard'
+import UserPage from './pages/UserPage'
 
 type RoomInfo = {
   code: string
@@ -22,8 +23,22 @@ function App() {
   const [players, setPlayers] = useState<string[]>([])
   const [showNamePopup, setShowNamePopup] = useState(false)
   const [joinUsername, setJoinUsername] = useState("")
-  const [username, setUsername] = useState<string | null>(null)
+  const [username, setUsername] = useState<string | null>(
+    localStorage.getItem("username")
+  )
+  const [showProfile, setShowProfile] = useState(false)
   const [nameAction, setNameAction] = useState<"create" | "join" | null>(null)
+
+  function handleLogin(name: string) {
+  localStorage.setItem("username", name)
+  setUsername(name)
+}
+
+function handleLogout() {
+  localStorage.removeItem("username")
+  setUsername(null)
+  setShowProfile(false)
+}
 
   useEffect(() => {
     if (connection.state === "Disconnected") {
@@ -89,6 +104,7 @@ function App() {
     setShowNamePopup(false)
   }
 
+
   async function handleNameSubmit() {
     if (joinUsername.trim() === "") return
 
@@ -120,6 +136,15 @@ function App() {
       />
     )
   }
+  if (username && showProfile) {
+  return (
+    <UserPage
+      username={username}
+      onBack={() => setShowProfile(false)}
+      onLogout={handleLogout}
+    />
+  )
+}
 
   return (
     <div>
@@ -135,15 +160,19 @@ function App() {
         </nav>
 
         <div className="account-buttons">
-          <button onClick={() => setShowLogin(true)}>
-            Prisijungti
-          </button>
+          {username ? (
+            <>
+              <button onClick={() => setShowProfile(true)}>{username}</button>
+              <button onClick={handleLogout}>Atsijungti</button>
+            </>
+          ) : (
 
-          <button onClick={() => setShowRegister(true)}>
-            Registruotis
-          </button>
-
-
+            <>
+              <button onClick={() => setShowLogin(true)}>Prisijungti</button>
+              <button onClick={() => setShowRegister(true)}>Registruotis</button>
+            </>
+          
+          )}
         </div>
       </header>
 
@@ -241,7 +270,7 @@ function App() {
       {showLogin && (
         <Login
           onClose={() => setShowLogin(false)}
-          onLogin={(username) => setUsername(username)}
+          onLogin={handleLogin}
         />
       )}
 

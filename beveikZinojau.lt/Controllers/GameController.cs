@@ -31,5 +31,25 @@ namespace beveikZinojau.lt.Controllers
 
             return Ok(result);
         }
+        [HttpGet("stats/{username}")]
+        public async Task<IActionResult> GetStats(string username)
+        {
+            var stats = await _db.UserStats
+                .Where(s => s.User.UserName == username)
+                .Select(s => new
+                {
+                    category = s.Category.CategoryName,
+                    totalScore = s.TotalScore,
+                    gamesPlayed = s.GamesPlayed,
+                    gamesWon = s.GamesWon,
+                    gamesLost = s.GamesLost,
+                    totalQuestions = s.TotalQuestions,
+                    correctAnswers = s.CorrectAnswers,
+                    totalAnswerTimeSeconds = s.TotalAnswerTimeSeconds
+                })
+                .ToListAsync();
+
+            return Ok(stats);
+        }
     }
 }
