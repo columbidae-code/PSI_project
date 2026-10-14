@@ -1,5 +1,6 @@
 using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Scoring;
+using beveikZinojau.lt.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -30,6 +31,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connectionString));
 // Container services
 builder.Services.AddControllers();
+builder.Services.AddScoped<GameService>();
 builder.Services.AddSignalR();
 builder.Services.AddSingleton<GameRoomManager>();
 
