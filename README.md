@@ -10,26 +10,26 @@ When entering the platform, the user can either sign in or sign up with a new ac
 
 ## 3. Web Pages
 
-1. Sign in / Sign up
-2. Main Page which allows the user to:
+1. **Sign in / Sign up**
+2. **Main Page which allows the user to:**
     - Choose a category;
     - Create a room;
     - Start a new game;
     - See user statistics;
     - View leaderboards.
-3. Category selection
-4. Game room
+3. **Category Selection**
+4. **Game Room**
     - Game code;
     - Connected players;
     - Ready button
-5. Game window
+5. **Game Window**
     - Question/problem
     - Possible answers
     - Timer
     - Current results
     - Round number
     - Other players' scores
-6. Final results
+6. **Final results**
 
 ## 4. Project Architecture
 
@@ -53,32 +53,32 @@ This part is responsible for:
 
 ### 4.3. Database
 
-1. Users
+1. **Users**
     - Id
     - Username
     - PasswordHash
     - CreatedAt
 
-2. Questions 
+2. **Questions**
     - Id
     - QuestionText
     - CorrectAnswer
     - Category
     - Difficulty
 
-3. Games
+3. **Games**
     - Id
     - GameMode
     - Category
     - CreatedAt
     - Status
 
-4. GamePlayers
+4. **GamePlayers**
     - GameId
     - UserId
     - Score
 
-5. GameResults
+5. **GameResults**
     - Id
     - GameId
     - UserId
@@ -88,7 +88,7 @@ This part is responsible for:
 
 ## 5. Technology Stack
 List the technologies and tools used:
-- Backend: C# ASP.NET Core (.NET 10.0)
-- Frontend: React.ts
-- Database: Supabase
+- **Backend**: C# ASP.NET Core (.NET 10.0)
+- **Frontend**: React.ts
+- **Database**: PostgreSQL, Supabase
 
