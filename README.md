@@ -11,7 +11,7 @@ When entering the platform, the user can either sign in or sign up with a new ac
 ## 3. Web Pages
 
 1. **Sign in / Sign up**
-2. **Main Page which allows the user to:**
+2. **Main Page**
     - Choose a category;
     - Create a room;
     - Start a new game;
@@ -35,7 +35,6 @@ When entering the platform, the user can either sign in or sign up with a new ac
 
 ### 4.1. Backend
 
-This part is responsible for:
 1. User management
 2. Game creation
 3. Joining a game
