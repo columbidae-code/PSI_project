@@ -1,11 +1,12 @@
 ﻿using beveikZinojau.lt.Controllers;
 using beveikZinojau.lt.Data;
+using beveikZinojau.lt.Services.ServiceHelpers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Supabase.Gotrue;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using beveikZinojau.lt.Services.ServiceHelpers;
 
 namespace beveikZinojau.lt.Services
 {
@@ -21,33 +22,24 @@ namespace beveikZinojau.lt.Services
         }
         public async Task<AuthResponse> Register(RegisterRequest request)
         {
-            AuthResponse requestResponse = new AuthResponse();
 
             if (string.IsNullOrWhiteSpace(request.Username))
             {
-                requestResponse.Success = false;
-                requestResponse.Message = "Username is required.";
-                return requestResponse;
+                return AuthResponse.Fail("Username is required.");
             }
             if (string.IsNullOrWhiteSpace(request.Email))
             {
-                requestResponse.Success = false;
-                requestResponse.Message = "Email is required.";
-                return requestResponse;
+                return AuthResponse.Fail("Email is required.");
             }
             if (string.IsNullOrWhiteSpace(request.Password))
             {
-                requestResponse.Success = false;
-                requestResponse.Message = "Password is required.";
-                return requestResponse;
+                return AuthResponse.Fail("Password is required.");
                 
             }
 
             if (_userManager.FindByNameAsync(request.Username) != null)//Check for lower/upper case not needed
             {
-                requestResponse.Success = false;
-                requestResponse.Message = "Username already exists.";
-                return requestResponse;
+                return AuthResponse.Fail("Username already exists.");
             }
 
             var newUser = new AppUser
@@ -59,42 +51,33 @@ namespace beveikZinojau.lt.Services
             if (!result.Succeeded)
             {
                 string errors = string.Join("; ", result.Errors.Select(e => e.Description));
-                requestResponse.Success = false;
-                requestResponse.Message = errors;
-                return requestResponse;
+                return AuthResponse.Fail(errors);
+
             }
-            requestResponse.Success = true;
-            requestResponse.Message = "User registered successfully.";
-            requestResponse.Username = newUser.UserName;
-            return requestResponse;
+            return AuthResponse.Ok("User registered successfully.", newUser.UserName);
 
         }
 
         public async Task<AuthResponse> Login(LoginRequest request)
         {
-            AuthResponse requestResponse = new AuthResponse();
+
 
             if (string.IsNullOrWhiteSpace(request.Username) || string.IsNullOrWhiteSpace(request.Password))
             {
-                requestResponse.Success = false;
-                requestResponse.Message = "Invalid username or password";
-                return requestResponse;
+                return AuthResponse.Fail("Invalid username or password");
             }
 
             AppUser user = await _userManager.FindByNameAsync(request.Username);
 
             if (user == null || !await _userManager.CheckPasswordAsync(user, request.Password))
             {
-                requestResponse.Success = false;
-                requestResponse.Message = "Invalid username or password";
-                return requestResponse;
-            }
-            requestResponse.Success = true;
-            requestResponse.Message = "Login successful";
-            requestResponse.Username = user.UserName;
+                return AuthResponse.Fail("Invalid username or password");
 
-            return requestResponse;
+            }
+            return AuthResponse.Ok("Login successful", user.UserName);
+
         }
+
 
     }
 }

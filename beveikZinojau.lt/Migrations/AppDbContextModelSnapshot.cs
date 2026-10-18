@@ -191,14 +191,14 @@ namespace beveikZinojau.lt.Migrations
                     b.Property<string>("FinalScore")
                         .HasColumnType("text");
 
+                    b.Property<string>("GameMode")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Status")
                         .HasColumnType("text");
 
                     b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("gameMode")
                         .IsRequired()
                         .HasColumnType("text");
 

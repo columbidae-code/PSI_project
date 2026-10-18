@@ -1,10 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using beveikZinojau.lt.Data;
+using beveikZinojau.lt.Services;
+using beveikZinojau.lt.Services.ServiceHelpers;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Microsoft.EntityFrameworkCore;
-using beveikZinojau.lt.Data;
-using beveikZinojau.lt.Services;
 
 namespace beveikZinojau.lt.Controllers
 {
@@ -30,5 +31,12 @@ namespace beveikZinojau.lt.Controllers
         {
               return Ok(service.GetUserStats(username));
         }
+        [HttpGet("stats/{username}/summary")]
+        public IActionResult GetSummary(string username)
+        {
+
+            return Ok(service.GetUserSummary(username));
+        }
+
     }
 }
