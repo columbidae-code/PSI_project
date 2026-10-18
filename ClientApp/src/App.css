@@ -374,12 +374,13 @@
   font-size: 16px;
   cursor: pointer;
 }
+
 /*Leaderbord*/
 .leaderboard {
   text-align: center;
   max-width: 600px;
   margin: 80px auto 20px;
- 
+
 
 }
 
@@ -396,6 +397,7 @@
   margin: 0 auto;
 
 }
+
 h2 {
   color: #734652;
 }
@@ -405,91 +407,94 @@ td {
   text-align: left;
   color: #333333;
 }
+
 th {
   padding: 10px;
   text-align: left;
   background-color: #BF567D;
   color: white;
 }
+
 tr:nth-child(odd) {
   background-color: #eecfdd;
 }
+
 /*User page*/
 .user-page {
   max-width: 900px;
   margin: 0 auto;
   padding: 60px 50px;
- 
+
   text-align: center;
 }
- 
+
 .user-page h1 {
   margin: 0;
- 
+
   font-size: 48px;
   color: var(--ferra);
 }
- 
+
 .user-page-subtitle {
   margin: 15px 0 40px;
- 
+
   font-size: 18px;
   color: var(--dark-gray);
 }
- 
+
 .user-page-empty {
   color: var(--dark-gray);
 }
- 
+
 .stats-table {
   width: 100%;
- 
+
   border: 3px solid var(--mulberry);
   border-radius: 15px;
   overflow: hidden;
   border-collapse: separate;
   border-spacing: 0;
- 
+
   background-color: var(--white);
 }
- 
+
 .stats-table th,
 .stats-table td {
   text-align: center;
 }
- 
+
 .stats-table th:first-child,
 .stats-table td:first-child {
   text-align: left;
 }
- 
+
 
 .stats-table tfoot th {
   background-color: var(--maverick);
   color: var(--ferra);
 }
- 
+
 .user-page-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
- 
+
   margin-top: 40px;
 }
- 
+
 .user-page-buttons button {
   padding: 10px 25px;
- 
+
   border: 2px solid var(--mulberry);
   border-radius: 20px;
- 
+
   background-color: var(--mulberry);
   color: var(--white);
- 
+
   font-size: 16px;
   cursor: pointer;
 }
- 
+
 .user-page-buttons button:hover {
   background-color: var(--ferra);
   border-color: var(--ferra);
@@ -500,7 +505,7 @@ tr:nth-child(odd) {
   color: var(--ferra);
   border-color: var(--bloom);
 }
- 
+
 .user-page-buttons .back-button:hover {
   background-color: var(--maverick);
   border-color: var(--mulberry);
@@ -523,7 +528,7 @@ tr:nth-child(odd) {
   text-align: center;
 }
 
-.game-room > h2 {
+.game-room>h2 {
   margin-bottom: 30px;
 
   color: var(--ferra);
