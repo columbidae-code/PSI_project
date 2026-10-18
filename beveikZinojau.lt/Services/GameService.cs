@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using beveikZinojau.lt.Services.ServiceHelpers;
 
 namespace beveikZinojau.lt.Services
 {
@@ -11,23 +12,6 @@ namespace beveikZinojau.lt.Services
         public GameService(AppDbContext db)
         {
             _db = db;
-        }
-
-        public class LeaderBoardEntry
-        {
-            public string username { get; set; }
-            public int score { get; set; }
-        }
-        public class StatisticsEntry
-        {
-            public string category {  get; set; }
-            public long    totalScore {  get; set; }
-            public int    gamesPlayed { get; set; }
-            public int    gamesWon    { get;  set; } 
-            public int gamesLost { get; set; }
-            public int totalQuestions  { get; set; }
-            public int correctAnswers { get; set; }
-            public double totalAnswerTimeSeconds { get; set; }
         }
 
 

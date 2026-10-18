@@ -32,6 +32,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Container services
 builder.Services.AddControllers();
 builder.Services.AddScoped<GameService>();
+builder.Services.AddScoped<AuthService>();
+
 builder.Services.AddSignalR();
 builder.Services.AddSingleton<GameRoomManager>();
 
