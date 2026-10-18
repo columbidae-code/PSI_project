@@ -509,3 +509,97 @@ tr:nth-child(odd) {
 .join-room button:hover {
   background-color: var(--ferra);
 }
+
+
+.game-room {
+  min-height: 100vh;
+  padding: 50px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--background);
+  text-align: center;
+}
+
+.game-room > h2 {
+  margin-bottom: 30px;
+
+  color: var(--ferra);
+  font-size: 32px;
+}
+
+
+.room-code {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 25px;
+  margin-bottom: 35px;
+
+  background-color: var(--white);
+  border: 2px solid var(--bloom);
+  border-radius: 15px;
+}
+
+.room-code p {
+  margin: 0 0 5px;
+
+  color: var(--ferra);
+  font-size: 16px;
+}
+
+.room-code h1 {
+  margin: 0;
+
+  color: var(--mulberry);
+  font-size: 48px;
+  letter-spacing: 6px;
+}
+
+
+.room-players {
+  width: 100%;
+  max-width: 500px;
+
+  margin-bottom: 30px;
+}
+
+.room-players h2 {
+  margin-bottom: 15px;
+
+  color: var(--ferra);
+}
+
+.player {
+  padding: 15px 20px;
+  margin-bottom: 10px;
+
+  background-color: var(--white);
+  border: 2px solid var(--bloom);
+  border-radius: 10px;
+
+  font-size: 18px;
+  text-align: left;
+}
+
+
+.start-game-button {
+  padding: 14px 35px;
+
+  background-color: var(--mulberry);
+  color: var(--white);
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.start-game-button:hover {
+  background-color: var(--ferra);
+}
