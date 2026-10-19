@@ -2,6 +2,7 @@ using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Scoring;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using beveikZinojau.lt.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,21 +18,14 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 })
 .AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders();
-builder.Services.AddScoped<StatsTracker>();
-// Scoring
-var scoringConfig = builder.Configuration
-    .GetSection("Scoring")
-    .Get<ScoringConfig>() ?? new ScoringConfig();
 
-builder.Services.AddSingleton(scoringConfig);
-builder.Services.AddSingleton<ScoringCalculator>();
+builder.Services.AddApplicationServices(builder.Configuration);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connectionString));
 // Container services
 builder.Services.AddControllers();
 builder.Services.AddSignalR();
-builder.Services.AddSingleton<GameRoomManager>();
 
 
 // Allowing the React dev server
