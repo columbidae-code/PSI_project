@@ -9,7 +9,7 @@ namespace beveikZinojau.lt.Data
 
         public string UserId { get; set; } = string.Empty;
         public AppUser? User { get; set; }
-        public string gameMode { get; set; } = string.Empty;
+        public string GameMode { get; set; } = string.Empty;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime EndedAt { get; set; } = DateTime.UtcNow;
         public string? Category { get; set; }

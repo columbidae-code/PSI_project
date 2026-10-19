@@ -17,8 +17,23 @@ type UserPageProps = {
   onLogout: () => void
 }
 
+type PlayerSummary = {
+  winRate: number
+  accuracy: number
+  averageAnswerTimeSeconds: number
+}
+
+
 function UserPage({ username, onBack, onLogout }: UserPageProps) {
   const [stats, setStats] = useState<CategoryStats[]>([])
+  const [summary, setSummary] = useState<PlayerSummary | null>(null)
+  
+  useEffect(() => {
+    fetch(`/api/stats/${encodeURIComponent(username)}/summary`)
+      .then((response) => response.json())
+      .then((data) => setSummary(data))
+  }, [username])
+  
 
   useEffect(() => {
     fetch(`/api/stats/${encodeURIComponent(username)}`)
@@ -34,7 +49,14 @@ function UserPage({ username, onBack, onLogout }: UserPageProps) {
     <div className="user-page">
       <h1>Sveiki, {username}!</h1>
 
-      <p className="user-page-subtitle">Tavo žaidimų statistika</p>
+      <h2>Statistika</h2>
+      {summary && stats.length > 0 && (
+        <div className="user-page-summary">
+          <p>Laimėjimų dažnis: {Math.round(summary.winRate * 100)}%</p>
+          <p>Tikslumas: {Math.round(summary.accuracy * 100)}%</p>
+          <p>Vidutinis atsakymo laikas: {summary.averageAnswerTimeSeconds.toFixed(1)} s</p>
+        </div>
+      )}
 
       {stats.length === 0 ? (
         <p className="user-page-empty">Dar nesi žaidęs nė vieno žaidimo</p>
@@ -73,6 +95,7 @@ function UserPage({ username, onBack, onLogout }: UserPageProps) {
           </tr>
           </tfoot>
         </table>
+        
       )}
       <div className="user-page-buttons">
       <button className="back-button" onClick={onBack}>Atgal</button>

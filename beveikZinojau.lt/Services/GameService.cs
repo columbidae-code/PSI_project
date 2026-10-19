@@ -1,8 +1,9 @@
 ﻿using beveikZinojau.lt.Data;
+using beveikZinojau.lt.Services.ServiceHelpers;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using beveikZinojau.lt.Services.ServiceHelpers;
 
 namespace beveikZinojau.lt.Services
 {
@@ -15,37 +16,39 @@ namespace beveikZinojau.lt.Services
         }
 
 
-        public List<LeaderBoardEntry> GetTopNUsers(int n)
+        public List<LeaderBoardEntry> GetTopNUsers(int NumberOfUsers)
         {
-
-           var result = _db.GameResults
-                 .GroupBy(r => r.User.UserName)
-                 .Select(g => new LeaderBoardEntry { username = g.Key, score = g.Sum(r => r.Score) })
-                 .OrderByDescending( x => x.score)
-                 .Take(n)
-                 .ToList();
-
-            return result;
+            return _db.GameResults
+                .GroupBy(r => r.User.UserName)
+                .OrderByDescending(g => g.Sum(r => r.Score))
+                .Take(NumberOfUsers)
+                .Select(g => new LeaderBoardEntry(g.Key, g.Sum(r => r.Score)))
+                .ToList();
         }
 
         public List<StatisticsEntry> GetUserStats(string username)
         {
-            var stats =  _db.UserStats
-               .Where(s => s.User.UserName == username)
-               .Select(s => new StatisticsEntry
-               {
-                   category = s.Category.CategoryName,
-                   totalScore = s.TotalScore,
-                   gamesPlayed = s.GamesPlayed,
-                   gamesWon = s.GamesWon,
-                   gamesLost = s.GamesLost,
-                   totalQuestions = s.TotalQuestions,
-                   correctAnswers = s.CorrectAnswers,
-                   totalAnswerTimeSeconds = s.TotalAnswerTimeSeconds
-               })
-               .ToList();
+            return _db.UserStats
+                .Where(s => s.User.UserName == username)
+                .Select(s => new StatisticsEntry(
+                    Category: s.Category.CategoryName,
+                    TotalScore: s.TotalScore,
+                    GamesPlayed: s.GamesPlayed,
+                    GamesWon: s.GamesWon,
+                    GamesLost: s.GamesLost,
+                    TotalQuestions: s.TotalQuestions,
+                    CorrectAnswers: s.CorrectAnswers,
+                    TotalAnswerTimeSeconds: s.TotalAnswerTimeSeconds))
+                .ToList();
+        }
 
-            return stats;
+        public PlayerSummary GetUserSummary(string username)
+        {
+            List<AppUserStats> stats = _db.UserStats
+                .Where(s => s.User.UserName == username)
+                .ToList();
+
+            return PlayerSummary.FromStats(stats);
         }
     }
 }

@@ -4,9 +4,6 @@ using System.Text;
 
 namespace beveikZinojau.lt.Services.ServiceHelpers
 {
-    public class LeaderBoardEntry
-    {
-        public string username { get; set; }
-        public int score { get; set; }
-    }
+    public record LeaderBoardEntry(string username, int score);
+
 }
