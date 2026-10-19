@@ -1,17 +1,17 @@
 [
   {
     "iso2": "AF",
-    "name": "Afghanistan",
-    "capital": "Kabul",
+    "name": "Afganistanas",
+    "capital": "Kabulas",
     "continent": "Asia",
     "region": "South Asia",
     "neighbours": [
-      "China",
-      "Iran",
-      "Pakistan",
-      "Tajikistan",
-      "Turkmenistan",
-      "Uzbekistan"
+      "Kinija",
+      "Iranas",
+      "Pakistanas",
+      "Tadžikija",
+      "Turkmėnistanas",
+      "Uzbekistanas"
     ],
     "flag": "/assets/geography/flags/af.svg",
     "outline": "/assets/geography/outlines/af.svg",
@@ -19,15 +19,15 @@
   },
   {
     "iso2": "AL",
-    "name": "Albania",
+    "name": "Albanija",
     "capital": "Tirana",
     "continent": "Europe",
     "region": "Southeastern Europe and Balkans",
     "neighbours": [
-      "Greece",
-      "Kosovo",
-      "Montenegro",
-      "North Macedonia"
+      "Graikija",
+      "Kosovas",
+      "Juodkalnija",
+      "Šiaurės Makedonija"
     ],
     "flag": "/assets/geography/flags/al.svg",
     "outline": "/assets/geography/outlines/al.svg",
@@ -35,17 +35,17 @@
   },
   {
     "iso2": "DZ",
-    "name": "Algeria",
-    "capital": "Algiers",
+    "name": "Alžyras",
+    "capital": "Alžyras",
     "continent": "Africa",
     "region": "North Africa",
     "neighbours": [
-      "Libya",
-      "Mali",
-      "Mauritania",
-      "Morocco",
-      "Niger",
-      "Tunisia"
+      "Libija",
+      "Malis",
+      "Mauritanija",
+      "Marokas",
+      "Nigeris",
+      "Tunisas"
     ],
     "flag": "/assets/geography/flags/dz.svg",
     "outline": "/assets/geography/outlines/dz.svg",
@@ -53,13 +53,13 @@
   },
   {
     "iso2": "AD",
-    "name": "Andorra",
-    "capital": "Andorra la Vella",
+    "name": "Andora",
+    "capital": "Andora la Vela",
     "continent": "Europe",
     "region": "Southern Europe",
     "neighbours": [
-      "France",
-      "Spain"
+      "Prancūzija",
+      "Ispanija"
     ],
     "flag": "/assets/geography/flags/ad.svg",
     "outline": "/assets/geography/outlines/ad.svg",
@@ -72,10 +72,10 @@
     "continent": "Africa",
     "region": "Central Africa",
     "neighbours": [
-      "Democratic Republic of the Congo",
-      "Namibia",
-      "Republic of the Congo",
-      "Zambia"
+      "Kongo Demokratinė Respublika",
+      "Namibija",
+      "Kongo Respublika",
+      "Zambija"
     ],
     "flag": "/assets/geography/flags/ao.svg",
     "outline": "/assets/geography/outlines/ao.svg",
@@ -83,8 +83,8 @@
   },
   {
     "iso2": "AG",
-    "name": "Antigua and Barbuda",
-    "capital": "St. John's",
+    "name": "Antigva ir Barbuda",
+    "capital": "Sent Džonsas",
     "continent": "North America",
     "region": "Lesser Antilles and Bahamas",
     "neighbours": [],
@@ -95,15 +95,15 @@
   {
     "iso2": "AR",
     "name": "Argentina",
-    "capital": "Buenos Aires",
+    "capital": "Buenos Airės",
     "continent": "South America",
     "region": "Eastern and Southern South America",
     "neighbours": [
-      "Bolivia",
-      "Brazil",
-      "Chile",
-      "Paraguay",
-      "Uruguay"
+      "Bolivija",
+      "Brazilija",
+      "Čilė",
+      "Paragvajus",
+      "Urugvajus"
     ],
     "flag": "/assets/geography/flags/ar.svg",
     "outline": "/assets/geography/outlines/ar.svg",
@@ -111,15 +111,15 @@
   },
   {
     "iso2": "AM",
-    "name": "Armenia",
-    "capital": "Yerevan",
+    "name": "Armėnija",
+    "capital": "Jerevanas",
     "continent": "Asia",
     "region": "Caucasus, Türkiye and Cyprus",
     "neighbours": [
-      "Azerbaijan",
-      "Georgia",
-      "Iran",
-      "Türkiye"
+      "Azerbaidžanas",
+      "Sakartvelas",
+      "Iranas",
+      "Turkija"
     ],
     "flag": "/assets/geography/flags/am.svg",
     "outline": "/assets/geography/outlines/am.svg",
@@ -127,8 +127,8 @@
   },
   {
     "iso2": "AU",
-    "name": "Australia",
-    "capital": "Canberra",
+    "name": "Australija",
+    "capital": "Kanbera",
     "continent": "Oceania",
     "region": "Australasia and Melanesia",
     "neighbours": [],
@@ -138,19 +138,19 @@
   },
   {
     "iso2": "AT",
-    "name": "Austria",
-    "capital": "Vienna",
+    "name": "Austrija",
+    "capital": "Viena",
     "continent": "Europe",
     "region": "Central Europe",
     "neighbours": [
-      "Czechia",
-      "Germany",
-      "Hungary",
-      "Italy",
-      "Liechtenstein",
-      "Slovakia",
-      "Slovenia",
-      "Switzerland"
+      "Čekija",
+      "Vokietija",
+      "Vengrija",
+      "Italija",
+      "Lichtenšteinas",
+      "Slovakija",
+      "Slovėnija",
+      "Šveicarija"
     ],
     "flag": "/assets/geography/flags/at.svg",
     "outline": "/assets/geography/outlines/at.svg",
@@ -158,16 +158,16 @@
   },
   {
     "iso2": "AZ",
-    "name": "Azerbaijan",
+    "name": "Azerbaidžanas",
     "capital": "Baku",
     "continent": "Asia",
     "region": "Caucasus, Türkiye and Cyprus",
     "neighbours": [
-      "Armenia",
-      "Georgia",
-      "Iran",
-      "Russia",
-      "Türkiye"
+      "Armėnija",
+      "Sakartvelas",
+      "Iranas",
+      "Rusija",
+      "Turkija"
     ],
     "flag": "/assets/geography/flags/az.svg",
     "outline": "/assets/geography/outlines/az.svg",
@@ -175,8 +175,8 @@
   },
   {
     "iso2": "BS",
-    "name": "Bahamas",
-    "capital": "Nassau",
+    "name": "Bahamos",
+    "capital": "Nasau",
     "continent": "North America",
     "region": "Lesser Antilles and Bahamas",
     "neighbours": [],
@@ -186,7 +186,7 @@
   },
   {
     "iso2": "BH",
-    "name": "Bahrain",
+    "name": "Bahreinas",
     "capital": "Manama",
     "continent": "Asia",
     "region": "Middle East",
@@ -197,13 +197,13 @@
   },
   {
     "iso2": "BD",
-    "name": "Bangladesh",
-    "capital": "Dhaka",
+    "name": "Bangladešas",
+    "capital": "Daka",
     "continent": "Asia",
     "region": "South Asia",
     "neighbours": [
-      "India",
-      "Myanmar"
+      "Indija",
+      "Mianmaras"
     ],
     "flag": "/assets/geography/flags/bd.svg",
     "outline": "/assets/geography/outlines/bd.svg",
@@ -211,8 +211,8 @@
   },
   {
     "iso2": "BB",
-    "name": "Barbados",
-    "capital": "Bridgetown",
+    "name": "Barbadosas",
+    "capital": "Bridžtaunas",
     "continent": "North America",
     "region": "Lesser Antilles and Bahamas",
     "neighbours": [],
@@ -222,16 +222,16 @@
   },
   {
     "iso2": "BY",
-    "name": "Belarus",
-    "capital": "Minsk",
+    "name": "Baltarusija",
+    "capital": "Minskas",
     "continent": "Europe",
     "region": "Eastern Europe",
     "neighbours": [
-      "Latvia",
-      "Lithuania",
-      "Poland",
-      "Russia",
-      "Ukraine"
+      "Latvija",
+      "Lietuva",
+      "Lenkija",
+      "Rusija",
+      "Ukraina"
     ],
     "flag": "/assets/geography/flags/by.svg",
     "outline": "/assets/geography/outlines/by.svg",
@@ -239,15 +239,15 @@
   },
   {
     "iso2": "BE",
-    "name": "Belgium",
-    "capital": "Brussels",
+    "name": "Belgija",
+    "capital": "Briuselis",
     "continent": "Europe",
     "region": "Western Europe",
     "neighbours": [
-      "France",
-      "Germany",
-      "Luxembourg",
-      "Netherlands"
+      "Prancūzija",
+      "Vokietija",
+      "Liuksemburgas",
+      "Nyderlandai"
     ],
     "flag": "/assets/geography/flags/be.svg",
     "outline": "/assets/geography/outlines/be.svg",
@@ -255,13 +255,13 @@
   },
   {
     "iso2": "BZ",
-    "name": "Belize",
-    "capital": "Belmopan",
+    "name": "Belizas",
+    "capital": "Belmopanas",
     "continent": "North America",
     "region": "Mainland North and Central America",
     "neighbours": [
-      "Guatemala",
-      "Mexico"
+      "Gvatemala",
+      "Meksika"
     ],
     "flag": "/assets/geography/flags/bz.svg",
     "outline": "/assets/geography/outlines/bz.svg",
@@ -269,15 +269,15 @@
   },
   {
     "iso2": "BJ",
-    "name": "Benin",
-    "capital": "Porto-Novo",
+    "name": "Beninas",
+    "capital": "Porto Novas",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Burkina Faso",
-      "Niger",
-      "Nigeria",
-      "Togo"
+      "Burkina Fasas",
+      "Nigeris",
+      "Nigerija",
+      "Togas"
     ],
     "flag": "/assets/geography/flags/bj.svg",
     "outline": "/assets/geography/outlines/bj.svg",
@@ -285,13 +285,13 @@
   },
   {
     "iso2": "BT",
-    "name": "Bhutan",
-    "capital": "Thimphu",
+    "name": "Butanas",
+    "capital": "Timpu",
     "continent": "Asia",
     "region": "South Asia",
     "neighbours": [
-      "China",
-      "India"
+      "Kinija",
+      "Indija"
     ],
     "flag": "/assets/geography/flags/bt.svg",
     "outline": "/assets/geography/outlines/bt.svg",
@@ -299,15 +299,15 @@
   },
   {
     "iso2": "BO",
-    "name": "Bolivia",
-    "capital": "Sucre",
+    "name": "Bolivija",
+    "capital": "Sukrė",
     "continent": "South America",
     "region": "Western and Andean South America",
     "neighbours": [
       "Argentina",
-      "Brazil",
-      "Chile",
-      "Paraguay",
+      "Brazilija",
+      "Čilė",
+      "Paragvajus",
       "Peru"
     ],
     "flag": "/assets/geography/flags/bo.svg",
@@ -316,14 +316,14 @@
   },
   {
     "iso2": "BA",
-    "name": "Bosnia and Herzegovina",
-    "capital": "Sarajevo",
+    "name": "Bosnija ir Hercegovina",
+    "capital": "Sarajevas",
     "continent": "Europe",
     "region": "Southeastern Europe and Balkans",
     "neighbours": [
-      "Croatia",
-      "Montenegro",
-      "Serbia"
+      "Kroatija",
+      "Juodkalnija",
+      "Serbija"
     ],
     "flag": "/assets/geography/flags/ba.svg",
     "outline": "/assets/geography/outlines/ba.svg",
@@ -331,15 +331,15 @@
   },
   {
     "iso2": "BW",
-    "name": "Botswana",
-    "capital": "Gaborone",
+    "name": "Botsvana",
+    "capital": "Gaboronas",
     "continent": "Africa",
     "region": "Southern Africa",
     "neighbours": [
-      "Namibia",
-      "South Africa",
-      "Zambia",
-      "Zimbabwe"
+      "Namibija",
+      "Pietų Afrika",
+      "Zambija",
+      "Zimbabvė"
     ],
     "flag": "/assets/geography/flags/bw.svg",
     "outline": "/assets/geography/outlines/bw.svg",
@@ -347,21 +347,21 @@
   },
   {
     "iso2": "BR",
-    "name": "Brazil",
-    "capital": "Brasília",
+    "name": "Brazilija",
+    "capital": "Brazilija",
     "continent": "South America",
     "region": "Eastern and Southern South America",
     "neighbours": [
       "Argentina",
-      "Bolivia",
-      "Colombia",
-      "France",
-      "Guyana",
-      "Paraguay",
+      "Bolivija",
+      "Kolumbija",
+      "Prancūzija",
+      "Gajana",
+      "Paragvajus",
       "Peru",
-      "Suriname",
-      "Uruguay",
-      "Venezuela"
+      "Surinamas",
+      "Urugvajus",
+      "Venesuela"
     ],
     "flag": "/assets/geography/flags/br.svg",
     "outline": "/assets/geography/outlines/br.svg",
@@ -369,12 +369,12 @@
   },
   {
     "iso2": "BN",
-    "name": "Brunei",
-    "capital": "Bandar Seri Begawan",
+    "name": "Brunėjus",
+    "capital": "Bandar Seri Begavanas",
     "continent": "Asia",
     "region": "Southeast Asia",
     "neighbours": [
-      "Malaysia"
+      "Malaizija"
     ],
     "flag": "/assets/geography/flags/bn.svg",
     "outline": "/assets/geography/outlines/bn.svg",
@@ -382,16 +382,16 @@
   },
   {
     "iso2": "BG",
-    "name": "Bulgaria",
-    "capital": "Sofia",
+    "name": "Bulgarija",
+    "capital": "Sofija",
     "continent": "Europe",
     "region": "Southeastern Europe and Balkans",
     "neighbours": [
-      "Greece",
-      "North Macedonia",
-      "Romania",
-      "Serbia",
-      "Türkiye"
+      "Graikija",
+      "Šiaurės Makedonija",
+      "Rumunija",
+      "Serbija",
+      "Turkija"
     ],
     "flag": "/assets/geography/flags/bg.svg",
     "outline": "/assets/geography/outlines/bg.svg",
@@ -399,17 +399,17 @@
   },
   {
     "iso2": "BF",
-    "name": "Burkina Faso",
-    "capital": "Ouagadougou",
+    "name": "Burkina Fasas",
+    "capital": "Uagadugu",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Benin",
-      "Côte d'Ivoire",
-      "Ghana",
-      "Mali",
-      "Niger",
-      "Togo"
+      "Beninas",
+      "Dramblio Kaulo Krantas",
+      "Gana",
+      "Malis",
+      "Nigeris",
+      "Togas"
     ],
     "flag": "/assets/geography/flags/bf.svg",
     "outline": "/assets/geography/outlines/bf.svg",
@@ -417,14 +417,14 @@
   },
   {
     "iso2": "BI",
-    "name": "Burundi",
+    "name": "Burundis",
     "capital": "Gitega",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
-      "Democratic Republic of the Congo",
-      "Rwanda",
-      "Tanzania"
+      "Kongo Demokratinė Respublika",
+      "Ruanda",
+      "Tanzanija"
     ],
     "flag": "/assets/geography/flags/bi.svg",
     "outline": "/assets/geography/outlines/bi.svg",
@@ -432,8 +432,8 @@
   },
   {
     "iso2": "CV",
-    "name": "Cabo Verde",
-    "capital": "Praia",
+    "name": "Žaliasis Kyšulys",
+    "capital": "Praja",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [],
@@ -443,14 +443,14 @@
   },
   {
     "iso2": "KH",
-    "name": "Cambodia",
-    "capital": "Phnom Penh",
+    "name": "Kambodža",
+    "capital": "Pnompenis",
     "continent": "Asia",
     "region": "Southeast Asia",
     "neighbours": [
-      "Laos",
-      "Thailand",
-      "Vietnam"
+      "Laosas",
+      "Tailandas",
+      "Vietnamas"
     ],
     "flag": "/assets/geography/flags/kh.svg",
     "outline": "/assets/geography/outlines/kh.svg",
@@ -458,17 +458,17 @@
   },
   {
     "iso2": "CM",
-    "name": "Cameroon",
-    "capital": "Yaoundé",
+    "name": "Kamerūnas",
+    "capital": "Jaundė",
     "continent": "Africa",
     "region": "Central Africa",
     "neighbours": [
-      "Central African Republic",
-      "Chad",
-      "Equatorial Guinea",
-      "Gabon",
-      "Nigeria",
-      "Republic of the Congo"
+      "Centrinės Afrikos Respublika",
+      "Čadas",
+      "Pusiaujo Gvinėja",
+      "Gabonas",
+      "Nigerija",
+      "Kongo Respublika"
     ],
     "flag": "/assets/geography/flags/cm.svg",
     "outline": "/assets/geography/outlines/cm.svg",
@@ -476,13 +476,13 @@
   },
   {
     "iso2": "CA",
-    "name": "Canada",
-    "capital": "Ottawa",
+    "name": "Kanada",
+    "capital": "Otava",
     "continent": "North America",
     "region": "Mainland North and Central America",
     "neighbours": [
-      "Denmark",
-      "United States"
+      "Danija",
+      "Jungtinės Amerikos Valstijos"
     ],
     "flag": "/assets/geography/flags/ca.svg",
     "outline": "/assets/geography/outlines/ca.svg",
@@ -490,17 +490,17 @@
   },
   {
     "iso2": "CF",
-    "name": "Central African Republic",
-    "capital": "Bangui",
+    "name": "Centrinės Afrikos Respublika",
+    "capital": "Bangis",
     "continent": "Africa",
     "region": "Central Africa",
     "neighbours": [
-      "Cameroon",
-      "Chad",
-      "Democratic Republic of the Congo",
-      "Republic of the Congo",
-      "South Sudan",
-      "Sudan"
+      "Kamerūnas",
+      "Čadas",
+      "Kongo Demokratinė Respublika",
+      "Kongo Respublika",
+      "Pietų Sudanas",
+      "Sudanas"
     ],
     "flag": "/assets/geography/flags/cf.svg",
     "outline": "/assets/geography/outlines/cf.svg",
@@ -508,17 +508,17 @@
   },
   {
     "iso2": "TD",
-    "name": "Chad",
-    "capital": "N'Djamena",
+    "name": "Čadas",
+    "capital": "Ndžamena",
     "continent": "Africa",
     "region": "Central Africa",
     "neighbours": [
-      "Cameroon",
-      "Central African Republic",
-      "Libya",
-      "Niger",
-      "Nigeria",
-      "Sudan"
+      "Kamerūnas",
+      "Centrinės Afrikos Respublika",
+      "Libija",
+      "Nigeris",
+      "Nigerija",
+      "Sudanas"
     ],
     "flag": "/assets/geography/flags/td.svg",
     "outline": "/assets/geography/outlines/td.svg",
@@ -526,13 +526,13 @@
   },
   {
     "iso2": "CL",
-    "name": "Chile",
-    "capital": "Santiago",
+    "name": "Čilė",
+    "capital": "Santjagas",
     "continent": "South America",
     "region": "Western and Andean South America",
     "neighbours": [
       "Argentina",
-      "Bolivia",
+      "Bolivija",
       "Peru"
     ],
     "flag": "/assets/geography/flags/cl.svg",
@@ -541,25 +541,25 @@
   },
   {
     "iso2": "CN",
-    "name": "China",
-    "capital": "Beijing",
+    "name": "Kinija",
+    "capital": "Pekinas",
     "continent": "Asia",
     "region": "East Asia",
     "neighbours": [
-      "Afghanistan",
-      "Bhutan",
-      "India",
-      "Kazakhstan",
-      "Kyrgyzstan",
-      "Laos",
-      "Mongolia",
-      "Myanmar",
-      "Nepal",
-      "North Korea",
-      "Pakistan",
-      "Russia",
-      "Tajikistan",
-      "Vietnam"
+      "Afganistanas",
+      "Butanas",
+      "Indija",
+      "Kazachstanas",
+      "Kirgizija",
+      "Laosas",
+      "Mongolija",
+      "Mianmaras",
+      "Nepalas",
+      "Šiaurės Korėja",
+      "Pakistanas",
+      "Rusija",
+      "Tadžikija",
+      "Vietnamas"
     ],
     "flag": "/assets/geography/flags/cn.svg",
     "outline": "/assets/geography/outlines/cn.svg",
@@ -567,16 +567,16 @@
   },
   {
     "iso2": "CO",
-    "name": "Colombia",
-    "capital": "Bogotá",
+    "name": "Kolumbija",
+    "capital": "Bogota",
     "continent": "South America",
     "region": "Western and Andean South America",
     "neighbours": [
-      "Brazil",
-      "Ecuador",
+      "Brazilija",
+      "Ekvadoras",
       "Panama",
       "Peru",
-      "Venezuela"
+      "Venesuela"
     ],
     "flag": "/assets/geography/flags/co.svg",
     "outline": "/assets/geography/outlines/co.svg",
@@ -584,8 +584,8 @@
   },
   {
     "iso2": "KM",
-    "name": "Comoros",
-    "capital": "Moroni",
+    "name": "Komorai",
+    "capital": "Moronis",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [],
@@ -595,12 +595,12 @@
   },
   {
     "iso2": "CR",
-    "name": "Costa Rica",
-    "capital": "San José",
+    "name": "Kosta Rika",
+    "capital": "San Chosė",
     "continent": "North America",
     "region": "Mainland North and Central America",
     "neighbours": [
-      "Nicaragua",
+      "Nikaragva",
       "Panama"
     ],
     "flag": "/assets/geography/flags/cr.svg",
@@ -609,16 +609,16 @@
   },
   {
     "iso2": "HR",
-    "name": "Croatia",
-    "capital": "Zagreb",
+    "name": "Kroatija",
+    "capital": "Zagrebas",
     "continent": "Europe",
     "region": "Southeastern Europe and Balkans",
     "neighbours": [
-      "Bosnia and Herzegovina",
-      "Hungary",
-      "Montenegro",
-      "Serbia",
-      "Slovenia"
+      "Bosnija ir Hercegovina",
+      "Vengrija",
+      "Juodkalnija",
+      "Serbija",
+      "Slovėnija"
     ],
     "flag": "/assets/geography/flags/hr.svg",
     "outline": "/assets/geography/outlines/hr.svg",
@@ -626,7 +626,7 @@
   },
   {
     "iso2": "CU",
-    "name": "Cuba",
+    "name": "Kuba",
     "capital": "Havana",
     "continent": "North America",
     "region": "Greater Antilles",
@@ -637,8 +637,8 @@
   },
   {
     "iso2": "CY",
-    "name": "Cyprus",
-    "capital": "Nicosia",
+    "name": "Kipras",
+    "capital": "Nikosija",
     "continent": "Asia",
     "region": "Caucasus, Türkiye and Cyprus",
     "neighbours": [],
@@ -648,15 +648,15 @@
   },
   {
     "iso2": "CZ",
-    "name": "Czechia",
-    "capital": "Prague",
+    "name": "Čekija",
+    "capital": "Praha",
     "continent": "Europe",
     "region": "Central Europe",
     "neighbours": [
-      "Austria",
-      "Germany",
-      "Poland",
-      "Slovakia"
+      "Austrija",
+      "Vokietija",
+      "Lenkija",
+      "Slovakija"
     ],
     "flag": "/assets/geography/flags/cz.svg",
     "outline": "/assets/geography/outlines/cz.svg",
@@ -664,16 +664,16 @@
   },
   {
     "iso2": "CI",
-    "name": "Côte d'Ivoire",
-    "capital": "Yamoussoukro",
+    "name": "Dramblio Kaulo Krantas",
+    "capital": "Jamusukras",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Burkina Faso",
-      "Ghana",
-      "Guinea",
-      "Liberia",
-      "Mali"
+      "Burkina Fasas",
+      "Gana",
+      "Gvinėja",
+      "Liberija",
+      "Malis"
     ],
     "flag": "/assets/geography/flags/ci.svg",
     "outline": "/assets/geography/outlines/ci.svg",
@@ -681,20 +681,20 @@
   },
   {
     "iso2": "CD",
-    "name": "Democratic Republic of the Congo",
-    "capital": "Kinshasa",
+    "name": "Kongo Demokratinė Respublika",
+    "capital": "Kinšasa",
     "continent": "Africa",
     "region": "Central Africa",
     "neighbours": [
       "Angola",
-      "Burundi",
-      "Central African Republic",
-      "Republic of the Congo",
-      "Rwanda",
-      "South Sudan",
-      "Tanzania",
+      "Burundis",
+      "Centrinės Afrikos Respublika",
+      "Kongo Respublika",
+      "Ruanda",
+      "Pietų Sudanas",
+      "Tanzanija",
       "Uganda",
-      "Zambia"
+      "Zambija"
     ],
     "flag": "/assets/geography/flags/cd.svg",
     "outline": "/assets/geography/outlines/cd.svg",
@@ -702,13 +702,13 @@
   },
   {
     "iso2": "DK",
-    "name": "Denmark",
-    "capital": "Copenhagen",
+    "name": "Danija",
+    "capital": "Kopenhaga",
     "continent": "Europe",
     "region": "Northern Europe and Baltics",
     "neighbours": [
-      "Canada",
-      "Germany"
+      "Kanada",
+      "Vokietija"
     ],
     "flag": "/assets/geography/flags/dk.svg",
     "outline": "/assets/geography/outlines/dk.svg",
@@ -716,14 +716,14 @@
   },
   {
     "iso2": "DJ",
-    "name": "Djibouti",
-    "capital": "Djibouti",
+    "name": "Džibutis",
+    "capital": "Džibutis",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
-      "Eritrea",
-      "Ethiopia",
-      "Somalia"
+      "Eritrėja",
+      "Etiopija",
+      "Somalis"
     ],
     "flag": "/assets/geography/flags/dj.svg",
     "outline": "/assets/geography/outlines/dj.svg",
@@ -731,8 +731,8 @@
   },
   {
     "iso2": "DM",
-    "name": "Dominica",
-    "capital": "Roseau",
+    "name": "Dominika",
+    "capital": "Rozo",
     "continent": "North America",
     "region": "Lesser Antilles and Bahamas",
     "neighbours": [],
@@ -742,12 +742,12 @@
   },
   {
     "iso2": "DO",
-    "name": "Dominican Republic",
-    "capital": "Santo Domingo",
+    "name": "Dominikos Respublika",
+    "capital": "Santo Domingas",
     "continent": "North America",
     "region": "Greater Antilles",
     "neighbours": [
-      "Haiti"
+      "Haitis"
     ],
     "flag": "/assets/geography/flags/do.svg",
     "outline": "/assets/geography/outlines/do.svg",
@@ -755,12 +755,12 @@
   },
   {
     "iso2": "EC",
-    "name": "Ecuador",
-    "capital": "Quito",
+    "name": "Ekvadoras",
+    "capital": "Kitas",
     "continent": "South America",
     "region": "Western and Andean South America",
     "neighbours": [
-      "Colombia",
+      "Kolumbija",
       "Peru"
     ],
     "flag": "/assets/geography/flags/ec.svg",
@@ -769,15 +769,15 @@
   },
   {
     "iso2": "EG",
-    "name": "Egypt",
-    "capital": "Cairo",
+    "name": "Egiptas",
+    "capital": "Kairas",
     "continent": "Africa",
     "region": "North Africa",
     "neighbours": [
-      "Israel",
-      "Libya",
-      "Palestine",
-      "Sudan"
+      "Izraelis",
+      "Libija",
+      "Palestina",
+      "Sudanas"
     ],
     "flag": "/assets/geography/flags/eg.svg",
     "outline": "/assets/geography/outlines/eg.svg",
@@ -785,13 +785,13 @@
   },
   {
     "iso2": "SV",
-    "name": "El Salvador",
-    "capital": "San Salvador",
+    "name": "Salvadoras",
+    "capital": "San Salvadoras",
     "continent": "North America",
     "region": "Mainland North and Central America",
     "neighbours": [
-      "Guatemala",
-      "Honduras"
+      "Gvatemala",
+      "Hondūras"
     ],
     "flag": "/assets/geography/flags/sv.svg",
     "outline": "/assets/geography/outlines/sv.svg",
@@ -799,13 +799,13 @@
   },
   {
     "iso2": "GQ",
-    "name": "Equatorial Guinea",
-    "capital": "Ciudad de la Paz",
+    "name": "Pusiaujo Gvinėja",
+    "capital": "Siudad de la Pasas",
     "continent": "Africa",
     "region": "Central Africa",
     "neighbours": [
-      "Cameroon",
-      "Gabon"
+      "Kamerūnas",
+      "Gabonas"
     ],
     "flag": "/assets/geography/flags/gq.svg",
     "outline": "/assets/geography/outlines/gq.svg",
@@ -813,14 +813,14 @@
   },
   {
     "iso2": "ER",
-    "name": "Eritrea",
+    "name": "Eritrėja",
     "capital": "Asmara",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
-      "Djibouti",
-      "Ethiopia",
-      "Sudan"
+      "Džibutis",
+      "Etiopija",
+      "Sudanas"
     ],
     "flag": "/assets/geography/flags/er.svg",
     "outline": "/assets/geography/outlines/er.svg",
@@ -828,13 +828,13 @@
   },
   {
     "iso2": "EE",
-    "name": "Estonia",
-    "capital": "Tallinn",
+    "name": "Estija",
+    "capital": "Talinas",
     "continent": "Europe",
     "region": "Northern Europe and Baltics",
     "neighbours": [
-      "Latvia",
-      "Russia"
+      "Latvija",
+      "Rusija"
     ],
     "flag": "/assets/geography/flags/ee.svg",
     "outline": "/assets/geography/outlines/ee.svg",
@@ -842,13 +842,13 @@
   },
   {
     "iso2": "SZ",
-    "name": "Eswatini",
-    "capital": "Mbabane",
+    "name": "Esvatinis",
+    "capital": "Mbabanė",
     "continent": "Africa",
     "region": "Southern Africa",
     "neighbours": [
-      "Mozambique",
-      "South Africa"
+      "Mozambikas",
+      "Pietų Afrika"
     ],
     "flag": "/assets/geography/flags/sz.svg",
     "outline": "/assets/geography/outlines/sz.svg",
@@ -856,17 +856,17 @@
   },
   {
     "iso2": "ET",
-    "name": "Ethiopia",
-    "capital": "Addis Ababa",
+    "name": "Etiopija",
+    "capital": "Adis Abeba",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
-      "Djibouti",
-      "Eritrea",
-      "Kenya",
-      "Somalia",
-      "South Sudan",
-      "Sudan"
+      "Džibutis",
+      "Eritrėja",
+      "Kenija",
+      "Somalis",
+      "Pietų Sudanas",
+      "Sudanas"
     ],
     "flag": "/assets/geography/flags/et.svg",
     "outline": "/assets/geography/outlines/et.svg",
@@ -874,8 +874,8 @@
   },
   {
     "iso2": "FM",
-    "name": "Federated States of Micronesia",
-    "capital": "Palikir",
+    "name": "Mikronezijos Federacinės Valstijos",
+    "capital": "Palikiras",
     "continent": "Oceania",
     "region": "Micronesia and Polynesia",
     "neighbours": [],
@@ -885,7 +885,7 @@
   },
   {
     "iso2": "FJ",
-    "name": "Fiji",
+    "name": "Fidžis",
     "capital": "Suva",
     "continent": "Oceania",
     "region": "Australasia and Melanesia",
@@ -896,14 +896,14 @@
   },
   {
     "iso2": "FI",
-    "name": "Finland",
-    "capital": "Helsinki",
+    "name": "Suomija",
+    "capital": "Helsinkis",
     "continent": "Europe",
     "region": "Northern Europe and Baltics",
     "neighbours": [
-      "Norway",
-      "Russia",
-      "Sweden"
+      "Norvegija",
+      "Rusija",
+      "Švedija"
     ],
     "flag": "/assets/geography/flags/fi.svg",
     "outline": "/assets/geography/outlines/fi.svg",
@@ -911,22 +911,22 @@
   },
   {
     "iso2": "FR",
-    "name": "France",
-    "capital": "Paris",
+    "name": "Prancūzija",
+    "capital": "Paryžius",
     "continent": "Europe",
     "region": "Western Europe",
     "neighbours": [
-      "Andorra",
-      "Belgium",
-      "Brazil",
-      "Germany",
-      "Italy",
-      "Luxembourg",
-      "Monaco",
-      "Netherlands",
-      "Spain",
-      "Suriname",
-      "Switzerland"
+      "Andora",
+      "Belgija",
+      "Brazilija",
+      "Vokietija",
+      "Italija",
+      "Liuksemburgas",
+      "Monakas",
+      "Nyderlandai",
+      "Ispanija",
+      "Surinamas",
+      "Šveicarija"
     ],
     "flag": "/assets/geography/flags/fr.svg",
     "outline": "/assets/geography/outlines/fr.svg",
@@ -934,14 +934,14 @@
   },
   {
     "iso2": "GA",
-    "name": "Gabon",
-    "capital": "Libreville",
+    "name": "Gabonas",
+    "capital": "Librevilis",
     "continent": "Africa",
     "region": "Central Africa",
     "neighbours": [
-      "Cameroon",
-      "Equatorial Guinea",
-      "Republic of the Congo"
+      "Kamerūnas",
+      "Pusiaujo Gvinėja",
+      "Kongo Respublika"
     ],
     "flag": "/assets/geography/flags/ga.svg",
     "outline": "/assets/geography/outlines/ga.svg",
@@ -949,12 +949,12 @@
   },
   {
     "iso2": "GM",
-    "name": "Gambia",
-    "capital": "Banjul",
+    "name": "Gambija",
+    "capital": "Bandžulis",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Senegal"
+      "Senegalas"
     ],
     "flag": "/assets/geography/flags/gm.svg",
     "outline": "/assets/geography/outlines/gm.svg",
@@ -962,15 +962,15 @@
   },
   {
     "iso2": "GE",
-    "name": "Georgia",
-    "capital": "Tbilisi",
+    "name": "Sakartvelas",
+    "capital": "Tbilisis",
     "continent": "Asia",
     "region": "Caucasus, Türkiye and Cyprus",
     "neighbours": [
-      "Armenia",
-      "Azerbaijan",
-      "Russia",
-      "Türkiye"
+      "Armėnija",
+      "Azerbaidžanas",
+      "Rusija",
+      "Turkija"
     ],
     "flag": "/assets/geography/flags/ge.svg",
     "outline": "/assets/geography/outlines/ge.svg",
@@ -978,20 +978,20 @@
   },
   {
     "iso2": "DE",
-    "name": "Germany",
-    "capital": "Berlin",
+    "name": "Vokietija",
+    "capital": "Berlynas",
     "continent": "Europe",
     "region": "Central Europe",
     "neighbours": [
-      "Austria",
-      "Belgium",
-      "Czechia",
-      "Denmark",
-      "France",
-      "Luxembourg",
-      "Netherlands",
-      "Poland",
-      "Switzerland"
+      "Austrija",
+      "Belgija",
+      "Čekija",
+      "Danija",
+      "Prancūzija",
+      "Liuksemburgas",
+      "Nyderlandai",
+      "Lenkija",
+      "Šveicarija"
     ],
     "flag": "/assets/geography/flags/de.svg",
     "outline": "/assets/geography/outlines/de.svg",
@@ -999,14 +999,14 @@
   },
   {
     "iso2": "GH",
-    "name": "Ghana",
-    "capital": "Accra",
+    "name": "Gana",
+    "capital": "Akra",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Burkina Faso",
-      "Côte d'Ivoire",
-      "Togo"
+      "Burkina Fasas",
+      "Dramblio Kaulo Krantas",
+      "Togas"
     ],
     "flag": "/assets/geography/flags/gh.svg",
     "outline": "/assets/geography/outlines/gh.svg",
@@ -1014,15 +1014,15 @@
   },
   {
     "iso2": "GR",
-    "name": "Greece",
-    "capital": "Athens",
+    "name": "Graikija",
+    "capital": "Atėnai",
     "continent": "Europe",
     "region": "Southeastern Europe and Balkans",
     "neighbours": [
-      "Albania",
-      "Bulgaria",
-      "North Macedonia",
-      "Türkiye"
+      "Albanija",
+      "Bulgarija",
+      "Šiaurės Makedonija",
+      "Turkija"
     ],
     "flag": "/assets/geography/flags/gr.svg",
     "outline": "/assets/geography/outlines/gr.svg",
@@ -1031,7 +1031,7 @@
   {
     "iso2": "GD",
     "name": "Grenada",
-    "capital": "St. George's",
+    "capital": "Sent Džordžas",
     "continent": "North America",
     "region": "Lesser Antilles and Bahamas",
     "neighbours": [],
@@ -1041,15 +1041,15 @@
   },
   {
     "iso2": "GT",
-    "name": "Guatemala",
-    "capital": "Guatemala City",
+    "name": "Gvatemala",
+    "capital": "Gvatemala",
     "continent": "North America",
     "region": "Mainland North and Central America",
     "neighbours": [
-      "Belize",
-      "El Salvador",
-      "Honduras",
-      "Mexico"
+      "Belizas",
+      "Salvadoras",
+      "Hondūras",
+      "Meksika"
     ],
     "flag": "/assets/geography/flags/gt.svg",
     "outline": "/assets/geography/outlines/gt.svg",
@@ -1057,17 +1057,17 @@
   },
   {
     "iso2": "GN",
-    "name": "Guinea",
-    "capital": "Conakry",
+    "name": "Gvinėja",
+    "capital": "Konakris",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Côte d'Ivoire",
-      "Guinea-Bissau",
-      "Liberia",
-      "Mali",
-      "Senegal",
-      "Sierra Leone"
+      "Dramblio Kaulo Krantas",
+      "Bisau Gvinėja",
+      "Liberija",
+      "Malis",
+      "Senegalas",
+      "Siera Leonė"
     ],
     "flag": "/assets/geography/flags/gn.svg",
     "outline": "/assets/geography/outlines/gn.svg",
@@ -1075,13 +1075,13 @@
   },
   {
     "iso2": "GW",
-    "name": "Guinea-Bissau",
-    "capital": "Bissau",
+    "name": "Bisau Gvinėja",
+    "capital": "Bisau",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Guinea",
-      "Senegal"
+      "Gvinėja",
+      "Senegalas"
     ],
     "flag": "/assets/geography/flags/gw.svg",
     "outline": "/assets/geography/outlines/gw.svg",
@@ -1089,14 +1089,14 @@
   },
   {
     "iso2": "GY",
-    "name": "Guyana",
-    "capital": "Georgetown",
+    "name": "Gajana",
+    "capital": "Džordžtaunas",
     "continent": "South America",
     "region": "Eastern and Southern South America",
     "neighbours": [
-      "Brazil",
-      "Suriname",
-      "Venezuela"
+      "Brazilija",
+      "Surinamas",
+      "Venesuela"
     ],
     "flag": "/assets/geography/flags/gy.svg",
     "outline": "/assets/geography/outlines/gy.svg",
@@ -1104,12 +1104,12 @@
   },
   {
     "iso2": "HT",
-    "name": "Haiti",
-    "capital": "Port-au-Prince",
+    "name": "Haitis",
+    "capital": "Port o Prensas",
     "continent": "North America",
     "region": "Greater Antilles",
     "neighbours": [
-      "Dominican Republic"
+      "Dominikos Respublika"
     ],
     "flag": "/assets/geography/flags/ht.svg",
     "outline": "/assets/geography/outlines/ht.svg",
@@ -1117,14 +1117,14 @@
   },
   {
     "iso2": "HN",
-    "name": "Honduras",
-    "capital": "Tegucigalpa",
+    "name": "Hondūras",
+    "capital": "Tegusigalpa",
     "continent": "North America",
     "region": "Mainland North and Central America",
     "neighbours": [
-      "El Salvador",
-      "Guatemala",
-      "Nicaragua"
+      "Salvadoras",
+      "Gvatemala",
+      "Nikaragva"
     ],
     "flag": "/assets/geography/flags/hn.svg",
     "outline": "/assets/geography/outlines/hn.svg",
@@ -1132,18 +1132,18 @@
   },
   {
     "iso2": "HU",
-    "name": "Hungary",
-    "capital": "Budapest",
+    "name": "Vengrija",
+    "capital": "Budapeštas",
     "continent": "Europe",
     "region": "Central Europe",
     "neighbours": [
-      "Austria",
-      "Croatia",
-      "Romania",
-      "Serbia",
-      "Slovakia",
-      "Slovenia",
-      "Ukraine"
+      "Austrija",
+      "Kroatija",
+      "Rumunija",
+      "Serbija",
+      "Slovakija",
+      "Slovėnija",
+      "Ukraina"
     ],
     "flag": "/assets/geography/flags/hu.svg",
     "outline": "/assets/geography/outlines/hu.svg",
@@ -1151,8 +1151,8 @@
   },
   {
     "iso2": "IS",
-    "name": "Iceland",
-    "capital": "Reykjavík",
+    "name": "Islandija",
+    "capital": "Reikjavikas",
     "continent": "Europe",
     "region": "Northern Europe and Baltics",
     "neighbours": [],
@@ -1162,17 +1162,17 @@
   },
   {
     "iso2": "IN",
-    "name": "India",
-    "capital": "New Delhi",
+    "name": "Indija",
+    "capital": "Naujasis Delis",
     "continent": "Asia",
     "region": "South Asia",
     "neighbours": [
-      "Bangladesh",
-      "Bhutan",
-      "China",
-      "Myanmar",
-      "Nepal",
-      "Pakistan"
+      "Bangladešas",
+      "Butanas",
+      "Kinija",
+      "Mianmaras",
+      "Nepalas",
+      "Pakistanas"
     ],
     "flag": "/assets/geography/flags/in.svg",
     "outline": "/assets/geography/outlines/in.svg",
@@ -1180,14 +1180,14 @@
   },
   {
     "iso2": "ID",
-    "name": "Indonesia",
-    "capital": "Jakarta",
+    "name": "Indonezija",
+    "capital": "Džakarta",
     "continent": "Asia",
     "region": "Southeast Asia",
     "neighbours": [
-      "Malaysia",
-      "Papua New Guinea",
-      "Timor-Leste"
+      "Malaizija",
+      "Papua Naujoji Gvinėja",
+      "Rytų Timoras"
     ],
     "flag": "/assets/geography/flags/id.svg",
     "outline": "/assets/geography/outlines/id.svg",
@@ -1195,18 +1195,18 @@
   },
   {
     "iso2": "IR",
-    "name": "Iran",
-    "capital": "Tehran",
+    "name": "Iranas",
+    "capital": "Teheranas",
     "continent": "Asia",
     "region": "Middle East",
     "neighbours": [
-      "Afghanistan",
-      "Armenia",
-      "Azerbaijan",
-      "Iraq",
-      "Pakistan",
-      "Turkmenistan",
-      "Türkiye"
+      "Afganistanas",
+      "Armėnija",
+      "Azerbaidžanas",
+      "Irakas",
+      "Pakistanas",
+      "Turkmėnistanas",
+      "Turkija"
     ],
     "flag": "/assets/geography/flags/ir.svg",
     "outline": "/assets/geography/outlines/ir.svg",
@@ -1214,17 +1214,17 @@
   },
   {
     "iso2": "IQ",
-    "name": "Iraq",
-    "capital": "Baghdad",
+    "name": "Irakas",
+    "capital": "Bagdadas",
     "continent": "Asia",
     "region": "Middle East",
     "neighbours": [
-      "Iran",
-      "Jordan",
-      "Kuwait",
-      "Saudi Arabia",
-      "Syria",
-      "Türkiye"
+      "Iranas",
+      "Jordanija",
+      "Kuveitas",
+      "Saudo Arabija",
+      "Sirija",
+      "Turkija"
     ],
     "flag": "/assets/geography/flags/iq.svg",
     "outline": "/assets/geography/outlines/iq.svg",
@@ -1232,12 +1232,12 @@
   },
   {
     "iso2": "IE",
-    "name": "Ireland",
-    "capital": "Dublin",
+    "name": "Airija",
+    "capital": "Dublinas",
     "continent": "Europe",
     "region": "Western Europe",
     "neighbours": [
-      "United Kingdom"
+      "Jungtinė Karalystė"
     ],
     "flag": "/assets/geography/flags/ie.svg",
     "outline": "/assets/geography/outlines/ie.svg",
@@ -1245,16 +1245,16 @@
   },
   {
     "iso2": "IL",
-    "name": "Israel",
-    "capital": "Jerusalem",
+    "name": "Izraelis",
+    "capital": "Jeruzalė",
     "continent": "Asia",
     "region": "Middle East",
     "neighbours": [
-      "Egypt",
-      "Jordan",
-      "Lebanon",
-      "Palestine",
-      "Syria"
+      "Egiptas",
+      "Jordanija",
+      "Libanas",
+      "Palestina",
+      "Sirija"
     ],
     "flag": "/assets/geography/flags/il.svg",
     "outline": "/assets/geography/outlines/il.svg",
@@ -1262,17 +1262,17 @@
   },
   {
     "iso2": "IT",
-    "name": "Italy",
-    "capital": "Rome",
+    "name": "Italija",
+    "capital": "Roma",
     "continent": "Europe",
     "region": "Southern Europe",
     "neighbours": [
-      "Austria",
-      "France",
-      "San Marino",
-      "Slovenia",
-      "Switzerland",
-      "Vatican City"
+      "Austrija",
+      "Prancūzija",
+      "San Marinas",
+      "Slovėnija",
+      "Šveicarija",
+      "Vatikanas"
     ],
     "flag": "/assets/geography/flags/it.svg",
     "outline": "/assets/geography/outlines/it.svg",
@@ -1280,8 +1280,8 @@
   },
   {
     "iso2": "JM",
-    "name": "Jamaica",
-    "capital": "Kingston",
+    "name": "Jamaika",
+    "capital": "Kingstonas",
     "continent": "North America",
     "region": "Greater Antilles",
     "neighbours": [],
@@ -1291,8 +1291,8 @@
   },
   {
     "iso2": "JP",
-    "name": "Japan",
-    "capital": "Tokyo",
+    "name": "Japonija",
+    "capital": "Tokijas",
     "continent": "Asia",
     "region": "East Asia",
     "neighbours": [],
@@ -1302,16 +1302,16 @@
   },
   {
     "iso2": "JO",
-    "name": "Jordan",
-    "capital": "Amman",
+    "name": "Jordanija",
+    "capital": "Amanas",
     "continent": "Asia",
     "region": "Middle East",
     "neighbours": [
-      "Iraq",
-      "Israel",
-      "Palestine",
-      "Saudi Arabia",
-      "Syria"
+      "Irakas",
+      "Izraelis",
+      "Palestina",
+      "Saudo Arabija",
+      "Sirija"
     ],
     "flag": "/assets/geography/flags/jo.svg",
     "outline": "/assets/geography/outlines/jo.svg",
@@ -1319,16 +1319,16 @@
   },
   {
     "iso2": "KZ",
-    "name": "Kazakhstan",
+    "name": "Kazachstanas",
     "capital": "Astana",
     "continent": "Asia",
     "region": "Central Asia",
     "neighbours": [
-      "China",
-      "Kyrgyzstan",
-      "Russia",
-      "Turkmenistan",
-      "Uzbekistan"
+      "Kinija",
+      "Kirgizija",
+      "Rusija",
+      "Turkmėnistanas",
+      "Uzbekistanas"
     ],
     "flag": "/assets/geography/flags/kz.svg",
     "outline": "/assets/geography/outlines/kz.svg",
@@ -1336,15 +1336,15 @@
   },
   {
     "iso2": "KE",
-    "name": "Kenya",
-    "capital": "Nairobi",
+    "name": "Kenija",
+    "capital": "Nairobis",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
-      "Ethiopia",
-      "Somalia",
-      "South Sudan",
-      "Tanzania",
+      "Etiopija",
+      "Somalis",
+      "Pietų Sudanas",
+      "Tanzanija",
       "Uganda"
     ],
     "flag": "/assets/geography/flags/ke.svg",
@@ -1353,8 +1353,8 @@
   },
   {
     "iso2": "KI",
-    "name": "Kiribati",
-    "capital": "South Tarawa",
+    "name": "Kiribatis",
+    "capital": "Pietų Tarava",
     "continent": "Oceania",
     "region": "Micronesia and Polynesia",
     "neighbours": [],
@@ -1364,15 +1364,15 @@
   },
   {
     "iso2": "XK",
-    "name": "Kosovo",
-    "capital": "Pristina",
+    "name": "Kosovas",
+    "capital": "Priština",
     "continent": "Europe",
     "region": "Southeastern Europe and Balkans",
     "neighbours": [
-      "Albania",
-      "Montenegro",
-      "North Macedonia",
-      "Serbia"
+      "Albanija",
+      "Juodkalnija",
+      "Šiaurės Makedonija",
+      "Serbija"
     ],
     "flag": "/assets/geography/flags/xk.svg",
     "outline": "/assets/geography/outlines/xk.svg",
@@ -1380,13 +1380,13 @@
   },
   {
     "iso2": "KW",
-    "name": "Kuwait",
-    "capital": "Kuwait City",
+    "name": "Kuveitas",
+    "capital": "Kuveitas",
     "continent": "Asia",
     "region": "Middle East",
     "neighbours": [
-      "Iraq",
-      "Saudi Arabia"
+      "Irakas",
+      "Saudo Arabija"
     ],
     "flag": "/assets/geography/flags/kw.svg",
     "outline": "/assets/geography/outlines/kw.svg",
@@ -1394,15 +1394,15 @@
   },
   {
     "iso2": "KG",
-    "name": "Kyrgyzstan",
-    "capital": "Bishkek",
+    "name": "Kirgizija",
+    "capital": "Biškekas",
     "continent": "Asia",
     "region": "Central Asia",
     "neighbours": [
-      "China",
-      "Kazakhstan",
-      "Tajikistan",
-      "Uzbekistan"
+      "Kinija",
+      "Kazachstanas",
+      "Tadžikija",
+      "Uzbekistanas"
     ],
     "flag": "/assets/geography/flags/kg.svg",
     "outline": "/assets/geography/outlines/kg.svg",
@@ -1410,16 +1410,16 @@
   },
   {
     "iso2": "LA",
-    "name": "Laos",
-    "capital": "Vientiane",
+    "name": "Laosas",
+    "capital": "Vientianas",
     "continent": "Asia",
     "region": "Southeast Asia",
     "neighbours": [
-      "Cambodia",
-      "China",
-      "Myanmar",
-      "Thailand",
-      "Vietnam"
+      "Kambodža",
+      "Kinija",
+      "Mianmaras",
+      "Tailandas",
+      "Vietnamas"
     ],
     "flag": "/assets/geography/flags/la.svg",
     "outline": "/assets/geography/outlines/la.svg",
@@ -1427,15 +1427,15 @@
   },
   {
     "iso2": "LV",
-    "name": "Latvia",
-    "capital": "Riga",
+    "name": "Latvija",
+    "capital": "Ryga",
     "continent": "Europe",
     "region": "Northern Europe and Baltics",
     "neighbours": [
-      "Belarus",
-      "Estonia",
-      "Lithuania",
-      "Russia"
+      "Baltarusija",
+      "Estija",
+      "Lietuva",
+      "Rusija"
     ],
     "flag": "/assets/geography/flags/lv.svg",
     "outline": "/assets/geography/outlines/lv.svg",
@@ -1443,13 +1443,13 @@
   },
   {
     "iso2": "LB",
-    "name": "Lebanon",
-    "capital": "Beirut",
+    "name": "Libanas",
+    "capital": "Beirutas",
     "continent": "Asia",
     "region": "Middle East",
     "neighbours": [
-      "Israel",
-      "Syria"
+      "Izraelis",
+      "Sirija"
     ],
     "flag": "/assets/geography/flags/lb.svg",
     "outline": "/assets/geography/outlines/lb.svg",
@@ -1457,12 +1457,12 @@
   },
   {
     "iso2": "LS",
-    "name": "Lesotho",
+    "name": "Lesotas",
     "capital": "Maseru",
     "continent": "Africa",
     "region": "Southern Africa",
     "neighbours": [
-      "South Africa"
+      "Pietų Afrika"
     ],
     "flag": "/assets/geography/flags/ls.svg",
     "outline": "/assets/geography/outlines/ls.svg",
@@ -1470,14 +1470,14 @@
   },
   {
     "iso2": "LR",
-    "name": "Liberia",
-    "capital": "Monrovia",
+    "name": "Liberija",
+    "capital": "Monrovija",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Côte d'Ivoire",
-      "Guinea",
-      "Sierra Leone"
+      "Dramblio Kaulo Krantas",
+      "Gvinėja",
+      "Siera Leonė"
     ],
     "flag": "/assets/geography/flags/lr.svg",
     "outline": "/assets/geography/outlines/lr.svg",
@@ -1485,17 +1485,17 @@
   },
   {
     "iso2": "LY",
-    "name": "Libya",
-    "capital": "Tripoli",
+    "name": "Libija",
+    "capital": "Tripolis",
     "continent": "Africa",
     "region": "North Africa",
     "neighbours": [
-      "Algeria",
-      "Chad",
-      "Egypt",
-      "Niger",
-      "Sudan",
-      "Tunisia"
+      "Alžyras",
+      "Čadas",
+      "Egiptas",
+      "Nigeris",
+      "Sudanas",
+      "Tunisas"
     ],
     "flag": "/assets/geography/flags/ly.svg",
     "outline": "/assets/geography/outlines/ly.svg",
@@ -1503,13 +1503,13 @@
   },
   {
     "iso2": "LI",
-    "name": "Liechtenstein",
-    "capital": "Vaduz",
+    "name": "Lichtenšteinas",
+    "capital": "Vaducas",
     "continent": "Europe",
     "region": "Central Europe",
     "neighbours": [
-      "Austria",
-      "Switzerland"
+      "Austrija",
+      "Šveicarija"
     ],
     "flag": "/assets/geography/flags/li.svg",
     "outline": "/assets/geography/outlines/li.svg",
@@ -1517,15 +1517,15 @@
   },
   {
     "iso2": "LT",
-    "name": "Lithuania",
+    "name": "Lietuva",
     "capital": "Vilnius",
     "continent": "Europe",
     "region": "Northern Europe and Baltics",
     "neighbours": [
-      "Belarus",
-      "Latvia",
-      "Poland",
-      "Russia"
+      "Baltarusija",
+      "Latvija",
+      "Lenkija",
+      "Rusija"
     ],
     "flag": "/assets/geography/flags/lt.svg",
     "outline": "/assets/geography/outlines/lt.svg",
@@ -1533,14 +1533,14 @@
   },
   {
     "iso2": "LU",
-    "name": "Luxembourg",
-    "capital": "Luxembourg",
+    "name": "Liuksemburgas",
+    "capital": "Liuksemburgas",
     "continent": "Europe",
     "region": "Western Europe",
     "neighbours": [
-      "Belgium",
-      "France",
-      "Germany"
+      "Belgija",
+      "Prancūzija",
+      "Vokietija"
     ],
     "flag": "/assets/geography/flags/lu.svg",
     "outline": "/assets/geography/outlines/lu.svg",
@@ -1548,8 +1548,8 @@
   },
   {
     "iso2": "MG",
-    "name": "Madagascar",
-    "capital": "Antananarivo",
+    "name": "Madagaskaras",
+    "capital": "Antananaryvas",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [],
@@ -1559,14 +1559,14 @@
   },
   {
     "iso2": "MW",
-    "name": "Malawi",
-    "capital": "Lilongwe",
+    "name": "Malavis",
+    "capital": "Lilongvė",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
-      "Mozambique",
-      "Tanzania",
-      "Zambia"
+      "Mozambikas",
+      "Tanzanija",
+      "Zambija"
     ],
     "flag": "/assets/geography/flags/mw.svg",
     "outline": "/assets/geography/outlines/mw.svg",
@@ -1574,14 +1574,14 @@
   },
   {
     "iso2": "MY",
-    "name": "Malaysia",
-    "capital": "Kuala Lumpur",
+    "name": "Malaizija",
+    "capital": "Kvala Lumpūras",
     "continent": "Asia",
     "region": "Southeast Asia",
     "neighbours": [
-      "Brunei",
-      "Indonesia",
-      "Thailand"
+      "Brunėjus",
+      "Indonezija",
+      "Tailandas"
     ],
     "flag": "/assets/geography/flags/my.svg",
     "outline": "/assets/geography/outlines/my.svg",
@@ -1589,8 +1589,8 @@
   },
   {
     "iso2": "MV",
-    "name": "Maldives",
-    "capital": "Malé",
+    "name": "Maldyvai",
+    "capital": "Malė",
     "continent": "Asia",
     "region": "South Asia",
     "neighbours": [],
@@ -1600,18 +1600,18 @@
   },
   {
     "iso2": "ML",
-    "name": "Mali",
-    "capital": "Bamako",
+    "name": "Malis",
+    "capital": "Bamakas",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Algeria",
-      "Burkina Faso",
-      "Côte d'Ivoire",
-      "Guinea",
-      "Mauritania",
-      "Niger",
-      "Senegal"
+      "Alžyras",
+      "Burkina Fasas",
+      "Dramblio Kaulo Krantas",
+      "Gvinėja",
+      "Mauritanija",
+      "Nigeris",
+      "Senegalas"
     ],
     "flag": "/assets/geography/flags/ml.svg",
     "outline": "/assets/geography/outlines/ml.svg",
@@ -1620,7 +1620,7 @@
   {
     "iso2": "MT",
     "name": "Malta",
-    "capital": "Valletta",
+    "capital": "Valeta",
     "continent": "Europe",
     "region": "Southern Europe",
     "neighbours": [],
@@ -1630,8 +1630,8 @@
   },
   {
     "iso2": "MH",
-    "name": "Marshall Islands",
-    "capital": "Majuro",
+    "name": "Maršalo Salos",
+    "capital": "Madžūras",
     "continent": "Oceania",
     "region": "Micronesia and Polynesia",
     "neighbours": [],
@@ -1641,14 +1641,14 @@
   },
   {
     "iso2": "MR",
-    "name": "Mauritania",
-    "capital": "Nouakchott",
+    "name": "Mauritanija",
+    "capital": "Nuakšotas",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Algeria",
-      "Mali",
-      "Senegal"
+      "Alžyras",
+      "Malis",
+      "Senegalas"
     ],
     "flag": "/assets/geography/flags/mr.svg",
     "outline": "/assets/geography/outlines/mr.svg",
@@ -1656,8 +1656,8 @@
   },
   {
     "iso2": "MU",
-    "name": "Mauritius",
-    "capital": "Port Louis",
+    "name": "Mauricijus",
+    "capital": "Port Luisas",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [],
@@ -1667,14 +1667,14 @@
   },
   {
     "iso2": "MX",
-    "name": "Mexico",
-    "capital": "Mexico City",
+    "name": "Meksika",
+    "capital": "Meksikas",
     "continent": "North America",
     "region": "Mainland North and Central America",
     "neighbours": [
-      "Belize",
-      "Guatemala",
-      "United States"
+      "Belizas",
+      "Gvatemala",
+      "Jungtinės Amerikos Valstijos"
     ],
     "flag": "/assets/geography/flags/mx.svg",
     "outline": "/assets/geography/outlines/mx.svg",
@@ -1683,12 +1683,12 @@
   {
     "iso2": "MD",
     "name": "Moldova",
-    "capital": "Chișinău",
+    "capital": "Kišiniovas",
     "continent": "Europe",
     "region": "Eastern Europe",
     "neighbours": [
-      "Romania",
-      "Ukraine"
+      "Rumunija",
+      "Ukraina"
     ],
     "flag": "/assets/geography/flags/md.svg",
     "outline": "/assets/geography/outlines/md.svg",
@@ -1696,12 +1696,12 @@
   },
   {
     "iso2": "MC",
-    "name": "Monaco",
-    "capital": "Monaco",
+    "name": "Monakas",
+    "capital": "Monakas",
     "continent": "Europe",
     "region": "Western Europe",
     "neighbours": [
-      "France"
+      "Prancūzija"
     ],
     "flag": "/assets/geography/flags/mc.svg",
     "outline": "/assets/geography/outlines/mc.svg",
@@ -1709,13 +1709,13 @@
   },
   {
     "iso2": "MN",
-    "name": "Mongolia",
-    "capital": "Ulaanbaatar",
+    "name": "Mongolija",
+    "capital": "Ulan Batoras",
     "continent": "Asia",
     "region": "East Asia",
     "neighbours": [
-      "China",
-      "Russia"
+      "Kinija",
+      "Rusija"
     ],
     "flag": "/assets/geography/flags/mn.svg",
     "outline": "/assets/geography/outlines/mn.svg",
@@ -1723,16 +1723,16 @@
   },
   {
     "iso2": "ME",
-    "name": "Montenegro",
+    "name": "Juodkalnija",
     "capital": "Podgorica",
     "continent": "Europe",
     "region": "Southeastern Europe and Balkans",
     "neighbours": [
-      "Albania",
-      "Bosnia and Herzegovina",
-      "Croatia",
-      "Kosovo",
-      "Serbia"
+      "Albanija",
+      "Bosnija ir Hercegovina",
+      "Kroatija",
+      "Kosovas",
+      "Serbija"
     ],
     "flag": "/assets/geography/flags/me.svg",
     "outline": "/assets/geography/outlines/me.svg",
@@ -1740,13 +1740,13 @@
   },
   {
     "iso2": "MA",
-    "name": "Morocco",
-    "capital": "Rabat",
+    "name": "Marokas",
+    "capital": "Rabatas",
     "continent": "Africa",
     "region": "North Africa",
     "neighbours": [
-      "Algeria",
-      "Spain"
+      "Alžyras",
+      "Ispanija"
     ],
     "flag": "/assets/geography/flags/ma.svg",
     "outline": "/assets/geography/outlines/ma.svg",
@@ -1754,17 +1754,17 @@
   },
   {
     "iso2": "MZ",
-    "name": "Mozambique",
-    "capital": "Maputo",
+    "name": "Mozambikas",
+    "capital": "Maputu",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
-      "Eswatini",
-      "Malawi",
-      "South Africa",
-      "Tanzania",
-      "Zambia",
-      "Zimbabwe"
+      "Esvatinis",
+      "Malavis",
+      "Pietų Afrika",
+      "Tanzanija",
+      "Zambija",
+      "Zimbabvė"
     ],
     "flag": "/assets/geography/flags/mz.svg",
     "outline": "/assets/geography/outlines/mz.svg",
@@ -1772,16 +1772,16 @@
   },
   {
     "iso2": "MM",
-    "name": "Myanmar",
-    "capital": "Naypyidaw",
+    "name": "Mianmaras",
+    "capital": "Neipidas",
     "continent": "Asia",
     "region": "Southeast Asia",
     "neighbours": [
-      "Bangladesh",
-      "China",
-      "India",
-      "Laos",
-      "Thailand"
+      "Bangladešas",
+      "Kinija",
+      "Indija",
+      "Laosas",
+      "Tailandas"
     ],
     "flag": "/assets/geography/flags/mm.svg",
     "outline": "/assets/geography/outlines/mm.svg",
@@ -1789,15 +1789,15 @@
   },
   {
     "iso2": "NA",
-    "name": "Namibia",
-    "capital": "Windhoek",
+    "name": "Namibija",
+    "capital": "Vindhukas",
     "continent": "Africa",
     "region": "Southern Africa",
     "neighbours": [
       "Angola",
-      "Botswana",
-      "South Africa",
-      "Zambia"
+      "Botsvana",
+      "Pietų Afrika",
+      "Zambija"
     ],
     "flag": "/assets/geography/flags/na.svg",
     "outline": "/assets/geography/outlines/na.svg",
@@ -1805,7 +1805,7 @@
   },
   {
     "iso2": "NR",
-    "name": "Naoero",
+    "name": "Nauru",
     "capital": null,
     "continent": "Oceania",
     "region": "Micronesia and Polynesia",
@@ -1816,13 +1816,13 @@
   },
   {
     "iso2": "NP",
-    "name": "Nepal",
-    "capital": "Kathmandu",
+    "name": "Nepalas",
+    "capital": "Katmandu",
     "continent": "Asia",
     "region": "South Asia",
     "neighbours": [
-      "China",
-      "India"
+      "Kinija",
+      "Indija"
     ],
     "flag": "/assets/geography/flags/np.svg",
     "outline": "/assets/geography/outlines/np.svg",
@@ -1830,14 +1830,14 @@
   },
   {
     "iso2": "NL",
-    "name": "Netherlands",
-    "capital": "Amsterdam",
+    "name": "Nyderlandai",
+    "capital": "Amsterdamas",
     "continent": "Europe",
     "region": "Western Europe",
     "neighbours": [
-      "Belgium",
-      "France",
-      "Germany"
+      "Belgija",
+      "Prancūzija",
+      "Vokietija"
     ],
     "flag": "/assets/geography/flags/nl.svg",
     "outline": "/assets/geography/outlines/nl.svg",
@@ -1845,8 +1845,8 @@
   },
   {
     "iso2": "NZ",
-    "name": "New Zealand",
-    "capital": "Wellington",
+    "name": "Naujoji Zelandija",
+    "capital": "Velingtonas",
     "continent": "Oceania",
     "region": "Australasia and Melanesia",
     "neighbours": [],
@@ -1856,13 +1856,13 @@
   },
   {
     "iso2": "NI",
-    "name": "Nicaragua",
-    "capital": "Managua",
+    "name": "Nikaragva",
+    "capital": "Managva",
     "continent": "North America",
     "region": "Mainland North and Central America",
     "neighbours": [
-      "Costa Rica",
-      "Honduras"
+      "Kosta Rika",
+      "Hondūras"
     ],
     "flag": "/assets/geography/flags/ni.svg",
     "outline": "/assets/geography/outlines/ni.svg",
@@ -1870,18 +1870,18 @@
   },
   {
     "iso2": "NE",
-    "name": "Niger",
-    "capital": "Niamey",
+    "name": "Nigeris",
+    "capital": "Niamėjus",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Algeria",
-      "Benin",
-      "Burkina Faso",
-      "Chad",
-      "Libya",
-      "Mali",
-      "Nigeria"
+      "Alžyras",
+      "Beninas",
+      "Burkina Fasas",
+      "Čadas",
+      "Libija",
+      "Malis",
+      "Nigerija"
     ],
     "flag": "/assets/geography/flags/ne.svg",
     "outline": "/assets/geography/outlines/ne.svg",
@@ -1889,15 +1889,15 @@
   },
   {
     "iso2": "NG",
-    "name": "Nigeria",
-    "capital": "Abuja",
+    "name": "Nigerija",
+    "capital": "Abudža",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Benin",
-      "Cameroon",
-      "Chad",
-      "Niger"
+      "Beninas",
+      "Kamerūnas",
+      "Čadas",
+      "Nigeris"
     ],
     "flag": "/assets/geography/flags/ng.svg",
     "outline": "/assets/geography/outlines/ng.svg",
@@ -1905,14 +1905,14 @@
   },
   {
     "iso2": "KP",
-    "name": "North Korea",
-    "capital": "Pyongyang",
+    "name": "Šiaurės Korėja",
+    "capital": "Pchenjanas",
     "continent": "Asia",
     "region": "East Asia",
     "neighbours": [
-      "China",
-      "Russia",
-      "South Korea"
+      "Kinija",
+      "Rusija",
+      "Pietų Korėja"
     ],
     "flag": "/assets/geography/flags/kp.svg",
     "outline": "/assets/geography/outlines/kp.svg",
@@ -1920,16 +1920,16 @@
   },
   {
     "iso2": "MK",
-    "name": "North Macedonia",
-    "capital": "Skopje",
+    "name": "Šiaurės Makedonija",
+    "capital": "Skopjė",
     "continent": "Europe",
     "region": "Southeastern Europe and Balkans",
     "neighbours": [
-      "Albania",
-      "Bulgaria",
-      "Greece",
-      "Kosovo",
-      "Serbia"
+      "Albanija",
+      "Bulgarija",
+      "Graikija",
+      "Kosovas",
+      "Serbija"
     ],
     "flag": "/assets/geography/flags/mk.svg",
     "outline": "/assets/geography/outlines/mk.svg",
@@ -1937,14 +1937,14 @@
   },
   {
     "iso2": "NO",
-    "name": "Norway",
-    "capital": "Oslo",
+    "name": "Norvegija",
+    "capital": "Oslas",
     "continent": "Europe",
     "region": "Northern Europe and Baltics",
     "neighbours": [
-      "Finland",
-      "Russia",
-      "Sweden"
+      "Suomija",
+      "Rusija",
+      "Švedija"
     ],
     "flag": "/assets/geography/flags/no.svg",
     "outline": "/assets/geography/outlines/no.svg",
@@ -1952,14 +1952,14 @@
   },
   {
     "iso2": "OM",
-    "name": "Oman",
-    "capital": "Muscat",
+    "name": "Omanas",
+    "capital": "Maskatas",
     "continent": "Asia",
     "region": "Middle East",
     "neighbours": [
-      "Saudi Arabia",
-      "United Arab Emirates",
-      "Yemen"
+      "Saudo Arabija",
+      "Jungtiniai Arabų Emyratai",
+      "Jemenas"
     ],
     "flag": "/assets/geography/flags/om.svg",
     "outline": "/assets/geography/outlines/om.svg",
@@ -1967,15 +1967,15 @@
   },
   {
     "iso2": "PK",
-    "name": "Pakistan",
-    "capital": "Islamabad",
+    "name": "Pakistanas",
+    "capital": "Islamabadas",
     "continent": "Asia",
     "region": "South Asia",
     "neighbours": [
-      "Afghanistan",
-      "China",
-      "India",
-      "Iran"
+      "Afganistanas",
+      "Kinija",
+      "Indija",
+      "Iranas"
     ],
     "flag": "/assets/geography/flags/pk.svg",
     "outline": "/assets/geography/outlines/pk.svg",
@@ -1984,7 +1984,7 @@
   {
     "iso2": "PW",
     "name": "Palau",
-    "capital": "Ngerulmud",
+    "capital": "Ngerulmudas",
     "continent": "Oceania",
     "region": "Micronesia and Polynesia",
     "neighbours": [],
@@ -1994,14 +1994,14 @@
   },
   {
     "iso2": "PS",
-    "name": "Palestine",
+    "name": "Palestina",
     "capital": null,
     "continent": "Asia",
     "region": "Middle East",
     "neighbours": [
-      "Egypt",
-      "Israel",
-      "Jordan"
+      "Egiptas",
+      "Izraelis",
+      "Jordanija"
     ],
     "flag": "/assets/geography/flags/ps.svg",
     "outline": "/assets/geography/outlines/ps.svg",
@@ -2010,12 +2010,12 @@
   {
     "iso2": "PA",
     "name": "Panama",
-    "capital": "Panama City",
+    "capital": "Panama",
     "continent": "North America",
     "region": "Mainland North and Central America",
     "neighbours": [
-      "Colombia",
-      "Costa Rica"
+      "Kolumbija",
+      "Kosta Rika"
     ],
     "flag": "/assets/geography/flags/pa.svg",
     "outline": "/assets/geography/outlines/pa.svg",
@@ -2023,12 +2023,12 @@
   },
   {
     "iso2": "PG",
-    "name": "Papua New Guinea",
-    "capital": "Port Moresby",
+    "name": "Papua Naujoji Gvinėja",
+    "capital": "Port Morsbis",
     "continent": "Oceania",
     "region": "Australasia and Melanesia",
     "neighbours": [
-      "Indonesia"
+      "Indonezija"
     ],
     "flag": "/assets/geography/flags/pg.svg",
     "outline": "/assets/geography/outlines/pg.svg",
@@ -2036,14 +2036,14 @@
   },
   {
     "iso2": "PY",
-    "name": "Paraguay",
-    "capital": "Asunción",
+    "name": "Paragvajus",
+    "capital": "Asunsjonas",
     "continent": "South America",
     "region": "Eastern and Southern South America",
     "neighbours": [
       "Argentina",
-      "Bolivia",
-      "Brazil"
+      "Bolivija",
+      "Brazilija"
     ],
     "flag": "/assets/geography/flags/py.svg",
     "outline": "/assets/geography/outlines/py.svg",
@@ -2056,11 +2056,11 @@
     "continent": "South America",
     "region": "Western and Andean South America",
     "neighbours": [
-      "Bolivia",
-      "Brazil",
-      "Chile",
-      "Colombia",
-      "Ecuador"
+      "Bolivija",
+      "Brazilija",
+      "Čilė",
+      "Kolumbija",
+      "Ekvadoras"
     ],
     "flag": "/assets/geography/flags/pe.svg",
     "outline": "/assets/geography/outlines/pe.svg",
@@ -2068,7 +2068,7 @@
   },
   {
     "iso2": "PH",
-    "name": "Philippines",
+    "name": "Filipinai",
     "capital": "Manila",
     "continent": "Asia",
     "region": "Southeast Asia",
@@ -2079,18 +2079,18 @@
   },
   {
     "iso2": "PL",
-    "name": "Poland",
-    "capital": "Warsaw",
+    "name": "Lenkija",
+    "capital": "Varšuva",
     "continent": "Europe",
     "region": "Central Europe",
     "neighbours": [
-      "Belarus",
-      "Czechia",
-      "Germany",
-      "Lithuania",
-      "Russia",
-      "Slovakia",
-      "Ukraine"
+      "Baltarusija",
+      "Čekija",
+      "Vokietija",
+      "Lietuva",
+      "Rusija",
+      "Slovakija",
+      "Ukraina"
     ],
     "flag": "/assets/geography/flags/pl.svg",
     "outline": "/assets/geography/outlines/pl.svg",
@@ -2098,12 +2098,12 @@
   },
   {
     "iso2": "PT",
-    "name": "Portugal",
-    "capital": "Lisbon",
+    "name": "Portugalija",
+    "capital": "Lisabona",
     "continent": "Europe",
     "region": "Southern Europe",
     "neighbours": [
-      "Spain"
+      "Ispanija"
     ],
     "flag": "/assets/geography/flags/pt.svg",
     "outline": "/assets/geography/outlines/pt.svg",
@@ -2111,12 +2111,12 @@
   },
   {
     "iso2": "QA",
-    "name": "Qatar",
+    "name": "Kataras",
     "capital": "Doha",
     "continent": "Asia",
     "region": "Middle East",
     "neighbours": [
-      "Saudi Arabia"
+      "Saudo Arabija"
     ],
     "flag": "/assets/geography/flags/qa.svg",
     "outline": "/assets/geography/outlines/qa.svg",
@@ -2124,16 +2124,16 @@
   },
   {
     "iso2": "CG",
-    "name": "Republic of the Congo",
-    "capital": "Brazzaville",
+    "name": "Kongo Respublika",
+    "capital": "Brazavilis",
     "continent": "Africa",
     "region": "Central Africa",
     "neighbours": [
       "Angola",
-      "Cameroon",
-      "Central African Republic",
-      "Democratic Republic of the Congo",
-      "Gabon"
+      "Kamerūnas",
+      "Centrinės Afrikos Respublika",
+      "Kongo Demokratinė Respublika",
+      "Gabonas"
     ],
     "flag": "/assets/geography/flags/cg.svg",
     "outline": "/assets/geography/outlines/cg.svg",
@@ -2141,16 +2141,16 @@
   },
   {
     "iso2": "RO",
-    "name": "Romania",
-    "capital": "Bucharest",
+    "name": "Rumunija",
+    "capital": "Bukareštas",
     "continent": "Europe",
     "region": "Southeastern Europe and Balkans",
     "neighbours": [
-      "Bulgaria",
-      "Hungary",
+      "Bulgarija",
+      "Vengrija",
       "Moldova",
-      "Serbia",
-      "Ukraine"
+      "Serbija",
+      "Ukraina"
     ],
     "flag": "/assets/geography/flags/ro.svg",
     "outline": "/assets/geography/outlines/ro.svg",
@@ -2158,25 +2158,25 @@
   },
   {
     "iso2": "RU",
-    "name": "Russia",
-    "capital": "Moscow",
+    "name": "Rusija",
+    "capital": "Maskva",
     "continent": "Europe",
     "region": "Eastern Europe",
     "neighbours": [
-      "Azerbaijan",
-      "Belarus",
-      "China",
-      "Estonia",
-      "Finland",
-      "Georgia",
-      "Kazakhstan",
-      "Latvia",
-      "Lithuania",
-      "Mongolia",
-      "North Korea",
-      "Norway",
-      "Poland",
-      "Ukraine"
+      "Azerbaidžanas",
+      "Baltarusija",
+      "Kinija",
+      "Estija",
+      "Suomija",
+      "Sakartvelas",
+      "Kazachstanas",
+      "Latvija",
+      "Lietuva",
+      "Mongolija",
+      "Šiaurės Korėja",
+      "Norvegija",
+      "Lenkija",
+      "Ukraina"
     ],
     "flag": "/assets/geography/flags/ru.svg",
     "outline": "/assets/geography/outlines/ru.svg",
@@ -2184,14 +2184,14 @@
   },
   {
     "iso2": "RW",
-    "name": "Rwanda",
-    "capital": "Kigali",
+    "name": "Ruanda",
+    "capital": "Kigalis",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
-      "Burundi",
-      "Democratic Republic of the Congo",
-      "Tanzania",
+      "Burundis",
+      "Kongo Demokratinė Respublika",
+      "Tanzanija",
       "Uganda"
     ],
     "flag": "/assets/geography/flags/rw.svg",
@@ -2200,8 +2200,8 @@
   },
   {
     "iso2": "KN",
-    "name": "Saint Kitts and Nevis",
-    "capital": "Basseterre",
+    "name": "Sent Kitsas ir Nevis",
+    "capital": "Basteras",
     "continent": "North America",
     "region": "Lesser Antilles and Bahamas",
     "neighbours": [],
@@ -2211,8 +2211,8 @@
   },
   {
     "iso2": "LC",
-    "name": "Saint Lucia",
-    "capital": "Castries",
+    "name": "Sent Lusija",
+    "capital": "Kastris",
     "continent": "North America",
     "region": "Lesser Antilles and Bahamas",
     "neighbours": [],
@@ -2222,8 +2222,8 @@
   },
   {
     "iso2": "VC",
-    "name": "Saint Vincent and the Grenadines",
-    "capital": "Kingstown",
+    "name": "Šventasis Vincentas ir Grenadinai",
+    "capital": "Kingstaunas",
     "continent": "North America",
     "region": "Lesser Antilles and Bahamas",
     "neighbours": [],
@@ -2234,7 +2234,7 @@
   {
     "iso2": "WS",
     "name": "Samoa",
-    "capital": "Apia",
+    "capital": "Apija",
     "continent": "Oceania",
     "region": "Micronesia and Polynesia",
     "neighbours": [],
@@ -2244,12 +2244,12 @@
   },
   {
     "iso2": "SM",
-    "name": "San Marino",
-    "capital": "San Marino",
+    "name": "San Marinas",
+    "capital": "San Marinas",
     "continent": "Europe",
     "region": "Southern Europe",
     "neighbours": [
-      "Italy"
+      "Italija"
     ],
     "flag": "/assets/geography/flags/sm.svg",
     "outline": "/assets/geography/outlines/sm.svg",
@@ -2257,8 +2257,8 @@
   },
   {
     "iso2": "ST",
-    "name": "Sao Tome and Principe",
-    "capital": "São Tomé",
+    "name": "San Tomė ir Prinsipė",
+    "capital": "San Tomė",
     "continent": "Africa",
     "region": "Central Africa",
     "neighbours": [],
@@ -2268,18 +2268,18 @@
   },
   {
     "iso2": "SA",
-    "name": "Saudi Arabia",
-    "capital": "Riyadh",
+    "name": "Saudo Arabija",
+    "capital": "Rijadas",
     "continent": "Asia",
     "region": "Middle East",
     "neighbours": [
-      "Iraq",
-      "Jordan",
-      "Kuwait",
-      "Oman",
-      "Qatar",
-      "United Arab Emirates",
-      "Yemen"
+      "Irakas",
+      "Jordanija",
+      "Kuveitas",
+      "Omanas",
+      "Kataras",
+      "Jungtiniai Arabų Emyratai",
+      "Jemenas"
     ],
     "flag": "/assets/geography/flags/sa.svg",
     "outline": "/assets/geography/outlines/sa.svg",
@@ -2287,16 +2287,16 @@
   },
   {
     "iso2": "SN",
-    "name": "Senegal",
-    "capital": "Dakar",
+    "name": "Senegalas",
+    "capital": "Dakaras",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Gambia",
-      "Guinea",
-      "Guinea-Bissau",
-      "Mali",
-      "Mauritania"
+      "Gambija",
+      "Gvinėja",
+      "Bisau Gvinėja",
+      "Malis",
+      "Mauritanija"
     ],
     "flag": "/assets/geography/flags/sn.svg",
     "outline": "/assets/geography/outlines/sn.svg",
@@ -2304,19 +2304,19 @@
   },
   {
     "iso2": "RS",
-    "name": "Serbia",
-    "capital": "Belgrade",
+    "name": "Serbija",
+    "capital": "Belgradas",
     "continent": "Europe",
     "region": "Southeastern Europe and Balkans",
     "neighbours": [
-      "Bosnia and Herzegovina",
-      "Bulgaria",
-      "Croatia",
-      "Hungary",
-      "Kosovo",
-      "Montenegro",
-      "North Macedonia",
-      "Romania"
+      "Bosnija ir Hercegovina",
+      "Bulgarija",
+      "Kroatija",
+      "Vengrija",
+      "Kosovas",
+      "Juodkalnija",
+      "Šiaurės Makedonija",
+      "Rumunija"
     ],
     "flag": "/assets/geography/flags/rs.svg",
     "outline": "/assets/geography/outlines/rs.svg",
@@ -2324,8 +2324,8 @@
   },
   {
     "iso2": "SC",
-    "name": "Seychelles",
-    "capital": "Victoria",
+    "name": "Seišeliai",
+    "capital": "Viktorija",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [],
@@ -2335,13 +2335,13 @@
   },
   {
     "iso2": "SL",
-    "name": "Sierra Leone",
-    "capital": "Freetown",
+    "name": "Siera Leonė",
+    "capital": "Fritaunas",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Guinea",
-      "Liberia"
+      "Gvinėja",
+      "Liberija"
     ],
     "flag": "/assets/geography/flags/sl.svg",
     "outline": "/assets/geography/outlines/sl.svg",
@@ -2349,8 +2349,8 @@
   },
   {
     "iso2": "SG",
-    "name": "Singapore",
-    "capital": "Singapore",
+    "name": "Singapūras",
+    "capital": "Singapūras",
     "continent": "Asia",
     "region": "Southeast Asia",
     "neighbours": [],
@@ -2360,16 +2360,16 @@
   },
   {
     "iso2": "SK",
-    "name": "Slovakia",
+    "name": "Slovakija",
     "capital": "Bratislava",
     "continent": "Europe",
     "region": "Central Europe",
     "neighbours": [
-      "Austria",
-      "Czechia",
-      "Hungary",
-      "Poland",
-      "Ukraine"
+      "Austrija",
+      "Čekija",
+      "Vengrija",
+      "Lenkija",
+      "Ukraina"
     ],
     "flag": "/assets/geography/flags/sk.svg",
     "outline": "/assets/geography/outlines/sk.svg",
@@ -2377,15 +2377,15 @@
   },
   {
     "iso2": "SI",
-    "name": "Slovenia",
-    "capital": "Ljubljana",
+    "name": "Slovėnija",
+    "capital": "Liubliana",
     "continent": "Europe",
     "region": "Southeastern Europe and Balkans",
     "neighbours": [
-      "Austria",
-      "Croatia",
-      "Hungary",
-      "Italy"
+      "Austrija",
+      "Kroatija",
+      "Vengrija",
+      "Italija"
     ],
     "flag": "/assets/geography/flags/si.svg",
     "outline": "/assets/geography/outlines/si.svg",
@@ -2393,7 +2393,7 @@
   },
   {
     "iso2": "SB",
-    "name": "Solomon Islands",
+    "name": "Saliamono Salos",
     "capital": "Honiara",
     "continent": "Oceania",
     "region": "Australasia and Melanesia",
@@ -2404,14 +2404,14 @@
   },
   {
     "iso2": "SO",
-    "name": "Somalia",
-    "capital": "Mogadishu",
+    "name": "Somalis",
+    "capital": "Mogadišas",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
-      "Djibouti",
-      "Ethiopia",
-      "Kenya"
+      "Džibutis",
+      "Etiopija",
+      "Kenija"
     ],
     "flag": "/assets/geography/flags/so.svg",
     "outline": "/assets/geography/outlines/so.svg",
@@ -2419,17 +2419,17 @@
   },
   {
     "iso2": "ZA",
-    "name": "South Africa",
-    "capital": "Pretoria",
+    "name": "Pietų Afrika",
+    "capital": "Pretorija",
     "continent": "Africa",
     "region": "Southern Africa",
     "neighbours": [
-      "Botswana",
-      "Eswatini",
-      "Lesotho",
-      "Mozambique",
-      "Namibia",
-      "Zimbabwe"
+      "Botsvana",
+      "Esvatinis",
+      "Lesotas",
+      "Mozambikas",
+      "Namibija",
+      "Zimbabvė"
     ],
     "flag": "/assets/geography/flags/za.svg",
     "outline": "/assets/geography/outlines/za.svg",
@@ -2437,12 +2437,12 @@
   },
   {
     "iso2": "KR",
-    "name": "South Korea",
-    "capital": "Seoul",
+    "name": "Pietų Korėja",
+    "capital": "Seulas",
     "continent": "Asia",
     "region": "East Asia",
     "neighbours": [
-      "North Korea"
+      "Šiaurės Korėja"
     ],
     "flag": "/assets/geography/flags/kr.svg",
     "outline": "/assets/geography/outlines/kr.svg",
@@ -2450,16 +2450,16 @@
   },
   {
     "iso2": "SS",
-    "name": "South Sudan",
-    "capital": "Juba",
+    "name": "Pietų Sudanas",
+    "capital": "Džuba",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
-      "Central African Republic",
-      "Democratic Republic of the Congo",
-      "Ethiopia",
-      "Kenya",
-      "Sudan",
+      "Centrinės Afrikos Respublika",
+      "Kongo Demokratinė Respublika",
+      "Etiopija",
+      "Kenija",
+      "Sudanas",
       "Uganda"
     ],
     "flag": "/assets/geography/flags/ss.svg",
@@ -2468,16 +2468,16 @@
   },
   {
     "iso2": "ES",
-    "name": "Spain",
-    "capital": "Madrid",
+    "name": "Ispanija",
+    "capital": "Madridas",
     "continent": "Europe",
     "region": "Southern Europe",
     "neighbours": [
-      "Andorra",
-      "France",
-      "Morocco",
-      "Portugal",
-      "United Kingdom"
+      "Andora",
+      "Prancūzija",
+      "Marokas",
+      "Portugalija",
+      "Jungtinė Karalystė"
     ],
     "flag": "/assets/geography/flags/es.svg",
     "outline": "/assets/geography/outlines/es.svg",
@@ -2485,8 +2485,8 @@
   },
   {
     "iso2": "LK",
-    "name": "Sri Lanka",
-    "capital": "Sri Jayawardenepura Kotte",
+    "name": "Šri Lanka",
+    "capital": "Šri Džajavardenepura Kotė",
     "continent": "Asia",
     "region": "South Asia",
     "neighbours": [],
@@ -2496,18 +2496,18 @@
   },
   {
     "iso2": "SD",
-    "name": "Sudan",
-    "capital": "Khartoum",
+    "name": "Sudanas",
+    "capital": "Chartumas",
     "continent": "Africa",
     "region": "North Africa",
     "neighbours": [
-      "Central African Republic",
-      "Chad",
-      "Egypt",
-      "Eritrea",
-      "Ethiopia",
-      "Libya",
-      "South Sudan"
+      "Centrinės Afrikos Respublika",
+      "Čadas",
+      "Egiptas",
+      "Eritrėja",
+      "Etiopija",
+      "Libija",
+      "Pietų Sudanas"
     ],
     "flag": "/assets/geography/flags/sd.svg",
     "outline": "/assets/geography/outlines/sd.svg",
@@ -2515,14 +2515,14 @@
   },
   {
     "iso2": "SR",
-    "name": "Suriname",
-    "capital": "Paramaribo",
+    "name": "Surinamas",
+    "capital": "Paramaribas",
     "continent": "South America",
     "region": "Eastern and Southern South America",
     "neighbours": [
-      "Brazil",
-      "France",
-      "Guyana"
+      "Brazilija",
+      "Prancūzija",
+      "Gajana"
     ],
     "flag": "/assets/geography/flags/sr.svg",
     "outline": "/assets/geography/outlines/sr.svg",
@@ -2530,13 +2530,13 @@
   },
   {
     "iso2": "SE",
-    "name": "Sweden",
-    "capital": "Stockholm",
+    "name": "Švedija",
+    "capital": "Stokholmas",
     "continent": "Europe",
     "region": "Northern Europe and Baltics",
     "neighbours": [
-      "Finland",
-      "Norway"
+      "Suomija",
+      "Norvegija"
     ],
     "flag": "/assets/geography/flags/se.svg",
     "outline": "/assets/geography/outlines/se.svg",
@@ -2544,16 +2544,16 @@
   },
   {
     "iso2": "CH",
-    "name": "Switzerland",
-    "capital": "Bern",
+    "name": "Šveicarija",
+    "capital": "Bernas",
     "continent": "Europe",
     "region": "Central Europe",
     "neighbours": [
-      "Austria",
-      "France",
-      "Germany",
-      "Italy",
-      "Liechtenstein"
+      "Austrija",
+      "Prancūzija",
+      "Vokietija",
+      "Italija",
+      "Lichtenšteinas"
     ],
     "flag": "/assets/geography/flags/ch.svg",
     "outline": "/assets/geography/outlines/ch.svg",
@@ -2561,16 +2561,16 @@
   },
   {
     "iso2": "SY",
-    "name": "Syria",
-    "capital": "Damascus",
+    "name": "Sirija",
+    "capital": "Damaskas",
     "continent": "Asia",
     "region": "Middle East",
     "neighbours": [
-      "Iraq",
-      "Israel",
-      "Jordan",
-      "Lebanon",
-      "Türkiye"
+      "Irakas",
+      "Izraelis",
+      "Jordanija",
+      "Libanas",
+      "Turkija"
     ],
     "flag": "/assets/geography/flags/sy.svg",
     "outline": "/assets/geography/outlines/sy.svg",
@@ -2578,8 +2578,8 @@
   },
   {
     "iso2": "TW",
-    "name": "Taiwan",
-    "capital": "Taipei",
+    "name": "Taivanas",
+    "capital": "Taibėjus",
     "continent": "Asia",
     "region": "East Asia",
     "neighbours": [],
@@ -2589,15 +2589,15 @@
   },
   {
     "iso2": "TJ",
-    "name": "Tajikistan",
-    "capital": "Dushanbe",
+    "name": "Tadžikija",
+    "capital": "Dušanbė",
     "continent": "Asia",
     "region": "Central Asia",
     "neighbours": [
-      "Afghanistan",
-      "China",
-      "Kyrgyzstan",
-      "Uzbekistan"
+      "Afganistanas",
+      "Kinija",
+      "Kirgizija",
+      "Uzbekistanas"
     ],
     "flag": "/assets/geography/flags/tj.svg",
     "outline": "/assets/geography/outlines/tj.svg",
@@ -2605,19 +2605,19 @@
   },
   {
     "iso2": "TZ",
-    "name": "Tanzania",
+    "name": "Tanzanija",
     "capital": "Dodoma",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
-      "Burundi",
-      "Democratic Republic of the Congo",
-      "Kenya",
-      "Malawi",
-      "Mozambique",
-      "Rwanda",
+      "Burundis",
+      "Kongo Demokratinė Respublika",
+      "Kenija",
+      "Malavis",
+      "Mozambikas",
+      "Ruanda",
       "Uganda",
-      "Zambia"
+      "Zambija"
     ],
     "flag": "/assets/geography/flags/tz.svg",
     "outline": "/assets/geography/outlines/tz.svg",
@@ -2625,15 +2625,15 @@
   },
   {
     "iso2": "TH",
-    "name": "Thailand",
-    "capital": "Bangkok",
+    "name": "Tailandas",
+    "capital": "Bankokas",
     "continent": "Asia",
     "region": "Southeast Asia",
     "neighbours": [
-      "Cambodia",
-      "Laos",
-      "Malaysia",
-      "Myanmar"
+      "Kambodža",
+      "Laosas",
+      "Malaizija",
+      "Mianmaras"
     ],
     "flag": "/assets/geography/flags/th.svg",
     "outline": "/assets/geography/outlines/th.svg",
@@ -2641,12 +2641,12 @@
   },
   {
     "iso2": "TL",
-    "name": "Timor-Leste",
-    "capital": "Dili",
+    "name": "Rytų Timoras",
+    "capital": "Dilis",
     "continent": "Asia",
     "region": "Southeast Asia",
     "neighbours": [
-      "Indonesia"
+      "Indonezija"
     ],
     "flag": "/assets/geography/flags/tl.svg",
     "outline": "/assets/geography/outlines/tl.svg",
@@ -2654,14 +2654,14 @@
   },
   {
     "iso2": "TG",
-    "name": "Togo",
-    "capital": "Lomé",
+    "name": "Togas",
+    "capital": "Lomė",
     "continent": "Africa",
     "region": "West Africa",
     "neighbours": [
-      "Benin",
-      "Burkina Faso",
-      "Ghana"
+      "Beninas",
+      "Burkina Fasas",
+      "Gana"
     ],
     "flag": "/assets/geography/flags/tg.svg",
     "outline": "/assets/geography/outlines/tg.svg",
@@ -2670,7 +2670,7 @@
   {
     "iso2": "TO",
     "name": "Tonga",
-    "capital": "Nuku'alofa",
+    "capital": "Nukualofa",
     "continent": "Oceania",
     "region": "Micronesia and Polynesia",
     "neighbours": [],
@@ -2680,8 +2680,8 @@
   },
   {
     "iso2": "TT",
-    "name": "Trinidad and Tobago",
-    "capital": "Port of Spain",
+    "name": "Trinidadas ir Tobagas",
+    "capital": "Port of Speinas",
     "continent": "North America",
     "region": "Lesser Antilles and Bahamas",
     "neighbours": [],
@@ -2691,13 +2691,13 @@
   },
   {
     "iso2": "TN",
-    "name": "Tunisia",
-    "capital": "Tunis",
+    "name": "Tunisas",
+    "capital": "Tunisas",
     "continent": "Africa",
     "region": "North Africa",
     "neighbours": [
-      "Algeria",
-      "Libya"
+      "Alžyras",
+      "Libija"
     ],
     "flag": "/assets/geography/flags/tn.svg",
     "outline": "/assets/geography/outlines/tn.svg",
@@ -2705,15 +2705,15 @@
   },
   {
     "iso2": "TM",
-    "name": "Turkmenistan",
-    "capital": "Ashgabat",
+    "name": "Turkmėnistanas",
+    "capital": "Ašchabadas",
     "continent": "Asia",
     "region": "Central Asia",
     "neighbours": [
-      "Afghanistan",
-      "Iran",
-      "Kazakhstan",
-      "Uzbekistan"
+      "Afganistanas",
+      "Iranas",
+      "Kazachstanas",
+      "Uzbekistanas"
     ],
     "flag": "/assets/geography/flags/tm.svg",
     "outline": "/assets/geography/outlines/tm.svg",
@@ -2722,7 +2722,7 @@
   {
     "iso2": "TV",
     "name": "Tuvalu",
-    "capital": "Funafuti",
+    "capital": "Funafutis",
     "continent": "Oceania",
     "region": "Micronesia and Polynesia",
     "neighbours": [],
@@ -2732,19 +2732,19 @@
   },
   {
     "iso2": "TR",
-    "name": "Türkiye",
+    "name": "Turkija",
     "capital": "Ankara",
     "continent": "Asia",
     "region": "Caucasus, Türkiye and Cyprus",
     "neighbours": [
-      "Armenia",
-      "Azerbaijan",
-      "Bulgaria",
-      "Georgia",
-      "Greece",
-      "Iran",
-      "Iraq",
-      "Syria"
+      "Armėnija",
+      "Azerbaidžanas",
+      "Bulgarija",
+      "Sakartvelas",
+      "Graikija",
+      "Iranas",
+      "Irakas",
+      "Sirija"
     ],
     "flag": "/assets/geography/flags/tr.svg",
     "outline": "/assets/geography/outlines/tr.svg",
@@ -2757,11 +2757,11 @@
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
-      "Democratic Republic of the Congo",
-      "Kenya",
-      "Rwanda",
-      "South Sudan",
-      "Tanzania"
+      "Kongo Demokratinė Respublika",
+      "Kenija",
+      "Ruanda",
+      "Pietų Sudanas",
+      "Tanzanija"
     ],
     "flag": "/assets/geography/flags/ug.svg",
     "outline": "/assets/geography/outlines/ug.svg",
@@ -2769,18 +2769,18 @@
   },
   {
     "iso2": "UA",
-    "name": "Ukraine",
-    "capital": "Kyiv",
+    "name": "Ukraina",
+    "capital": "Kyjivas",
     "continent": "Europe",
     "region": "Eastern Europe",
     "neighbours": [
-      "Belarus",
-      "Hungary",
+      "Baltarusija",
+      "Vengrija",
       "Moldova",
-      "Poland",
-      "Romania",
-      "Russia",
-      "Slovakia"
+      "Lenkija",
+      "Rumunija",
+      "Rusija",
+      "Slovakija"
     ],
     "flag": "/assets/geography/flags/ua.svg",
     "outline": "/assets/geography/outlines/ua.svg",
@@ -2788,13 +2788,13 @@
   },
   {
     "iso2": "AE",
-    "name": "United Arab Emirates",
-    "capital": "Abu Dhabi",
+    "name": "Jungtiniai Arabų Emyratai",
+    "capital": "Abu Dabis",
     "continent": "Asia",
     "region": "Middle East",
     "neighbours": [
-      "Oman",
-      "Saudi Arabia"
+      "Omanas",
+      "Saudo Arabija"
     ],
     "flag": "/assets/geography/flags/ae.svg",
     "outline": "/assets/geography/outlines/ae.svg",
@@ -2802,13 +2802,13 @@
   },
   {
     "iso2": "GB",
-    "name": "United Kingdom",
-    "capital": "London",
+    "name": "Jungtinė Karalystė",
+    "capital": "Londonas",
     "continent": "Europe",
     "region": "Western Europe",
     "neighbours": [
-      "Ireland",
-      "Spain"
+      "Airija",
+      "Ispanija"
     ],
     "flag": "/assets/geography/flags/gb.svg",
     "outline": "/assets/geography/outlines/gb.svg",
@@ -2816,13 +2816,13 @@
   },
   {
     "iso2": "US",
-    "name": "United States",
-    "capital": "Washington, D.C.",
+    "name": "Jungtinės Amerikos Valstijos",
+    "capital": "Vašingtonas",
     "continent": "North America",
     "region": "Mainland North and Central America",
     "neighbours": [
-      "Canada",
-      "Mexico"
+      "Kanada",
+      "Meksika"
     ],
     "flag": "/assets/geography/flags/us.svg",
     "outline": "/assets/geography/outlines/us.svg",
@@ -2830,13 +2830,13 @@
   },
   {
     "iso2": "UY",
-    "name": "Uruguay",
-    "capital": "Montevideo",
+    "name": "Urugvajus",
+    "capital": "Montevidėjas",
     "continent": "South America",
     "region": "Eastern and Southern South America",
     "neighbours": [
       "Argentina",
-      "Brazil"
+      "Brazilija"
     ],
     "flag": "/assets/geography/flags/uy.svg",
     "outline": "/assets/geography/outlines/uy.svg",
@@ -2844,16 +2844,16 @@
   },
   {
     "iso2": "UZ",
-    "name": "Uzbekistan",
-    "capital": "Tashkent",
+    "name": "Uzbekistanas",
+    "capital": "Taškentas",
     "continent": "Asia",
     "region": "Central Asia",
     "neighbours": [
-      "Afghanistan",
-      "Kazakhstan",
-      "Kyrgyzstan",
-      "Tajikistan",
-      "Turkmenistan"
+      "Afganistanas",
+      "Kazachstanas",
+      "Kirgizija",
+      "Tadžikija",
+      "Turkmėnistanas"
     ],
     "flag": "/assets/geography/flags/uz.svg",
     "outline": "/assets/geography/outlines/uz.svg",
@@ -2872,12 +2872,12 @@
   },
   {
     "iso2": "VA",
-    "name": "Vatican City",
-    "capital": "Vatican City",
+    "name": "Vatikanas",
+    "capital": "Vatikanas",
     "continent": "Europe",
     "region": "Southern Europe",
     "neighbours": [
-      "Italy"
+      "Italija"
     ],
     "flag": "/assets/geography/flags/va.svg",
     "outline": "/assets/geography/outlines/va.svg",
@@ -2885,14 +2885,14 @@
   },
   {
     "iso2": "VE",
-    "name": "Venezuela",
-    "capital": "Caracas",
+    "name": "Venesuela",
+    "capital": "Karakasas",
     "continent": "South America",
     "region": "Western and Andean South America",
     "neighbours": [
-      "Brazil",
-      "Colombia",
-      "Guyana"
+      "Brazilija",
+      "Kolumbija",
+      "Gajana"
     ],
     "flag": "/assets/geography/flags/ve.svg",
     "outline": "/assets/geography/outlines/ve.svg",
@@ -2900,14 +2900,14 @@
   },
   {
     "iso2": "VN",
-    "name": "Vietnam",
-    "capital": "Hanoi",
+    "name": "Vietnamas",
+    "capital": "Hanojus",
     "continent": "Asia",
     "region": "Southeast Asia",
     "neighbours": [
-      "Cambodia",
-      "China",
-      "Laos"
+      "Kambodža",
+      "Kinija",
+      "Laosas"
     ],
     "flag": "/assets/geography/flags/vn.svg",
     "outline": "/assets/geography/outlines/vn.svg",
@@ -2915,13 +2915,13 @@
   },
   {
     "iso2": "YE",
-    "name": "Yemen",
-    "capital": "Sanaa",
+    "name": "Jemenas",
+    "capital": "Sana",
     "continent": "Asia",
     "region": "Middle East",
     "neighbours": [
-      "Oman",
-      "Saudi Arabia"
+      "Omanas",
+      "Saudo Arabija"
     ],
     "flag": "/assets/geography/flags/ye.svg",
     "outline": "/assets/geography/outlines/ye.svg",
@@ -2929,19 +2929,19 @@
   },
   {
     "iso2": "ZM",
-    "name": "Zambia",
+    "name": "Zambija",
     "capital": "Lusaka",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
       "Angola",
-      "Botswana",
-      "Democratic Republic of the Congo",
-      "Malawi",
-      "Mozambique",
-      "Namibia",
-      "Tanzania",
-      "Zimbabwe"
+      "Botsvana",
+      "Kongo Demokratinė Respublika",
+      "Malavis",
+      "Mozambikas",
+      "Namibija",
+      "Tanzanija",
+      "Zimbabvė"
     ],
     "flag": "/assets/geography/flags/zm.svg",
     "outline": "/assets/geography/outlines/zm.svg",
@@ -2949,15 +2949,15 @@
   },
   {
     "iso2": "ZW",
-    "name": "Zimbabwe",
-    "capital": "Harare",
+    "name": "Zimbabvė",
+    "capital": "Hararė",
     "continent": "Africa",
     "region": "East Africa",
     "neighbours": [
-      "Botswana",
-      "Mozambique",
-      "South Africa",
-      "Zambia"
+      "Botsvana",
+      "Mozambikas",
+      "Pietų Afrika",
+      "Zambija"
     ],
     "flag": "/assets/geography/flags/zw.svg",
     "outline": "/assets/geography/outlines/zw.svg",
