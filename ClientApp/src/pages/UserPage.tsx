@@ -59,9 +59,10 @@ function UserPage({ username, onBack, onLogout }: UserPageProps) {
       )}
 
       {stats.length === 0 ? (
-        <p>Dar nesi žaidęs nė vieno žaidimo</p>
+        <p className="user-page-empty">Dar nesi žaidęs nė vieno žaidimo</p>
       ) : (
         <table className="stats-table">
+          <thead>
           <tr>
             <th>Kategorija</th>
             <th>Taškai</th>
@@ -70,6 +71,8 @@ function UserPage({ username, onBack, onLogout }: UserPageProps) {
             <th>Pralaimėta</th>
             <th>Teisingi atsakymai</th>
           </tr>
+          </thead>
+          <tbody>
           {stats.map((s) => (
             <tr key={s.category}>
               <td>{s.category}</td>
@@ -80,6 +83,8 @@ function UserPage({ username, onBack, onLogout }: UserPageProps) {
               <td>{s.correctAnswers} / {s.totalQuestions}</td>
             </tr>
           ))}
+          </tbody>
+          <tfoot>
           <tr>
             <th>Iš viso</th>
             <th>{sum("totalScore")}</th>
@@ -88,12 +93,14 @@ function UserPage({ username, onBack, onLogout }: UserPageProps) {
             <th>{sum("gamesLost")}</th>
             <th>{sum("correctAnswers")} / {sum("totalQuestions")}</th>
           </tr>
+          </tfoot>
         </table>
         
       )}
-
-      <button onClick={onBack}>Atgal</button>
+      <div className="user-page-buttons">
+      <button className="back-button" onClick={onBack}>Atgal</button>
       <button onClick={onLogout}>Atsijungti</button>
+      </div>
     </div>
   )
 }

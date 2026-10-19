@@ -30,15 +30,15 @@ function App() {
   const [nameAction, setNameAction] = useState<"create" | "join" | null>(null)
 
   function handleLogin(name: string) {
-  localStorage.setItem("username", name)
-  setUsername(name)
-}
+    localStorage.setItem("username", name)
+    setUsername(name)
+  }
 
-function handleLogout() {
-  localStorage.removeItem("username")
-  setUsername(null)
-  setShowProfile(false)
-}
+  function handleLogout() {
+    localStorage.removeItem("username")
+    setUsername(null)
+    setShowProfile(false)
+  }
 
   useEffect(() => {
     if (connection.state === "Disconnected") {
@@ -137,14 +137,14 @@ function handleLogout() {
     )
   }
   if (username && showProfile) {
-  return (
-    <UserPage
-      username={username}
-      onBack={() => setShowProfile(false)}
-      onLogout={handleLogout}
-    />
-  )
-}
+    return (
+      <UserPage
+        username={username}
+        onBack={() => setShowProfile(false)}
+        onLogout={handleLogout}
+      />
+    )
+  }
 
   return (
     <div>
@@ -171,7 +171,7 @@ function handleLogout() {
               <button onClick={() => setShowLogin(true)}>Prisijungti</button>
               <button onClick={() => setShowRegister(true)}>Registruotis</button>
             </>
-          
+
           )}
         </div>
       </header>
