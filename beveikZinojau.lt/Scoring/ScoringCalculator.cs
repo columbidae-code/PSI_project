@@ -22,7 +22,7 @@ namespace beveikZinojau.lt.Scoring
                 return 0;
             }
 
-            double timeRatio = Math.Max(0, timeTaken) / timeLimit;
+            double timeRatio = timeTaken/ timeLimit;
             double speedMultiplier = 1 - (1 - _config.CorrectAnswerShare) * timeRatio;
 
             double points = _config.BasePoints * speedMultiplier * GetDifficultyMultiplier(difficulty);
