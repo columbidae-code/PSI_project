@@ -6,7 +6,7 @@ using beveikZinojau.lt.Data;
 namespace beveikZinojau.lt.Services.ServiceHelpers
 {
 
-    public readonly record struct PlayerSummary(
+    public record PlayerSummary(
         long TotalScore,
         int GamesPlayed,
         int GamesWon,
@@ -20,14 +20,15 @@ namespace beveikZinojau.lt.Services.ServiceHelpers
 
         public double AverageAnswerTimeSeconds => Divide(TotalAnswerTimeSeconds, TotalQuestions);
 
-        public static PlayerSummary FromStats(IReadOnlyCollection<AppUserStats> stats) => new(
-            stats.Sum(s => s.TotalScore),
-            stats.Sum(s => s.GamesPlayed),
-            stats.Sum(s => s.GamesWon),
-            stats.Sum(s => s.TotalQuestions),
-            stats.Sum(s => s.CorrectAnswers),
-            stats.Sum(s => s.TotalAnswerTimeSeconds));
-
+        public static PlayerSummary FromStats(IReadOnlyCollection<AppUserStats> stats){
+            return new PlayerSummary(
+                stats.Sum(s => s.TotalScore),
+                stats.Sum(s => s.GamesPlayed),
+                stats.Sum(s => s.GamesWon),
+                stats.Sum(s => s.TotalQuestions),
+                stats.Sum(s => s.CorrectAnswers),
+                stats.Sum(s => s.TotalAnswerTimeSeconds));
+        }
         private static double Divide(double top, double bottom) => bottom == 0 ? 0 : top / bottom;
     }
 }
