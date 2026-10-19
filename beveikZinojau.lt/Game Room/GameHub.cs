@@ -17,14 +17,11 @@ public class GameHub : Hub
 
         var room = _roomManager.CreateRoom(category);
 
-        _roomManager.AddPlayer(
-            room.Code,
-            username
-        );
+        _roomManager.AddPlayer(code: room.Code, username: username);
 
         await Groups.AddToGroupAsync(
-            Context.ConnectionId,
-            room.Code
+            connectionId: Context.ConnectionId,
+            groupName: room.Code
         );
 
         await Clients.Group(room.Code)
@@ -57,10 +54,7 @@ public class GameHub : Hub
             return null;
         }
 
-        var added = _roomManager.AddPlayer(
-            roomCode,
-            username
-        );
+        var added = _roomManager.AddPlayer(code: roomCode, username: username);
 
         if (!added)
         {
@@ -72,8 +66,8 @@ public class GameHub : Hub
         }
 
         await Groups.AddToGroupAsync(
-            Context.ConnectionId,
-            roomCode
+            connectionId: Context.ConnectionId,
+            groupName: roomCode
         );
 
         await Clients.Group(roomCode)
@@ -106,8 +100,8 @@ public class GameHub : Hub
         room.Players.Remove(username);
 
         await Groups.RemoveFromGroupAsync(
-            Context.ConnectionId,
-            roomCode
+            connectionId: Context.ConnectionId,
+            groupName: roomCode
         );
 
         await Clients.Group(roomCode)
