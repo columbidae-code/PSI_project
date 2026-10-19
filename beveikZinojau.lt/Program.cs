@@ -20,11 +20,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 .AddDefaultTokenProviders();
 builder.Services.AddScoped<StatsTracker>();
 // Scoring
-var scoringConfig = builder.Configuration
-    .GetSection("Scoring")
-    .Get<ScoringConfig>() ?? new ScoringConfig();
-
-builder.Services.AddSingleton(scoringConfig);
+builder.Services.Configure<ScoringConfig>(builder.Configuration.GetSection("Scoring"));
 builder.Services.AddSingleton<ScoringCalculator>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>

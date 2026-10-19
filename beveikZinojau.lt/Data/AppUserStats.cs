@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace beveikZinojau.lt.Data
 {
+    [Index(nameof(UserId), nameof(CategoryId), IsUnique = true)]
     public class AppUserStats
     {
         public int Id { get; set; }

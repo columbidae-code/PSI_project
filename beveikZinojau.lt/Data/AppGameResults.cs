@@ -1,10 +1,13 @@
-﻿using System;
+﻿using beveikZinojau.lt.Models;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using beveikZinojau.lt.Models;
 
 namespace beveikZinojau.lt.Data
 {
+    [Index(nameof(CategoryId), nameof(PlayedAt))]
+    [Index(nameof(UserId))]
     public class AppGameResults
     {
         public int Id { get; set; }
@@ -13,7 +16,7 @@ namespace beveikZinojau.lt.Data
         public int CategoryId { get; set; }
         public AppCategory Category { get; set; } = default!;
         public DifficultyLevel Difficulty { get; set; }
-        public int Score { get; set; }
+        public int Score { get; set; } // win or lose
         public int QuestionsAnswered { get; set; }
         public int CorrectAnswers { get; set; }
         public double TotalAnswerTimeSeconds { get; set; }

@@ -23,15 +23,15 @@ namespace beveikZinojau.lt.Services
         public async Task<AuthResponse> Register(RegisterRequest request)
         {
 
-            if (string.IsNullOrWhiteSpace(request.Username))
+            if (request.Username.IsMissing())
             {
                 return AuthResponse.Fail("Username is required.");
             }
-            if (string.IsNullOrWhiteSpace(request.Email))
+            if (request.Email.IsMissing())
             {
                 return AuthResponse.Fail("Email is required.");
             }
-            if (string.IsNullOrWhiteSpace(request.Password))
+            if (request.Password.IsMissing())
             {
                 return AuthResponse.Fail("Password is required.");
                 
@@ -62,7 +62,7 @@ namespace beveikZinojau.lt.Services
         {
 
 
-            if (string.IsNullOrWhiteSpace(request.Username) || string.IsNullOrWhiteSpace(request.Password))
+            if (request.Username.IsMissing() || request.Password.IsMissing())
             {
                 return AuthResponse.Fail("Invalid username or password");
             }

@@ -16,12 +16,12 @@ namespace beveikZinojau.lt.Services
         }
 
 
-        public List<LeaderBoardEntry> GetTopNUsers(int n)
+        public List<LeaderBoardEntry> GetTopNUsers(int NumberOfUsers)
         {
             return _db.GameResults
                 .GroupBy(r => r.User.UserName)
                 .OrderByDescending(g => g.Sum(r => r.Score))
-                .Take(n)
+                .Take(NumberOfUsers)
                 .Select(g => new LeaderBoardEntry(g.Key, g.Sum(r => r.Score)))
                 .ToList();
         }

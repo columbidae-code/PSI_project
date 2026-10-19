@@ -9,26 +9,10 @@ namespace beveikZinojau.lt.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<AppGame> Games => Set<AppGame>();
-        public DbSet<AppQuestionText> QuestionTexts => Set<AppQuestionText>();
-        public DbSet<AppCategory> Categories => Set<AppCategory>();
-        public DbSet<AppGameResults> GameResults => Set<AppGameResults>();
-        public DbSet<AppUserStats> UserStats => Set<AppUserStats>();
-
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);  
-
-            // One stats row per user and category
-            builder.Entity<AppUserStats>()
-                .HasIndex(s => new { s.UserId, s.CategoryId })
-                .IsUnique();
-
-            // Faster leaderboard and history queries
-            builder.Entity<AppGameResults>()
-                .HasIndex(r => new { r.CategoryId, r.PlayedAt });
-            builder.Entity<AppGameResults>()
-                .HasIndex(r => r.UserId);
-        }
+        public DbSet<AppGame> Games { get; set; } = default!;
+        public DbSet<AppQuestionText> QuestionTexts { get; set; } = default!;
+        public DbSet<AppCategory> Categories { get; set; } = default!;
+        public DbSet<AppGameResults> GameResults { get; set; } = default!;
+        public DbSet<AppUserStats> UserStats { get; set; } = default!;
     }
 }
