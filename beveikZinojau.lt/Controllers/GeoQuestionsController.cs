@@ -5,8 +5,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace beveikZinojau.lt.Controllers
 {
-    [ApiController]
-    [Route("api/geoquestions")]
+    [ApiController, Route("api/geoquestions")]
     public class GeoQuestionsController : ControllerBase
     {
         private readonly IMemoryCache cache;

@@ -10,24 +10,23 @@ namespace beveikZinojau.lt.Controllers
 {
 
 
-    [ApiController]
-    [Route("api")]
+    [ApiController,Route("api")]
     public class AuthController : ControllerBase
     {
 
-        private AuthService _service;
+        private AuthService _AuthenticationService;
 
 
         public AuthController(AuthService service)
         {
-            _service = service;
+            _AuthenticationService = service;
         }
 
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
 
-            var result = await _service.Register(request);
+            var result = await _AuthenticationService.Register(request);
             if (result.Success == false)
             {
                 return BadRequest(result);
@@ -41,7 +40,7 @@ namespace beveikZinojau.lt.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
-            var result = await _service.Login(request);
+            var result = await _AuthenticationService.Login(request);
             if (result.Success == false)
             {
                 return Unauthorized(result);
