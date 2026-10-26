@@ -81,5 +81,14 @@ namespace beveikZinojau.lt.Models
             }
         }
 
+        public bool IsFull
+        {
+            get
+            {
+                lock (sync)
+                    return generatedQuestions >= QuestionCount;
+            }
+        }
+
     }
 }
