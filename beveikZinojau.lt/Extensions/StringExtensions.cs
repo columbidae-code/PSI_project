@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
-namespace beveikZinojau.lt.Services.ServiceHelpers
+namespace beveikZinojau.lt.Extensions
 {
 
     public static class StringExtensions

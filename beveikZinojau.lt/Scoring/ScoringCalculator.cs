@@ -15,15 +15,13 @@ namespace beveikZinojau.lt.Scoring
             _config = config.Value;
         }
 
-        public int Calculate(bool isCorrect, DifficultyLevel difficulty, double timeTaken, double timeLimit)
+        public int Calculate(bool isCorrect, DifficultyLevel difficulty, AnswerTiming timing)
         {
-            if (!isCorrect || timeLimit <= 0 || timeTaken > timeLimit)
+            if (!isCorrect || !timing.IsWithinLimit)
             {
                 return 0;
             }
-
-            double timeRatio = timeTaken/ timeLimit;
-            double speedMultiplier = 1 - (1 - _config.CorrectAnswerShare) * timeRatio;
+            double speedMultiplier = 1 - (1 - _config.CorrectAnswerShare) * timing.Ratio;
 
             double points = _config.BasePoints * speedMultiplier * GetDifficultyMultiplier(difficulty);
 
