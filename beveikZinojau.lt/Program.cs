@@ -71,7 +71,7 @@ builder.Services.AddMemoryCache();
 
 builder.Services.AddSingleton<ICountryRepository, JsonCountryRepository>();
 builder.Services.AddSingleton<GeoQuestionGenerator>();
-builder.Services.AddSingleton<GeoGameService>();
+builder.Services.AddScoped<GeoGameService>();
 
 var app = builder.Build();
 

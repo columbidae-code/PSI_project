@@ -26,7 +26,9 @@ namespace beveikZinojau.lt.Controllers
         public IActionResult StartSession(
     [FromBody] GeoSessionCreateRequest request)
         {
-            var (session, error) = gameService.CreateSession(request);
+
+            string? userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var (session, error) = gameService.CreateSession(request, userId);
 
             if (session is null)
                 return BadRequest(error);
