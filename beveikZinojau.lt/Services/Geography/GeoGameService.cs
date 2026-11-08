@@ -1,5 +1,8 @@
 using beveikZinojau.lt.Models;
 using Microsoft.Extensions.Caching.Memory;
+using beveikZinojau.lt.Data;
+using beveikZinojau.lt.Scoring;
+
 
 namespace beveikZinojau.lt.Services.Geography;
 
@@ -15,6 +18,7 @@ public record GeoQuestionIssued(
     int QuestionNumber,
     int TotalQuestions,
     string QuestionType,
+    double TimeLimitSeconds,
     string Text,
     string? ImageUrl,
     string[] Options
@@ -22,14 +26,18 @@ public record GeoQuestionIssued(
 
 public record GeoAnswerChecked(
     bool IsCorrect,
-    int CorrectOptionIndex
+    int CorrectOptionIndex,
+    int PointsEarned,
+    int TotalPoints
 );
 
 public record GeoGameResult(
     int TotalQuestions,
     int CorrectAnswers,
     int WrongAnswers,
-    double AccuracyPercent
+    double AccuracyPercent,
+    int TotalPoints,
+    bool Saved
 );
 
 public enum GeoGameError
@@ -49,7 +57,8 @@ public class GeoGameService
 {
     private readonly IMemoryCache cache;
     private readonly GeoQuestionGenerator generator;
-
+    private readonly ScoringCalculator scoring;
+    private readonly StatsTracker statsTracker;
     private static readonly HashSet<string> SupportedQuestionTypes = new()
     {
         "capital",
@@ -59,14 +68,16 @@ public class GeoGameService
         "neighbour"
     };
 
-    public GeoGameService(IMemoryCache cache, GeoQuestionGenerator generator)
+    public GeoGameService(IMemoryCache cache, GeoQuestionGenerator generator, ScoringCalculator scoring, StatsTracker statsTracker)
     {
         this.cache = cache;
         this.generator = generator;
+        this.scoring = scoring;
+        this.statsTracker = statsTracker;
     }
 
     public (GeoSessionCreated? Session, string? Error)
-        CreateSession(GeoSessionCreateRequest request)
+        CreateSession(GeoSessionCreateRequest request, string? userId = null)
     {
         if (request.QuestionCount <= 0)
             return (null, "Question count must be positive.");
@@ -87,7 +98,8 @@ public class GeoGameService
 
         GeoQuestionSession session = new(
             questionCount: request.QuestionCount,
-            questionTypes: selectedTypes
+            questionTypes: selectedTypes,
+            userId: userId
         );
 
         cache.Set(
@@ -135,6 +147,7 @@ public class GeoGameService
             StoredGeoQuestion stored = new()
             {
                 SessionId = sessionId,
+                QuestionType = generated.QuestionType,
                 Options = generated.Options,
                 CorrectOptionIndex = generated.CorrectOptionIndex
             };
@@ -150,6 +163,7 @@ public class GeoGameService
                 number,
                 session.QuestionCount,
                 generated.QuestionType,
+                GeoQuestionRules.For(generated.QuestionType).TimeLimitSeconds,
                 generated.Text,
                 generated.ImageUrl,
                 generated.Options
@@ -198,10 +212,15 @@ public class GeoGameService
             return (null, GeoGameError.AlreadyAnswered);
         }
 
-        session.RecordAnswer(request.PlayerId, isCorrect);
+        //The server measures the time itself
+        double answerSeconds = (DateTime.UtcNow - question.ServedAt).TotalSeconds;
+        GeoQuestionRule rule = GeoQuestionRules.For(question.QuestionType);
 
+        int pointsEarned = scoring.Calculate(isCorrect, rule.Difficulty, new AnswerTiming(answerSeconds, rule.TimeLimitSeconds));
+        int totalPoints = session.RecordAnswer(request.PlayerId, isCorrect, pointsEarned, answerSeconds);
+        
         return (
-            new GeoAnswerChecked(isCorrect, question.CorrectOptionIndex),
+            new GeoAnswerChecked(isCorrect, question.CorrectOptionIndex, pointsEarned, totalPoints),
             GeoGameError.None
         );
     }
@@ -221,10 +240,36 @@ public class GeoGameService
         if (stats is null)
             return (null, GeoGameError.PlayerNotFound);
 
-        var (answered, correct) = stats.Value;
+        var (answered, correct, points, totalSeconds) = stats.Value;
 
         if (answered < session.QuestionCount)
             return (null, GeoGameError.RoundNotFinished);
+        if (session.UserId is not null && session.TryMarkSaved(playerId))
+        {
+            try
+            {
+                int categoryId = statsTracker.GetOrCreateCategoryId(
+                    GeoQuestionRules.CategoryName);
+
+                statsTracker.RecordGame(new AppGameResults
+                {
+                    UserId = session.UserId,
+                    CategoryId = categoryId,
+                    // A round mixes difficulties, so store the hardest selected type
+                    Difficulty = session.QuestionTypes.Max(t => GeoQuestionRules.For(t).Difficulty),
+                    Score = points,
+                    QuestionsAnswered = answered,
+                    CorrectAnswers = correct,
+                    TotalAnswerTimeSeconds = totalSeconds
+                });
+            }
+            catch
+            {
+                // Let the next request try saving again
+                session.UnmarkSaved(playerId);
+                throw;
+            }
+        }
 
         double accuracy = Math.Round(
             (double)correct / answered * 100, 1
@@ -234,7 +279,9 @@ public class GeoGameService
             session.QuestionCount,
             correct,
             answered - correct,
-            accuracy
+            accuracy,
+            points,
+            session.UserId is not null
         );
 
         return (result, GeoGameError.None);
