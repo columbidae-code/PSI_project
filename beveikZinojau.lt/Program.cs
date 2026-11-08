@@ -4,6 +4,7 @@ using beveikZinojau.lt.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using beveikZinojau.lt.Extensions;
+using beveikZinojau.lt.Services.Geography;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -48,6 +49,10 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddMemoryCache();
+
+builder.Services.AddSingleton<ICountryRepository, JsonCountryRepository>();
+builder.Services.AddSingleton<GeoQuestionGenerator>();
+builder.Services.AddSingleton<GeoGameService>();
 
 var app = builder.Build();
 
