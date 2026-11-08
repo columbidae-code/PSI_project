@@ -57,6 +57,11 @@ export default function InRound({
   const [deadline, setDeadline] = useState(0);
   const [now, setNow] = useState(() => Date.now());
   const timeoutSent = useRef<string | null>(null);
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
+  const [answerStatus, setAnswerStatus] = useState<
+    "normal" | "skipped" | "timeout"
+  >("normal");
 
   // Re-render four times a second while a question is waiting for an answer
   useEffect(() => {
@@ -109,23 +114,36 @@ export default function InRound({
       setError("");
 
       try {
-        setAnswer(
-          await api<Answer>(
-            `/api/geoquestions/session/${session.sessionId}/answer`,
-            {
-              questionId: question.questionId,
-              playerId: session.playerId,
-              selectedOptionIndex: index,
-            },
-          ),
+        const checked = await api<Answer>(
+          `/api/geoquestions/session/${session.sessionId}/answer`,
+          {
+            questionId: question.questionId,
+            playerId: session.playerId,
+            selectedOptionIndex: index,
+          },
         );
+
+        setAnswer(checked);
+
+        setAnswerStatus(
+          index === null
+            ? secondsLeft === 0
+              ? "timeout"
+              : "skipped"
+            : "normal",
+        );
+
+        const newStreak = checked.isCorrect ? streak + 1 : 0;
+
+        setStreak(newStreak);
+        setBestStreak((previous) => Math.max(previous, newStreak));
       } catch (e) {
         setError(String(e));
       } finally {
         setBusy(false);
       }
     },
-    [session, question, answer, busy],
+    [session, question, answer, busy, secondsLeft, streak],
   );
 
   useEffect(() => {
@@ -153,6 +171,7 @@ export default function InRound({
         setQuestion(q);
         startTimer(q);
         setAnswer(null);
+        setAnswerStatus("normal");
       }
     } catch (e) {
       setError(String(e));
@@ -173,6 +192,7 @@ export default function InRound({
             Rezultatas: {result.correctAnswers}/{result.totalQuestions}
           </h2>
           <h3>Taškai: {result.totalPoints}</h3>
+          <p>🔥 Geriausia teisingų atsakymų serija: {bestStreak}</p>
           <p>
             {result.saved
               ? "Rezultatas išsaugotas tavo profilyje."
@@ -184,6 +204,7 @@ export default function InRound({
           <h2>
             {question.questionNumber}/{question.totalQuestions}
           </h2>
+          {streak >= 3 && <p>🔥 {streak} teisingi atsakymai iš eilės!</p>}
           <p>
             Laiko liko: {secondsLeft} s
             {answer && ` | Taškai: ${answer.totalPoints}`}
@@ -204,6 +225,13 @@ export default function InRound({
               </button>
             </div>
           ))}
+          {!answer && secondsLeft > 0 && (
+            <div style={{ marginTop: "24px" }}>
+              <button disabled={busy} onClick={() => void choose(null)}>
+                Praleisti klausimą
+              </button>
+            </div>
+          )}
 
           {!answer && secondsLeft === 0 && error && (
             <button disabled={busy} onClick={() => void choose(null)}>
@@ -214,11 +242,13 @@ export default function InRound({
           {answer && (
             <>
               <p>
-                {secondsLeft === 0 && !answer.isCorrect
-                  ? "Neteisingai arba baigėsi laikas!"
-                  : answer.isCorrect
-                    ? "Teisingai!"
-                    : "Neteisingai!"}{" "}
+                {answerStatus === "timeout"
+                  ? "Laikas baigėsi!"
+                  : answerStatus === "skipped"
+                    ? "Klausimas praleistas!"
+                    : answer.isCorrect
+                      ? "Teisingai!"
+                      : "Neteisingai!"}{" "}
                 +{answer.pointsEarned} taškų
               </p>
               <p>Teisingas: {question.options[answer.correctOptionIndex]}</p>
