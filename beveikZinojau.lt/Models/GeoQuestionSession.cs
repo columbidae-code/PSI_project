@@ -118,5 +118,14 @@ namespace beveikZinojau.lt.Models
                 players[playerId].Saved = false;
             }
         }
+        public bool IsFull
+        {
+            get
+            {
+                lock (sync)
+                    return generatedQuestions >= QuestionCount;
+            }
+        }
+
     }
 }
