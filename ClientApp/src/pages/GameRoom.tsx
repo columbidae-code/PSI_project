@@ -13,10 +13,12 @@ function GameRoom({
   category,
   roomCode,
   players,
+  onLeave
 }: {
   category: string;
   roomCode: string;
   players: string[];
+  onLeave: () => void;
 }) {
   const [playing, setPlaying] = useState(false);
   const [questionCount, setQuestionCount] = useState(5);
@@ -82,7 +84,7 @@ function GameRoom({
           ))}
         </>
       )}
-
+      <button onClick={onLeave}>Išeiti iš kambario</button>
       <button
         className="start-game-button"
         disabled={

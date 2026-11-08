@@ -1,6 +1,11 @@
+using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Models;
+using beveikZinojau.lt.Scoring;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
+using System.Data;
+using System.Security.Claims;
+using System.Text.Json;
 using beveikZinojau.lt.Services.Geography;
 
 namespace beveikZinojau.lt.Controllers

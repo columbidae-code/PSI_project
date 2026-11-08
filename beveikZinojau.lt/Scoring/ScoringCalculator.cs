@@ -10,9 +10,9 @@ namespace beveikZinojau.lt.Scoring
     {
         private readonly ScoringConfig _config;
 
-        public ScoringCalculator(IOptions<ScoringConfig> config)
+        public ScoringCalculator(ScoringConfig config)
         {
-            _config = config.Value;
+            _config = config;
         }
 
         public int Calculate(bool isCorrect, DifficultyLevel difficulty, AnswerTiming timing)

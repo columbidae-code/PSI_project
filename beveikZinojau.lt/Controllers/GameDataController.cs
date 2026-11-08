@@ -12,27 +12,27 @@ namespace beveikZinojau.lt.Controllers
     [ApiController, Route("api")]
     public class GameDataController : ControllerBase
     {
-        private GameService _GameDataService;
-        public GameDataController(GameService GameDataService)
+        private GameService _gameDataService;
+        public GameDataController(GameService service)
         {
-            _GameDataService = GameDataService;
+            _gameDataService = service;
         }
 
         [HttpGet("leaderboard")]
         public async Task<IActionResult> GetLeaderboard()
         {
-            return Ok(_GameDataService.GetTopNUsers(10));
+            return Ok(_gameDataService.GetTopNUsers(10));
         }
         [HttpGet("stats/{username}")]
         public async Task<IActionResult> GetUserStats(string username)
         {
-              return Ok(_GameDataService.GetUserStats(username));
+              return Ok(_gameDataService.GetUserStats(username));
         }
         [HttpGet("stats/{username}/summary")]
         public IActionResult GetGameSummarySummary(string username)
         {
 
-            return Ok(_GameDataService.GetUserSummary(username));
+            return Ok(_gameDataService.GetUserSummary(username));
         }
 
     }

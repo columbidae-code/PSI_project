@@ -23,19 +23,25 @@ function App() {
   const [players, setPlayers] = useState<string[]>([])
   const [showNamePopup, setShowNamePopup] = useState(false)
   const [joinUsername, setJoinUsername] = useState("")
-  const [username, setUsername] = useState<string | null>(
-    localStorage.getItem("username")
-  )
+  const [username, setUsername] = useState<string | null>(null)
+  const [authChecked, setAuthChecked] = useState(false)
   const [showProfile, setShowProfile] = useState(false)
   const [nameAction, setNameAction] = useState<"create" | "join" | null>(null)
+  // The server keeps the login in a cookie
+  useEffect(() => {
+    fetch("/api/me")
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => setUsername(data?.username ?? null))
+      .catch(() => setUsername(null))
+      .finally(() => setAuthChecked(true))
+  }, [])
 
   function handleLogin(name: string) {
-    localStorage.setItem("username", name)
     setUsername(name)
   }
 
-  function handleLogout() {
-    localStorage.removeItem("username")
+  async function handleLogout() {
+    await fetch("/api/logout", { method: "POST"})
     setUsername(null)
     setShowProfile(false)
   }
@@ -85,6 +91,24 @@ function App() {
     setPlayers([username])
     setRoomCode(code)
   }
+  async function leaveRoom() {
+    if (roomCode) {
+      const name = username ?? joinUsername
+      try { 
+        await connection.invoke("LeaveRoom", roomCode, name)
+      } catch (error) {
+        console.log(error) // still let the user leave if call fails
+      }
+    }
+
+    setRoomCode(null)
+    setSelectedCategory(null)
+    setPlayers([])
+    setJoinCode("")
+    setNameAction(null)
+    setShowNamePopup(false)
+    
+  }
 
   async function handleJoinRoom(playerName: string) {
     const room = await connection.invoke<RoomInfo | null>(
@@ -103,6 +127,14 @@ function App() {
     setPlayers(room.players)
     setShowNamePopup(false)
   }
+
+  const handlePlayerLeft = (name: string) => {
+  setPlayers((players) => players.filter((p) => p !== name))
+  }
+
+  connection.on("PlayerLeft", handlePlayerLeft)
+
+  connection.off("PlayerLeft", handlePlayerLeft)
 
 
   async function handleNameSubmit() {
@@ -133,6 +165,7 @@ function App() {
         category={selectedCategory}
         roomCode={roomCode}
         players={players}
+        onLeave={leaveRoom}
       />
     )
   }
@@ -160,7 +193,7 @@ function App() {
         </nav>
 
         <div className="account-buttons">
-          {username ? (
+          {!authChecked ? null : username ? (
             <>
               <button onClick={() => setShowProfile(true)}>{username}</button>
               <button onClick={handleLogout}>Atsijungti</button>
