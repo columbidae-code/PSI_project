@@ -12,8 +12,22 @@ namespace beveikZinojau.lt.Scoring
         {
             _context = context;
         }   
+         // Finds a category by name and creates it if it does not exist yet
+        public int GetOrCreateCategoryId(string categoryName)
+        {
+            AppCategory? category = _context.Categories
+                .FirstOrDefault(c => c.CategoryName == categoryName);
 
-        public void RecordGame (AppGameResults results)
+            if (category == null)
+            {
+                category = new AppCategory { CategoryName = categoryName };
+                _context.Categories.Add(category);
+                _context.SaveChanges();
+            }
+
+            return category.Id;
+        }
+public void RecordGame (AppGameResults results)
         {
             _context.GameResults.Add(results);
             var userStats = _context.UserStats.FirstOrDefault(s => s.UserId == results.UserId && s.CategoryId == results.CategoryId);

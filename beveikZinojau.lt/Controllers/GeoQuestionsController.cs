@@ -1,7 +1,11 @@
+using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Models;
+using beveikZinojau.lt.Scoring;
 using Microsoft.AspNetCore.Mvc;
-using System.Text.Json;
 using Microsoft.Extensions.Caching.Memory;
+using System.Data;
+using System.Security.Claims;
+using System.Text.Json;
 
 namespace beveikZinojau.lt.Controllers
 {
@@ -9,7 +13,8 @@ namespace beveikZinojau.lt.Controllers
     public class GeoQuestionsController : ControllerBase
     {
         private readonly IMemoryCache cache;
-
+        private readonly ScoringCalculator scoring;
+        private readonly StatsTracker statsTracker;
 
         private static readonly HashSet<string> SupportedQuestionTypes = new()
         {
@@ -21,9 +26,11 @@ namespace beveikZinojau.lt.Controllers
         };
 
 
-        public GeoQuestionsController(IMemoryCache cache)
+        public GeoQuestionsController(IMemoryCache cache, ScoringCalculator scoring, StatsTracker statsTracker)
         {
             this.cache = cache;
+            this.scoring = scoring;
+            this.statsTracker = statsTracker;
         }
 
 
@@ -52,10 +59,13 @@ namespace beveikZinojau.lt.Controllers
             }
 
             Guid sessionId = Guid.NewGuid();
+            // Id of the logged-in user (for the login cookie)
+            string? userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             GeoQuestionSession session = new(
                 questionCount: request.QuestionCount,
-                questionTypes: selectedTypes
+                questionTypes: selectedTypes,
+                userId: userId
             );
 
             cache.Set(
@@ -249,6 +259,7 @@ namespace beveikZinojau.lt.Controllers
             StoredGeoQuestion storedQuestion = new()
             {
                 SessionId = sessionId,
+                QuestionType = type,
                 Options = options,
                 CorrectOptionIndex = Array.IndexOf(options, correctAnswer)
             };
@@ -265,6 +276,7 @@ namespace beveikZinojau.lt.Controllers
                 QuestionNumber = questionNumber,
                 TotalQuestions = session.QuestionCount,
                 QuestionType = type,
+                TimeLimitSeconds = GeoQuestionRules.For(type).TimeLimitSeconds,
                 Text = text,
                 ImageUrl = imageUrl,
                 Options = options
@@ -321,12 +333,23 @@ namespace beveikZinojau.lt.Controllers
                 return Conflict("Player already answered this question.");
             }
 
-            session.RecordAnswer(request.PlayerId, isCorrect);
-
+           double answerSeconds = (DateTime.UtcNow - question.ServedAt).TotalSeconds;
+           GeoQuestionRule rule = GeoQuestionRules.For(question.QuestionType);
+            
+           int pointsEarned = scoring.Calculate(
+           isCorrect,
+           rule.Difficulty,
+           new AnswerTiming(answerSeconds, rule.TimeLimitSeconds));
+           
+           int totalPoints = session.RecordAnswer(
+           request.PlayerId, isCorrect, pointsEarned, answerSeconds);
             return Ok(new
             {
                 IsCorrect = isCorrect,
-                CorrectOptionIndex = question.CorrectOptionIndex
+                CorrectOptionIndex = question.CorrectOptionIndex,
+                PointsEarned = pointsEarned,
+                TotalPoints = totalPoints
+
             });
         }
 
@@ -348,10 +371,36 @@ namespace beveikZinojau.lt.Controllers
             if (stats is null)
                 return NotFound("Player not found.");
 
-            var (answered, correct) = stats.Value;
+            var (answered, correct, points, totalSeconds) = stats.Value;
 
             if (answered < session.QuestionCount)
                 return Conflict("Round not finished.");
+            if (session.UserId is not null && session.TryMarkSaved(playerId))
+            {
+                try
+                {
+                    int categoryId = statsTracker.GetOrCreateCategoryId(
+                        GeoQuestionRules.CategoryName);
+
+                    statsTracker.RecordGame(new AppGameResults
+                    {
+                        UserId = session.UserId,
+                        CategoryId = categoryId,
+                        // A round mixes difficulties, so store the hardest selected type
+                        Difficulty = session.QuestionTypes.Max(t => GeoQuestionRules.For(t).Difficulty),
+                        Score = points,
+                        QuestionsAnswered = answered,
+                        CorrectAnswers = correct,
+                        TotalAnswerTimeSeconds = totalSeconds
+                    });
+                }
+                catch
+                {
+                    // Let the next request try saving again
+                    session.UnmarkSaved(playerId);
+                    throw;
+                }
+            }
 
             double accuracy = Math.Round(
                 (double)correct / answered * 100, 1
@@ -362,7 +411,9 @@ namespace beveikZinojau.lt.Controllers
                 TotalQuestions = session.QuestionCount,
                 CorrectAnswers = correct,
                 WrongAnswers = answered - correct,
-                AccuracyPercent = accuracy
+                AccuracyPercent = accuracy,
+                TotalPoints = points,
+                Saved = session.UserId is not null
             });
         }
 

@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Services;
 using beveikZinojau.lt.Services.ServiceHelpers;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace beveikZinojau.lt.Controllers
@@ -14,19 +15,19 @@ namespace beveikZinojau.lt.Controllers
     public class AuthController : ControllerBase
     {
 
-        private AuthService _AuthenticationService;
+        private AuthService _authenticationService;
 
 
         public AuthController(AuthService service)
         {
-            _AuthenticationService = service;
+            _authenticationService = service;
         }
 
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
 
-            var result = await _AuthenticationService.Register(request);
+            var result = await _authenticationService.Register(request);
             if (result.Success == false)
             {
                 return BadRequest(result);
@@ -40,7 +41,7 @@ namespace beveikZinojau.lt.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
-            var result = await _AuthenticationService.Login(request);
+            var result = await _authenticationService.Login(request);
             if (result.Success == false)
             {
                 return Unauthorized(result);
@@ -49,6 +50,19 @@ namespace beveikZinojau.lt.Controllers
             {
                 return Ok(result);
             }
+        }
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout()
+        {
+            await _authenticationService.Logout();
+            return Ok();
+
+        }
+
+        [Authorize, HttpGet("me")]
+        public IActionResult Me()
+        {
+            return Ok(new { username = User.Identity!.Name });
         }
     }
 }

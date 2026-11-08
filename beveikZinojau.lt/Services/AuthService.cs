@@ -2,6 +2,7 @@
 using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Extensions;
 using beveikZinojau.lt.Services.ServiceHelpers;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Supabase.Gotrue;
@@ -16,10 +17,13 @@ namespace beveikZinojau.lt.Services
     {
         private readonly UserManager<AppUser> _userManager;
 
+        SignInManager<AppUser>  _signInManager;
 
-        public AuthService(UserManager<AppUser> userManager)
+
+        public AuthService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
         }
         public async Task<AuthResponse> Register(RegisterRequest request)
         {
@@ -38,10 +42,6 @@ namespace beveikZinojau.lt.Services
                 
             }
 
-            if (_userManager.FindByNameAsync(request.Username) != null)//Check for lower/upper case not needed
-            {
-                return AuthResponse.Fail("Username already exists.");
-            }
 
             var newUser = new AppUser
             {
@@ -62,23 +62,39 @@ namespace beveikZinojau.lt.Services
         public async Task<AuthResponse> Login(LoginRequest request)
         {
 
-
             if (request.Username.IsMissing() || request.Password.IsMissing())
             {
                 return AuthResponse.Fail("Invalid username or password");
             }
 
-            AppUser user = await _userManager.FindByNameAsync(request.Username);
+            AppUser? user = await _userManager.FindByNameAsync(request.Username);
 
-            if (user == null || !await _userManager.CheckPasswordAsync(user, request.Password))
+            if (user == null)
             {
                 return AuthResponse.Fail("Invalid username or password");
 
+            }
+            // Checks the password and sets the login cookie on the response
+            var result = await _signInManager.PasswordSignInAsync(
+            user,
+            request.Password,
+            isPersistent: true,
+            lockoutOnFailure: true);
+            
+                        if (result.IsLockedOut)
+                        {
+                            return AuthResponse.Fail("Too many failed attempts. Try again later.");
+                        }
+
+                        if (!result.Succeeded)
+                        {
+                            return AuthResponse.Fail("Invalid username or password");
             }
             return AuthResponse.Ok("Login successful", user.UserName);
 
         }
 
+        public Task Logout() { return _signInManager.SignOutAsync(); }
 
     }
 }

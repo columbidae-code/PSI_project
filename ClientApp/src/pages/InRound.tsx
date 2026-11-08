@@ -5,9 +5,16 @@ type Session = { sessionId: string; playerId: string }
 type Question = {
   questionId: string; questionNumber: number; totalQuestions: number
   text: string; imageUrl: string | null; options: string[]
+  timeLimitSeconds: number
 }
-type Answer = { isCorrect: boolean; correctOptionIndex: number }
-type Result = { correctAnswers: number; totalQuestions: number }
+type Answer = { 
+  isCorrect: boolean; correctOptionIndex: number
+  pointsEarned: number; totalPoints: number
+ }
+type Result = { 
+  correctAnswers: number; totalQuestions: number
+  totalPoints: number; saved: boolean
+}
 
 async function api<T>(url: string, data?: object): Promise<T> {
   const response = await fetch(url, data ? {
@@ -31,7 +38,23 @@ export default function InRound({ questionCount, questionTypes, onBack }: {
   const [result, setResult] = useState<Result | null>(null)
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
+  const [deadline, setDeadline] = useState(0)
+  const [now, setNow] = useState(() => Date.now())
 
+  // Re-render four times a second while a question is waiting for an answer
+  useEffect(() => {
+    if (!question || answer) return
+    const id = setInterval(() => setNow(Date.now()), 250)
+    return () => clearInterval(id)
+  }, [question, answer])
+
+  function startTimer(q: Question) {
+    setNow(Date.now())
+    setDeadline(Date.now() + q.timeLimitSeconds * 1000)
+  }
+
+  const secondsLeft = Math.max(0, Math.ceil((deadline - now) / 1000))
+  
   useEffect(() => {
     let active = true
 
@@ -46,6 +69,7 @@ export default function InRound({ questionCount, questionTypes, onBack }: {
         if (active) {
           setSession(s)
           setQuestion(q)
+          startTimer(q)
         }
       } catch (e) {
         if (active) setError(String(e))
@@ -85,6 +109,7 @@ export default function InRound({ questionCount, questionTypes, onBack }: {
       } else {
         const q = await api<Question>(`${url}/questions`, {})
         setQuestion(q)
+        startTimer(q)
         setAnswer(null)
       }
     } catch (e) { setError(String(e)) }
@@ -98,10 +123,22 @@ export default function InRound({ questionCount, questionTypes, onBack }: {
       {error && <p>Klaida: {error}</p>}
 
       {result ? (
-        <h2>Rezultatas: {result.correctAnswers}/{result.totalQuestions}</h2>
+        <>
+          <h2>Rezultatas: {result.correctAnswers}/{result.totalQuestions}</h2>
+          <h3>Taškai: {result.totalPoints}</h3>
+          <p>
+            {result.saved
+              ? 'Rezultatas išsaugotas tavo profilyje.'
+              : 'Prisijunk, kad rezultatas būtų išsaugotas.'}
+          </p>
+        </>
       ) : question ? (
         <>
           <h2>{question.questionNumber}/{question.totalQuestions}</h2>
+          <p>
+            Laiko liko: {secondsLeft} s
+            {answer && ` | Taškai: ${answer.totalPoints}`}
+          </p>
           <h3>{question.text}</h3>
 
           {question.imageUrl &&
@@ -117,7 +154,7 @@ export default function InRound({ questionCount, questionTypes, onBack }: {
 
           {answer && (
             <>
-              <p>{answer.isCorrect ? 'Teisingai!' : 'Neteisingai!'}</p>
+              <p>{answer.isCorrect ? 'Teisingai!' : 'Neteisingai!'} +{answer.pointsEarned} points.</p>
               <p>Teisingas: {question.options[answer.correctOptionIndex]}</p>
               <button disabled={busy} onClick={next}>Toliau</button>
             </>
