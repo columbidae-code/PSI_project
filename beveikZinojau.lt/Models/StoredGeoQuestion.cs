@@ -18,18 +18,25 @@ namespace beveikZinojau.lt.Models
         public DateTime ServedAt { get; init; } = DateTime.UtcNow;
         public bool TryAnswer(
             Guid playerId,
-            int selectedOptionIndex,
-            out bool isCorrect)
+            int? selectedOptionIndex,
+            double timeLimitSeconds,
+            out bool isCorrect,
+            out double answerSeconds)
         {
             lock (sync)
             {
                 if (!answeredPlayers.Add(playerId))
                 {
                     isCorrect = false;
+                    answerSeconds = 0;
                     return false;
                 }
 
-                isCorrect = selectedOptionIndex == CorrectOptionIndex;
+                double elapsed = Math.Max(0, (DateTime.UtcNow - ServedAt).TotalSeconds);
+
+                answerSeconds = Math.Min(elapsed, timeLimitSeconds);
+
+                isCorrect = selectedOptionIndex.HasValue && elapsed <= timeLimitSeconds && selectedOptionIndex.Value == CorrectOptionIndex;
                 return true;
             }
         }

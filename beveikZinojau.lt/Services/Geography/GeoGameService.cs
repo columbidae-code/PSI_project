@@ -198,27 +198,35 @@ public class GeoGameService
         if (question.SessionId != sessionId)
             return (null, GeoGameError.WrongSession);
 
-        if (!request.SelectedOptionIndex.HasValue)
+        if (request.SelectedOptionIndex is int selectedIndex &&
+            (selectedIndex < 0 || selectedIndex >= question.Options.Length))
             return (null, GeoGameError.MissingAnswer);
 
-        int selectedIndex = request.SelectedOptionIndex.Value;
-
-        if (selectedIndex < 0 || selectedIndex >= question.Options.Length)
-            return (null, GeoGameError.InvalidOption);
+        GeoQuestionRule rule = GeoQuestionRules.For(question.QuestionType);
 
         if (!question.TryAnswer(
-            request.PlayerId, selectedIndex, out bool isCorrect))
+            request.PlayerId,
+            request.SelectedOptionIndex,
+            rule.TimeLimitSeconds,
+            out bool isCorrect,
+            out double answerSeconds))
         {
             return (null, GeoGameError.AlreadyAnswered);
         }
 
-        //The server measures the time itself
-        double answerSeconds = (DateTime.UtcNow - question.ServedAt).TotalSeconds;
-        GeoQuestionRule rule = GeoQuestionRules.For(question.QuestionType);
+        int pointsEarned = scoring.Calculate(
+            isCorrect,
+            rule.Difficulty,
+            new AnswerTiming(answerSeconds, rule.TimeLimitSeconds)
+        );
 
-        int pointsEarned = scoring.Calculate(isCorrect, rule.Difficulty, new AnswerTiming(answerSeconds, rule.TimeLimitSeconds));
-        int totalPoints = session.RecordAnswer(request.PlayerId, isCorrect, pointsEarned, answerSeconds);
-        
+        int totalPoints = session.RecordAnswer(
+            request.PlayerId,
+            isCorrect,
+            pointsEarned,
+            answerSeconds
+        );
+
         return (
             new GeoAnswerChecked(isCorrect, question.CorrectOptionIndex, pointsEarned, totalPoints),
             GeoGameError.None
