@@ -1,5 +1,5 @@
 using beveikZinojau.lt.Data;
-using beveikZinojau.lt.Scoring;
+using beveikZinojau.lt.Services.MathGame;
 using beveikZinojau.lt.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -72,6 +72,9 @@ builder.Services.AddMemoryCache();
 builder.Services.AddSingleton<ICountryRepository, JsonCountryRepository>();
 builder.Services.AddSingleton<GeoQuestionGenerator>();
 builder.Services.AddScoped<GeoGameService>();
+
+builder.Services.AddSingleton<MathQuestionGenerator>();
+builder.Services.AddScoped<MathGameService>();
 
 var app = builder.Build();
 

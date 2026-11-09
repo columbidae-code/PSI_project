@@ -98,25 +98,23 @@ namespace beveikZinojau.lt.Models
         //True only for the first caller
         public bool TryMarkSaved(Guid playerId)
         {
-            lock (sync)
-            {
-                PlayerProgress progress = players[playerId];
+            
+             PlayerProgress progress = players[playerId];
 
-                if (progress.Saved)
-                    return false;
+             if (progress.Saved)
+                 return false;
 
-                progress.Saved = true;
-                return true;
-            }
+             progress.Saved = true;
+             return true;
+            
         }
 
         // Used when the database write failed so the save can be retried
         public void UnmarkSaved(Guid playerId)
         {
-            lock (sync)
-            {
-                players[playerId].Saved = false;
-            }
+           
+            players[playerId].Saved = false;
+            
         }
         public bool IsFull
         {
