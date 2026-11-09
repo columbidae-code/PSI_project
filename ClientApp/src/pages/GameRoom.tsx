@@ -1,5 +1,7 @@
 import { useState } from "react";
 import InRound from "./InRound";
+import InRoundTyped from "./InRoundTyped";
+
 
 const questionTypes = {
   capital: "Sostinės",
@@ -7,6 +9,12 @@ const questionTypes = {
   map: "Žemėlapiai",
   outline: "Kontūrai",
   neighbour: "Kaimyninės šalys",
+};
+const mathOperations = {
+  add: "Sudėtis",
+  sub: "Atimtis",
+  mul: "Daugyba",
+  div: "Dalyba",
 };
 
 function GameRoom({
@@ -25,8 +33,21 @@ function GameRoom({
   const [selectedTypes, setSelectedTypes] = useState(
     Object.keys(questionTypes),
   );
+  const [selectedOperations, setSelectedOperations] = useState(
+    Object.keys(mathOperations),
+  );
 
   if (playing) {
+    if (category === "Matematika") {
+       return (
+         <InRoundTyped
+           apiPath="/api/mathquestions"
+           questionCount={questionCount}
+           questionTypes={selectedOperations}
+           onBack={() => setPlaying(false)}
+         />
+       );
+     }
     return (
       <InRound
         questionCount={questionCount}
@@ -84,14 +105,44 @@ function GameRoom({
           ))}
         </>
       )}
+      {category === "Matematika" && (
+        <>
+          <p>Klausimų skaičius:</p>
+          <input
+            type="number"
+            min={1}
+            value={questionCount}
+            onChange={(e) => setQuestionCount(Number(e.target.value))}
+          />
+
+          <p>Veiksmai:</p>
+          {Object.entries(mathOperations).map(([type, label]) => (
+            <label key={type}>
+              <input
+                type="checkbox"
+                checked={selectedOperations.includes(type)}
+                onChange={() =>
+                  setSelectedOperations((old) =>
+                    old.includes(type)
+                      ? old.filter((t) => t !== type)
+                      : [...old, type],
+                  )
+                }
+              />
+              {label}
+            </label>
+          ))}
+        </>
+      )}
+    
       <button onClick={onLeave}>Išeiti iš kambario</button>
       <button
         className="start-game-button"
         disabled={
-          category !== "Geografija" ||
+          (category !== "Geografija" && category !== "Matematika") ||
           !Number.isInteger(questionCount) ||
           questionCount < 1 ||
-          selectedTypes.length === 0
+          (category === "Matematika" ?  selectedOperations.length === 0 : selectedTypes.length === 0)
         }
         onClick={() => setPlaying(true)}
       >
