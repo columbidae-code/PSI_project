@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "scope": "World",
+    "period": "Senovė",
+    "event": "Jericho įkūrimas",
+    "year": -9000,
+    "displayDate": "9000 m. pr. Kr.",
+    "isApproximate": true,
+    "exactDate": null
+  },
+  {
+    "id": 97,
+    "scope": "World",
+    "period": "Viduramžiai",
+    "event": "Frankų krikštas",
+    "year": 496,
+    "displayDate": "496 m.",
+    "isApproximate": false,
+    "exactDate": null
+  },
+  {
+    "id": 266,
+    "scope": "World",
+    "period": "Modernybė",
+    "event": "Didžioji Prancūzijos Revoliucija",
+    "year": 1789,
+    "displayDate": "1789 m.",
+    "isApproximate": false,
+    "exactDate": "1789-07-14"
+  }
+]
