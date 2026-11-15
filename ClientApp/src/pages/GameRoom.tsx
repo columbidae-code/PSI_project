@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
 import connection from "../signalR";
 import AccentuationRound from "./AccentuationRound";
+import HistoryInRound from "./HistoryInRound";
 import InRound from "./InRound";
 import InRoundTyped from "./InRoundTyped";
+import {
+  historyDifficulties,
+  historyPeriods,
+  historyScopes,
+} from "../games/historySettings";
 
 const questionTypes = {
   capital: "Sostinės",
@@ -49,6 +55,9 @@ function GameRoom({
     Object.keys(mathOperations),
   );
   const [selectedLevels, setSelectedLevels] = useState<number[]>([1]);
+  const [historyScope, setHistoryScope] = useState("All");
+  const [historyPeriod, setHistoryPeriod] = useState("All");
+  const [historyDifficulty, setHistoryDifficulty] = useState(1);
   const [seed, setSeed] = useState<number | null>(null);
 
   useEffect(() => {
@@ -62,6 +71,9 @@ function GameRoom({
       setSelectedTypes(types);
       setSelectedOperations(types);
       setSelectedLevels(levels);
+      setHistoryScope(types[0] ?? "All");
+      setHistoryPeriod(types[1] ?? "All");
+      setHistoryDifficulty(levels[0] ?? 1);
       setSeed(gameSeed);
       setPlaying(true);
     };
@@ -80,13 +92,17 @@ function GameRoom({
           ? selectedOperations
           : category === "Geografija"
             ? selectedTypes
+            : category === "Istorija"
+              ? [historyScope, historyPeriod]
             : [];
+      const levels =
+        category === "Istorija" ? [historyDifficulty] : selectedLevels;
       await connection.invoke(
         "StartGame",
         roomCode,
         questionCount,
         types,
-        selectedLevels,
+        levels,
       );
     } else {
       setPlaying(true);
@@ -116,6 +132,18 @@ function GameRoom({
       );
     }
 
+    if (category === "Istorija") {
+      return (
+        <HistoryInRound
+          questionCount={questionCount}
+          scope={historyScope}
+          period={historyPeriod}
+          difficulty={historyDifficulty}
+          onBack={() => setPlaying(false)}
+        />
+      );
+    }
+
     return (
       <InRound
         questionCount={questionCount}
@@ -126,12 +154,15 @@ function GameRoom({
   }
 
   const isValidQuestionCount =
-    Number.isInteger(questionCount) && questionCount >= 1;
+    Number.isInteger(questionCount) &&
+    questionCount >= 1 &&
+    (category !== "Istorija" || questionCount <= 20);
   const canStart =
     isValidQuestionCount &&
     ((category === "Geografija" && selectedTypes.length > 0) ||
       (category === "Matematika" && selectedOperations.length > 0) ||
-      (category === "Lietuvių kalba" && selectedLevels.length > 0));
+      (category === "Lietuvių kalba" && selectedLevels.length > 0) ||
+      category === "Istorija");
 
   return (
     <main className="game-room">
@@ -159,7 +190,8 @@ function GameRoom({
         <>
           {(category === "Geografija" ||
             category === "Matematika" ||
-            category === "Lietuvių kalba") && (
+            category === "Lietuvių kalba" ||
+            category === "Istorija") && (
             <div className="acc-room-settings">
               <p>
                 {category === "Lietuvių kalba"
@@ -169,7 +201,13 @@ function GameRoom({
               <input
                 type="number"
                 min={1}
-                max={category === "Lietuvių kalba" ? 50 : undefined}
+                max={
+                  category === "Lietuvių kalba"
+                    ? 50
+                    : category === "Istorija"
+                      ? 20
+                      : undefined
+                }
                 value={questionCount}
                 onChange={(event) =>
                   setQuestionCount(Number(event.target.value))
@@ -248,6 +286,54 @@ function GameRoom({
                 ))}
               </div>
             </div>
+          )}
+
+          {category === "Istorija" && (
+            <>
+              <label className="history-setting">
+                Sritis:
+                <select
+                  value={historyScope}
+                  onChange={(event) => setHistoryScope(event.target.value)}
+                >
+                  {historyScopes.map(({ value, label }) => (
+                    <option key={value} value={value}>
+                      {label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="history-setting">
+                Laikotarpis:
+                <select
+                  value={historyPeriod}
+                  onChange={(event) => setHistoryPeriod(event.target.value)}
+                >
+                  {historyPeriods.map(({ value, label }) => (
+                    <option key={value} value={value}>
+                      {label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="history-setting">
+                Sudėtingumas:
+                <select
+                  value={historyDifficulty}
+                  onChange={(event) =>
+                    setHistoryDifficulty(Number(event.target.value))
+                  }
+                >
+                  {historyDifficulties.map(({ value, label }) => (
+                    <option key={value} value={value}>
+                      {label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </>
           )}
         </>
       ) : (

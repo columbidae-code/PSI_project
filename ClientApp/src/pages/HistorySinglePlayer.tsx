@@ -1,19 +1,10 @@
 import { useState } from "react";
+import {
+  historyDifficulties,
+  historyPeriods,
+  historyScopes,
+} from "../games/historySettings";
 import HistoryInRound from "./HistoryInRound";
-
-const periods = [
-  ["All", "Visi laikotarpiai"],
-  ["Senovė", "Senovė"],
-  ["Viduramžiai", "Viduramžiai"],
-  ["Naujieji amžiai", "Naujieji amžiai"],
-  ["Modernybė", "Modernybė"],
-];
-
-const difficulties = [
-  ["0", "Lengvas (4 įvykiai)"],
-  ["1", "Vidutinis (6 įvykiai)"],
-  ["2", "Sunkus (8 įvykiai)"],
-];
 
 export default function HistorySinglePlayer({
   onBack,
@@ -56,15 +47,18 @@ export default function HistorySinglePlayer({
       <label className="history-setting">
         Sritis:
         <select value={scope} onChange={(event) => setScope(event.target.value)}>
-          <option value="All">Visos sritys</option>
-          <option value="Pasaulis">Pasaulis</option>
+          {historyScopes.map(({ value, label }) => (
+            <option key={value} value={value}>
+              {label}
+            </option>
+          ))}
         </select>
       </label>
 
       <label className="history-setting">
         Laikotarpis:
         <select value={period} onChange={(event) => setPeriod(event.target.value)}>
-          {periods.map(([value, label]) => (
+          {historyPeriods.map(({ value, label }) => (
             <option key={value} value={value}>
               {label}
             </option>
@@ -78,7 +72,7 @@ export default function HistorySinglePlayer({
           value={difficulty}
           onChange={(event) => setDifficulty(Number(event.target.value))}
         >
-          {difficulties.map(([value, label]) => (
+          {historyDifficulties.map(({ value, label }) => (
             <option key={value} value={value}>
               {label}
             </option>
