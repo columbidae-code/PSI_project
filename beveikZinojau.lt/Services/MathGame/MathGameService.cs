@@ -181,12 +181,12 @@ namespace beveikZinojau.lt.Services.MathGame
                 return (null, MathGameError.InvalidAnswer);
             }
 
-            if (!question.TryAnswer(request.PlayerId, enteredAnswer, out bool isCorrect))
+            MathQuestionRule rule = MathQuestionRules.For(question.QuestionType);
+
+            if (!question.TryAnswer(request.PlayerId, enteredAnswer,
+                    out bool isCorrect, out double answerSeconds,rule.TimeLimitSeconds))
                 return (null, MathGameError.AlreadyAnswered);
 
-            // The server measures the time itself
-            double answerSeconds = (DateTime.UtcNow - question.ServedAt).TotalSeconds;
-            MathQuestionRule rule = MathQuestionRules.For(question.QuestionType);
 
             int pointsEarned = scoring.Calculate(
                 isCorrect,
