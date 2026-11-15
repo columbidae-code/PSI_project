@@ -4,6 +4,7 @@ namespace beveikZinojau.lt.Services.History;
 
 public class HistorySession
 {
+    private readonly object _sync = new();
     private readonly HashSet<string> _askedSignatures = new();
     private readonly Dictionary<Guid, PlayerSessionStats> _players = new();
 
@@ -13,7 +14,14 @@ public class HistorySession
     public DifficultyLevel Difficulty { get; }
     public string? UserId { get; }
 
-    public bool IsFull => _askedSignatures.Count >= QuestionCount;
+    public bool IsFull
+    {
+        get
+        {
+            lock (_sync)
+                return _askedSignatures.Count >= QuestionCount;
+        }
+    }
 
     public HistorySession(
         int questionCount,
@@ -31,16 +39,23 @@ public class HistorySession
 
     public Guid AddPlayer()
     {
-        Guid playerId = Guid.NewGuid();
-        _players[playerId] = new PlayerSessionStats();
-        return playerId;
+        lock (_sync)
+        {
+            Guid playerId = Guid.NewGuid();
+            _players[playerId] = new PlayerSessionStats();
+            return playerId;
+        }
     }
 
-    public bool HasPlayer(Guid playerId) => _players.ContainsKey(playerId);
+    public bool HasPlayer(Guid playerId)
+    {
+        lock (_sync)
+            return _players.ContainsKey(playerId);
+    }
 
     public bool TryRecordQuestion(string signatureKey, out int questionNumber)
     {
-        lock (_askedSignatures)
+        lock (_sync)
         {
             if (_askedSignatures.Contains(signatureKey) || _askedSignatures.Count >= QuestionCount)
             {
@@ -56,24 +71,49 @@ public class HistorySession
 
     public int RecordAnswer(Guid playerId, bool isCorrect, int points, double seconds)
     {
-        if (_players.TryGetValue(playerId, out var stats))
+        lock (_sync)
         {
+            if (!_players.TryGetValue(playerId, out var stats))
+                return 0;
+
             stats.AnsweredCount++;
             if (isCorrect) stats.CorrectCount++;
             stats.TotalPoints += points;
             stats.TotalTimeSeconds += seconds;
             return stats.TotalPoints;
         }
-        return 0;
     }
 
     public (int Answered, int Correct, int Points, double TotalSeconds)? GetPlayerStats(Guid playerId)
     {
-        if (_players.TryGetValue(playerId, out var stats))
+        lock (_sync)
         {
+            if (!_players.TryGetValue(playerId, out var stats))
+                return null;
+
             return (stats.AnsweredCount, stats.CorrectCount, stats.TotalPoints, stats.TotalTimeSeconds);
         }
-        return null;
+    }
+
+    public bool TryMarkSaved(Guid playerId)
+    {
+        lock (_sync)
+        {
+            if (!_players.TryGetValue(playerId, out var stats) || stats.Saved)
+                return false;
+
+            stats.Saved = true;
+            return true;
+        }
+    }
+
+    public void UnmarkSaved(Guid playerId)
+    {
+        lock (_sync)
+        {
+            if (_players.TryGetValue(playerId, out var stats))
+                stats.Saved = false;
+        }
     }
 
     private class PlayerSessionStats
@@ -82,6 +122,7 @@ public class HistorySession
         public int CorrectCount { get; set; }
         public int TotalPoints { get; set; }
         public double TotalTimeSeconds { get; set; }
+        public bool Saved { get; set; }
     }
 }
 

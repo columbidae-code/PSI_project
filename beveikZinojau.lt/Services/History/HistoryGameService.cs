@@ -2,13 +2,12 @@ using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
 using Microsoft.Extensions.Caching.Memory;
-using beveikZinojau.lt.Services.Geography;
 
 namespace beveikZinojau.lt.Services.History;
 
 public record HistorySessionCreateRequest(
     int QuestionCount,
-    string Scope,        // "World", "Lithuania", or "All"
+    string Scope,        // "Pasaulis" or "All"
     string Period,       // "Senovė", "Viduramžiai", "Naujieji amžiai", "Modernybė", or "All"
     DifficultyLevel Difficulty
 );
@@ -22,7 +21,7 @@ public record HistorySessionCreated(
     Guid PlayerId
 );
 
-public record HistoryTimelineIssued(
+public record HistoryQuestionIssued(
     Guid QuestionId,
     int QuestionNumber,
     int TotalQuestions,
@@ -41,6 +40,15 @@ public record HistoryAnswerChecked(
     IReadOnlyList<TimelineCardRevealedDto> CorrectTimeline,
     int PointsEarned,
     int TotalPoints
+);
+
+public record HistoryGameResult(
+    int TotalQuestions,
+    int CorrectAnswers,
+    int WrongAnswers,
+    double AccuracyPercent,
+    int TotalPoints,
+    bool Saved
 );
 
 public enum HistoryGameError
@@ -79,13 +87,16 @@ public class HistoryGameService
         string? userId = null)
     {
         if (request.QuestionCount <= 0)
+        {
             return (null, "Question count must be positive.");
+        }
 
         string scope = string.IsNullOrWhiteSpace(request.Scope) ? "All" : request.Scope.Trim();
         string period = string.IsNullOrWhiteSpace(request.Period) ? "All" : request.Period.Trim();
 
         Guid sessionId = Guid.NewGuid();
-        var session = new HistorySession(
+
+        HistorySession session = new(
             questionCount: request.QuestionCount,
             scope: scope,
             period: period,
@@ -93,7 +104,12 @@ public class HistoryGameService
             userId: userId
         );
 
-        cache.Set($"history-session:{sessionId}", session, TimeSpan.FromMinutes(30));
+        cache.Set(
+            $"history-session:{sessionId}",
+            session,
+            TimeSpan.FromMinutes(30)
+        );
+
         Guid playerId = session.AddPlayer();
 
         return (new HistorySessionCreated(
@@ -106,43 +122,63 @@ public class HistoryGameService
         ), null);
     }
 
-    public (HistoryTimelineIssued? Question, bool SessionMissing) GetQuestion(Guid sessionId)
+    public (HistoryQuestionIssued? Question, bool SessionMissing) GetQuestion(Guid sessionId)
     {
-        if (!cache.TryGetValue<HistorySession>($"history-session:{sessionId}", out var session) || session is null)
+        if (!cache.TryGetValue<HistorySession>(
+            $"history-session:{sessionId}", out var session)
+            || session is null)
+        {
             return (null, true);
+        }
 
         if (session.IsFull)
+        {
             return (null, false);
+        }
 
-        // Try a few times to avoid issuing the exact same set of cards twice in one session
-        for (int attempt = 0; attempt < 10; attempt++)
+        for (int attempt = 0; attempt < 200; attempt++)
         {
             var generated = generator.GenerateTimeline(session.Scope, session.Period, session.Difficulty);
+
             if (generated is null)
+            {
                 return (null, false);
+            }
 
             if (!session.TryRecordQuestion(generated.SignatureKey, out int number))
+            {
+                if (session.IsFull)
+                    break;
+
                 continue;
+            }
 
             Guid questionId = Guid.NewGuid();
-            var rule = HistoryQuestionRules.For(session.Difficulty);
 
-            var stored = new StoredHistoryTimeline
+            StoredHistoryQuestion stored = new()
             {
                 SessionId = sessionId,
                 Difficulty = session.Difficulty,
                 CorrectEvents = generated.CorrectChronologicalEvents
             };
 
-            cache.Set($"history-question:{questionId}", stored, TimeSpan.FromMinutes(30));
+            cache.Set(
+                $"history-question:{questionId}",
+                stored,
+                TimeSpan.FromMinutes(30)
+            );
 
-            return (new HistoryTimelineIssued(
+            HistoryTimelineRule rule = HistoryQuestionRules.For(session.Difficulty);
+
+            HistoryQuestionIssued question = new(
                 questionId,
                 number,
                 session.QuestionCount,
                 rule.TimeLimitSeconds,
                 generated.ShuffledCards
-            ), false);
+            );
+
+            return (question, false);
         }
 
         return (null, false);
@@ -152,27 +188,40 @@ public class HistoryGameService
         Guid sessionId,
         HistoryAnswerRequest request)
     {
-        if (!cache.TryGetValue<HistorySession>($"history-session:{sessionId}", out var session) || session is null)
+        if (!cache.TryGetValue<HistorySession>(
+            $"history-session:{sessionId}", out var session)
+            || session is null)
+        {
             return (null, HistoryGameError.SessionNotFound);
+        }
 
         if (!session.HasPlayer(request.PlayerId))
             return (null, HistoryGameError.PlayerNotFound);
 
-        if (!cache.TryGetValue<StoredHistoryTimeline>($"history-question:{request.QuestionId}", out var question) || question is null)
+        if (!cache.TryGetValue<StoredHistoryQuestion>(
+            $"history-question:{request.QuestionId}", out var question)
+            || question is null)
+        {
             return (null, HistoryGameError.QuestionNotFound);
+        }
 
         if (question.SessionId != sessionId)
             return (null, HistoryGameError.WrongSession);
 
-        if (request.OrderedEventIds is null || request.OrderedEventIds.Count != question.CorrectEvents.Count)
+        if (request.OrderedEventIds is null || request.OrderedEventIds.Count == 0)
             return (null, HistoryGameError.InvalidSubmission);
 
-        var rule = HistoryQuestionRules.For(question.Difficulty);
-        var correctIds = question.CorrectEvents.Select(e => e.Id).ToList();
-        bool isCorrect = request.OrderedEventIds.SequenceEqual(correctIds);
+        HistoryTimelineRule rule = HistoryQuestionRules.For(question.Difficulty);
 
-        if (!question.TryAnswer(request.PlayerId, isCorrect, rule.TimeLimitSeconds, out double answerSeconds))
+        if (!question.TryAnswer(
+            request.PlayerId,
+            request.OrderedEventIds,
+            rule.TimeLimitSeconds,
+            out bool isCorrect,
+            out double answerSeconds))
+        {
             return (null, HistoryGameError.AlreadyAnswered);
+        }
 
         int pointsEarned = scoring.Calculate(
             isCorrect,
@@ -180,21 +229,34 @@ public class HistoryGameService
             new AnswerTiming(answerSeconds, rule.TimeLimitSeconds)
         );
 
-        int totalPoints = session.RecordAnswer(request.PlayerId, isCorrect, pointsEarned, answerSeconds);
+        int totalPoints = session.RecordAnswer(
+            request.PlayerId,
+            isCorrect,
+            pointsEarned,
+            answerSeconds
+        );
 
         var revealed = question.CorrectEvents
             .Select((ev, index) => new TimelineCardRevealedDto(ev.Id, ev.Title, ev.DisplayDate, index))
             .ToList();
 
-        return (new HistoryAnswerChecked(isCorrect, revealed, pointsEarned, totalPoints), HistoryGameError.None);
+        return (
+            new HistoryAnswerChecked(isCorrect, revealed, pointsEarned, totalPoints),
+            HistoryGameError.None
+        );
     }
 
-    public (GeoGameResult? Result, HistoryGameError Error) GetResult(Guid sessionId, Guid playerId)
+    public (HistoryGameResult? Result, HistoryGameError Error) GetResult(Guid sessionId, Guid playerId)
     {
-        if (!cache.TryGetValue<HistorySession>($"history-session:{sessionId}", out var session) || session is null)
+        if (!cache.TryGetValue<HistorySession>(
+            $"history-session:{sessionId}", out var session)
+            || session is null)
+        {
             return (null, HistoryGameError.SessionNotFound);
+        }
 
         var stats = session.GetPlayerStats(playerId);
+
         if (stats is null)
             return (null, HistoryGameError.PlayerNotFound);
 
@@ -203,24 +265,36 @@ public class HistoryGameService
         if (answered < session.QuestionCount)
             return (null, HistoryGameError.RoundNotFinished);
 
-        if (session.UserId is not null)
+        if (session.UserId is not null && session.TryMarkSaved(playerId))
         {
-            int categoryId = statsTracker.GetOrCreateCategoryId(HistoryQuestionRules.CategoryName);
-            statsTracker.RecordGame(new AppGameResults
+            try
             {
-                UserId = session.UserId,
-                CategoryId = categoryId,
-                Difficulty = session.Difficulty,
-                Score = points,
-                QuestionsAnswered = answered,
-                CorrectAnswers = correct,
-                TotalAnswerTimeSeconds = totalSeconds
-            });
+                int categoryId = statsTracker.GetOrCreateCategoryId(
+                    HistoryQuestionRules.CategoryName);
+
+                statsTracker.RecordGame(new AppGameResults
+                {
+                    UserId = session.UserId,
+                    CategoryId = categoryId,
+                    Difficulty = session.Difficulty,
+                    Score = points,
+                    QuestionsAnswered = answered,
+                    CorrectAnswers = correct,
+                    TotalAnswerTimeSeconds = totalSeconds
+                });
+            }
+            catch
+            {
+                session.UnmarkSaved(playerId);
+                throw;
+            }
         }
 
-        double accuracy = Math.Round((double)correct / answered * 100, 1);
+        double accuracy = Math.Round(
+            (double)correct / answered * 100, 1
+        );
 
-        GeoGameResult result = new(
+        HistoryGameResult result = new(
             session.QuestionCount,
             correct,
             answered - correct,
@@ -231,7 +305,4 @@ public class HistoryGameService
 
         return (result, HistoryGameError.None);
     }
-
 }
-    // GetResult(...) follows the exact same pattern as GeoGameService.GetResult,
-    // passing HistoryQuestionRules.CategoryName and session.Difficulty to statsTracker.RecordGame(...

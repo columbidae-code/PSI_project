@@ -38,7 +38,7 @@ public sealed class HistoryQuestionGenerator
         var rule = HistoryQuestionRules.For(difficulty);
         IReadOnlyList<HistoryEvent> allEvents = historyRepository.GetEvents();
 
-        // 1. Filter by Scope ("World", "Lithuania", or "All") and Period
+        // 1. Filter by scope ("Pasaulis" or "All") and period.
         var filtered = allEvents.Where(e =>
             (scope.Equals("All", StringComparison.OrdinalIgnoreCase) ||
              e.Scope.Equals(scope, StringComparison.OrdinalIgnoreCase)) &&
