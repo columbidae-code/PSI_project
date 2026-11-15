@@ -7,6 +7,7 @@ import GameRoom from "./pages/GameRoom";
 import "./App.css";
 import Leaderboard from "./pages/Leaderboard";
 import UserPage from "./pages/UserPage";
+import { gameRegistry } from "./games/gameRegistry";
 
 type RoomInfo = {
   code: string;
@@ -20,6 +21,7 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [roomCode, setRoomCode] = useState<string | null>(null)
   const [singlePlayer, setSinglePlayer] = useState(false)
+  const [soloCategory, setSoloCategory] = useState<string | null>(null)
   const [isHost, setIsHost] = useState(false)
   const [joinCode, setJoinCode] = useState("")
   const [players, setPlayers] = useState<string[]>([])
@@ -161,6 +163,14 @@ function App() {
       setIsHost(true)
       setShowNamePopup(false)
     }
+  }
+
+  const SoloComponent = soloCategory
+    ? gameRegistry[soloCategory]?.SoloComponent
+    : undefined
+
+  if (SoloComponent) {
+    return <SoloComponent onBack={() => setSoloCategory(null)} />
   }
 
   if ((roomCode || singlePlayer) && selectedCategory) {
@@ -310,8 +320,16 @@ function App() {
           category={selectedCategory}
           onClose={() => setSelectedCategory(null)}
           onSinglePlayer={() => {
-            setIsHost(true)
-            setSinglePlayer(true)
+            const SoloComponent =
+              gameRegistry[selectedCategory]?.SoloComponent
+
+            if (SoloComponent) {
+              setSoloCategory(selectedCategory)
+              setSelectedCategory(null)
+            } else {
+              setIsHost(true)
+              setSinglePlayer(true)
+            }
           }}
           onCreateRoom={createRoom}
         />

@@ -1,4 +1,5 @@
 import type { ComponentType } from "react";
+import HistorySinglePlayer from "../pages/HistorySinglePlayer";
 import SinglePlayer from "../pages/SinglePlayer";
 
 export type SoloGameProps = {
@@ -17,7 +18,8 @@ export const gameRegistry: Record<string, GameConfig> = {
   },
 
   Istorija: {
-    description: "Įvykiai, datos ir istorinės asmenybės, prisidėkit patys",
+    description: "Išdėstyk istorinius įvykius chronologine tvarka",
+    SoloComponent: HistorySinglePlayer,
   },
 
   "Lietuvių kalba": {

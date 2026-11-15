@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using beveikZinojau.lt.Extensions;
 using beveikZinojau.lt.Services.Geography;
+using beveikZinojau.lt.Services.History;
 using beveikZinojau.lt.Services.Accentuation;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -76,6 +77,10 @@ builder.Services.AddScoped<GeoGameService>();
 
 builder.Services.AddSingleton<MathQuestionGenerator>();
 builder.Services.AddScoped<MathGameService>();
+
+builder.Services.AddSingleton<IHistoryRepository, JsonHistoryRepository>();
+builder.Services.AddSingleton<HistoryQuestionGenerator>();
+builder.Services.AddScoped<HistoryGameService>();
 
 // Accentuation services
 builder.Services.AddSingleton<ParserService>();

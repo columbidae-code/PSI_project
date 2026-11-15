@@ -535,6 +535,138 @@ tr:nth-child(odd) {
   font-size: 32px;
 }
 
+.history-setting {
+  width: min(100%, 360px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  color: var(--ferra);
+}
+
+.history-setting input,
+.history-setting select {
+  min-width: 180px;
+  padding: 8px;
+  border: 1px solid var(--bloom);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--dark-gray);
+}
+
+.history-setup-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.history-setup-buttons button,
+.history-game > button,
+.history-question > button,
+.history-result > button {
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--mulberry);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.history-setup-buttons button:disabled,
+.history-question button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.history-game {
+  min-height: 100vh;
+  padding: 32px 20px 56px;
+  background: var(--background);
+}
+
+.history-question,
+.history-result {
+  width: min(100%, 760px);
+  margin: 20px auto 0;
+  padding: 24px;
+  border: 2px solid var(--bloom);
+  border-radius: 15px;
+  background: var(--white);
+  text-align: center;
+}
+
+.history-question h2,
+.history-result h2 {
+  color: var(--ferra);
+}
+
+.history-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 24px 0;
+  list-style: none;
+}
+
+.history-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--bloom);
+  border-radius: 10px;
+  background: var(--background);
+  text-align: left;
+}
+
+.history-card-number {
+  color: var(--mulberry);
+  font-weight: bold;
+}
+
+.history-card-title {
+  flex: 1;
+}
+
+.history-card-date {
+  color: var(--ferra);
+  font-weight: bold;
+}
+
+.history-card-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.history-card-controls button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--bloom);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--ferra);
+  cursor: pointer;
+}
+
+.history-card-correct {
+  border-color: #3b8c5a;
+  background: #e9f5ed;
+}
+
+.history-card-wrong {
+  border-color: #bf567d;
+  background: #f9eaf0;
+}
+
+.history-error {
+  width: min(100%, 760px);
+  margin: 20px auto;
+  color: #a32626;
+  overflow-wrap: anywhere;
+}
+
 
 .room-code {
   width: 100%;

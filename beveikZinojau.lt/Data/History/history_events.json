@@ -1,0 +1,3017 @@
+[
+  {
+    "id": "sen-001",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Jericho įkūrimas",
+    "displayDate": "Apie 9000 m. pr. Kr.",
+    "year": -9000,
+    "exactDate": null
+  },
+  {
+    "id": "sen-002",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Ninevės įkūrimas",
+    "displayDate": "Apie 6000 m. pr. Kr.",
+    "year": -6000,
+    "exactDate": null
+  },
+  {
+    "id": "sen-003",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Eridu įkūrimas",
+    "displayDate": "Apie 5400 m. pr. Kr.",
+    "year": -5400,
+    "exactDate": null
+  },
+  {
+    "id": "sen-004",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Nippūro įkūrimas",
+    "displayDate": "Apie 5000 m. pr. Kr.",
+    "year": -5000,
+    "exactDate": null
+  },
+  {
+    "id": "sen-005",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Uruko įkūrimas",
+    "displayDate": "Apie 4300 m. pr. Kr.",
+    "year": -4300,
+    "exactDate": null
+  },
+  {
+    "id": "sen-006",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Ūro įkūrimas",
+    "displayDate": "Apie 3800 m. pr. Kr.",
+    "year": -3800,
+    "exactDate": null
+  },
+  {
+    "id": "sen-007",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Pirmojo rato išradimas",
+    "displayDate": "Apie 3500 m. pr. Kr.",
+    "year": -3500,
+    "exactDate": null
+  },
+  {
+    "id": "sen-008",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Piktografinio rašto atsiradimas",
+    "displayDate": "Apie 3300 m. pr. Kr.",
+    "year": -3300,
+    "exactDate": null
+  },
+  {
+    "id": "sen-009",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Egipto suvienijimas",
+    "displayDate": "Apie 3050 m. pr. Kr.",
+    "year": -3050,
+    "exactDate": null
+  },
+  {
+    "id": "sen-010",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Mino civilizacijos pradžia",
+    "displayDate": "3000 m. pr. Kr.",
+    "year": -3000,
+    "exactDate": null
+  },
+  {
+    "id": "sen-011",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Dantiraščio atsiradimas",
+    "displayDate": "Apie 2700 m. pr. Kr.",
+    "year": -2700,
+    "exactDate": null
+  },
+  {
+    "id": "sen-012",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Indo civilizacijos pradžia",
+    "displayDate": "Apie 2600 m. pr. Kr.",
+    "year": -2600,
+    "exactDate": null
+  },
+  {
+    "id": "sen-013",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Gizos piramidžių statyba",
+    "displayDate": "Apie 2500 m. pr. Kr.",
+    "year": -2500,
+    "exactDate": null
+  },
+  {
+    "id": "sen-014",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Pirmosios teisės reformos",
+    "displayDate": "Apie 2500 m. pr. Kr.",
+    "year": -2500,
+    "exactDate": null
+  },
+  {
+    "id": "sen-015",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Sargono Didžiojo valdymo laikotarpis",
+    "displayDate": "Apie 2300 m. pr. Kr.",
+    "year": -2300,
+    "exactDate": null
+  },
+  {
+    "id": "sen-016",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Akado žlugimas",
+    "displayDate": "Apie 2100 m. pr. Kr.",
+    "year": -2100,
+    "exactDate": null
+  },
+  {
+    "id": "sen-017",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Asirijos įkūrimas",
+    "displayDate": "2025 m. pr. Kr.",
+    "year": -2025,
+    "exactDate": null
+  },
+  {
+    "id": "sen-018",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Abraomo gyvenimas",
+    "displayDate": "Apie 1800 m. pr. Kr.",
+    "year": -1800,
+    "exactDate": null
+  },
+  {
+    "id": "sen-019",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Hamurabio kodeksas",
+    "displayDate": "1772 m. pr. Kr.",
+    "year": -1772,
+    "exactDate": null
+  },
+  {
+    "id": "sen-020",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Senovės Kinijos įkūrimas",
+    "displayDate": "1766 m. pr. Kr.",
+    "year": -1766,
+    "exactDate": null
+  },
+  {
+    "id": "sen-021",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Hititų imperijos iškilimas",
+    "displayDate": "Apie 1750 m. pr. Kr.",
+    "year": -1750,
+    "exactDate": null
+  },
+  {
+    "id": "sen-022",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Mikenų civilizacija",
+    "displayDate": "Apie 1600 m. pr. Kr.",
+    "year": -1600,
+    "exactDate": null
+  },
+  {
+    "id": "sen-023",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Senosios Babilonijos žlugimas",
+    "displayDate": "1595 m. pr. Kr.",
+    "year": -1595,
+    "exactDate": null
+  },
+  {
+    "id": "sen-024",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Arijų migracija į Indiją",
+    "displayDate": "Apie 1500 m. pr. Kr.",
+    "year": -1500,
+    "exactDate": null
+  },
+  {
+    "id": "sen-025",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Kadešo mūšis",
+    "displayDate": "1274 m. pr. Kr.",
+    "year": -1274,
+    "exactDate": null
+  },
+  {
+    "id": "sen-026",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Žydų išėjimas iš Egipto",
+    "displayDate": "1250 m. pr. Kr.",
+    "year": -1250,
+    "exactDate": null
+  },
+  {
+    "id": "sen-027",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Tukulti-Ninurtos I valdymo pabaiga",
+    "displayDate": "1207 m. pr. Kr.",
+    "year": -1207,
+    "exactDate": null
+  },
+  {
+    "id": "sen-028",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Trojos žlugimas",
+    "displayDate": "1184 m. pr. Kr.",
+    "year": -1184,
+    "exactDate": null
+  },
+  {
+    "id": "sen-029",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Izraelio suvienijimas",
+    "displayDate": "Apie 1030 m. pr. Kr.",
+    "year": -1030,
+    "exactDate": null
+  },
+  {
+    "id": "sen-030",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Dovydo Jeruzalės užkariavimas",
+    "displayDate": "Apie 1010 m. pr. Kr.",
+    "year": -1010,
+    "exactDate": null
+  },
+  {
+    "id": "sen-031",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Solomono valdymas",
+    "displayDate": "Apie 950 m. pr. Kr.",
+    "year": -950,
+    "exactDate": null
+  },
+  {
+    "id": "sen-032",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Adad-nirario II įžengimas į sostą",
+    "displayDate": "911 m. pr. Kr.",
+    "year": -911,
+    "exactDate": null
+  },
+  {
+    "id": "sen-033",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Pirmieji olimpiniai žaidimai",
+    "displayDate": "776 m. pr. Kr.",
+    "year": -776,
+    "exactDate": null
+  },
+  {
+    "id": "sen-034",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Romos įkūrimas",
+    "displayDate": "753 m. pr. Kr.",
+    "year": -753,
+    "exactDate": null
+  },
+  {
+    "id": "sen-035",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Sargonidų dinastijos įsteigimas",
+    "displayDate": "722 m. pr. Kr.",
+    "year": -722,
+    "exactDate": null
+  },
+  {
+    "id": "sen-036",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Ninevija tampa Asirijos sostine",
+    "displayDate": "705 m. pr. Kr.",
+    "year": -705,
+    "exactDate": null
+  },
+  {
+    "id": "sen-037",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Judėjos apgultis (Asirija)",
+    "displayDate": "701 m. pr. Kr.",
+    "year": -701,
+    "exactDate": null
+  },
+  {
+    "id": "sen-038",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Naujojo Babilono karalystės įkūrimas",
+    "displayDate": "626 m. pr. Kr.",
+    "year": -626,
+    "exactDate": null
+  },
+  {
+    "id": "sen-039",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Asirijos žlugimas",
+    "displayDate": "612 m. pr. Kr.",
+    "year": -612,
+    "exactDate": null
+  },
+  {
+    "id": "sen-040",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Kabančiųjų Babilono sodų sukūrimas",
+    "displayDate": "Apie 600 m. pr. Kr.",
+    "year": -600,
+    "exactDate": null
+  },
+  {
+    "id": "sen-041",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Žydų tremties pradžia",
+    "displayDate": "586 m. pr. Kr.",
+    "year": -586,
+    "exactDate": null
+  },
+  {
+    "id": "sen-042",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Sidhartos Gautamos (Budos) gimimas",
+    "displayDate": "Apie 563 m. pr. Kr.",
+    "year": -563,
+    "exactDate": null
+  },
+  {
+    "id": "sen-043",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Konfucijaus gimimas",
+    "displayDate": "Apie 551 m. pr. Kr.",
+    "year": -551,
+    "exactDate": null
+  },
+  {
+    "id": "sen-044",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Kyro Didžiojo Babilono užkariavimas",
+    "displayDate": "539 m. pr. Kr.",
+    "year": -539,
+    "exactDate": null
+  },
+  {
+    "id": "sen-045",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Žydų tremties pabaiga",
+    "displayDate": "538 m. pr. Kr.",
+    "year": -538,
+    "exactDate": null
+  },
+  {
+    "id": "sen-046",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Romos Monarchijos pabaiga",
+    "displayDate": "509 m. pr. Kr.",
+    "year": -509,
+    "exactDate": null
+  },
+  {
+    "id": "sen-047",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Kleisteno reformos Atėnuose",
+    "displayDate": "507 m. pr. Kr.",
+    "year": -507,
+    "exactDate": null
+  },
+  {
+    "id": "sen-048",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Maratono mūšis",
+    "displayDate": "490 m. pr. Kr.",
+    "year": -490,
+    "exactDate": null
+  },
+  {
+    "id": "sen-049",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Helenų sąjungos įsteigimas",
+    "displayDate": "481 m. pr. Kr.",
+    "year": -481,
+    "exactDate": null
+  },
+  {
+    "id": "sen-050",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Termopilų mūšis",
+    "displayDate": "480 m. pr. Kr.",
+    "year": -480,
+    "exactDate": null
+  },
+  {
+    "id": "sen-051",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Salaminos mūšis",
+    "displayDate": "480 m. pr. Kr.",
+    "year": -480,
+    "exactDate": null
+  },
+  {
+    "id": "sen-052",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Platėjos mūšis",
+    "displayDate": "479 m. pr. Kr.",
+    "year": -479,
+    "exactDate": null
+  },
+  {
+    "id": "sen-053",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Delo sąjungos įsteigimas",
+    "displayDate": "478 m. pr. Kr.",
+    "year": -478,
+    "exactDate": null
+  },
+  {
+    "id": "sen-054",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Dvylikos lentų įstatymai",
+    "displayDate": "450 m. pr. Kr.",
+    "year": -450,
+    "exactDate": null
+  },
+  {
+    "id": "sen-055",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Kallijo taika",
+    "displayDate": "449 m. pr. Kr.",
+    "year": -449,
+    "exactDate": null
+  },
+  {
+    "id": "sen-056",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Peloponeso karo pradžia",
+    "displayDate": "431 m. pr. Kr.",
+    "year": -431,
+    "exactDate": null
+  },
+  {
+    "id": "sen-057",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Herodoto \"Istorijos\" sukūrimas",
+    "displayDate": "Apie 430 m. pr. Kr.",
+    "year": -430,
+    "exactDate": null
+  },
+  {
+    "id": "sen-058",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Nikijos taika",
+    "displayDate": "421 m. pr. Kr.",
+    "year": -421,
+    "exactDate": null
+  },
+  {
+    "id": "sen-059",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Atėnų žygis į Siciliją",
+    "displayDate": "415 m. pr. Kr.",
+    "year": -415,
+    "exactDate": null
+  },
+  {
+    "id": "sen-060",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Sokrato mirtis",
+    "displayDate": "399 m. pr. Kr.",
+    "year": -399,
+    "exactDate": null
+  },
+  {
+    "id": "sen-061",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Cheronėjos mūšis",
+    "displayDate": "338 m. pr. Kr.",
+    "year": -338,
+    "exactDate": null
+  },
+  {
+    "id": "sen-062",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Aleksandro Didžiojo valdymo pradžia",
+    "displayDate": "336 m. pr. Kr.",
+    "year": -336,
+    "exactDate": null
+  },
+  {
+    "id": "sen-063",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Iso mūšis",
+    "displayDate": "333 m. pr. Kr.",
+    "year": -333,
+    "exactDate": null
+  },
+  {
+    "id": "sen-064",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Gaugamelos mūšis",
+    "displayDate": "331 m. pr. Kr.",
+    "year": -331,
+    "exactDate": null
+  },
+  {
+    "id": "sen-065",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Aleksandro Didžiojo mirtis",
+    "displayDate": "323 m. pr. Kr.",
+    "year": -323,
+    "exactDate": null
+  },
+  {
+    "id": "sen-066",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Ptolemajų dinastijos įsteigimas",
+    "displayDate": "305 m. pr. Kr.",
+    "year": -305,
+    "exactDate": null
+  },
+  {
+    "id": "sen-067",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Aleksandrijos bibliotekos įsteigimas",
+    "displayDate": "Apie 280 m. pr. Kr.",
+    "year": -280,
+    "exactDate": null
+  },
+  {
+    "id": "sen-068",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Pūnų karų pradžia",
+    "displayDate": "264 m. pr. Kr.",
+    "year": -264,
+    "exactDate": null
+  },
+  {
+    "id": "sen-069",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Kinijos suvienijimas",
+    "displayDate": "221 m. pr. Kr.",
+    "year": -221,
+    "exactDate": null
+  },
+  {
+    "id": "sen-070",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Hanibalas užima Saguntą",
+    "displayDate": "219 m. pr. Kr.",
+    "year": -219,
+    "exactDate": null
+  },
+  {
+    "id": "sen-071",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Pirmasis Makedonijos karas",
+    "displayDate": "214 m. pr. Kr.",
+    "year": -214,
+    "exactDate": null
+  },
+  {
+    "id": "sen-072",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "II Pūnų karo pabaiga",
+    "displayDate": "201 m. pr. Kr.",
+    "year": -201,
+    "exactDate": null
+  },
+  {
+    "id": "sen-073",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Ispanijos užkariavimas",
+    "displayDate": "197 m. pr. Kr.",
+    "year": -197,
+    "exactDate": null
+  },
+  {
+    "id": "sen-074",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Kartaginos žlugimas",
+    "displayDate": "146 m. pr. Kr.",
+    "year": -146,
+    "exactDate": null
+  },
+  {
+    "id": "sen-075",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Grakchų reformos",
+    "displayDate": "133 m. pr. Kr.",
+    "year": -133,
+    "exactDate": null
+  },
+  {
+    "id": "sen-076",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Spartako sukilimas",
+    "displayDate": "73 m. pr. Kr.",
+    "year": -73,
+    "exactDate": null
+  },
+  {
+    "id": "sen-077",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Pirmasis triumviratas",
+    "displayDate": "60 m. pr. Kr.",
+    "year": -60,
+    "exactDate": null
+  },
+  {
+    "id": "sen-078",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Juliaus Cezario nužudymas",
+    "displayDate": "44 m. pr. Kr.",
+    "year": -44,
+    "exactDate": null
+  },
+  {
+    "id": "sen-079",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Akcijaus mūšis",
+    "displayDate": "31 m. pr. Kr.",
+    "year": -31,
+    "exactDate": null
+  },
+  {
+    "id": "sen-080",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Romos Imperijos pradžia",
+    "displayDate": "27 m. pr. Kr.",
+    "year": -27,
+    "exactDate": null
+  },
+  {
+    "id": "sen-081",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Kristaus gimimas",
+    "displayDate": "Apie 6 m. pr. Kr.",
+    "year": -6,
+    "exactDate": null
+  },
+  {
+    "id": "sen-082",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Kristaus mirtis",
+    "displayDate": "27 m.",
+    "year": 27,
+    "exactDate": null
+  },
+  {
+    "id": "sen-083",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Didysis Romos gaisras",
+    "displayDate": "64 m.",
+    "year": 64,
+    "exactDate": null
+  },
+  {
+    "id": "sen-084",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Jėruzalės šventyklos sunaikinimas",
+    "displayDate": "70 m.",
+    "year": 70,
+    "exactDate": null
+  },
+  {
+    "id": "sen-085",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Vezuvijaus išsiveržimas",
+    "displayDate": "79 m.",
+    "year": 79,
+    "exactDate": null
+  },
+  {
+    "id": "sen-086",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Popieriaus išradimas",
+    "displayDate": "105 m.",
+    "year": 105,
+    "exactDate": null
+  },
+  {
+    "id": "sen-087",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Romos Imperijos didžiausias išsiplietimas",
+    "displayDate": "117 m.",
+    "year": 117,
+    "exactDate": null
+  },
+  {
+    "id": "sen-088",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Seismoskopo išradimas",
+    "displayDate": "132 m.",
+    "year": 132,
+    "exactDate": null
+  },
+  {
+    "id": "sen-089",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Constitutio Antoniniana",
+    "displayDate": "212 m.",
+    "year": 212,
+    "exactDate": null
+  },
+  {
+    "id": "sen-090",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Dominato pradžia",
+    "displayDate": "284 m.",
+    "year": 284,
+    "exactDate": null
+  },
+  {
+    "id": "sen-091",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Milano ediktas",
+    "displayDate": "313 m.",
+    "year": 313,
+    "exactDate": null
+  },
+  {
+    "id": "sen-092",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Nikėjos susirinkimas",
+    "displayDate": "325 m.",
+    "year": 325,
+    "exactDate": null
+  },
+  {
+    "id": "sen-093",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Krikščionybė tampa Romos Imperijos valstybine religija",
+    "displayDate": "380 m.",
+    "year": 380,
+    "exactDate": null
+  },
+  {
+    "id": "sen-094",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Pagoniškų religijų uždraudimas Romos Imperijoje",
+    "displayDate": "392 m.",
+    "year": 392,
+    "exactDate": null
+  },
+  {
+    "id": "sen-095",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Romos Imperijos padalijimas",
+    "displayDate": "395 m.",
+    "year": 395,
+    "exactDate": null
+  },
+  {
+    "id": "sen-096",
+    "scope": "Pasaulis",
+    "period": "Senovė",
+    "title": "Vakarų Imperijos žlugimas",
+    "displayDate": "476 m.",
+    "year": 476,
+    "exactDate": null
+  },
+  {
+    "id": "vid-001",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Frankų krikštas",
+    "displayDate": "496 m.",
+    "year": 496,
+    "exactDate": null
+  },
+  {
+    "id": "vid-002",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Įkuriamas benediktinų ordinas",
+    "displayDate": "529 m.",
+    "year": 529,
+    "exactDate": null
+  },
+  {
+    "id": "vid-003",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Justiniano Kodeksas",
+    "displayDate": "533 m.",
+    "year": 533,
+    "exactDate": null
+  },
+  {
+    "id": "vid-004",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Justiniano maras",
+    "displayDate": "541 m.",
+    "year": 541,
+    "exactDate": null
+  },
+  {
+    "id": "vid-005",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Mahometo Hidžra",
+    "displayDate": "622 m.",
+    "year": 622,
+    "exactDate": null
+  },
+  {
+    "id": "vid-006",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Mahometo mirtis",
+    "displayDate": "632 m.",
+    "year": 632,
+    "exactDate": null
+  },
+  {
+    "id": "vid-007",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Puatjė mūšis",
+    "displayDate": "732 m.",
+    "year": 732,
+    "exactDate": null
+  },
+  {
+    "id": "vid-008",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Įkuriama popiežiaus valstybė",
+    "displayDate": "754 m.",
+    "year": 754,
+    "exactDate": null
+  },
+  {
+    "id": "vid-009",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Karolio Didžiojo Longobardų sumušimas",
+    "displayDate": "773 m.",
+    "year": 773,
+    "exactDate": null
+  },
+  {
+    "id": "vid-010",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Karolio Didžiojo karūnavimas",
+    "displayDate": "800 m.",
+    "year": 800,
+    "exactDate": null
+  },
+  {
+    "id": "vid-011",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Moravijos krikštas",
+    "displayDate": "831 m.",
+    "year": 831,
+    "exactDate": null
+  },
+  {
+    "id": "vid-012",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Verdeno sutartis",
+    "displayDate": "843 m.",
+    "year": 843,
+    "exactDate": null
+  },
+  {
+    "id": "vid-013",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Šv. Kirilto ir Metodijaus misija į Moraviją",
+    "displayDate": "863 m.",
+    "year": 863,
+    "exactDate": null
+  },
+  {
+    "id": "vid-014",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Anglijos suvienijmas",
+    "displayDate": "927 m.",
+    "year": 927,
+    "exactDate": null
+  },
+  {
+    "id": "vid-015",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Įkuriama Šv. Romos Imperija",
+    "displayDate": "962 m.",
+    "year": 962,
+    "exactDate": null
+  },
+  {
+    "id": "vid-016",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Danijos krikštas",
+    "displayDate": "965 m.",
+    "year": 965,
+    "exactDate": null
+  },
+  {
+    "id": "vid-017",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Lenkijos krikštas",
+    "displayDate": "966 m.",
+    "year": 966,
+    "exactDate": null
+  },
+  {
+    "id": "vid-018",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Vengrų krikštas",
+    "displayDate": "974 m.",
+    "year": 974,
+    "exactDate": null
+  },
+  {
+    "id": "vid-019",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Karūnojamas pirmas Prancūzijos karalius",
+    "displayDate": "987 m.",
+    "year": 987,
+    "exactDate": null
+  },
+  {
+    "id": "vid-020",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Kijevo Rusios krikšts",
+    "displayDate": "988 m.",
+    "year": 988,
+    "exactDate": null
+  },
+  {
+    "id": "vid-021",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Islandijos krikštas",
+    "displayDate": "1000 m.",
+    "year": 1000,
+    "exactDate": null
+  },
+  {
+    "id": "vid-022",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Amerikos atradimas",
+    "displayDate": "1003 m.",
+    "year": 1003,
+    "exactDate": null
+  },
+  {
+    "id": "vid-023",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Švedijos krikštas",
+    "displayDate": "1008 m.",
+    "year": 1008,
+    "exactDate": null
+  },
+  {
+    "id": "vid-024",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Jaroslavo Išmintingojo valdymo pradžia",
+    "displayDate": "1019 m.",
+    "year": 1019,
+    "exactDate": null
+  },
+  {
+    "id": "vid-025",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Norvegijos krikštas",
+    "displayDate": "1024 m.",
+    "year": 1024,
+    "exactDate": null
+  },
+  {
+    "id": "vid-026",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Didžioji schizma",
+    "displayDate": "1054 m.",
+    "year": 1054,
+    "exactDate": null
+  },
+  {
+    "id": "vid-027",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Popiežių išrinkinėti galėjo tik kardinolai",
+    "displayDate": "1059 m.",
+    "year": 1059,
+    "exactDate": null
+  },
+  {
+    "id": "vid-028",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Heistingso mūšis",
+    "displayDate": "1066 m.",
+    "year": 1066,
+    "exactDate": null
+  },
+  {
+    "id": "vid-029",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Dictatus Papae",
+    "displayDate": "1075 m.",
+    "year": 1075,
+    "exactDate": null
+  },
+  {
+    "id": "vid-030",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Kovos dėl investitūros pradžia",
+    "displayDate": "1076 m.",
+    "year": 1076,
+    "exactDate": null
+  },
+  {
+    "id": "vid-031",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Bolonijos universiteto įkurimas",
+    "displayDate": "1088 m.",
+    "year": 1088,
+    "exactDate": null
+  },
+  {
+    "id": "vid-032",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Pirmojo kryžiaus žygio pradžia",
+    "displayDate": "1096 m.",
+    "year": 1096,
+    "exactDate": null
+  },
+  {
+    "id": "vid-033",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Jeruzalės užėmimas",
+    "displayDate": "1099 m.",
+    "year": 1099,
+    "exactDate": null
+  },
+  {
+    "id": "vid-034",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Tamplierių ordino įkurimas",
+    "displayDate": "1118 m.",
+    "year": 1118,
+    "exactDate": null
+  },
+  {
+    "id": "vid-035",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Vormso konkordatas",
+    "displayDate": "1122 m.",
+    "year": 1122,
+    "exactDate": null
+  },
+  {
+    "id": "vid-036",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Edesos praradimas",
+    "displayDate": "1144 m.",
+    "year": 1144,
+    "exactDate": null
+  },
+  {
+    "id": "vid-037",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Antro kryžiaus žygio pradžia",
+    "displayDate": "1147 m.",
+    "year": 1147,
+    "exactDate": null
+  },
+  {
+    "id": "vid-038",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Paryžiaus universiteto įkurimas",
+    "displayDate": "1150 m.",
+    "year": 1150,
+    "exactDate": null
+  },
+  {
+    "id": "vid-039",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Oksfordo universiteto įkurimas",
+    "displayDate": "1167 m.",
+    "year": 1167,
+    "exactDate": null
+  },
+  {
+    "id": "vid-040",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Baldvino IV Montgisardo mūšis",
+    "displayDate": "1177 m.",
+    "year": 1177,
+    "exactDate": null
+  },
+  {
+    "id": "vid-041",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Čingischano Mongolijos suvienijimas",
+    "displayDate": "Apie 1182 m.",
+    "year": 1182,
+    "exactDate": null
+  },
+  {
+    "id": "vid-042",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Inkvizicijos įsteigimas",
+    "displayDate": "1184 m.",
+    "year": 1184,
+    "exactDate": null
+  },
+  {
+    "id": "vid-043",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Jėruzalės žlugimas",
+    "displayDate": "1187 m.",
+    "year": 1187,
+    "exactDate": null
+  },
+  {
+    "id": "vid-044",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Kryžiuočių ordino įkurimas",
+    "displayDate": "1190 m.",
+    "year": 1190,
+    "exactDate": null
+  },
+  {
+    "id": "vid-045",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Taika su Saladinu",
+    "displayDate": "1192 m.",
+    "year": 1192,
+    "exactDate": null
+  },
+  {
+    "id": "vid-046",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Konstantinopolio apiplėšimas",
+    "displayDate": "1204 m.",
+    "year": 1204,
+    "exactDate": null
+  },
+  {
+    "id": "vid-047",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Pranciškonų ordino įsteigimas",
+    "displayDate": "1209 m.",
+    "year": 1209,
+    "exactDate": null
+  },
+  {
+    "id": "vid-048",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Vaikų žygis",
+    "displayDate": "1212 m.",
+    "year": 1212,
+    "exactDate": null
+  },
+  {
+    "id": "vid-049",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Didžioji Laisvių Chartija",
+    "displayDate": "1215 m.",
+    "year": 1215,
+    "exactDate": null
+  },
+  {
+    "id": "vid-050",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Šv. Tomo Akviniečio gimimas",
+    "displayDate": "1225 m.",
+    "year": 1225,
+    "exactDate": null
+  },
+  {
+    "id": "vid-051",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Jeruzalės grąžinimas",
+    "displayDate": "1229 m.",
+    "year": 1229,
+    "exactDate": null
+  },
+  {
+    "id": "vid-052",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Mongolų invazijos į Europą pradžia",
+    "displayDate": "1237 m.",
+    "year": 1237,
+    "exactDate": null
+  },
+  {
+    "id": "vid-053",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Pakartotinis Jeruzalės praradimas",
+    "displayDate": "1244 m.",
+    "year": 1244,
+    "exactDate": null
+  },
+  {
+    "id": "vid-054",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Liudviko IX paskiria inspektorius, kad šie ištirtų piktnaudžiavimą valdžia",
+    "displayDate": "1247 m.",
+    "year": 1247,
+    "exactDate": null
+  },
+  {
+    "id": "vid-055",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Griežtas elgesio kodas Liudviko IX valdininkams",
+    "displayDate": "1256 m.",
+    "year": 1256,
+    "exactDate": null
+  },
+  {
+    "id": "vid-056",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Teismo dvikovų panaikinimas Prancūzijoje",
+    "displayDate": "1258 m.",
+    "year": 1258,
+    "exactDate": null
+  },
+  {
+    "id": "vid-057",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Paryžiaus sutartis",
+    "displayDate": "1259 m.",
+    "year": 1259,
+    "exactDate": null
+  },
+  {
+    "id": "vid-058",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Lotynų Imperijos žlugimas",
+    "displayDate": "1261 m.",
+    "year": 1261,
+    "exactDate": null
+  },
+  {
+    "id": "vid-059",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Anglijos karalius pirmą kartą sušaukia parlamentą",
+    "displayDate": "1265 m.",
+    "year": 1265,
+    "exactDate": null
+  },
+  {
+    "id": "vid-060",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Paskutinio kryžiaus žygio pradžia",
+    "displayDate": "1270 m.",
+    "year": 1270,
+    "exactDate": null
+  },
+  {
+    "id": "vid-061",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Marko Polo kelionės į Kiniją pradžia",
+    "displayDate": "1271 m.",
+    "year": 1271,
+    "exactDate": null
+  },
+  {
+    "id": "vid-062",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Pirmieji akiniai",
+    "displayDate": "1285 m.",
+    "year": 1285,
+    "exactDate": null
+  },
+  {
+    "id": "vid-063",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Akros praradimas",
+    "displayDate": "1291 m.",
+    "year": 1291,
+    "exactDate": null
+  },
+  {
+    "id": "vid-064",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Pirmą kartą sušaukti Generaliniai Luomai",
+    "displayDate": "1302 m.",
+    "year": 1302,
+    "exactDate": null
+  },
+  {
+    "id": "vid-065",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Tamplierių ordino sudeginimas",
+    "displayDate": "1314 m.",
+    "year": 1314,
+    "exactDate": null
+  },
+  {
+    "id": "vid-066",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Šimtamečio karo pradžia",
+    "displayDate": "1337 m.",
+    "year": 1337,
+    "exactDate": null
+  },
+  {
+    "id": "vid-067",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Juodosios mirties protrūkis",
+    "displayDate": "1347 m.",
+    "year": 1347,
+    "exactDate": null
+  },
+  {
+    "id": "vid-068",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Didžiosios Vakarų Bažnyčios schizmos pradžia",
+    "displayDate": "1378 m.",
+    "year": 1378,
+    "exactDate": null
+  },
+  {
+    "id": "vid-069",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Konstanco susirinkimas",
+    "displayDate": "1414 m.",
+    "year": 1414,
+    "exactDate": null
+  },
+  {
+    "id": "vid-070",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Didžiosios Vakarų Bažnyčios schizmos pabaiga",
+    "displayDate": "1417 m.",
+    "year": 1417,
+    "exactDate": null
+  },
+  {
+    "id": "vid-071",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Jeanne d'Arc įsitraukimas į Orleano apsiaustį",
+    "displayDate": "1429 m.",
+    "year": 1429,
+    "exactDate": null
+  },
+  {
+    "id": "vid-072",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Florencijos susirinkimas",
+    "displayDate": "1439 m.",
+    "year": 1439,
+    "exactDate": null
+  },
+  {
+    "id": "vid-073",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Konstantinopolio žlugimas",
+    "displayDate": "1453 m.",
+    "year": 1453,
+    "exactDate": null
+  },
+  {
+    "id": "vid-074",
+    "scope": "Pasaulis",
+    "period": "Viduramžiai",
+    "title": "Rožių karų pradžia",
+    "displayDate": "1455 m.",
+    "year": 1455,
+    "exactDate": null
+  },
+  {
+    "id": "nau-001",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "\"Dieviškosios Komedijos\" išleidimas",
+    "displayDate": "1321 m.",
+    "year": 1321,
+    "exactDate": null
+  },
+  {
+    "id": "nau-002",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Išleistas Dekameronas",
+    "displayDate": "1353 m.",
+    "year": 1353,
+    "exactDate": null
+  },
+  {
+    "id": "nau-003",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Jono Huso sudeginimas",
+    "displayDate": "1414 m.",
+    "year": 1414,
+    "exactDate": null
+  },
+  {
+    "id": "nau-004",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Atspausdinta Gutenbergo Biblija",
+    "displayDate": "1455 m.",
+    "year": 1455,
+    "exactDate": null
+  },
+  {
+    "id": "nau-005",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Cape Verde atradimas",
+    "displayDate": "1488 m.",
+    "year": 1488,
+    "exactDate": null
+  },
+  {
+    "id": "nau-006",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Amerikos atradimas",
+    "displayDate": "1492 m.",
+    "year": 1492,
+    "exactDate": null
+  },
+  {
+    "id": "nau-007",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Tordesilijo sutartis",
+    "displayDate": "1494 m.",
+    "year": 1494,
+    "exactDate": null
+  },
+  {
+    "id": "nau-008",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Vasco da Gamos kelionės pradžia",
+    "displayDate": "1497 m.",
+    "year": 1497,
+    "exactDate": null
+  },
+  {
+    "id": "nau-009",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Leonardo da Vinci pabaigia Moną Lizą",
+    "displayDate": "1506 m.",
+    "year": 1506,
+    "exactDate": null
+  },
+  {
+    "id": "nau-010",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Pirmą kartą panaudotas Amerikos pavadinimas",
+    "displayDate": "1507 m.",
+    "year": 1507,
+    "exactDate": null
+  },
+  {
+    "id": "nau-011",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Pasirodo Erazmo Roterdamiečio \"Pagiriamasis žodis kvailybei\"",
+    "displayDate": "1509 m.",
+    "year": 1509,
+    "exactDate": null
+  },
+  {
+    "id": "nau-012",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Mikelandželas užbaigia Siksto koplyčios lubų freskas",
+    "displayDate": "1512 m.",
+    "year": 1512,
+    "exactDate": null
+  },
+  {
+    "id": "nau-013",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Nikolo Makiavelio \"Kunigaikštis\" sukūrimas",
+    "displayDate": "1513 m.",
+    "year": 1513,
+    "exactDate": null
+  },
+  {
+    "id": "nau-014",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Rafaelis užbaigia Siksto Madoną",
+    "displayDate": "1514 m.",
+    "year": 1514,
+    "exactDate": null
+  },
+  {
+    "id": "nau-015",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Popiežius garantuoja Prancūzijos karaliui Prancūzijos bažnyčios kontrolę",
+    "displayDate": "1515 m.",
+    "year": 1515,
+    "exactDate": null
+  },
+  {
+    "id": "nau-016",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Liuterio 95 tezės",
+    "displayDate": "1517 m.",
+    "year": 1517,
+    "exactDate": null
+  },
+  {
+    "id": "nau-017",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Tomo Moro \"Utopijos\" išleidimas",
+    "displayDate": "1518 m.",
+    "year": 1518,
+    "exactDate": null
+  },
+  {
+    "id": "nau-018",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Hernano Korteso Meksikos užkariavimas",
+    "displayDate": "1519 m.",
+    "year": 1519,
+    "exactDate": null
+  },
+  {
+    "id": "nau-019",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Ferdinando Magelano kelionės aplink pasaulį pabaiga",
+    "displayDate": "1521 m.",
+    "year": 1521,
+    "exactDate": null
+  },
+  {
+    "id": "nau-020",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Tomo Miuncerio: valstiečių sukilimas",
+    "displayDate": "1524 m.",
+    "year": 1524,
+    "exactDate": null
+  },
+  {
+    "id": "nau-021",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Liuteronų katekizmas",
+    "displayDate": "1526 m.",
+    "year": 1526,
+    "exactDate": null
+  },
+  {
+    "id": "nau-022",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Saragosos sutartis",
+    "displayDate": "1529 m.",
+    "year": 1529,
+    "exactDate": null
+  },
+  {
+    "id": "nau-023",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Šmalkaldeno sąjunga",
+    "displayDate": "1531 m.",
+    "year": 1531,
+    "exactDate": null
+  },
+  {
+    "id": "nau-024",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Inkų užkariavimas",
+    "displayDate": "1533 m.",
+    "year": 1533,
+    "exactDate": null
+  },
+  {
+    "id": "nau-025",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Anglikonų bažnyčios įsteigimas",
+    "displayDate": "1534 m.",
+    "year": 1534,
+    "exactDate": null
+  },
+  {
+    "id": "nau-026",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Tomo Moro mirties bausmė",
+    "displayDate": "1535 m.",
+    "year": 1535,
+    "exactDate": null
+  },
+  {
+    "id": "nau-027",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Išleisti Kalvino „Krikščioniškosios religijos pamokymai“",
+    "displayDate": "1536 m.",
+    "year": 1536,
+    "exactDate": null
+  },
+  {
+    "id": "nau-028",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Kalvino katekizmas",
+    "displayDate": "1542 m.",
+    "year": 1542,
+    "exactDate": null
+  },
+  {
+    "id": "nau-029",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Išleidžiamas Mikalojaus Koperniko „Apie dangaus sferų sukimąsi“",
+    "displayDate": "1543 m.",
+    "year": 1543,
+    "exactDate": null
+  },
+  {
+    "id": "nau-030",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Augsburgo taika",
+    "displayDate": "1555 m.",
+    "year": 1555,
+    "exactDate": null
+  },
+  {
+    "id": "nau-031",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Elžbietos I karūnavimas",
+    "displayDate": "1558 m.",
+    "year": 1558,
+    "exactDate": null
+  },
+  {
+    "id": "nau-032",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Uždraustų knygų indeksas",
+    "displayDate": "1559 m.",
+    "year": 1559,
+    "exactDate": null
+  },
+  {
+    "id": "nau-033",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Tridento susirinkimo pabaiga",
+    "displayDate": "1563 m.",
+    "year": 1563,
+    "exactDate": null
+  },
+  {
+    "id": "nau-034",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Lepanto mūšis",
+    "displayDate": "1571 m.",
+    "year": 1571,
+    "exactDate": null
+  },
+  {
+    "id": "nau-035",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Šv. Baltramiejaus naktis",
+    "displayDate": "1572 m.",
+    "year": 1572,
+    "exactDate": null
+  },
+  {
+    "id": "nau-036",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Jean Bodin \"Šešios knygos apie respubliką\"",
+    "displayDate": "1576 m.",
+    "year": 1576,
+    "exactDate": null
+  },
+  {
+    "id": "nau-037",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Antra kelionė aplink pasaulį",
+    "displayDate": "1577 m.",
+    "year": 1577,
+    "exactDate": null
+  },
+  {
+    "id": "nau-038",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Pirmoji Anglijos kolonija Šiaurės Amerikoje",
+    "displayDate": "1584 m.",
+    "year": 1584,
+    "exactDate": null
+  },
+  {
+    "id": "nau-039",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Ispanų Armados sutriuškinimas",
+    "displayDate": "1588 m.",
+    "year": 1588,
+    "exactDate": null
+  },
+  {
+    "id": "nau-040",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Mikroskopo išradimas",
+    "displayDate": "1590 m.",
+    "year": 1590,
+    "exactDate": null
+  },
+  {
+    "id": "nau-041",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Henriko IV Nanto Ediktas",
+    "displayDate": "1598 m.",
+    "year": 1598,
+    "exactDate": null
+  },
+  {
+    "id": "nau-042",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Įsteigiama Britų Rytų Indijos Kompanija",
+    "displayDate": "1600 m.",
+    "year": 1600,
+    "exactDate": null
+  },
+  {
+    "id": "nau-043",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Išeina Šekspyro \"Hamletas\"",
+    "displayDate": "1602 m.",
+    "year": 1602,
+    "exactDate": null
+  },
+  {
+    "id": "nau-044",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Mikroskopo išradimas",
+    "displayDate": "1609 m.",
+    "year": 1609,
+    "exactDate": null
+  },
+  {
+    "id": "nau-045",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Trisdešimtmečio karo pradžia",
+    "displayDate": "1618 m.",
+    "year": 1618,
+    "exactDate": null
+  },
+  {
+    "id": "nau-046",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Francis Bacon \"Novum Organum\"",
+    "displayDate": "1620 m.",
+    "year": 1620,
+    "exactDate": null
+  },
+  {
+    "id": "nau-047",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Armanas Žanas de Rišeljė tampa premjeru",
+    "displayDate": "1624 m.",
+    "year": 1624,
+    "exactDate": null
+  },
+  {
+    "id": "nau-048",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Karolis I Stuartas paleidžia parlamentą",
+    "displayDate": "1629 m.",
+    "year": 1629,
+    "exactDate": null
+  },
+  {
+    "id": "nau-049",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Dekarto \"Cogito ergo sum\"",
+    "displayDate": "1637 m.",
+    "year": 1637,
+    "exactDate": null
+  },
+  {
+    "id": "nau-050",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Mechaninis skaičiuotuvas",
+    "displayDate": "1642 m.",
+    "year": 1642,
+    "exactDate": null
+  },
+  {
+    "id": "nau-051",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Barometro išradimas",
+    "displayDate": "1643 m.",
+    "year": 1643,
+    "exactDate": null
+  },
+  {
+    "id": "nau-052",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Vestfalijos taika",
+    "displayDate": "1648 m.",
+    "year": 1648,
+    "exactDate": null
+  },
+  {
+    "id": "nau-053",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Mirties bausmė Karoliui I",
+    "displayDate": "1649 m.",
+    "year": 1649,
+    "exactDate": null
+  },
+  {
+    "id": "nau-054",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Tomo Hobso \"Leviatanas\"",
+    "displayDate": "1651 m.",
+    "year": 1651,
+    "exactDate": null
+  },
+  {
+    "id": "nau-055",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Tikimybės teorijos pradmenys",
+    "displayDate": "1654 m.",
+    "year": 1654,
+    "exactDate": null
+  },
+  {
+    "id": "nau-056",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Švytuoklinio laikrodžio išradimas",
+    "displayDate": "1657 m.",
+    "year": 1657,
+    "exactDate": null
+  },
+  {
+    "id": "nau-057",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Kromvelio mirtis",
+    "displayDate": "1658 m.",
+    "year": 1658,
+    "exactDate": null
+  },
+  {
+    "id": "nau-058",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Viešojo transporto įgyvendinimas",
+    "displayDate": "1662 m.",
+    "year": 1662,
+    "exactDate": null
+  },
+  {
+    "id": "nau-059",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Integralinio skaičiavimo atradimas",
+    "displayDate": "1665 m.",
+    "year": 1665,
+    "exactDate": null
+  },
+  {
+    "id": "nau-060",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Blaise Pascal \"Mintys\"",
+    "displayDate": "1670 m.",
+    "year": 1670,
+    "exactDate": null
+  },
+  {
+    "id": "nau-061",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Karolius II Stuartas pasirašo Habeas Corpus Act kuris garantuoja piliečių neliečiamybę",
+    "displayDate": "1679 m.",
+    "year": 1679,
+    "exactDate": null
+  },
+  {
+    "id": "nau-062",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Galikonybės (valdovo viršenybės prieš popiežių) įtvirtinimas",
+    "displayDate": "1682 m.",
+    "year": 1682,
+    "exactDate": null
+  },
+  {
+    "id": "nau-063",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Liudviko XIV Fonteblo ediktas",
+    "displayDate": "1685 m.",
+    "year": 1685,
+    "exactDate": null
+  },
+  {
+    "id": "nau-064",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "\"Šlovingoji\" Revoliucija",
+    "displayDate": "1688 m.",
+    "year": 1688,
+    "exactDate": null
+  },
+  {
+    "id": "nau-065",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Teisių Deklaracija (Bill of Rights) Anglijoje, parlamentas aukščiau už karalių",
+    "displayDate": "1689 m.",
+    "year": 1689,
+    "exactDate": null
+  },
+  {
+    "id": "nau-066",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Džono Loko \"Esė apie žmogaus intelektą\"",
+    "displayDate": "1690 m.",
+    "year": 1690,
+    "exactDate": null
+  },
+  {
+    "id": "nau-067",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Petras I keliauja po Europą pirmą kartą",
+    "displayDate": "1697 m.",
+    "year": 1697,
+    "exactDate": null
+  },
+  {
+    "id": "nau-068",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Garinės pompos išradimas",
+    "displayDate": "1698 m.",
+    "year": 1698,
+    "exactDate": null
+  },
+  {
+    "id": "nau-069",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Frydrichas II karūnuojamas Prūsijos karaliumi",
+    "displayDate": "1701 m.",
+    "year": 1701,
+    "exactDate": null
+  },
+  {
+    "id": "nau-070",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Pirmas garinis variklis",
+    "displayDate": "1705 m.",
+    "year": 1705,
+    "exactDate": null
+  },
+  {
+    "id": "nau-071",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Poltavos mūšis",
+    "displayDate": "1709 m.",
+    "year": 1709,
+    "exactDate": null
+  },
+  {
+    "id": "nau-072",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Rusijos sostinė perkeliama į Peterburgą",
+    "displayDate": "1712 m.",
+    "year": 1712,
+    "exactDate": null
+  },
+  {
+    "id": "nau-073",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Liudviko XIV mirtis",
+    "displayDate": "1715 m.",
+    "year": 1715,
+    "exactDate": null
+  },
+  {
+    "id": "nau-074",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Didžiojo Šiaurės Karo pabaiga",
+    "displayDate": "1721 m.",
+    "year": 1721,
+    "exactDate": null
+  },
+  {
+    "id": "nau-075",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Rusų mokslų akademijos įsteigimas",
+    "displayDate": "1724 m.",
+    "year": 1724,
+    "exactDate": null
+  },
+  {
+    "id": "nau-076",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Aliaskos atradimas",
+    "displayDate": "1741 m.",
+    "year": 1741,
+    "exactDate": null
+  },
+  {
+    "id": "nau-077",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Celsijaus termometro išradimas",
+    "displayDate": "1742 m.",
+    "year": 1742,
+    "exactDate": null
+  },
+  {
+    "id": "nau-078",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Monteskjė „Apie įstatymų dvasią“",
+    "displayDate": "1748 m.",
+    "year": 1748,
+    "exactDate": null
+  },
+  {
+    "id": "nau-079",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Volterio \"Kandidas\"",
+    "displayDate": "1759 m.",
+    "year": 1759,
+    "exactDate": null
+  },
+  {
+    "id": "nau-080",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Žano Žako Ruso \"Socialinis Kontraktas\"",
+    "displayDate": "1762 m.",
+    "year": 1762,
+    "exactDate": null
+  },
+  {
+    "id": "nau-081",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Septynmečio karo pabaiga",
+    "displayDate": "1763 m.",
+    "year": 1763,
+    "exactDate": null
+  },
+  {
+    "id": "nau-082",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Džeimso Vato garo mašina",
+    "displayDate": "1765 m.",
+    "year": 1765,
+    "exactDate": null
+  },
+  {
+    "id": "nau-083",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Pirmoji verpimo staklė",
+    "displayDate": "1767 m.",
+    "year": 1767,
+    "exactDate": null
+  },
+  {
+    "id": "nau-084",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Liudviko XVI ir Marijos Antuanetės santuoka",
+    "displayDate": "1770 m.",
+    "year": 1770,
+    "exactDate": null
+  },
+  {
+    "id": "nau-085",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Australijos atradimas",
+    "displayDate": "1771 m.",
+    "year": 1771,
+    "exactDate": null
+  },
+  {
+    "id": "nau-086",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Bostono arbatėlė",
+    "displayDate": "1773 m.",
+    "year": 1773,
+    "exactDate": null
+  },
+  {
+    "id": "nau-087",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Leksingtono mūšis",
+    "displayDate": "1775 m.",
+    "year": 1775,
+    "exactDate": null
+  },
+  {
+    "id": "nau-088",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Jungtinių Valstijų nepriklausomybės deklaracija",
+    "displayDate": "1776 m.",
+    "year": 1776,
+    "exactDate": null
+  },
+  {
+    "id": "nau-089",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Saratogos mūšis",
+    "displayDate": "1777 m.",
+    "year": 1777,
+    "exactDate": null
+  },
+  {
+    "id": "nau-090",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Prancūzijos ir JAV sąjunga",
+    "displayDate": "1778 m.",
+    "year": 1778,
+    "exactDate": null
+  },
+  {
+    "id": "nau-091",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Savanos mūšis",
+    "displayDate": "1779 m.",
+    "year": 1779,
+    "exactDate": null
+  },
+  {
+    "id": "nau-092",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Yorktown mūšis",
+    "displayDate": "1781 m.",
+    "year": 1781,
+    "exactDate": null
+  },
+  {
+    "id": "nau-093",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Nepriklausomybės karo pabaiga",
+    "displayDate": "1783 m.",
+    "year": 1783,
+    "exactDate": null
+  },
+  {
+    "id": "nau-094",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Pirmasis verpimo fabrikas",
+    "displayDate": "1784 m.",
+    "year": 1784,
+    "exactDate": null
+  },
+  {
+    "id": "nau-095",
+    "scope": "Pasaulis",
+    "period": "Naujieji amžiai",
+    "title": "Pirmoji pasaulio konstitucija",
+    "displayDate": "1787 m.",
+    "year": 1787,
+    "exactDate": null
+  },
+  {
+    "id": "mod-001",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Liudvikas XVI kviečia Generalinius Luomus",
+    "displayDate": "1789-05-05",
+    "year": 1789,
+    "exactDate": "1789-05-05"
+  },
+  {
+    "id": "mod-002",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Didžioji Prancūzijos Revoliucija",
+    "displayDate": "1789-07-14",
+    "year": 1789,
+    "exactDate": "1789-07-14"
+  },
+  {
+    "id": "mod-003",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Žmogaus Teisių Deklaracija",
+    "displayDate": "1789-08-26",
+    "year": 1789,
+    "exactDate": "1789-08-26"
+  },
+  {
+    "id": "mod-004",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Liudviko XVI pabėgimas",
+    "displayDate": "1791-06-21",
+    "year": 1791,
+    "exactDate": "1791-06-21"
+  },
+  {
+    "id": "mod-005",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Pirmoji Prancūzijos konstitucija",
+    "displayDate": "1791-09-03",
+    "year": 1791,
+    "exactDate": "1791-09-03"
+  },
+  {
+    "id": "mod-006",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Karas su Austrija ir Prūsija",
+    "displayDate": "1792-04-20",
+    "year": 1792,
+    "exactDate": "1792-04-20"
+  },
+  {
+    "id": "mod-007",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Liudviko XVI įkalinimas",
+    "displayDate": "1792-08-10",
+    "year": 1792,
+    "exactDate": "1792-08-10"
+  },
+  {
+    "id": "mod-008",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Prancūzijos respublikos steigimas",
+    "displayDate": "1792-09-22",
+    "year": 1792,
+    "exactDate": "1792-09-22"
+  },
+  {
+    "id": "mod-009",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Liudviko XVI proceso pradžia",
+    "displayDate": "1793-01-11",
+    "year": 1793,
+    "exactDate": "1793-01-11"
+  },
+  {
+    "id": "mod-010",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Liudviko XVI mirtis",
+    "displayDate": "1793-01-21",
+    "year": 1793,
+    "exactDate": "1793-01-21"
+  },
+  {
+    "id": "mod-011",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Rojalistų sukilimo pradžia",
+    "displayDate": "1793-03-03",
+    "year": 1793,
+    "exactDate": "1793-03-03"
+  },
+  {
+    "id": "mod-012",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Antroji konstitucija",
+    "displayDate": "1793-06-24",
+    "year": 1793,
+    "exactDate": "1793-06-24"
+  },
+  {
+    "id": "mod-013",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Didžiojo teroro pradžia",
+    "displayDate": "1793-09-05",
+    "year": 1793,
+    "exactDate": "1793-09-05"
+  },
+  {
+    "id": "mod-014",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Termidoro perversmas",
+    "displayDate": "1794-07-27",
+    "year": 1794,
+    "exactDate": "1794-07-27"
+  },
+  {
+    "id": "mod-015",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "III Prancūzijos konstitucija",
+    "displayDate": "1795-08-22",
+    "year": 1795,
+    "exactDate": "1795-08-22"
+  },
+  {
+    "id": "mod-016",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Campo Formio taika",
+    "displayDate": "1797-10-17",
+    "year": 1797,
+    "exactDate": "1797-10-17"
+  },
+  {
+    "id": "mod-017",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Įsteigtas Nacionalinis Prancūzijos bankas",
+    "displayDate": "1797-10-17",
+    "year": 1797,
+    "exactDate": "1797-10-17"
+  },
+  {
+    "id": "mod-018",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Napoleono perversmas",
+    "displayDate": "1799-11-09",
+    "year": 1799,
+    "exactDate": "1799-11-09"
+  },
+  {
+    "id": "mod-019",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Napoleonas pasirašė konkordatą su popiežiumi",
+    "displayDate": "1801-07-15",
+    "year": 1801,
+    "exactDate": "1801-07-15"
+  },
+  {
+    "id": "mod-020",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Napoleonas tampa konsulu visam gyvenimui",
+    "displayDate": "1802-08-02",
+    "year": 1802,
+    "exactDate": "1802-08-02"
+  },
+  {
+    "id": "mod-021",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Luizianos perpirkimas",
+    "displayDate": "1803-04-30",
+    "year": 1803,
+    "exactDate": "1803-04-30"
+  },
+  {
+    "id": "mod-022",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Napoleono kodeksas",
+    "displayDate": "1804-03-21",
+    "year": 1804,
+    "exactDate": "1804-03-21"
+  },
+  {
+    "id": "mod-023",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Austerlitz mūšis",
+    "displayDate": "1805-12-02",
+    "year": 1805,
+    "exactDate": "1805-12-02"
+  },
+  {
+    "id": "mod-024",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Šventosios Romos Imperijos panaikinimas",
+    "displayDate": "1806-08-06",
+    "year": 1806,
+    "exactDate": "1806-08-06"
+  },
+  {
+    "id": "mod-025",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Tilžės taika",
+    "displayDate": "1807-07-09",
+    "year": 1807,
+    "exactDate": "1807-07-09"
+  },
+  {
+    "id": "mod-026",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Somosieros mūšis",
+    "displayDate": "1808-11-30",
+    "year": 1808,
+    "exactDate": "1808-11-30"
+  },
+  {
+    "id": "mod-027",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Borodino mūšis",
+    "displayDate": "1812-09-07",
+    "year": 1812,
+    "exactDate": "1812-09-07"
+  },
+  {
+    "id": "mod-028",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Leipcigo mūšis",
+    "displayDate": "1813-10-16",
+    "year": 1813,
+    "exactDate": "1813-10-16"
+  },
+  {
+    "id": "mod-029",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Napoleono abdikacija",
+    "displayDate": "1814-04-06",
+    "year": 1814,
+    "exactDate": "1814-04-06"
+  },
+  {
+    "id": "mod-030",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Vienos kongreso pradžia",
+    "displayDate": "1814-09-18",
+    "year": 1814,
+    "exactDate": "1814-09-18"
+  },
+  {
+    "id": "mod-031",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Vienos kongreso pabaiga",
+    "displayDate": "1815-06-09",
+    "year": 1815,
+    "exactDate": "1815-06-09"
+  },
+  {
+    "id": "mod-032",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "JAV nuperka Floridą iš Ispanijos",
+    "displayDate": "1819-02-22",
+    "year": 1819,
+    "exactDate": "1819-02-22"
+  },
+  {
+    "id": "mod-033",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Napoleono mirtis",
+    "displayDate": "1821-05-05",
+    "year": 1821,
+    "exactDate": "1821-05-05"
+  },
+  {
+    "id": "mod-034",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Graikijos nepriklausomybės proklamacija",
+    "displayDate": "1822-01-15",
+    "year": 1822,
+    "exactDate": "1822-01-15"
+  },
+  {
+    "id": "mod-035",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Monro doktrinos galiojimo pradžia",
+    "displayDate": "1823-12-02",
+    "year": 1823,
+    "exactDate": "1823-12-02"
+  },
+  {
+    "id": "mod-036",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Dekabristų sukilimas",
+    "displayDate": "1825-12-26",
+    "year": 1825,
+    "exactDate": "1825-12-26"
+  },
+  {
+    "id": "mod-037",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Adrianopolio taika",
+    "displayDate": "1829-09-14",
+    "year": 1829,
+    "exactDate": "1829-09-14"
+  },
+  {
+    "id": "mod-038",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Liepos revoliucija",
+    "displayDate": "1830-07-27",
+    "year": 1830,
+    "exactDate": "1830-07-27"
+  },
+  {
+    "id": "mod-039",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Viktorijos I karūnavimas",
+    "displayDate": "1838-06-28",
+    "year": 1838,
+    "exactDate": "1838-06-28"
+  },
+  {
+    "id": "mod-040",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Didžiojo Airijos bado pradžia",
+    "displayDate": "1845-09-09",
+    "year": 1845,
+    "exactDate": "1845-09-09"
+  },
+  {
+    "id": "mod-041",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "JAV karo su Meksika pradžia",
+    "displayDate": "1846-04-25",
+    "year": 1846,
+    "exactDate": "1846-04-25"
+  },
+  {
+    "id": "mod-042",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Tautų pavasaris",
+    "displayDate": "1848 m.",
+    "year": 1848,
+    "exactDate": null
+  },
+  {
+    "id": "mod-043",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Napoleono III perversmas",
+    "displayDate": "1851-12-02",
+    "year": 1851,
+    "exactDate": "1851-12-02"
+  },
+  {
+    "id": "mod-044",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Napoleonas III tampa imperatoriumi",
+    "displayDate": "1852-12-02",
+    "year": 1852,
+    "exactDate": "1852-12-02"
+  },
+  {
+    "id": "mod-045",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Krymo karo pradža",
+    "displayDate": "1853-10-04",
+    "year": 1853,
+    "exactDate": "1853-10-04"
+  },
+  {
+    "id": "mod-046",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Sevastopolio apgultis",
+    "displayDate": "1854-10-17",
+    "year": 1854,
+    "exactDate": "1854-10-17"
+  },
+  {
+    "id": "mod-047",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Nikolajaus I mirtis",
+    "displayDate": "1855-03-02",
+    "year": 1855,
+    "exactDate": "1855-03-02"
+  },
+  {
+    "id": "mod-048",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Wilhelmo I valdymo pradžia",
+    "displayDate": "1858-10-07",
+    "year": 1858,
+    "exactDate": "1858-10-07"
+  },
+  {
+    "id": "mod-049",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Italijos karo su Austrija pradžia",
+    "displayDate": "1859-04-26",
+    "year": 1859,
+    "exactDate": "1859-04-26"
+  },
+  {
+    "id": "mod-050",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Sukilimo Sicilijoje pradžia",
+    "displayDate": "1860-05-11",
+    "year": 1860,
+    "exactDate": "1860-05-11"
+  },
+  {
+    "id": "mod-051",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "JAV pilietinio karo pradžia",
+    "displayDate": "1861-04-12",
+    "year": 1861,
+    "exactDate": "1861-04-12"
+  },
+  {
+    "id": "mod-052",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Vokietijos karo su Danija pradžia",
+    "displayDate": "1864-02-01",
+    "year": 1864,
+    "exactDate": "1864-02-01"
+  },
+  {
+    "id": "mod-053",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Vokietijos karo su Austrija pradžia",
+    "displayDate": "1866-06-14",
+    "year": 1866,
+    "exactDate": "1866-06-14"
+  },
+  {
+    "id": "mod-054",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Austrų-Vengrijos Imperijos steigimas",
+    "displayDate": "1867-03-30",
+    "year": 1867,
+    "exactDate": "1867-03-30"
+  },
+  {
+    "id": "mod-055",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Imperatorius Mutsuhito perima valdžią Japonijoje",
+    "displayDate": "1868-01-03",
+    "year": 1868,
+    "exactDate": "1868-01-03"
+  },
+  {
+    "id": "mod-056",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Sueco kanalo atidarymas",
+    "displayDate": "1869-11-17",
+    "year": 1869,
+    "exactDate": "1869-11-17"
+  },
+  {
+    "id": "mod-057",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Romos užėmimas Italų kariuomene",
+    "displayDate": "1870-09-20",
+    "year": 1870,
+    "exactDate": "1870-09-20"
+  },
+  {
+    "id": "mod-058",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Vokietijos suvienijimas",
+    "displayDate": "1871-01-18",
+    "year": 1871,
+    "exactDate": "1871-01-18"
+  },
+  {
+    "id": "mod-059",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Pirmas degalinis variklis",
+    "displayDate": "1886-01-29",
+    "year": 1886,
+    "exactDate": "1886-01-29"
+  },
+  {
+    "id": "mod-060",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Japonų konstitucija",
+    "displayDate": "1889-02-11",
+    "year": 1889,
+    "exactDate": "1889-02-11"
+  },
+  {
+    "id": "mod-061",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Naujoji Zelandija pripažįsta moterų teisės",
+    "displayDate": "1893-09-19",
+    "year": 1893,
+    "exactDate": "1893-09-19"
+  },
+  {
+    "id": "mod-062",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Japonijos karo su Kinija pradžia",
+    "displayDate": "1894-08-01",
+    "year": 1894,
+    "exactDate": "1894-08-01"
+  },
+  {
+    "id": "mod-063",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Ispanų-JAV karo pradžia",
+    "displayDate": "1898-04-21",
+    "year": 1898,
+    "exactDate": "1898-04-21"
+  },
+  {
+    "id": "mod-064",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Pirmas lėktuvas",
+    "displayDate": "1903-12-17",
+    "year": 1903,
+    "exactDate": "1903-12-17"
+  },
+  {
+    "id": "mod-065",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Rusijos karo su Japonija pradžia",
+    "displayDate": "1904-02-08",
+    "year": 1904,
+    "exactDate": "1904-02-08"
+  },
+  {
+    "id": "mod-066",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Revoliucija Rusijoje",
+    "displayDate": "1905-01-22",
+    "year": 1905,
+    "exactDate": "1905-01-22"
+  },
+  {
+    "id": "mod-067",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Revoliucijos Kinijoje pradžia",
+    "displayDate": "1911-10-10",
+    "year": 1911,
+    "exactDate": "1911-10-10"
+  },
+  {
+    "id": "mod-068",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Kinijos respublikos įkūrimas",
+    "displayDate": "1912-01-01",
+    "year": 1912,
+    "exactDate": "1912-01-01"
+  },
+  {
+    "id": "mod-069",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "I Pasaulinio karo pradžia",
+    "displayDate": "1914-07-28",
+    "year": 1914,
+    "exactDate": "1914-07-28"
+  },
+  {
+    "id": "mod-070",
+    "scope": "Pasaulis",
+    "period": "Modernybė",
+    "title": "Spalio revoliucija",
+    "displayDate": "1917-11-07",
+    "year": 1917,
+    "exactDate": "1917-11-07"
+  }
+]
