@@ -1,0 +1,1302 @@
+{
+  "0": {
+    "wrd": "abipusiškas",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "abipùsiškas": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "1": {
+    "wrd": "abitūra",
+    "exp": [
+      ""
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "abitūrà": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "2": {
+    "wrd": "adventas",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "adveñtas": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "3": {
+    "wrd": "afektas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "afèktas": {
+        "pos": 2,
+        "act": "LEFT"
+      }
+    }
+  },
+  "4": {
+    "wrd": "afera",
+    "exp": [
+      ""
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "aferà": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "5": {
+    "wrd": "agentūra",
+    "exp": [
+      ""
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "agentūrà": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "6": {
+    "wrd": "agresyvus",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "agresyvùs": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "7": {
+    "wrd": "aimana",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "áimana": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "8": {
+    "wrd": "aiškus",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "áiškus": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "9": {
+    "wrd": "akcentas",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "akceñtas": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "10": {
+    "wrd": "aksioma",
+    "exp": [
+      ""
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "aksiomà": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "11": {
+    "wrd": "akvalangininkas",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "akvalángininkas": {
+        "pos": 5,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "12": {
+    "wrd": "automobilis",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "automobìlis": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "13": {
+    "wrd": "autobusas",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "autobùsas": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "14": {
+    "wrd": "alternatyvus",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "alternatyvùs": {
+        "pos": 10,
+        "act": "LEFT"
+      }
+    }
+  },
+  "15": {
+    "wrd": "amperas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "ampèras": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "16": {
+    "wrd": "anketa",
+    "exp": [
+      ""
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "anketà": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "17": {
+    "wrd": "antitezė",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "antitèzė": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "18": {
+    "wrd": "antklodė",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "añtklodė": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "19": {
+    "wrd": "antspaudas",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "añtspaudas": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "20": {
+    "wrd": "aparatūra",
+    "exp": [
+      ""
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "aparatūrà": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "21": {
+    "wrd": "arba",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "arbà": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "22": {
+    "wrd": "architektas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "architèktas": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "23": {
+    "wrd": "architektūra",
+    "exp": [
+      ""
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "architektūrà": {
+        "pos": 11,
+        "act": "LEFT"
+      }
+    }
+  },
+  "24": {
+    "wrd": "argumentas",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "argumeñtas": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "25": {
+    "wrd": "algebra",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "álgebra": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "26": {
+    "wrd": "bent",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "beñt": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "27": {
+    "wrd": "biblioteka",
+    "exp": [
+      ""
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "bibliotekà": {
+        "pos": 9,
+        "act": "LEFT"
+      }
+    }
+  },
+  "28": {
+    "wrd": "bibliotekininkė",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "bibliotèkininkė": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "29": {
+    "wrd": "biudžetas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "biudžètas": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "30": {
+    "wrd": "brangus",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "brangùs": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "31": {
+    "wrd": "balionas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „o“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "baliònas": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "32": {
+    "wrd": "bemaž",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "bemàž": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "33": {
+    "wrd": "bufetas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "bufètas": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "34": {
+    "wrd": "chirurgija",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "chirùrgija": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "35": {
+    "wrd": "centimetras",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "centimètras": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "36": {
+    "wrd": "cementas",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "cemeñtas": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "37": {
+    "wrd": "chaosas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „o“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "chaòsas": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "38": {
+    "wrd": "cholera",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „o“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "chòlera": {
+        "pos": 2,
+        "act": "LEFT"
+      }
+    }
+  },
+  "39": {
+    "wrd": "citrina",
+    "exp": [
+      ""
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "citrinà": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "40": {
+    "wrd": "čiurna",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "čiùrna": {
+        "pos": 2,
+        "act": "LEFT"
+      }
+    }
+  },
+  "41": {
+    "wrd": "chronometras",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "chronomètras": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "42": {
+    "wrd": "debetas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "dèbetas": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "43": {
+    "wrd": "dekretas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "dekrètas": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "44": {
+    "wrd": "despotas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „o“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "despòtas": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "45": {
+    "wrd": "diagnozė",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „o“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "diagnòzė": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "46": {
+    "wrd": "diplomas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „o“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "diplòmas": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "47": {
+    "wrd": "disciplina",
+    "exp": [
+      ""
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "disciplinà": {
+        "pos": 9,
+        "act": "LEFT"
+      }
+    }
+  },
+  "48": {
+    "wrd": "docentas",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "doceñtas": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "49": {
+    "wrd": "dokumentas",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "dokumeñtas": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "50": {
+    "wrd": "efektas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "efèktas": {
+        "pos": 2,
+        "act": "LEFT"
+      }
+    }
+  },
+  "51": {
+    "wrd": "elegancija",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "elegáncija": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "52": {
+    "wrd": "eksportas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuoti mišriųjų dvigarsių tvirtapradžiai skiemenys „ol, om, on, or“ žymimi kairiniu kirčio ženklu.",
+    "acc": {
+      "ekspòrtas": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "53": {
+    "wrd": "filosofas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „o“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "filosòfas": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "54": {
+    "wrd": "hipnozė",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „o“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "hipnòzė": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "55": {
+    "wrd": "įdomu",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "įdomù": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "56": {
+    "wrd": "įkainoti",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "įkáinoti": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "57": {
+    "wrd": "importas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuoti mišriųjų dvigarsių tvirtapradžiai skiemenys „ol, om, on, or“ žymimi kairiniu kirčio ženklu.",
+    "acc": {
+      "impòrtas": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "58": {
+    "wrd": "iniciatyva",
+    "exp": [
+      ""
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "iniciatyvà": {
+        "pos": 9,
+        "act": "LEFT"
+      }
+    }
+  },
+  "59": {
+    "wrd": "istorija",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „o“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "istòrija": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "60": {
+    "wrd": "impulsyvus",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "impulsyvùs": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "61": {
+    "wrd": "atgal",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "atgal̃": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "62": {
+    "wrd": "juodmargė",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "juodmar̃gė": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "63": {
+    "wrd": "kabinetas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "kabinètas": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "64": {
+    "wrd": "kadangi",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "kadángi": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "65": {
+    "wrd": "kakava",
+    "exp": [
+      ""
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "kakavà": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "66": {
+    "wrd": "kompresas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "komprèsas": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "67": {
+    "wrd": "kuomet",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "kuomèt": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "68": {
+    "wrd": "kokosas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „o“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "kòkosas": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "69": {
+    "wrd": "koledžas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „o“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "kòledžas": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "70": {
+    "wrd": "kompleksas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "komplèksas": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "71": {
+    "wrd": "konkursas",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "konkùrsas": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "72": {
+    "wrd": "kilometras",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "kilomètras": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "73": {
+    "wrd": "kostiumas",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "kostiùmas": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "74": {
+    "wrd": "magnetas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "magnètas": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "75": {
+    "wrd": "mansarda",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "mansárda": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "76": {
+    "wrd": "masyvus",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "masyvùs": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "77": {
+    "wrd": "mikroskopas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „o“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "mikroskòpas": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "78": {
+    "wrd": "vesternas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "vèsternas": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "79": {
+    "wrd": "negu",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "negù": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "80": {
+    "wrd": "neįkainojamas",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "neįkáinojamas": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "81": {
+    "wrd": "nepaprastas",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "nepàprastas": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "82": {
+    "wrd": "netgi",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "nètgi": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "83": {
+    "wrd": "nusivilkti",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "nusivil̃kti": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "84": {
+    "wrd": "objektas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "objèktas": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "85": {
+    "wrd": "olimpiada",
+    "exp": [
+      ""
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "olimpiadà": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "86": {
+    "wrd": "pagalvė",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "pagálvė": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "87": {
+    "wrd": "pagrįstas",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "pàgrįstas": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "88": {
+    "wrd": "procesas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "procèsas": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "89": {
+    "wrd": "projektas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "projèktas": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "90": {
+    "wrd": "prospektas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "prospèktas": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "91": {
+    "wrd": "receptas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "recèptas": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "92": {
+    "wrd": "refleksas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "reflèksas": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "93": {
+    "wrd": "savaitė",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "saváitė": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "94": {
+    "wrd": "semestras",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „e“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "semèstras": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "95": {
+    "wrd": "savo",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "sàvo": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "96": {
+    "wrd": "taigi",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "taĩgi": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "97": {
+    "wrd": "teisė",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "téisė": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "98": {
+    "wrd": "telefonas",
+    "exp": [
+      ""
+    ],
+    "aft": "Tarptautinių žodžių kirčiuotas „o“ žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "telefònas": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "99": {
+    "wrd": "valkata",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "válkata": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  }
+}

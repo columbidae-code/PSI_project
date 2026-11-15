@@ -1,0 +1,1302 @@
+{
+  "0": {
+    "wrd": "antakis",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "añtakis": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "1": {
+    "wrd": "stalams",
+    "exp": [
+      ""
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“  (pvz., akìms).",
+    "acc": {
+      "staláms": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "2": {
+    "wrd": "aikštelė",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "aikštẽlė": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "3": {
+    "wrd": "arklys",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "arklỹs": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "4": {
+    "wrd": "akmuo",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "akmuõ": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "5": {
+    "wrd": "amatas",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "ãmatas": {
+        "pos": 0,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "6": {
+    "wrd": "angelas",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "ángelas": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "7": {
+    "wrd": "antradienis",
+    "exp": [
+      ""
+    ],
+    "aft": "Sudurtinių žodžių kirčiuoti jungiamieji balsiai „ė, y, o, ū“ visada žymimi dešininiu kirčio ženklu, „a“ – riestiniu kirčio ženklu, „i, u“ – kairiniu kirčio ženklu. Sudurtiniai žodžiai, turintys kirčiuotą jungiamąjį balsį, visada priklauso pirmajai kirčiuotei.",
+    "acc": {
+      "antrãdienis": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "8": {
+    "wrd": "apynaujis",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „apý-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "apýnaujis": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "9": {
+    "wrd": "apytaka",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „apý-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "apýtaka": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "10": {
+    "wrd": "apklausinėti",
+    "exp": [
+      ""
+    ],
+    "aft": "Dauguma kirčiuotų veiksmažodžių bendraties priesagų (-áuti, -ė́ti, -ýti, -óti, -úoti) žymimos dešininiu kirčio ženklu. Išimtis – kirčiuota veiksmažodžių priesaga „-ìnti“, kuri žymima kairiniu kirčio ženklu.",
+    "acc": {
+      "apklausinė́ti": {
+        "pos": 9,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "11": {
+    "wrd": "apskritas",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "ãpskritas": {
+        "pos": 0,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "12": {
+    "wrd": "ar",
+    "exp": [
+      ""
+    ],
+    "aft": "Vienskiemenis žodis, kurio pagrindą sudaro ilgasis balsis, dvibalsis ar mišrusis dvigarsis, dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "ar̃": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "13": {
+    "wrd": "artimas",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "ar̃timas": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "14": {
+    "wrd": "atgaivinti",
+    "exp": [
+      ""
+    ],
+    "aft": "Dauguma kirčiuotų veiksmažodžių bendraties priesagų (-áuti, -ė́ti, -ýti, -óti, -úoti) žymimos dešininiu kirčio ženklu. Išimtis – kirčiuota veiksmažodžių priesaga „-ìnti“, kuri žymima kairiniu kirčio ženklu.",
+    "acc": {
+      "atgaivìnti": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "15": {
+    "wrd": "atokvėpis",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „ató-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "atókvėpis": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "16": {
+    "wrd": "atoslūgis",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „ató-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "atóslūgis": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "17": {
+    "wrd": "atviras",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "ãtviras": {
+        "pos": 0,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "18": {
+    "wrd": "auksaspalvis",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei sudurtinių žodžių kirčiuotas antras dėmuo, jis dažniausiai žymimas riestiniu kirčio ženklu, o žodis priklauso antrajai kirčiuotei (metatonijos dėsnis). Jei sudurtinių žodžių kirčiuotas pirmas dėmuo, jis išlaiko pamatinio žodžio kirčio ženklą ir dažniausiai priklauso pirmajai kirčiuotei.",
+    "acc": {
+      "auksaspal̃vis": {
+        "pos": 8,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "19": {
+    "wrd": "aukštaičiai",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "aukštaĩčiai": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "20": {
+    "wrd": "aukštas",
+    "exp": [
+      "dkv."
+    ],
+    "aft": "Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "aũkštas": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "21": {
+    "wrd": "aukštis",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "aũkštis": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "22": {
+    "wrd": "baidarė",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "baidãrė": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "23": {
+    "wrd": "baklažanas",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "baklažãnas": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "24": {
+    "wrd": "balansas",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "balánsas": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "25": {
+    "wrd": "baltyn",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "baltỹn": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "26": {
+    "wrd": "bangų",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "bangų̃": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "27": {
+    "wrd": "basakojis",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei sudurtinių žodžių kirčiuotas antras dėmuo, jis dažniausiai žymimas riestiniu kirčio ženklu, o žodis priklauso antrajai kirčiuotei (metatonijos dėsnis). Jei sudurtinių žodžių kirčiuotas pirmas dėmuo, jis išlaiko pamatinio žodžio kirčio ženklą ir dažniausiai priklauso pirmajai kirčiuotei.",
+    "acc": {
+      "basakõjis": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "28": {
+    "wrd": "batsiuvys",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "batsiuvỹs": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "29": {
+    "wrd": "įstrižas",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas veiksmažodžių ir būdvardžių priešdėlis „į̃-“ visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "į̃strižas": {
+        "pos": 0,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "30": {
+    "wrd": "bebras",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "bẽbras": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "31": {
+    "wrd": "bebaimis",
+    "exp": [
+      ""
+    ],
+    "aft": "Dauguma daiktavardžių ir būdvardžių su priešdėliu „be-“ keičia pamatinio žodžio kirčio ženklą iš dešininio ar kairinio  į riestinį ir tampa antrosios kirčiuotės žodžiais (metatonijos dėsnis).",
+    "acc": {
+      "bebaĩmis": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "32": {
+    "wrd": "bei",
+    "exp": [
+      ""
+    ],
+    "aft": "Vienskiemenis žodis, kurio pagrindą sudaro ilgasis balsis, dvibalsis ar mišrusis dvigarsis, dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "beĩ": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "33": {
+    "wrd": "bėga",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio ar kirčiuoto antro nuo galo skiemenyje veiksmažodžio esamojo arba būtojo kartinio laiko I a. ir II a. turi kirčiuotą kamieną, tai dažniausiai III a. esamojo arba būtojo kartinio laiko veiksmažodis bus kirčiuojamas dešininiu arba kairiniu kirčio ženklu (pvz.: bė́gu, bė́gi, bė́ga; dìrbu, dìrbi, dìrba). Jei dviskiemenio arba kirčiuoto antro nuo galo skiemenyje veiksmažodžio esamojo arba būtojo kartinio laiko I a. ir II a. turi kirčiuotą galūnę, tai ir III a. esamojo arba būtojo kartinio laiko veiksmažodis dažniausiai bus kirčiuojamas riestiniu kirčio ženklu kamiene (pvz.: ėjaũ, ėjaĩ, ė̃jo).",
+    "acc": {
+      "bė́ga": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "34": {
+    "wrd": "bendraamžis",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei sudurtinių žodžių kirčiuotas antras dėmuo, jis dažniausiai žymimas riestiniu kirčio ženklu, o žodis priklauso antrajai kirčiuotei (metatonijos dėsnis). Jei sudurtinių žodžių kirčiuotas pirmas dėmuo, jis išlaiko pamatinio žodžio kirčio ženklą ir dažniausiai priklauso pirmajai kirčiuotei.",
+    "acc": {
+      "bendraam̃žis": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "35": {
+    "wrd": "bendrinti",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "beñdrinti": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "36": {
+    "wrd": "bernelis",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "bernẽlis": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "37": {
+    "wrd": "beržas",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "béržas": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "38": {
+    "wrd": "beteisis",
+    "exp": [
+      ""
+    ],
+    "aft": "Dauguma daiktavardžių ir būdvardžių su priešdėliu „be-“ keičia pamatinio žodžio kirčio ženklą iš dešininio ar kairinio  į riestinį ir tampa antrosios kirčiuotės žodžiais (metatonijos dėsnis).",
+    "acc": {
+      "beteĩsis": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "39": {
+    "wrd": "bet",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "bèt": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "40": {
+    "wrd": "skaityti",
+    "exp": [
+      ""
+    ],
+    "aft": "Dauguma kirčiuotų veiksmažodžių bendraties priesagų (-áuti, -ė́ti, -ýti, -óti, -úoti) žymimos dešininiu kirčio ženklu. Išimtis – kirčiuota veiksmažodžių priesaga „-ìnti“, kuri žymima kairiniu kirčio ženklu.",
+    "acc": {
+      "skaitýti": {
+        "pos": 5,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "41": {
+    "wrd": "bitėms",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "bìtėms": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "42": {
+    "wrd": "boružė",
+    "exp": [
+      ""
+    ],
+    "aft": "Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "borùžė": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "43": {
+    "wrd": "brangūs",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "brángūs": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "44": {
+    "wrd": "priešpiečiai",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „príeš-“ žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "príešpiečiai": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "45": {
+    "wrd": "burbuliuoti",
+    "exp": [
+      ""
+    ],
+    "aft": "Dauguma kirčiuotų veiksmažodžių bendraties priesagų (-áuti, -ė́ti, -ýti, -óti, -úoti) žymimos dešininiu kirčio ženklu. Išimtis – kirčiuota veiksmažodžių priesaga „-ìnti“, kuri žymima kairiniu kirčio ženklu.",
+    "acc": {
+      "burbuliúoti": {
+        "pos": 7,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "46": {
+    "wrd": "būrelis",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "būrẽlis": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "47": {
+    "wrd": "burtažodis",
+    "exp": [
+      ""
+    ],
+    "aft": "Sudurtinių žodžių kirčiuoti jungiamieji balsiai „ė, y, o, ū“ visada žymimi dešininiu kirčio ženklu, „a“ – riestiniu kirčio ženklu, „i, u“ – kairiniu kirčio ženklu.",
+    "acc": {
+      "burtãžodis": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "48": {
+    "wrd": "buveinė",
+    "exp": [
+      ""
+    ],
+    "aft": "Dvibalsių ir mišriųjų dvigarsių kirčiuotas antras dėmuo visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "buveĩnė": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "49": {
+    "wrd": "dienoms",
+    "exp": [
+      ""
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“  (pvz., akìms).",
+    "acc": {
+      "dienóms": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "50": {
+    "wrd": "dailyraštis",
+    "exp": [
+      ""
+    ],
+    "aft": "Sudurtinių žodžių kirčiuoti jungiamieji balsiai „ė, y, o, ū“ visada žymimi dešininiu kirčio ženklu, „a“ – riestiniu kirčio ženklu, „i, u“ – kairiniu kirčio ženklu. Sudurtiniai žodžiai, turintys kirčiuotą jungiamąjį balsį, visada priklauso pirmajai kirčiuotei.",
+    "acc": {
+      "dailýraštis": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "51": {
+    "wrd": "dangoraižis",
+    "exp": [
+      ""
+    ],
+    "aft": "Sudurtinių žodžių kirčiuoti jungiamieji balsiai „ė, y, o, ū“ visada žymimi dešininiu kirčio ženklu, „a“ – riestiniu kirčio ženklu, „i, u“ – kairiniu kirčio ženklu. Sudurtiniai žodžiai, turintys kirčiuotą jungiamąjį balsį, visada priklauso pirmajai kirčiuotei.",
+    "acc": {
+      "dangóraižis": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "52": {
+    "wrd": "danties",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "dantiẽs": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "53": {
+    "wrd": "darbų",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "darbų̃": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "54": {
+    "wrd": "daugiareikšmis",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei sudurtinių žodžių kirčiuotas antras dėmuo, jis dažniausiai žymimas riestiniu kirčio ženklu, o žodis priklauso antrajai kirčiuotei (metatonijos dėsnis). Jei sudurtinių žodžių kirčiuotas pirmas dėmuo, jis išlaiko pamatinio žodžio kirčio ženklą ir dažniausiai priklauso pirmajai kirčiuotei.",
+    "acc": {
+      "daugiareĩkšmis": {
+        "pos": 8,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "55": {
+    "wrd": "deginti",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "dẽginti": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "56": {
+    "wrd": "delnas",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "délnas": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "57": {
+    "wrd": "dėjo",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio ar kirčiuoto antro nuo galo skiemenyje veiksmažodžio esamojo arba būtojo kartinio laiko I a. ir II a. turi kirčiuotą kamieną, tai dažniausiai III a. esamojo arba būtojo kartinio laiko veiksmažodis bus kirčiuojamas dešininiu arba kairiniu kirčio ženklu (pvz.: bė́gu, bė́gi, bė́ga; dìrbu, dìrbi, dìrba). Jei dviskiemenio arba kirčiuoto antro nuo galo skiemenyje veiksmažodžio esamojo arba būtojo kartinio laiko I a. ir II a. turi kirčiuotą galūnę, tai ir III a. esamojo arba būtojo kartinio laiko veiksmažodis dažniausiai bus kirčiuojamas riestiniu kirčio ženklu kamiene (pvz.: ėjaũ, ėjaĩ, ė̃jo).",
+    "acc": {
+      "dė́jo": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "58": {
+    "wrd": "dienoraštis",
+    "exp": [
+      ""
+    ],
+    "aft": "Sudurtinių žodžių kirčiuoti jungiamieji balsiai „ė, y, o, ū“ visada žymimi dešininiu kirčio ženklu, „a“ – riestiniu kirčio ženklu, „i, u“ – kairiniu kirčio ženklu. Sudurtiniai žodžiai, turintys kirčiuotą jungiamąjį balsį, visada priklauso pirmajai kirčiuotei.",
+    "acc": {
+      "dienóraštis": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "59": {
+    "wrd": "emalis",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "emãlis": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "60": {
+    "wrd": "duoda",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio ar kirčiuoto antro nuo galo skiemenyje veiksmažodžio esamojo arba būtojo kartinio laiko I a. ir II a. turi kirčiuotą kamieną, tai dažniausiai III a. esamojo arba būtojo kartinio laiko veiksmažodis bus kirčiuojamas dešininiu arba kairiniu kirčio ženklu (pvz.: bė́gu, bė́gi, bė́ga; dìrbu, dìrbi, dìrba). Jei dviskiemenio arba kirčiuoto antro nuo galo skiemenyje veiksmažodžio esamojo arba būtojo kartinio laiko I a. ir II a. turi kirčiuotą galūnę, tai ir III a. esamojo arba būtojo kartinio laiko veiksmažodis dažniausiai bus kirčiuojamas riestiniu kirčio ženklu kamiene (pvz.: ėjaũ, ėjaĩ, ė̃jo).",
+    "acc": {
+      "dúoda": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "61": {
+    "wrd": "davė",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio ar kirčiuoto antro nuo galo skiemenyje veiksmažodžio esamojo arba būtojo kartinio laiko I a. ir II a. turi kirčiuotą kamieną, tai dažniausiai III a. esamojo arba būtojo kartinio laiko veiksmažodis bus kirčiuojamas dešininiu arba kairiniu kirčio ženklu (pvz.: bė́gu, bė́gi, bė́ga; dìrbu, dìrbi, dìrba). Jei dviskiemenio arba kirčiuoto antro nuo galo skiemenyje veiksmažodžio esamojo arba būtojo kartinio laiko I a. ir II a. turi kirčiuotą galūnę, tai ir III a. esamojo arba būtojo kartinio laiko veiksmažodis dažniausiai bus kirčiuojamas riestiniu kirčio ženklu kamiene (pvz.: ėjaũ, ėjaĩ, ė̃jo).",
+    "acc": {
+      "dãvė": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "62": {
+    "wrd": "užuojauta",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „užúo-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "užúojauta": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "63": {
+    "wrd": "džiovinti",
+    "exp": [
+      ""
+    ],
+    "aft": "Dauguma kirčiuotų veiksmažodžių bendraties priesagų (-áuti, -ė́ti, -ýti, -óti, -úoti) žymimos dešininiu kirčio ženklu. Išimtis – kirčiuota veiksmažodžių priesaga„-ìnti“, kuri žymima kairiniu kirčio ženklu.",
+    "acc": {
+      "džiovìnti": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "64": {
+    "wrd": "eglė",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "ẽglė": {
+        "pos": 0,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "65": {
+    "wrd": "saulėgrąža",
+    "exp": [
+      ""
+    ],
+    "aft": "Sudurtinių žodžių kirčiuoti jungiamieji balsiai „ė, y, o, ū“ visada žymimi dešininiu kirčio ženklu, „a“ – riestiniu kirčio ženklu, „i, u“ – kairiniu kirčio ženklu. Sudurtiniai žodžiai, turintys kirčiuotą jungiamąjį balsį, visada priklauso pirmajai kirčiuotei.",
+    "acc": {
+      "saulė́grąža": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "66": {
+    "wrd": "erkė",
+    "exp": [
+      ""
+    ],
+    "aft": "Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "érkė": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "67": {
+    "wrd": "esmė",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "esmė̃": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "68": {
+    "wrd": "ėdė",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio ar kirčiuoto antro nuo galo skiemenyje veiksmažodžio esamojo arba būtojo kartinio laiko I a. ir II a. turi kirčiuotą kamieną, tai dažniausiai III a. esamojo arba būtojo kartinio laiko veiksmažodis bus kirčiuojamas dešininiu arba kairiniu kirčio ženklu (pvz.: bė́gu, bė́gi, bė́ga; dìrbu, dìrbi, dìrba). Jei dviskiemenio arba kirčiuoto antro nuo galo skiemenyje veiksmažodžio esamojo arba būtojo kartinio laiko I a. ir II a. turi kirčiuotą galūnę, tai ir III a. esamojo arba būtojo kartinio laiko veiksmažodis dažniausiai bus kirčiuojamas riestiniu kirčio ženklu kamiene (pvz.: ėjaũ, ėjaĩ, ė̃jo).",
+    "acc": {
+      "ė́dė": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "69": {
+    "wrd": "skaičiuos",
+    "exp": [
+      ""
+    ],
+    "aft": "Veiksmažodžių bendratyje dešininiu ar kairiniu kirčio ženklu kirčiuotas antras nuo galo skiemuo būsimojo laiko III asmenyje dažniausiai virsta riestiniu kirčio ženklu. Išimtys – sutrumpėję „y, ū“ balsiai (pvz.: lýti – lìs, bū́ti – bùs).",
+    "acc": {
+      "skaičiuõs": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "70": {
+    "wrd": "skaičiuoti",
+    "exp": [
+      ""
+    ],
+    "aft": "Dauguma kirčiuotų veiksmažodžių bendraties priesagų (-áuti, -ė́ti, -ýti, -óti, -úoti) žymimos dešininiu kirčio ženklu. Išimtis – kirčiuota veiksmažodžių priesaga „-ìnti“,  kuri žymima kairiniu kirčio ženklu.",
+    "acc": {
+      "skaičiúoti": {
+        "pos": 6,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "71": {
+    "wrd": "finalas",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "finãlas": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "72": {
+    "wrd": "gyvens",
+    "exp": [
+      ""
+    ],
+    "aft": "Veiksmažodžių bendratyje dešininiu ar kairiniu kirčio ženklu kirčiuotas antras nuo galo skiemuo būsimojo laiko III asmenyje dažniausiai virsta riestiniu kirčio ženklu. Išimtys – sutrumpėję „y, ū“ balsiai (pvz.: lýti – lìs, bū́ti – bùs).",
+    "acc": {
+      "gyveñs": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "73": {
+    "wrd": "gyventi",
+    "exp": [
+      ""
+    ],
+    "aft": "Dauguma kirčiuotų veiksmažodžių bendraties priesagų (-áuti, -ė́ti, -ýti, -óti, -úoti) žymimos dešininiu kirčio ženklu. Išimtis – kirčiuota veiksmažodžių priesaga „-ìnti“, kuri žymima kairiniu kirčio ženklu.",
+    "acc": {
+      "gyvénti": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "74": {
+    "wrd": "galėti",
+    "exp": [
+      ""
+    ],
+    "aft": "Dauguma kirčiuotų veiksmažodžių bendraties priesagų (-áuti, -ė́ti, -ýti, -óti, -úoti) žymimos dešininiu kirčio ženklu. Išimtis – kirčiuota veiksmažodžių priesaga  „-ìnti“, kuri žymima kairiniu kirčio ženklu.",
+    "acc": {
+      "galė́ti": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "75": {
+    "wrd": "gėlėms",
+    "exp": [
+      ""
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“   (pvz., akìms).",
+    "acc": {
+      "gėlė́ms": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "76": {
+    "wrd": "geriems",
+    "exp": [
+      ""
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“  (pvz., akìms).",
+    "acc": {
+      "geríems": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "77": {
+    "wrd": "grindims",
+    "exp": [
+      ""
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne„-ìms“   (pvz., akìms).",
+    "acc": {
+      "grindìms": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "78": {
+    "wrd": "lašnoti",
+    "exp": [
+      ""
+    ],
+    "aft": "Dauguma kirčiuotų veiksmažodžių bendraties priesagų (-áuti, -ė́ti, -ýti, -óti, -úoti) žymimos dešininiu kirčio ženklu. Išimtis – kirčiuota veiksmažodžių priesaga „-ìnti“,  kuri žymima kairiniu kirčio ženklu.",
+    "acc": {
+      "lašnóti": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "79": {
+    "wrd": "liepsnoms",
+    "exp": [
+      ""
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“  (pvz., akìms).",
+    "acc": {
+      "liepsnóms": {
+        "pos": 6,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "80": {
+    "wrd": "šie",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "šiẽ": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "81": {
+    "wrd": "kėdėms",
+    "exp": [
+      ""
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“ (pvz., akìms).",
+    "acc": {
+      "kėdė́ms": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "82": {
+    "wrd": "kojūgalis",
+    "exp": [
+      ""
+    ],
+    "aft": "Sudurtinių žodžių kirčiuoti jungiamieji balsiai „ė, y, o, ū“ visada žymimi dešininiu kirčio ženklu, „a“ – riestiniu kirčio ženklu, „i, u“ – kairiniu kirčio ženklu. Sudurtiniai žodžiai, turintys kirčiuotą jungiamąjį balsį, visada priklauso pirmajai kirčiuotei.",
+    "acc": {
+      "kojū́galis": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "83": {
+    "wrd": "nuomonė",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „núo-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "núomonė": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "84": {
+    "wrd": "nuotrauka",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „núo-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "núotrauka": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "85": {
+    "wrd": "įspūdis",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas daiktavardžių priešdėlis „į́-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "į́spūdis": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "86": {
+    "wrd": "įžanga",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas daiktavardžių priešdėlis „į́-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "į́žanga": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "87": {
+    "wrd": "įveikė",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas veiksmažodžių ir būdvardžių priešdėlis „į̃-“ visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "į̃veikė": {
+        "pos": 0,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "88": {
+    "wrd": "įžengė",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas veiksmažodžių ir būdvardžių priešdėlis „į̃-“ visada žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "į̃žengė": {
+        "pos": 0,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "89": {
+    "wrd": "papuošalas",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "pãpuošalas": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "90": {
+    "wrd": "potvynis",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „pó-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "pótvynis": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "91": {
+    "wrd": "prieplauka",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „príe-“  žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "príeplauka": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "92": {
+    "wrd": "poilsis",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „pó-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "póilsis": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "93": {
+    "wrd": "pertrauka",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „pér-“ dažniausiai žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "pértrauka": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "94": {
+    "wrd": "per",
+    "exp": [
+      ""
+    ],
+    "aft": "Vienskiemenis žodis, kurio pagrindą sudaro ilgasis balsis, dvibalsis ar mišrusis dvigarsis, dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "per̃": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "95": {
+    "wrd": "pilims",
+    "exp": [
+      ""
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“ (pvz., akìms).",
+    "acc": {
+      "pilìms": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "96": {
+    "wrd": "skaitys",
+    "exp": [
+      ""
+    ],
+    "aft": "Veiksmažodžių bendratyje dešininiu ar kairiniu kirčio ženklu kirčiuotas antras nuo galo skiemuo būsimojo laiko III asmenyje dažniausiai virsta riestiniu kirčio ženklu. Išimtys – sutrumpėję „y, ū“ balsiai (pvz.: lýti – lìs, bū́ti – bùs).",
+    "acc": {
+      "skaitỹs": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "97": {
+    "wrd": "santykis",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „sán-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "sántykis": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "98": {
+    "wrd": "sąrašas",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „są́-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "są́rašas": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "99": {
+    "wrd": "sąsiuvinis",
+    "exp": [
+      ""
+    ],
+    "aft": "Kirčiuotas priešdėlis „są́-“ visada žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "są́siuvinis": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  }
+}

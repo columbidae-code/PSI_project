@@ -7,7 +7,6 @@ import GameRoom from "./pages/GameRoom";
 import "./App.css";
 import Leaderboard from "./pages/Leaderboard";
 import UserPage from "./pages/UserPage";
-import { gameRegistry } from "./games/gameRegistry";
 
 type RoomInfo = {
   code: string;
@@ -16,19 +15,21 @@ type RoomInfo = {
 };
 
 function App() {
-  const [showLogin, setShowLogin] = useState(false);
-  const [showRegister, setShowRegister] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [roomCode, setRoomCode] = useState<string | null>(null);
-  const [joinCode, setJoinCode] = useState("");
-  const [players, setPlayers] = useState<string[]>([]);
-  const [showNamePopup, setShowNamePopup] = useState(false);
-  const [joinUsername, setJoinUsername] = useState("");
-  const [username, setUsername] = useState<string | null>(null);
-  const [authChecked, setAuthChecked] = useState(false);
-  const [showProfile, setShowProfile] = useState(false);
-  const [nameAction, setNameAction] = useState<"create" | "join" | null>(null);
-  const [soloCategory, setSoloCategory] = useState<string | null>(null);
+  const [showLogin, setShowLogin] = useState(false)
+  const [showRegister, setShowRegister] = useState(false)
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+  const [roomCode, setRoomCode] = useState<string | null>(null)
+  const [singlePlayer, setSinglePlayer] = useState(false)
+  const [isHost, setIsHost] = useState(false)
+  const [joinCode, setJoinCode] = useState("")
+  const [players, setPlayers] = useState<string[]>([])
+  const [showNamePopup, setShowNamePopup] = useState(false)
+  const [joinUsername, setJoinUsername] = useState("")
+  const [username, setUsername] = useState<string | null>(null)
+  const [authChecked, setAuthChecked] = useState(false)
+  const [showProfile, setShowProfile] = useState(false)
+  const [nameAction, setNameAction] = useState<"create" | "join" | null>(null)
+
   // The server keeps the login in a cookie
   useEffect(() => {
     fetch("/api/me")
@@ -43,9 +44,9 @@ function App() {
   }
 
   async function handleLogout() {
-    await fetch("/api/logout", { method: "POST" });
-    setUsername(null);
-    setShowProfile(false);
+    await fetch("/api/logout", { method: "POST" })
+    setUsername(null)
+    setShowProfile(false)
   }
 
   useEffect(() => {
@@ -58,22 +59,27 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const handlePlayerJoined = (username: string) => {
-      setPlayers((players) => {
-        if (players.includes(username)) {
-          return players;
+    const handlePlayerJoined = (playerName: string) => {
+      setPlayers((prev) => {
+        if (prev.includes(playerName)) {
+          return prev
         }
+        return [...prev, playerName]
+      })
+    }
 
-        return [...players, username];
-      });
-    };
+    const handlePlayerLeft = (playerName: string) => {
+      setPlayers((prev) => prev.filter((p) => p !== playerName))
+    }
 
-    connection.on("PlayerJoined", handlePlayerJoined);
+    connection.on("PlayerJoined", handlePlayerJoined)
+    connection.on("PlayerLeft", handlePlayerLeft)
 
     return () => {
-      connection.off("PlayerJoined", handlePlayerJoined);
-    };
-  }, []);
+      connection.off("PlayerJoined", handlePlayerJoined)
+      connection.off("PlayerLeft", handlePlayerLeft)
+    }
+  }, [])
 
   async function createRoom() {
     if (!selectedCategory) return;
@@ -90,25 +96,29 @@ function App() {
       selectedCategory,
     );
 
-    setPlayers([username]);
-    setRoomCode(code);
+    setPlayers([username])
+    setRoomCode(code)
+    setIsHost(true)
   }
+
   async function leaveRoom() {
     if (roomCode) {
-      const name = username ?? joinUsername;
+      const name = username ?? joinUsername
       try {
-        await connection.invoke("LeaveRoom", roomCode, name);
+        await connection.invoke("LeaveRoom", roomCode, name)
       } catch (error) {
-        console.log(error); // still let the user leave if call fails
+        console.log(error)
       }
     }
 
-    setRoomCode(null);
-    setSelectedCategory(null);
-    setPlayers([]);
-    setJoinCode("");
-    setNameAction(null);
-    setShowNamePopup(false);
+    setRoomCode(null)
+    setSinglePlayer(false)
+    setIsHost(false)
+    setSelectedCategory(null)
+    setPlayers([])
+    setJoinCode("")
+    setNameAction(null)
+    setShowNamePopup(false)
   }
 
   async function handleJoinRoom(playerName: string) {
@@ -123,19 +133,12 @@ function App() {
       return;
     }
 
-    setSelectedCategory(room.category);
-    setRoomCode(room.code);
-    setPlayers(room.players);
-    setShowNamePopup(false);
+    setSelectedCategory(room.category)
+    setRoomCode(room.code)
+    setPlayers(room.players)
+    setIsHost(false)
+    setShowNamePopup(false)
   }
-
-  const handlePlayerLeft = (name: string) => {
-    setPlayers((players) => players.filter((p) => p !== name));
-  };
-
-  connection.on("PlayerLeft", handlePlayerLeft);
-
-  connection.off("PlayerLeft", handlePlayerLeft);
 
   async function handleNameSubmit() {
     if (joinUsername.trim() === "") return;
@@ -153,30 +156,25 @@ function App() {
         selectedCategory,
       );
 
-      setPlayers([joinUsername]);
-      setRoomCode(code);
-      setShowNamePopup(false);
+      setPlayers([joinUsername])
+      setRoomCode(code)
+      setIsHost(true)
+      setShowNamePopup(false)
     }
   }
 
-  const SoloComponent = soloCategory
-    ? gameRegistry[soloCategory]?.SoloComponent
-    : undefined;
-
-  if (SoloComponent) {
-    return <SoloComponent onBack={() => setSoloCategory(null)} />;
-  }
-
-  if (roomCode && selectedCategory) {
+  if ((roomCode || singlePlayer) && selectedCategory) {
     return (
       <GameRoom
         category={selectedCategory}
         roomCode={roomCode}
         players={players}
+        isHost={isHost || singlePlayer}
         onLeave={leaveRoom}
       />
     );
   }
+
   if (username && showProfile) {
     return (
       <UserPage
@@ -229,31 +227,48 @@ function App() {
             onChange={(e) => setJoinCode(e.target.value)}
           />
 
-          <button
-            onClick={() => {
-              if (username) {
-                handleJoinRoom(username);
-              } else {
-                setNameAction("join");
-                setShowNamePopup(true);
-              }
-            }}
-          >
+          <button onClick={() => {
+            if (username) {
+              handleJoinRoom(username)
+            } else {
+              setNameAction("join")
+              setShowNamePopup(true)
+            }
+          }}>
             Prisijungti
           </button>
         </div>
 
         <section className="categories" id="categories">
-          {Object.entries(gameRegistry).map(([category, config]) => (
-            <div
-              className="category-card"
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-            >
-              <h2>{category}</h2>
-              <p>{config.description}</p>
-            </div>
-          ))}
+
+          <div className="category-card"
+            onClick={() => setSelectedCategory("Geografija")}
+          >
+            <h2>Geografija</h2>
+            <p>Šalys, miestai, vėliavos ir pasaulis</p>
+          </div>
+
+          <div className="category-card"
+            onClick={() => setSelectedCategory("Istorija")}
+          >
+            <h2>Istorija</h2>
+            <p>Įvykiai, datos ir istorinės asmenybės</p>
+          </div>
+
+          <div className="category-card"
+            onClick={() => setSelectedCategory("Lietuvių kalba")}
+          >
+            <h2>Lietuvių kalba</h2>
+            <p>Žodžių kirčiavimas, priegaidės ir taisyklės</p>
+          </div>
+
+          <div className="category-card"
+            onClick={() => setSelectedCategory("Matematika")}
+          >
+            <h2>Matematika</h2>
+            <p>Skaičiai, formulės ir loginiai uždaviniai</p>
+          </div>
+
         </section>
 
         <section className="how-to-play">
@@ -281,6 +296,7 @@ function App() {
         </section>
 
         <Leaderboard />
+
       </main>
 
       {showLogin && (
@@ -293,12 +309,11 @@ function App() {
         <GameMode
           category={selectedCategory}
           onClose={() => setSelectedCategory(null)}
-          onCreateRoom={createRoom}
-          soloAvailable={!!gameRegistry[selectedCategory]?.SoloComponent}
-          onPlaySolo={() => {
-            setSoloCategory(selectedCategory);
-            setSelectedCategory(null);
+          onSinglePlayer={() => {
+            setIsHost(true)
+            setSinglePlayer(true)
           }}
+          onCreateRoom={createRoom}
         />
       )}
 
@@ -327,6 +342,7 @@ function App() {
           </div>
         </div>
       )}
+
     </div>
   );
 }

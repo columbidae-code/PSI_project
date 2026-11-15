@@ -1,0 +1,1952 @@
+{
+  "0": {
+    "wrd": "draugiškasis",
+    "exp": [
+      ""
+    ],
+    "aft": "Pastovią kirčio vietą žodžio kamiene turi įvardžiuotiniai būdvardžiai, padaryti iš pirmosios kirčiuotės daugiaskiemenių būdvardžių.",
+    "acc": {
+      "draũgiškasis": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "1": {
+    "wrd": "išmintingasis",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Pastovią kirčio vietą žodžio kamiene turi įvardžiuotiniai būdvardžiai, padaryti iš pirmosios kirčiuotės daugiaskiemenių būdvardžių. 2. Kirčiuota būdvardžių priesaga „-ing-“ visada žymima kairiniu kirčio ženklu ir yra pirmosios kirčiuotės.",
+    "acc": {
+      "išmintìngasis": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "2": {
+    "wrd": "galingųjų",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Pastovią kirčio vietą žodžio kamiene turi įvardžiuotiniai būdvardžiai, padaryti iš pirmosios kirčiuotės daugiaskiemenių būdvardžių. 2. Kirčiuota būdvardžių priesaga „-ing-“ visada žymima kairiniu kirčio ženklu ir yra pirmosios kirčiuotės.",
+    "acc": {
+      "galìngųjų": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "3": {
+    "wrd": "garbinguoju",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Pastovią kirčio vietą žodžio kamiene turi įvardžiuotiniai būdvardžiai, padaryti iš pirmosios kirčiuotės daugiaskiemenių būdvardžių. 2. Kirčiuota būdvardžių priesaga „-ing-“ visada žymima kairiniu kirčio ženklu ir yra pirmosios kirčiuotės.",
+    "acc": {
+      "garbìnguoju": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "4": {
+    "wrd": "atsakingasis",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Pastovią kirčio vietą turi įvardžiuotiniai būdvardžiai, padaryti iš pirmosios kirčiuotės daugiaskiemenių būdvardžių. 2. Kirčiuota būdvardžių priesaga „-ing-“ visada žymima kairiniu kirčio ženklu ir yra pirmosios kirčiuotės.",
+    "acc": {
+      "atsakìngasis": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "5": {
+    "wrd": "broliškajam",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Pastovią kirčio vietą žodžio kamiene turi įvardžiuotiniai būdvardžiai, padaryti iš pirmosios kirčiuotės daugiaskiemenių būdvardžių. 2. Pamatinis žodis „brolis“ yra pirmosios kirčiuotės, tad kirčiuotas antras nuo galo ilgasis skiemuo žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "bróliškajam": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "6": {
+    "wrd": "dieviškajam",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Pastovią kirčio vietą žodžio kamiene turi įvardžiuotiniai būdvardžiai, padaryti iš pirmosios kirčiuotės daugiaskiemenių būdvardžių. 2. Pamatinis žodis „dievas“ yra ketvirtosios kirčiuotės, tad kirčiuotas antras nuo galo ilgasis skiemuo žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "diẽviškajam": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "7": {
+    "wrd": "kalnuotasis",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Pastovią kirčio vietą žodžio kamiene turi įvardžiuotiniai būdvardžiai, padaryti iš pirmosios kirčiuotės daugiaskiemenių būdvardžių. 2. Būdvardis „kalnuotas“ yra pirmosios kirčiuotės, tad kirčiuotas antras nuo galo ilgasis skiemuo žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "kalnúotasis": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "8": {
+    "wrd": "nuostabioji",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, kirčiuojami galūnėje. Vyr. g. vns. vard. įvardžiuotiniai  būdvardžiai kirčiuojami kairiniu kirčio ženklu (nuostabùsis, baltàsis), o mot. g. vns. vard. įvardžiuotiniai  būdvardžiai kirčiuojami dešininiu kirčio ženklu (nuostabióji, baltóji).",
+    "acc": {
+      "nuostabióji": {
+        "pos": 8,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "9": {
+    "wrd": "gerosios",
+    "exp": [
+      "vns. kilm."
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, mot. g. vns. kilm. l. kirčiuojami galūnėje riestiniu kirčio ženklu (gerõsios), o vyr. g. vns. kilm. l. kirčiuojamas kamiene, kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės (gẽrojo).",
+    "acc": {
+      "gerõsios": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "10": {
+    "wrd": "gražiajai",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, mot. g. vns. naud. l. kirčiuojami kamiene (kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės), o vyr. g. vns. naud. l. kirčiuojami galūnėje dešininiu kirčio ženklu (gražiájam). 2. Būdvardis ,,graži“ yra ketvirtosios kirčiuotės, tad kirčiuotas antras nuo galo ilgasis skiemuo žymimas riestiniu kirčio ženklu. 3. Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "grãžiajai": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "11": {
+    "wrd": "didžiojoje",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, vyr. g. ir mot. g.  vns. ir dgs. viet. l. kirčiuojami galūnėje riestiniu kirčio ženklu (didžiãjame, didžiõjoje, didžiuõsiuose, didžiõsiose).",
+    "acc": {
+      "didžiõjoje": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "12": {
+    "wrd": "artimųjų",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. dgs. kilm. l. kirčiuojami galūnėje riestiniu kirčio ženklu.",
+    "acc": {
+      "artimų̃jų": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "13": {
+    "wrd": "mažosioms",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. dgs. naud. l. kirčiuojami galūnėje dešininiu kirčio ženklu (mažíesiems, mažósioms).",
+    "acc": {
+      "mažósioms": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "14": {
+    "wrd": "baltąsias",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. dgs. gal. l. kirčiuojami galūnėje dešininiu kirčio ženklu (baltúosius, baltą́sias).",
+    "acc": {
+      "baltą́sias": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "15": {
+    "wrd": "sunkiosiomis",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. dgs. įn. l. kirčiuojami galūnėje riestiniu kirčio ženklu (sunkiaĩsiais, sunkiõsiomis).",
+    "acc": {
+      "sunkiõsiomis": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "16": {
+    "wrd": "lengvąją",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. vns. gal. l. kirčiuojami kamiene. Kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės. 2. Būdvardis ,,lengva“ yra ketvirtosios kirčiuotės, tad kirčiuotas antras nuo galo ilgasis skiemuo žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "leñgvąją": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "17": {
+    "wrd": "mieluoju",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. vns. gal. l. kirčiuojami galūnėje (mielúoju, mielą́ja).",
+    "acc": {
+      "mielúoju": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "18": {
+    "wrd": "šaltoji",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, kirčiuojami galūnėje. Vyr. g. vns. vard. įvardžiuotiniai  būdvardžiai kirčiuojami kairiniu kirčio ženklu (nuostabùsis, baltàsis), o mot. g. vns. vard. įvardžiuotiniai  būdvardžiai kirčiuojami dešininiu kirčio ženklu (nuostabióji, baltóji).",
+    "acc": {
+      "šaltóji": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "19": {
+    "wrd": "mandagioji",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, kirčiuojami galūnėje. Vyr. g. vns. vard. įvardžiuotiniai  būdvardžiai kirčiuojami kairiniu kirčio ženklu (nuostabùsis, baltàsis), o mot. g. vns. vard. įvardžiuotiniai  būdvardžiai kirčiuojami dešininiu kirčio ženklu (nuostabióji, baltóji).",
+    "acc": {
+      "mandagióji": {
+        "pos": 7,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "20": {
+    "wrd": "sumaniojo",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, mot. g. vns. kilm. l. kirčiuojami galūnėje riestiniu kirčio ženklu (gerõsios), o vyr. g. vns. kilm. l. kirčiuojamas kamiene, kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės (gẽrojo).",
+    "acc": {
+      "sumãniojo": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "21": {
+    "wrd": "aštriosios",
+    "exp": [
+      "vns. kilm."
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, mot. g. vns. kilm. l. kirčiuojami galūnėje riestiniu kirčio ženklu (gerõsios), o vyr. g. vns. kilm. l. kirčiuojamas kamiene, kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės (gẽrojo).",
+    "acc": {
+      "aštriõsios": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "22": {
+    "wrd": "maloniajam",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, mot. g. vns. naud. l. kirčiuojami kamiene (kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės), o vyr. g. vns. naud. l. kirčiuojami galūnėje dešininiu kirčio ženklu (gražiájam).",
+    "acc": {
+      "maloniájam": {
+        "pos": 6,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "23": {
+    "wrd": "ramiajai",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, mot. g. vns. naud. l. kirčiuojami kamiene (kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės), o vyr. g. vns. naud. l. kirčiuojami galūnėje dešininiu kirčio ženklu (gražiájam). 2. Būdvardis ,,rami“ yra ketvirtosios kirčiuotės, tad kirčiuotas antras nuo galo ilgasis skiemuo žymimas riestiniu kirčio ženklu. 3. Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "rãmiajai": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "24": {
+    "wrd": "drąsiajai",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, mot. g. vns. naud. l. kirčiuojami kamiene (kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės), o vyr. g. vns. naud. l. kirčiuojami galūnėje dešininiu kirčio ženklu (gražiájam). 2. Būdvardis ,,drąsi“ yra ketvirtosios kirčiuotės, tad kirčiuotas antras nuo galo ilgasis skiemuo žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "drą̃siajai": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "25": {
+    "wrd": "žiląją",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. vns. gal. l. kirčiuojami kamiene. Kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės. 2. Būdvardis ,,žila“ yra ketvirtosios kirčiuotės, tad kirčiuotas antras nuo galo trumpasis skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "žìląją": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "26": {
+    "wrd": "luošąjį",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. vns. gal. l. kirčiuojami kamiene. Kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės. 2. Būdvardis ,,luošas“ yra trečiosios kirčiuotės, tad kirčiuotas antras nuo galo ilgasis skiemuo žymimas dešininiu kirčio ženklu.",
+    "acc": {
+      "lúošąjį": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "27": {
+    "wrd": "gražiuoju",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. vns. gal. l. kirčiuojami galūnėje (mielúoju, mielą́ja).",
+    "acc": {
+      "gražiúoju": {
+        "pos": 5,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "28": {
+    "wrd": "drėgnąja",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. vns. gal. l. kirčiuojami galūnėje (mielúoju, mielą́ja).",
+    "acc": {
+      "drėgną́ja": {
+        "pos": 5,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "29": {
+    "wrd": "saldžiajame",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, vyr. g. ir mot. g.  vns. ir dgs. viet. l. kirčiuojami galūnėje riestiniu kirčio ženklu (didžiãjame, didžiõjoje, didžiuõsiuose, didžiõsiose).",
+    "acc": {
+      "saldžiãjame": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "30": {
+    "wrd": "sūriojoje",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, vyr. g. ir mot. g.  vns. ir dgs. viet. l. kirčiuojami galūnėje riestiniu kirčio ženklu (didžiãjame, didžiõjoje, didžiuõsiuose, didžiõsiose).",
+    "acc": {
+      "sūriõjoje": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "31": {
+    "wrd": "žaliuosiuose",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, vyr. g. ir mot. g.  vns. ir dgs. viet. l. kirčiuojami galūnėje riestiniu kirčio ženklu (didžiãjame, didžiõjoje, didžiuõsiuose, didžiõsiose).",
+    "acc": {
+      "žaliuõsiuose": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "32": {
+    "wrd": "garsiosiose",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, vyr. g. ir mot. g.  vns. ir dgs. viet. l. kirčiuojami galūnėje riestiniu kirčio ženklu (didžiãjame, didžiõjoje, didžiuõsiuose, didžiõsiose).",
+    "acc": {
+      "garsiõsiose": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "33": {
+    "wrd": "kilnieji",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, vyr. g. dgs. vard. l. kirčiuojami galūnėje dešininiu kirčio ženklu (geríeji), o mot. g. vns. vard. l. kirčiuojamas kamiene, kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės (gẽrosios).",
+    "acc": {
+      "kilníeji": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "34": {
+    "wrd": "svetimieji",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, vyr. g. dgs. vard. l. kirčiuojami galūnėje dešininiu kirčio ženklu (geríeji), o mot. g. vns. vard. l. kirčiuojamas kamiene, kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės (gẽrosios).",
+    "acc": {
+      "svetimíeji": {
+        "pos": 6,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "35": {
+    "wrd": "svetimosios",
+    "exp": [
+      "dgs. vard."
+    ],
+    "aft": "1. Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, vyr. g. dgs. vard. l. kirčiuojami galūnėje dešininiu kirčio ženklu (geríeji), o mot. g. vns. vard. l. kirčiuojamas kamiene, kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės (gẽrosios). 2. Būdvardis ,,svetima“ yra 3b kirčiuotės, tad kirčiuotas trečias nuo galo ilgasis skiemuo žymimas riestiniu kirčio ženklu. 3. Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "svẽtimosios": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "36": {
+    "wrd": "šaltosios",
+    "exp": [
+      "dgs. vard."
+    ],
+    "aft": "1. Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, vyr. g. dgs. vard. l. kirčiuojami galūnėje dešininiu kirčio ženklu (geríeji), o mot. g. vns. vard. l. kirčiuojamas kamiene, kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės (gẽrosios). 2. Būdvardis ,,šalta“ yra trečiosios kirčiuotės, tad kirčiuotas antras nuo galo ilgasis skiemuo žymimas dešininiu kirčio ženklu. 3. Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "šáltosios": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "37": {
+    "wrd": "nuostabiųjų",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. dgs. kilm. l. kirčiuojami galūnėje riestiniu kirčio ženklu.",
+    "acc": {
+      "nuostabių̃jų": {
+        "pos": 8,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "38": {
+    "wrd": "nuoširdžiųjų",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. dgs. kilm. l. kirčiuojami galūnėje riestiniu kirčio ženklu.",
+    "acc": {
+      "nuoširdžių̃jų": {
+        "pos": 9,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "39": {
+    "wrd": "paprastųjų",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. dgs. kilm. l. kirčiuojami galūnėje riestiniu kirčio ženklu.",
+    "acc": {
+      "paprastų̃jų": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "40": {
+    "wrd": "doriesiems",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. dgs. naud. l. kirčiuojami galūnėje dešininiu kirčio ženklu (mažíesiems, mažósioms).",
+    "acc": {
+      "doríesiems": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "41": {
+    "wrd": "įdomiosioms",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. dgs. naud. l. kirčiuojami galūnėje dešininiu kirčio ženklu (mažíesiems, mažósioms).",
+    "acc": {
+      "įdomiósioms": {
+        "pos": 5,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "42": {
+    "wrd": "narsiuosius",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. dgs. gal. l. kirčiuojami galūnėje dešininiu kirčio ženklu (baltúosius, baltą́sias).",
+    "acc": {
+      "narsiúosius": {
+        "pos": 5,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "43": {
+    "wrd": "naujuosius",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. dgs. gal. l. kirčiuojami galūnėje dešininiu kirčio ženklu (baltúosius, baltą́sias).",
+    "acc": {
+      "naujúosius": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "44": {
+    "wrd": "greitosiomis",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. dgs. įn. l. kirčiuojami galūnėje riestiniu kirčio ženklu (sunkiaĩsiais, sunkiõsiomis).",
+    "acc": {
+      "greitõsiomis": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "45": {
+    "wrd": "švariosiomis",
+    "exp": [
+      ""
+    ],
+    "aft": "Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, ir vyr. g., ir mot. g. dgs. įn. l. kirčiuojami galūnėje riestiniu kirčio ženklu (sunkiaĩsiais, sunkiõsiomis).",
+    "acc": {
+      "švariõsiomis": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "46": {
+    "wrd": "artimojo",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, mot. g. vns. kilm. l. kirčiuojami galūnėje riestiniu kirčio ženklu (gerõsios), o vyr. g. vns. kilm. l. kirčiuojamas kamiene, kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės (gẽrojo). 2. Būdvardis ,,artimas“ yra 3b kirčiuotės, tad kirčiuotas trečias nuo galo ilgasis skiemuo žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "ar̃timojo": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "47": {
+    "wrd": "pilnajai",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, mot. g. vns. naud. l. kirčiuojami kamiene (kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės), o vyr. g. vns. naud. l. kirčiuojami galūnėje dešininiu kirčio ženklu (gražiájam). 2. Būdvardis ,,pilna“ yra trečiosios kirčiuotės, tad kirčiuotas antras nuo galo skiemuo žymimas kairiniu kirčio ženklu. 3. Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "pìlnajai": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "48": {
+    "wrd": "jaunajam",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, mot. g. vns. naud. l. kirčiuojami kamiene (kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės), o vyr. g. vns. naud. l. kirčiuojami galūnėje dešininiu kirčio ženklu (gražiájam). 2. Būdvardis ,,rami“ yra ketvirtosios kirčiuotės, tad kirčiuotas antras nuo galo ilgasis skiemuo žymimas riestiniu kirčio ženklu. 3. Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "jaunájam": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "49": {
+    "wrd": "turtingajam",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Pastovią kirčio vietą žodžio kamiene turi įvardžiuotiniai būdvardžiai, padaryti iš pirmosios kirčiuotės daugiaskiemenių būdvardžių. 2. Kirčiuota būdvardžių priesaga „-ing-“ visada žymima kairiniu kirčio ženklu ir yra pirmosios kirčiuotės.",
+    "acc": {
+      "turtìngajam": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "50": {
+    "wrd": "vienas",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardžiai „vienas, viena, pirmas, pirma“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai ,,baltas, balta“. 2. Trečiosios kirčiuotės antras nuo galo kirčiuotas ilgasis skiemuo kirčiuojamas dešininiu arba kairiniu kirčio ženklu. 3. Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "víenas": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "51": {
+    "wrd": "vienu",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardžiai „vienas, viena, pirmas, pirma“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai ,,baltas, balta“. 2. Trečiosios kirčiuotės antras nuo galo kirčiuotas ilgasis skiemuo kirčiuojamas dešininiu arba kairiniu kirčio ženklu. 3. Trečiosios kirčiuotės būdvardžių vienaskaitos įnagininko linksnis paprastai kirčiuojamas kamiene. 4. Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "víenu": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "52": {
+    "wrd": "vienai",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardžiai „vienas, viena, pirmas, pirma“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai ,,baltas, balta“. 2. Trečiosios kirčiuotės antras nuo galo kirčiuotas ilgasis skiemuo kirčiuojamas dešininiu arba kairiniu kirčio ženklu. 3. Trečiosios kirčiuotės būdvardžių mot. g. vns. naud. linksnis kirčiuojamas kamiene. 4. Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "víenai": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "53": {
+    "wrd": "viena",
+    "exp": [
+      "vns. įn. l."
+    ],
+    "aft": "1. Skaitvardžiai „vienas, viena, pirmas, pirma“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai ,,baltas, balta“. 2. Trečiosios kirčiuotės antras nuo galo kirčiuotas ilgasis skiemuo kirčiuojamas dešininiu arba kairiniu kirčio ženklu. 3. Trečiosios kirčiuotės būdvardžių vienaskaitos įnagininko linksnis paprastai kirčiuojamas kamiene. 4. Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "víena": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "54": {
+    "wrd": "vienus",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardžiai „vienas, viena, pirmas, pirma“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai ,,baltas, balta“. 2. Trečiosios kirčiuotės antras nuo galo kirčiuotas ilgasis skiemuo kirčiuojamas dešininiu arba kairiniu kirčio ženklu. 3. Visų kalbos dalių ir visų kirčiuočių vienaskaitos galininko linksnis kirčiuojamas kamiene. 4. Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "víenus": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "55": {
+    "wrd": "vienas",
+    "exp": [
+      "dgs. gal. l."
+    ],
+    "aft": "1. Skaitvardžiai „vienas, viena, pirmas, pirma“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai ,,baltas, balta“. 2. Trečiosios kirčiuotės antras nuo galo kirčiuotas ilgasis skiemuo kirčiuojamas dešininiu arba kairiniu kirčio ženklu. 3. Visų kalbos dalių ir visų kirčiuočių vienaskaitos galininko linksnis kirčiuojamas kamiene. 4. Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "víenas": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "56": {
+    "wrd": "vienuolika",
+    "exp": [
+      ""
+    ],
+    "aft": "Skaitvardžiai nuo vienuolikos iki devyniolikos kirčiuojami pirmąja kirčiuote ir turi tvirtapradę priegaidę.",
+    "acc": {
+      "vienúolika": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "57": {
+    "wrd": "dvylika",
+    "exp": [
+      ""
+    ],
+    "aft": "Skaitvardžiai nuo vienuolikos iki devyniolikos kirčiuojami pirmąja kirčiuote ir turi tvirtapradę priegaidę.",
+    "acc": {
+      "dvýlika": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "58": {
+    "wrd": "šešiolika",
+    "exp": [
+      ""
+    ],
+    "aft": "Skaitvardžiai nuo vienuolikos iki devyniolikos kirčiuojami pirmąja kirčiuote ir turi tvirtapradę priegaidę.",
+    "acc": {
+      "šešiólika": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "59": {
+    "wrd": "aštuoniolika",
+    "exp": [
+      ""
+    ],
+    "aft": "Skaitvardžiai nuo vienuolikos iki devyniolikos kirčiuojami pirmąja kirčiuote ir turi tvirtapradę priegaidę.",
+    "acc": {
+      "aštuoniólika": {
+        "pos": 7,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "60": {
+    "wrd": "šimtu",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardis „šimtas“ kirčiuojamas kaip ketvirtosios kirčiuotės žodis „namas“. 2. Ketvirtosios kirčiuotės ir vienaskaitos, ir daugiskaitos įnagininko linksnis kirčiuojamas galūnėje.",
+    "acc": {
+      "šimtù": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "61": {
+    "wrd": "šimtus",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardis „šimtas“ kirčiuojamas kaip ketvirtosios kirčiuotės žodis „namas“. 2. Antrosios ir ketvirtosios kirčiuotės daugiskaitos galininko linksnis visada kirčiuojamas galūnėje.",
+    "acc": {
+      "šimtùs": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "62": {
+    "wrd": "milijonas",
+    "exp": [
+      ""
+    ],
+    "aft": "Skaitvardžiai „milijonas, bilijonas, trilijonas“ kirčiuojami kaip antrosios kirčiuotės daiktavardis „ponas“.",
+    "acc": {
+      "milijõnas": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "63": {
+    "wrd": "milijonus",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardžiai „milijonas, bilijonas, trilijonas“ kirčiuojami kaip antrosios kirčiuotės daiktavardis „ponas“. 2. Antrosios ir ketvirtosios kirčiuotės daugiskaitos galininko linksnis visada kirčiuojamas galūnėje.",
+    "acc": {
+      "milijonùs": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "64": {
+    "wrd": "milijonu",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardžiai „milijonas, bilijonas, trilijonas“ kirčiuojami kaip antrosios kirčiuotės daiktavardis „ponas“. 2. Antrosios kirčiuotės vienaskaitos įnagininko linksnis kirčiuojamas galūnėje.",
+    "acc": {
+      "milijonù": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "65": {
+    "wrd": "milijone",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardžiai „milijonas, bilijonas, trilijonas“ kirčiuojami kaip antrosios kirčiuotės daiktavardis „ponas“. 2. Antrosios kirčiuotės vienaskaitos vietininko linksnis kirčiuojamas galūnėje, jei įnagininko linksnyje turėjo vienskiemenę galūnę (plg. ponù, ponè ir aliẽjumi, aliẽjuje).",
+    "acc": {
+      "milijonè": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "66": {
+    "wrd": "septynias",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardžiai ,,septyni, aštuoni, devyni“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai. 2. Trečiosios kirčiuotės daugiskaitos galininko linksnis kirčiuojamas kamiene. 3. Trečiosios kirčiuotės kirčiuotas antras nuo galo skiemuo kirčiuojamas dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "septýnias": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "67": {
+    "wrd": "aštuonis",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardžiai ,,septyni, aštuoni, devyni“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai. 2. Trečiosios kirčiuotės daugiskaitos galininko linksnis kirčiuojamas kamiene. 3. Trečiosios kirčiuotės kirčiuotas antras nuo galo skiemuo kirčiuojamas dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "aštúonis": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "68": {
+    "wrd": "devynis",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardžiai ,,septyni, aštuoni, devyni“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai. 2. Trečiosios kirčiuotės daugiskaitos galininko linksnis kirčiuojamas kamiene. 3. Trečiosios kirčiuotės kirčiuotas antras nuo galo skiemuo kirčiuojamas dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "devýnis": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "69": {
+    "wrd": "pirmu",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardžiai „vienas, viena, pirmas, pirma“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai ,,baltas, balta“. 2. Trečiosios kirčiuotės būdvardžių vienaskaitos įnagininko linksnis paprastai kirčiuojamas kamiene. 3. Trečiosios kirčiuotės antras nuo galo kirčiuotas ilgasis skiemuo kirčiuojamas dešininiu arba kairiniu kirčio ženklu. 4. Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "pìrmu": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "70": {
+    "wrd": "pirma",
+    "exp": [
+      "vns. įn. l."
+    ],
+    "aft": "1. Skaitvardžiai „vienas, viena, pirmas, pirma“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai ,,baltas, balta“. 2. Trečiosios kirčiuotės antras nuo galo kirčiuotas ilgasis skiemuo kirčiuojamas dešininiu arba kairiniu kirčio ženklu. 3. Trečiosios kirčiuotės būdvardžių vienaskaitos įnagininko linksnis paprastai kirčiuojamas kamiene. 4. Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "pìrma": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "71": {
+    "wrd": "pirma",
+    "exp": [
+      "vns. vard l."
+    ],
+    "aft": "1. Skaitvardžiai „vienas, viena, pirmas, pirma“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai ,,baltas, balta“. 2. Trečiosios kirčiuotės mot. g. būdvardžių su galūne „-a“ vienaskaitos vardininko linksnis kirčiuojamas galūnėje (baltà).",
+    "acc": {
+      "pirmà": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "72": {
+    "wrd": "pirmus",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Skaitvardžiai „vienas, viena, pirmas, pirma“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai ,,baltas, balta“. 2. Trečiosios kirčiuotės antras nuo galo kirčiuotas ilgasis skiemuo kirčiuojamas dešininiu arba kairiniu kirčio ženklu. 3. Visų kalbos dalių ir visų kirčiuočių vienaskaitos galininko linksnis kirčiuojamas kamiene. 4. Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "pìrmus": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "73": {
+    "wrd": "pirmas",
+    "exp": [
+      "dgs. gal. l."
+    ],
+    "aft": "1. Skaitvardžiai „vienas, viena, pirmas, pirma“ kirčiuojami kaip trečiosios kirčiuotės būdvardžiai ,,baltas, balta“. 2. Trečiosios kirčiuotės antras nuo galo kirčiuotas ilgasis skiemuo kirčiuojamas dešininiu arba kairiniu kirčio ženklu. 3. Visų kalbos dalių ir visų kirčiuočių vienaskaitos galininko linksnis kirčiuojamas kamiene. 4. Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "pìrmas": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "74": {
+    "wrd": "penkioliktąjį",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardžiuotiniai skaitvardžiai kirčiuojami kaip įvardžiuotiniai būdvardžiai. 2. Įvardžiuotinių būdvardžių pastovią kirčio vietą žodžio kamiene turi tie įvardžiuotiniai būdvardžiai, kurie yra padaryti iš pirmosios kirčiuotės daugiaskiemenių būdvardžių. 3. Skaitvardžiai nuo vienuolikos iki devyniolikos kirčiuojami pirmąja kirčiuote ir turi tvirtapradę priegaidę.",
+    "acc": {
+      "penkióliktąjį": {
+        "pos": 5,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "75": {
+    "wrd": "pirmoji",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardžiuotiniai skaitvardžiai kirčiuojami kaip įvardžiuotiniai būdvardžiai. 2. Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, kirčiuojami galūnėje. Vyr. g. vns. vard. įvardžiuotiniai  būdvardžiai kirčiuojami kairiniu kirčio ženklu (nuostabùsis, baltàsis), o mot. g. vns. vard. įvardžiuotiniai  būdvardžiai kirčiuojami dešininiu kirčio ženklu (nuostabióji, baltóji).",
+    "acc": {
+      "pirmóji": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "76": {
+    "wrd": "antrajai",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardžiuotiniai skaitvardžiai kirčiuojami kaip įvardžiuotiniai būdvardžiai. 2. Įvardžiuotiniai būdvardžiai, padaryti iš antrosios, trečiosios ar ketvirtosios kirčiuotės pamatinio žodžio, mot. g. vns. naud. l. kirčiuojami kamiene (kirčio ženklas priklauso nuo pamatinio žodžio kirčiuotės), o vyr. g. vns. naud. l. kirčiuojami galūnėje dešininiu kirčio ženklu (gražiájam). 3. Skaitvardis ,,antra“ yra ketvirtosios kirčiuotės, tad kirčiuotas antras nuo galo ilgasis skiemuo žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "añtrajai": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "77": {
+    "wrd": "manęs",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "manę̃s": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "78": {
+    "wrd": "mes",
+    "exp": [
+      "įvardis"
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "mẽs": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "79": {
+    "wrd": "mūsų",
+    "exp": [
+      ""
+    ],
+    "aft": "Įsidėmėtinas kirčiavimas.",
+    "acc": {
+      "mū́sų": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "80": {
+    "wrd": "tavęs",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "tavę̃s": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "81": {
+    "wrd": "jūsų",
+    "exp": [
+      ""
+    ],
+    "aft": "Įsidėmėtinas kirčiavimas.",
+    "acc": {
+      "jū́sų": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "82": {
+    "wrd": "jūs",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "jū̃s": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "83": {
+    "wrd": "jiems",
+    "exp": [
+      ""
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“   (pvz., akìms).",
+    "acc": {
+      "jíems": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "84": {
+    "wrd": "joms",
+    "exp": [
+      ""
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“   (pvz., akìms).",
+    "acc": {
+      "jóms": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "85": {
+    "wrd": "savęs",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "savę̃s": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "86": {
+    "wrd": "jos",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "jõs": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "87": {
+    "wrd": "kažkurio",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "kažkuriõ": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "88": {
+    "wrd": "kurie",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "kuriẽ": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "89": {
+    "wrd": "saviems",
+    "exp": [
+      ""
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“   (pvz., akìms).",
+    "acc": {
+      "savíems": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "90": {
+    "wrd": "šiuos",
+    "exp": [
+      ""
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "šiuõs": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "91": {
+    "wrd": "kitoks",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Dauguma „-oks; -okia“  trigarsiu besibaigiantys dviskiemeniai įvardžiai priklauso pirmajai kirčiuotei (išskyrus trečiosios kirčiuotės įvardį „kažkoks“). 2. Pirmosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "kitóks": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "92": {
+    "wrd": "visoks",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Dauguma „-oks; -okia“  trigarsiu besibaigiantys dviskiemeniai įvardžiai priklauso pirmajai kirčiuotei (išskyrus trečiosios kirčiuotės įvardį „kažkoks“). 2. Pirmosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "visóks": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "93": {
+    "wrd": "kitokiu",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Dauguma „-oks; -okia“  trigarsiu besibaigiantys dviskiemeniai įvardžiai priklauso pirmajai kirčiuotei (išskyrus trečiosios kirčiuotės įvardį „kažkoks“). 2. Pirmosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "kitókiu": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "94": {
+    "wrd": "visokių",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Dauguma „-oks; -okia“  trigarsiu besibaigiantys dviskiemeniai įvardžiai priklauso pirmajai kirčiuotei (išskyrus trečiosios kirčiuotės įvardį „kažkoks“). 2. Pirmosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "visókių": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "95": {
+    "wrd": "saviškiu",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardžiai su baigmeniu „-iškis“ priklauso antrajai kirčiuotei. 2. Dauguma antrosios kirčiuotės žodžių vns. įn. l. kirčiuojami galūnėje.",
+    "acc": {
+      "saviškiù": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "96": {
+    "wrd": "taviškius",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardžiai su baigmeniu „-iškis“ priklauso antrajai kirčiuotei. 2. Antrosios kirčiuotės žodžių dgs. gal. l. kirčiuojamas galūnėje.",
+    "acc": {
+      "taviškiùs": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "97": {
+    "wrd": "niekas",
+    "exp": [
+      ""
+    ],
+    "aft": "Antrosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami riestiniu kirčio ženklu.",
+    "acc": {
+      "niẽkas": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "98": {
+    "wrd": "niekų",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Antrosios kirčiuotės žodžių dgs. kilm. l. visada kirčiuojamas kamiene. 2. Antrosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami riestiniu kirčio ženklu.",
+    "acc": {
+      "niẽkų": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "99": {
+    "wrd": "niekams",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Antrosios kirčiuotės žodžių dgs. naud. l. visada kirčiuojamas kamiene. 2. Antrosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami riestiniu kirčio ženklu.",
+    "acc": {
+      "niẽkams": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "100": {
+    "wrd": "niekus",
+    "exp": [
+      ""
+    ],
+    "aft": "Antrosios kirčiuotės žodžių dgs. gal. l. visada kirčiuojamas galūnėje.",
+    "acc": {
+      "niekùs": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "101": {
+    "wrd": "niekais",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Antrosios kirčiuotės žodžių dgs. įn. l. visada kirčiuojamas kamiene. 2. Antrosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami riestiniu kirčio ženklu.",
+    "acc": {
+      "niẽkais": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "102": {
+    "wrd": "toks",
+    "exp": [
+      ""
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių vns. vard. l. visada kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "tóks": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "103": {
+    "wrd": "joks",
+    "exp": [
+      ""
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių vns. vard. l. visada kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "jóks": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "104": {
+    "wrd": "koks",
+    "exp": [
+      ""
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių vns. vard. l. visada kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "kóks": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "105": {
+    "wrd": "kažkoks",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardis „kažkoks“ kaip ir įvardis „koks“ priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių vns. vard. l. visada kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "kažkóks": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "106": {
+    "wrd": "kiekvienas",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardis „kiekvienas“ kaip ir skaitvardis „vienas“ priklauso trečiajai kirčiuotei. 2.Trečiosios kirčiuotės žodžių vns. vard. l. visada kirčiuojamas kamiene. 3.Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "kiekvíenas": {
+        "pos": 5,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "107": {
+    "wrd": "tokiu",
+    "exp": [
+      ""
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių vns. įn. l. dažniausiai kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "tókiu": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "108": {
+    "wrd": "kokiu",
+    "exp": [
+      ""
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių vns. įn. l. dažniausiai kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "kókiu": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "109": {
+    "wrd": "kiekvienu",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardis „kiekvienas“ kaip ir skaitvardis „vienas“ priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių vns. įn. l. dažniausiai kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "kiekvíenu": {
+        "pos": 5,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "110": {
+    "wrd": "tokia",
+    "exp": [
+      "vns. vard."
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės mot. g. žodžiai, vns. vard. l. turintys galūnę „-a“, visada kirčiuojami galūnėje.",
+    "acc": {
+      "tokià": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "111": {
+    "wrd": "tokia",
+    "exp": [
+      "vns. įn."
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių vns. įn. l. dažniausiai kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "tókia": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "112": {
+    "wrd": "kažkokia",
+    "exp": [
+      "vns. vard."
+    ],
+    "aft": "1. Įvardis „kažkoks“ kaip ir įvardis „koks“ priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės mot. g. žodžiai, vns. vard. l. turintys galūnę „-a“, visada kirčiuojami galūnėje.",
+    "acc": {
+      "kažkokià": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "113": {
+    "wrd": "kažkokia",
+    "exp": [
+      "vns. įn."
+    ],
+    "aft": "1. Įvardis „kažkoks“ kaip ir įvardis „koks“ priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių vns. įn. l. dažniausiai kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "kažkókia": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "114": {
+    "wrd": "jokia",
+    "exp": [
+      "vns. vard."
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės mot. g. žodžiai, vns. vard. l. turintys galūnę „-a“, visada kirčiuojami galūnėje.",
+    "acc": {
+      "jokià": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "115": {
+    "wrd": "jokia",
+    "exp": [
+      "vns. įn."
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių vns. įn. l. dažniausiai kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "jókia": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "116": {
+    "wrd": "tokius",
+    "exp": [
+      ""
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių dgs. gal. l. kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "tókius": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "117": {
+    "wrd": "kokius",
+    "exp": [
+      ""
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių dgs. gal. l. kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "kókius": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "118": {
+    "wrd": "jokias",
+    "exp": [
+      ""
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių dgs. gal. l. kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "jókias": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "119": {
+    "wrd": "kažkokius",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardis „kažkoks“ kaip ir įvardis „koks“ priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių dgs. gal. l. kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "kažkókius": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "120": {
+    "wrd": "kiekvienus",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardis „kiekvienas“ kaip ir skaitvardis „vienas“ priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių dgs. gal. l. kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "kiekvíenus": {
+        "pos": 5,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "121": {
+    "wrd": "tokiems",
+    "exp": [
+      ""
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių dgs. naud. l. kirčiuojamas galūnėje. 3. Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“  (pvz., akìms).",
+    "acc": {
+      "tokíems": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "122": {
+    "wrd": "jokiems",
+    "exp": [
+      ""
+    ],
+    "aft": "1. „-oks; -okia“  trigarsiu besibaigiantys vyr. g. vienskiemeniai įvardžiai (mot. g. dviskiemeniai įvardžiai) priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių dgs. naud. l. kirčiuojamas galūnėje. 3. Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“  (pvz., akìms).",
+    "acc": {
+      "jokíems": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "123": {
+    "wrd": "kažkokiems",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardis „kažkoks“ kaip ir įvardis „koks“ priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių dgs. naud. l. kirčiuojamas galūnėje. 3. Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“  (pvz., akìms).",
+    "acc": {
+      "kažkokíems": {
+        "pos": 6,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "124": {
+    "wrd": "kažkokias",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Įvardis „kažkoks“ kaip ir įvardis „koks“ priklauso trečiajai kirčiuotei. 2. Trečiosios kirčiuotės žodžių dgs. gal. l. kirčiuojamas kamiene. 3. Trečiosios kirčiuotės žodžiai, kirčiuoti antrame nuo galo ilgajame skiemenyje, kirčiuojami dešininiu arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "kažkókias": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "125": {
+    "wrd": "aštriai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis trumpa, kirčiuojami žodžio gale.",
+    "acc": {
+      "aštriaĩ": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "126": {
+    "wrd": "gudriai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis trumpa, kirčiuojami žodžio gale.",
+    "acc": {
+      "gudriaĩ": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "127": {
+    "wrd": "giliai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis trumpa, kirčiuojami žodžio gale.",
+    "acc": {
+      "giliaĩ": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "128": {
+    "wrd": "giliai",
+    "exp": [
+      "mot. g. vns. naud."
+    ],
+    "aft": "1. Ketvirtosios kirčiuotės būdvardis „gili“ priklauso ketvirtajai kirčiuotei. 2. Ketvirtosios kirčiuotės mot. g. žodžiai vns. naud. l. kirčiuojami kamiene. 3. Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "gìliai": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "129": {
+    "wrd": "grakščiai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis trumpa, kirčiuojami žodžio gale.",
+    "acc": {
+      "grakščiaĩ": {
+        "pos": 8,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "130": {
+    "wrd": "aštriai",
+    "exp": [
+      "mot. g. vns. naud."
+    ],
+    "aft": "1. Ketvirtosios kirčiuotės būdvardis „aštri“ priklauso ketvirtajai kirčiuotei. 2. Ketvirtosios kirčiuotės mot. g. žodžiai vns. naud. l. kirčiuojami kamiene. 3. Ketvirtosios kirčiuotės žodžiai antrame nuo galo ilgajame skiemenyje kirčiuojami riestiniu kirčio ženklu. 4. Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "ãštriai": {
+        "pos": 0,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "131": {
+    "wrd": "gudriai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis trumpa, kirčiuojami žodžio gale.",
+    "acc": {
+      "gudriaĩ": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "132": {
+    "wrd": "klusniai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis trumpa, kirčiuojami žodžio gale.",
+    "acc": {
+      "klusniaĩ": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "133": {
+    "wrd": "lipšniai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis trumpa, kirčiuojami žodžio gale.",
+    "acc": {
+      "lipšniaĩ": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "134": {
+    "wrd": "mikliai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis trumpa, kirčiuojami žodžio gale.",
+    "acc": {
+      "mikliaĩ": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "135": {
+    "wrd": "stipriai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis trumpa, kirčiuojami žodžio gale.",
+    "acc": {
+      "stipriaĩ": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "136": {
+    "wrd": "tiksliai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis trumpa, kirčiuojami žodžio gale.",
+    "acc": {
+      "tiksliaĩ": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "137": {
+    "wrd": "vikriai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis trumpa, kirčiuojami žodžio gale.",
+    "acc": {
+      "vikriaĩ": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "138": {
+    "wrd": "vikriai",
+    "exp": [
+      "mot. g. vns. naud."
+    ],
+    "aft": "1. Ketvirtosios kirčiuotės būdvardis „vikri“ priklauso ketvirtajai kirčiuotei. 2. Ketvirtosios kirčiuotės mot. g. žodžiai vns. naud. l. kirčiuojami kamiene. 3. Ketvirtosios kirčiuotės žodžiai antrame nuo galo trumpajame skiemenyje kirčiuojami kairiniu kirčio ženklu.",
+    "acc": {
+      "vìkriai": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "139": {
+    "wrd": "tiksliai",
+    "exp": [
+      "mot. g. vns. naud."
+    ],
+    "aft": "1. Ketvirtosios kirčiuotės būdvardis „tiksli“ priklauso ketvirtajai kirčiuotei. 2. Ketvirtosios kirčiuotės mot. g. žodžiai vns. naud. l. kirčiuojami kamiene. 3. Ketvirtosios kirčiuotės žodžiai antrame nuo galo trumpajame skiemenyje kirčiuojami kairiniu kirčio ženklu.",
+    "acc": {
+      "tìksliai": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "140": {
+    "wrd": "aiškiai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis ilga (skiemens pagrindą sudaro ilgasis balsis ar bet kuris dvigarsis), kirčiuojami žodžio gale. Išimtys – skonio prieveiksmiai (gardžiaĩ, karčiaĩ, riebiaĩ, rūgščiaĩ, saldžiaĩ, sūriaĩ) ir vėlaĩ.",
+    "acc": {
+      "áiškiai": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "141": {
+    "wrd": "brangiai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis ilga (skiemens pagrindą sudaro ilgasis balsis ar bet kuris dvigarsis), kirčiuojami žodžio gale. Išimtys – skonio prieveiksmiai (gardžiaĩ, karčiaĩ, riebiaĩ, rūgščiaĩ, saldžiaĩ, sūriaĩ) ir vėlaĩ.",
+    "acc": {
+      "brángiai": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "142": {
+    "wrd": "jautriai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis ilga (skiemens pagrindą sudaro ilgasis balsis ar bet kuris dvigarsis), kirčiuojami žodžio gale. Išimtys – skonio prieveiksmiai (gardžiaĩ, karčiaĩ, riebiaĩ, rūgščiaĩ, saldžiaĩ, sūriaĩ) ir vėlaĩ.",
+    "acc": {
+      "jaũtriai": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "143": {
+    "wrd": "riebiai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis ilga (skiemens pagrindą sudaro ilgasis balsis ar bet kuris dvigarsis), kirčiuojami žodžio gale. Išimtys – skonio prieveiksmiai (gardžiaĩ, karčiaĩ, riebiaĩ, rūgščiaĩ, saldžiaĩ, sūriaĩ) ir vėlaĩ.",
+    "acc": {
+      "riebiaĩ": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "144": {
+    "wrd": "saldžiai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis ilga (skiemens pagrindą sudaro ilgasis balsis ar bet kuris dvigarsis), kirčiuojami žodžio gale. Išimtys – skonio prieveiksmiai (gardžiaĩ, karčiaĩ, riebiaĩ, rūgščiaĩ, saldžiaĩ, sūriaĩ) ir vėlaĩ.",
+    "acc": {
+      "saldžiaĩ": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "145": {
+    "wrd": "rūgščiai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių šaknis ilga (skiemens pagrindą sudaro ilgasis balsis ar bet kuris dvigarsis), kirčiuojami žodžio gale. Išimtys – skonio prieveiksmiai (gardžiaĩ, karčiaĩ, riebiaĩ, rūgščiaĩ, saldžiaĩ, sūriaĩ) ir vėlaĩ.",
+    "acc": {
+      "rūgščiaĩ": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "146": {
+    "wrd": "sūriai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis ilga (skiemens pagrindą sudaro ilgasis balsis ar bet kuris dvigarsis), kirčiuojami žodžio gale. Išimtys – skonio prieveiksmiai (gardžiaĩ, karčiaĩ, riebiaĩ, rūgščiaĩ, saldžiaĩ, sūriaĩ) ir vėlaĩ.",
+    "acc": {
+      "sūriaĩ": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "147": {
+    "wrd": "karčiai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis ilga (skiemens pagrindą sudaro ilgasis balsis ar bet kuris dvigarsis), kirčiuojami žodžio gale. Išimtys – skonio prieveiksmiai (gardžiaĩ, karčiaĩ, riebiaĩ, rūgščiaĩ, saldžiaĩ, sūriaĩ) ir vėlaĩ.",
+    "acc": {
+      "karčiaĩ": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "148": {
+    "wrd": "kruopščiai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "1. Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis ilga (skiemens pagrindą sudaro ilgasis balsis ar bet kuris dvigarsis), kirčiuojami žodžio gale. Išimtys – skonio prieveiksmiai (gardžiaĩ, karčiaĩ, riebiaĩ, rūgščiaĩ, saldžiaĩ, sūriaĩ) ir vėlaĩ. 2. Būdvardis „kruopštus“ priklauso ketvirtajai kirčiuotei, tad kirčiuotas antras nuo galo ilgasis skiemuo žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "kruõpščiai": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "149": {
+    "wrd": "dosniai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "1. Prieveiksmiai, padaryti iš dviskiemenių būdvardžių, kurių pamatinio žodžio šaknis ilga (skiemens pagrindą sudaro ilgasis balsis ar bet kuris dvigarsis), kirčiuojami žodžio gale. Išimtys – skonio prieveiksmiai (gardžiaĩ, karčiaĩ, riebiaĩ, rūgščiaĩ, saldžiaĩ, sūriaĩ) ir vėlaĩ. 2. Būdvardis „dosnus“ priklauso ketvirtajai kirčiuotei, tad kirčiuotas antras nuo galo ilgasis skiemuo žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "dõsniai": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  }
+}

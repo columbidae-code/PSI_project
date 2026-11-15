@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using beveikZinojau.lt.Extensions;
 using beveikZinojau.lt.Services.Geography;
 using beveikZinojau.lt.Services.History;
+using beveikZinojau.lt.Services.Accentuation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -81,7 +82,16 @@ builder.Services.AddSingleton<IHistoryRepository, JsonHistoryRepository>();
 builder.Services.AddSingleton<HistoryQuestionGenerator>();
 builder.Services.AddScoped<HistoryGameService>();
 
+// Accentuation services
+builder.Services.AddSingleton<ParserService>();
+builder.Services.AddSingleton<IAccentuationRepository, JsonAccentuationRepository>();
+builder.Services.AddScoped<AccentuationGameService>();
+
 var app = builder.Build();
+
+// Generate level1.json - level5.json from .docx files on startup if they don't exist yet
+var parser = app.Services.GetRequiredService<ParserService>();
+await parser.GenerateAllLevelsJsonAsync();
 
 // HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
