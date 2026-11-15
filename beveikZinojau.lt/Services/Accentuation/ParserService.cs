@@ -21,7 +21,7 @@ public class ParserService
 
         // Open the Word document in read only mode
         using WordprocessingDocument doc = WordprocessingDocument.Open(docxFilePath, false);
-        var body = doc.MainDocumentPart?.Document.Body;
+        var body = doc.MainDocumentPart?.Document?.Body;
         if (body == null) return data;
 
         foreach (var table in body.Elements<Table>())
@@ -151,7 +151,7 @@ public class ParserService
         return data;
     }
 
-    
+
     // Parses a .docx file and writes the data to a JSON file
     public async Task ParseDocxToJsonFileAsync(string docxFilePath, string outputJsonPath)
     {
@@ -181,5 +181,21 @@ public class ParserService
             }
         }
         return paradigm;
+    }
+
+    public async Task GenerateAllLevelsJsonAsync()
+    {
+        string folder = Path.Combine(Directory.GetCurrentDirectory(), "Data", "Accentuation");
+
+        for (int level = 1; level <= 5; level++)
+        {
+            string docxPath = Path.Combine(folder, $"{level}.docx");
+            string jsonPath = Path.Combine(folder, $"level{level}.json");
+
+            if (File.Exists(docxPath) && !File.Exists(jsonPath))
+            {
+                await ParseDocxToJsonFileAsync(docxPath, jsonPath);
+            }
+        }
     }
 }

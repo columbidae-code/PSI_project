@@ -1,0 +1,1302 @@
+{
+  "0": {
+    "wrd": "absoliučiai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmių, padarytų iš ketvirtosios kirčiuotės daugiaskiemenių būdvardžių su galūne „-us“, kirčiuojama galūnė.",
+    "acc": {
+      "absoliučiaĩ": {
+        "pos": 10,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "1": {
+    "wrd": "agresyviai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmių, padarytų iš ketvirtosios kirčiuotės daugiaskiemenių būdvardžių su galūne „-us“, kirčiuojama galūnė.",
+    "acc": {
+      "agresyviaĩ": {
+        "pos": 9,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "2": {
+    "wrd": "atsargiai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmių, padarytų iš ketvirtosios kirčiuotės daugiaskiemenių būdvardžių su galūne „-us“, kirčiuojama galūnė.",
+    "acc": {
+      "atsargiaĩ": {
+        "pos": 8,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "3": {
+    "wrd": "įmantriai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmių, padarytų iš ketvirtosios kirčiuotės daugiaskiemenių būdvardžių su galūne „-us“, kirčiuojama galūnė.",
+    "acc": {
+      "įmantriaĩ": {
+        "pos": 8,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "4": {
+    "wrd": "moderniai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmių, padarytų iš ketvirtosios kirčiuotės daugiaskiemenių būdvardžių su galūne „-us“, kirčiuojama galūnė.",
+    "acc": {
+      "moderniaĩ": {
+        "pos": 8,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "5": {
+    "wrd": "pasyviai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmių, padarytų iš ketvirtosios kirčiuotės daugiaskiemenių būdvardžių su galūne „-us“, kirčiuojama galūnė.",
+    "acc": {
+      "pasyviaĩ": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "6": {
+    "wrd": "subjektyviai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmių, padarytų iš ketvirtosios kirčiuotės daugiaskiemenių būdvardžių su galūne „-us“, kirčiuojama galūnė.",
+    "acc": {
+      "subjektyviaĩ": {
+        "pos": 11,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "7": {
+    "wrd": "klausiamai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai šaknis ilga, kirčiuojami kamiene.",
+    "acc": {
+      "kláusiamai": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "8": {
+    "wrd": "negrįžtamai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis ilga, kirčiuojami kamiene.",
+    "acc": {
+      "negrį̃žtamai": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "9": {
+    "wrd": "neišvengiamai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis ilga, kirčiuojami kamiene.",
+    "acc": {
+      "neišvéngiamai": {
+        "pos": 5,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "10": {
+    "wrd": "pašiepiamai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis ilga, kirčiuojami kamiene.",
+    "acc": {
+      "pašiẽpiamai": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "11": {
+    "wrd": "pakenčiamai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis ilga, kirčiuojami kamiene.",
+    "acc": {
+      "pakeñčiamai": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "12": {
+    "wrd": "suprantamai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis ilga, kirčiuojami kamiene.",
+    "acc": {
+      "suprañtamai": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "13": {
+    "wrd": "tinkamai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis ilga, kirčiuojami kamiene.",
+    "acc": {
+      "tiñkamai": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "14": {
+    "wrd": "deramai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis trumpa, kirčiuojami kamiene (šaknies balsiai „a, e“ pailgėja, gavę kirtį, nekirčiuoti jie yra trumpi).",
+    "acc": {
+      "deramaĩ": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "15": {
+    "wrd": "nepatikimai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis trumpa, kirčiuojami kamiene (šaknies balsiai „a, e“ pailgėja, gavę kirtį, nekirčiuoti jie yra trumpi).",
+    "acc": {
+      "nepatikimaĩ": {
+        "pos": 10,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "16": {
+    "wrd": "prideramai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis trumpa, kirčiuojami kamiene (šaknies balsiai „a, e“ pailgėja, gavę kirtį, nekirčiuoti jie yra trumpi).",
+    "acc": {
+      "prideramaĩ": {
+        "pos": 9,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "17": {
+    "wrd": "pritariamai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis trumpa, kirčiuojami kamiene (šaknies balsiai „a, e“ pailgėja, gavę kirtį, nekirčiuoti jie yra trumpi).",
+    "acc": {
+      "pritariamaĩ": {
+        "pos": 10,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "18": {
+    "wrd": "patikimai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis trumpa, kirčiuojami kamiene (šaknies balsiai „a, e“ pailgėja, gavę kirtį, nekirčiuoti jie yra trumpi).",
+    "acc": {
+      "patikimaĩ": {
+        "pos": 8,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "19": {
+    "wrd": "veriamai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis trumpa, kirčiuojami kamiene (šaknies balsiai „a, e“ pailgėja, gavę kirtį, nekirčiuoti jie yra trumpi).",
+    "acc": {
+      "veriamaĩ": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "20": {
+    "wrd": "neatskiriamai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis trumpa, kirčiuojami kamiene (šaknies balsiai „a, e“ pailgėja, gavę kirtį, nekirčiuoti jie yra trumpi).",
+    "acc": {
+      "neatskiriamaĩ": {
+        "pos": 12,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "21": {
+    "wrd": "prieinamai",
+    "exp": [
+      "prv."
+    ],
+    "aft": "Prieveiksmiai, padaryti iš neveikiamųjų trečiosios kirčiuotės dalyvių, kai pamatinio žodžio šaknis ilga, kirčiuojami kamiene.",
+    "acc": {
+      "prieĩnamai": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "22": {
+    "wrd": "visuomet",
+    "exp": [
+      ""
+    ],
+    "aft": "Įsidėmėtinas sustabarėjusio prieveiksmio kirčiavimas.",
+    "acc": {
+      "visuomèt": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "23": {
+    "wrd": "niekaip",
+    "exp": [
+      ""
+    ],
+    "aft": "Įsidėmėtinas sustabarėjusio prieveiksmio kirčiavimas.",
+    "acc": {
+      "niẽkaip": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "24": {
+    "wrd": "palaipsniui",
+    "exp": [
+      ""
+    ],
+    "aft": "Įsidėmėtinas sustabarėjusio prieveiksmio kirčiavimas.",
+    "acc": {
+      "palaipsniuĩ": {
+        "pos": 10,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "25": {
+    "wrd": "bėgo",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Jei asmenuojant būtojo kartinio laiko veiksmažodžius kirčio vieta nesikeičia, tai visos būt. k. l. formos kirčiuojamos tvirtapradiškai (bė́gau, bė́gai– bė́go). 2. Taisyklę galima taikyti ir atvirkščiai: jei būt. k. l. 3 a. dviskiemenis veiksmažodis kirčiuojamas tvirtapradiškai, tai būt. k. l. 1 ir 2 asmenyse kirčiuojame toje pačioje vietoje ir tuo pačiu kirčio ženklu.",
+    "acc": {
+      "bė́go": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "26": {
+    "wrd": "mokiau",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Jei asmenuojant būtojo kartinio laiko veiksmažodžius kirčio vieta nesikeičia, tai visos būt. k. l. formos kirčiuojamos tvirtapradiškai (mókiau, mókei– mókė). 2. Taisyklę galima taikyti ir atvirkščiai: jei būt. k. l. 3 a. dviskiemenis veiksmažodis kirčiuojamas tvirtapradiškai, tai būt. k. l. 1 ir 2 asmenyse kirčiuojame toje pačioje vietoje ir tuo pačiu kirčio ženklu.",
+    "acc": {
+      "mókiau": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "27": {
+    "wrd": "kviečia",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Jei asmenuojant esamojo laiko veiksmažodžius kirčio vieta keičiasi, tai  es. l. 3 a. kirčiuojamas tvirtagališkai (kviečiù, kvietì – kviẽčia). 2. Taisyklę galima taikyti ir atvirkščiai: jei es. l. 3 a. dviskiemenis veiksmažodis kirčiuojamas tvirtagališkai, tai es. l. 1 ir 2 asmenyse kirčiuojame galūnėje.",
+    "acc": {
+      "kviẽčia": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "28": {
+    "wrd": "liepė",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Jei asmenuojant būtojo kartinio laiko veiksmažodžius kirčio vieta keičiasi, tai būt. k. l. 3 a. kirčiuojamas tvirtagališkai (liepiaũ, liepeĩ – liẽpė). 2. Taisyklę galima taikyti ir atvirkščiai: jei būt. k. l. 3 a. dviskiemenis veiksmažodis kirčiuojamas tvirtagališkai, tai būt. k. l. 1 ir 2 asmenyse kirčiuojame galūnėje.",
+    "acc": {
+      "liẽpė": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "29": {
+    "wrd": "nori",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Jei asmenuojant esamojo laiko dviskiemenius veiksmažodžius kirčio vieta nesikeičia, tai visos es. l. formos kirčiuojamos tvirtapradiškai (nóriu, nóri – nóri). 2. Taisyklę galima taikyti ir atvirkščiai: jei es. l. 3 a. dviskiemenis veiksmažodis kirčiuojamas tvirtapradiškai, tai es. l. 1 ir 2 asmenyse kirčiuojame toje pačioje vietoje ir tuo pačiu kirčio ženklu.",
+    "acc": {
+      "nóri": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "30": {
+    "wrd": "ruošė",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Jei asmenuojant būtojo kartinio laiko veiksmažodžius kirčio vieta keičiasi, tai būt. k. l. 3 a. kirčiuojamas tvirtagališkai (ruošiaũ, ruošeĩ – ruõšė). 2. Taisyklę galima taikyti ir atvirkščiai: jei būt. k. l. 3 a. dviskiemenis veiksmažodis kirčiuojamas tvirtagališkai, tai būt. k. l. 1 ir 2 asmenyse kirčiuojame galūnėje.",
+    "acc": {
+      "ruõšė": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "31": {
+    "wrd": "piešiu",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Jei asmenuojant esamojo laiko veiksmažodžius kirčio vieta keičiasi, tai  es. l. 3 a. kirčiuojamas tvirtagališkai (piešiù, piešì – piẽšia). 2. Taisyklę galima taikyti ir atvirkščiai: jei es. l. 3 a. dviskiemenis veiksmažodis kirčiuojamas tvirtagališkai, tai es. l. 1 ir 2 asmenyse kirčiuojame galūnėje.",
+    "acc": {
+      "piešiù": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "32": {
+    "wrd": "pabaigia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "pabaĩgia": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "33": {
+    "wrd": "įžvelgia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "įžvel̃gia": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "34": {
+    "wrd": "pakviečia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "pakviẽčia": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "35": {
+    "wrd": "paveikia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "paveĩkia": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "36": {
+    "wrd": "atidengia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "atideñgia": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "37": {
+    "wrd": "užjaučia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "užjaũčia": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "38": {
+    "wrd": "parengia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "pareñgia": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "39": {
+    "wrd": "paruošia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "paruõšia": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "40": {
+    "wrd": "įteikia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "įteĩkia": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "41": {
+    "wrd": "sulenkia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "suleñkia": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "42": {
+    "wrd": "sutelkia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "sutel̃kia": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "43": {
+    "wrd": "apžvelgia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "apžvel̃gia": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "44": {
+    "wrd": "pagrindžia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "pagriñdžia": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "45": {
+    "wrd": "atskleidžia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "atskleĩdžia": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "46": {
+    "wrd": "išverčia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "išver̃čia": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "47": {
+    "wrd": "iškenčia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "iškeñčia": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "48": {
+    "wrd": "pašaukia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "pašaũkia": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "49": {
+    "wrd": "sukaupia",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei dviskiemenio veiksmažodžio es. l. 3 . galūnė „-ia“ ir šaknis tvirtagalė, tai priešdėlinio es. l. 3 a. veiksmažodis bus kirčiuotas šaknyje, o 3 a. būt. k. l. priešdėlinis veiksmažodis – priešdėlyje (pavyzdžiui, baĩgia – pabaĩgia, pàbaigė).",
+    "acc": {
+      "sukaũpia": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "50": {
+    "wrd": "Kalėdos",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios kirčiuotės žodžių antras nuo galo skiemuo kirčiuojamas kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "Kalė̃dos": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "51": {
+    "wrd": "Kalėdas",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios ir ketvirtosios kirčiuotės žodžiai daugiskaitos galininko linksnyje visada kirčiuojami galūnėje.",
+    "acc": {
+      "Kalėdàs": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "52": {
+    "wrd": "kieme",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Trečiosios ir ketvirtosios kirčiuočių žodžių vienaskaitos vietininkas visada kirčiuojamas galūnėje.",
+    "acc": {
+      "kiemè": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "53": {
+    "wrd": "Velykos",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžių antras nuo galo skiemuo kirčiuojamas kairiniu (il, im, in, ir, ul, um, un, ur) arba dešininiu kirčio ženklu.",
+    "acc": {
+      "Velýkos": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "54": {
+    "wrd": "Varėna",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "Varėnà": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "55": {
+    "wrd": "Varėnos",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1. Moteriškosios giminės trečiosios ir ketvirtosios kirčiuočių daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, vienaskaitos kilmininko linksnyje kirčiuojami galūnėje. 2. Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "Varėnõs": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "56": {
+    "wrd": "Varėnoje",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "Trečiosios kirčiuotės žodžiai vienaskaitos įnagininko linksnyje visada kirčiuojami galūnėje.",
+    "acc": {
+      "Varėnojè": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "57": {
+    "wrd": "Žuvintas",
+    "exp": [
+      "3<sup>b</sup> kirčiuotė"
+    ],
+    "aft": "1. Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal pagrindinius kirčiavimo dėsnius arba išlaiko pamatinio žodžio priegaidę ir kirčio ženklą. 2. Trumpasis kirčiuotas skiemuo žymimas kairiniu kirčio ženklu.",
+    "acc": {
+      "Žùvintas": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "58": {
+    "wrd": "Žuvinte",
+    "exp": [
+      "3<sup>b</sup> kirčiuotė"
+    ],
+    "aft": "Trečiosios ir ketvirtosios kirčiuočių vienaskaitos vietininko linksnis visada kirčiuojamas galūnėje.",
+    "acc": {
+      "Žuvintè": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "59": {
+    "wrd": "Alytus",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Daugelis ketvirtosios kirčiuotės daiktavardžių vienaskaitos vardininko linksnyje kirčiuojami galūnėje. Išimtis – daiktavardžiai su vns. vard. galūne „-as“ (pavyzdžiui, nãmas).",
+    "acc": {
+      "Alytùs": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "60": {
+    "wrd": "Alytaus",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Daugelis ketvirtosios kirčiuotės daiktavardžių vienaskaitos kilmininko linksnyje kirčiuojami galūnėje.",
+    "acc": {
+      "Alytaũs": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "61": {
+    "wrd": "Alytuje",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Trečiosios ir ketvirtosios kirčiuočių vienaskaitos vietininko linksnis visada kirčiuojamas galūnėje.",
+    "acc": {
+      "Alytujè": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "62": {
+    "wrd": "Galgiai",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Dauguma ketvirtosios kirčiuotės vyriškosios giminės daiktavardžių daugiskaitos vardininko linksnyje kirčiuojami galūnėje. Išimtis – daiktavardžiai su vns. vard. galūne  „-is“ (pavyzdžiui, vãgys).",
+    "acc": {
+      "Galgiaĩ": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "63": {
+    "wrd": "Galgius",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Antrosios ir ketvirtosios kirčiuotės žodžiai daugiskaitos galininko linksnyje visada kirčiuojami galūnėje.",
+    "acc": {
+      "Galgiùs": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "64": {
+    "wrd": "Bukčiai",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Dauguma ketvirtosios kirčiuotės vyriškosios giminės daiktavardžių daugiskaitos vardininko linksnyje kirčiuojami galūnėje. Išimtis – daiktavardžiai su vns. vard. galūne  „-is“ (pavyzdžiui, vãgys).",
+    "acc": {
+      "Bukčiaĩ": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "65": {
+    "wrd": "Bukčius",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Antrosios ir ketvirtosios kirčiuotės žodžiai daugiskaitos galininko linksnyje visada kirčiuojami galūnėje.",
+    "acc": {
+      "Bukčiùs": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "66": {
+    "wrd": "Jurkėnaitė",
+    "exp": [
+      ""
+    ],
+    "aft": "Mergaičių ir netekėjusiu moterų pavardės, padarytos iš vyriškų pavardžių „-ė́nas, -ýnas, -(i)ū́nas“, turi nekirčiuotą priesagą „-aitė“ ir yra pirmosios kirčiuotės.",
+    "acc": {
+      "Jurkė́naitė": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "67": {
+    "wrd": "Sirtautaitė",
+    "exp": [
+      ""
+    ],
+    "aft": "Mergaičių ir netekėjusių moterų pavardės, padarytos iš vyriškų pavardžių su galūnėmis „-as, -a“, turi kirčiuotą tvirtapradę priesagą „-áitė“.",
+    "acc": {
+      "Sirtautáitė": {
+        "pos": 7,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "68": {
+    "wrd": "Daugirdaitė",
+    "exp": [
+      ""
+    ],
+    "aft": "Mergaičių ir netekėjusių moterų pavardės, padarytos iš vyriškų pavardžių su galūnėmis „-as, -a“, turi kirčiuotą tvirtapradę priesagą „-áitė“.",
+    "acc": {
+      "Daugirdáitė": {
+        "pos": 7,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "69": {
+    "wrd": "Jurkūnaitė",
+    "exp": [
+      ""
+    ],
+    "aft": "Mergaičių ir netekėjusiu moterų pavardės, padarytos iš vyriškų pavardžių „-ė́nas, -ýnas, -(i)ū́nas“, turi nekirčiuotą priesagą „-aitė“ ir yra pirmosios kirčiuotės.",
+    "acc": {
+      "Jurkū́naitė": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "70": {
+    "wrd": "rašydavau",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Dauguma išvestinių veiksmažodžių formų, padarytų iš bendraties, išlaiko veiksmažodžio bendraties kirčio vietą ir kirčio ženklą. 2. Dauguma kirčiuotų veiksmažodžių bendraties priesagų (-áuti, -ė́ti, -ýti, -óti, -úoti) žymimos dešininiu kirčio ženklu. Išimtis – kirčiuota veiksmažodžių priesaga „-ìnti“, kuri žymima kairiniu kirčio ženklu.",
+    "acc": {
+      "rašýdavau": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "71": {
+    "wrd": "kalbėtų",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Dauguma išvestinių veiksmažodžių formų, padarytų iš bendraties, išlaiko veiksmažodžio bendraties kirčio vietą ir kirčio ženklą. 2. Dauguma kirčiuotų veiksmažodžių bendraties priesagų (-áuti, -ė́ti, -ýti, -óti, -úoti) žymimos dešininiu kirčio ženklu. Išimtis – kirčiuota veiksmažodžių priesaga „-ìnti“, kuri žymima kairiniu kirčio ženklu.",
+    "acc": {
+      "kalbė́tų": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "72": {
+    "wrd": "skaitys",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei veiksmažodžio bendratis priešpaskutiniame skiemenyje turi tvirtapradę priegaidę, tai būsimojo laiko 3 asmenyje ji virs tvirtagale. Jei būsimojo laiko 3 a. balsis sutrumpėja, jis kirčiuojamas trumpai.",
+    "acc": {
+      "skaitỹs": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "73": {
+    "wrd": "džius",
+    "exp": [
+      ""
+    ],
+    "aft": "Jei veiksmažodžio bendratis priešpaskutiniame skiemenyje turi tvirtapradę priegaidę, tai būsimojo laiko 3 asmenyje ji virs tvirtagale. Jei būsimojo laiko 3 a. balsis sutrumpėja, jis kirčiuojamas trumpai.",
+    "acc": {
+      "džiùs": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "74": {
+    "wrd": "šoka",
+    "exp": [
+      ""
+    ],
+    "aft": "1. Jei asmenuojant esamojo laiko dviskiemenius veiksmažodžius kirčio vieta nesikeičia, tai visos es. l. formos kirčiuojamos tvirtapradiškai (šóku, šóki – šóka). 2. Taisyklę galima taikyti ir atvirkščiai: jei es. l. 3 a. dviskiemenis veiksmažodis kirčiuojamas tvirtapradiškai, tai es. l. 1 ir 2 asmenyse kirčiuojame toje pačioje vietoje ir tuo pačiu kirčio ženklu.",
+    "acc": {
+      "šóka": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "75": {
+    "wrd": "Vilnius",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu (il, im, in, ir, ul, um, un, ur) arba dešininiu kirčio ženklu.",
+    "acc": {
+      "Vìlnius": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "76": {
+    "wrd": "Baltupiai",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal pagrindinius kirčiavimo dėsnius arba išlaiko pamatinio žodžio priegaidę ir kirčio ženklą. 2. Žodžio trečias nuo galo skiemuo išlaiko pamatinio žodžio „báltas“ tvirtapradę priegaidę ir kirčio ženklą.",
+    "acc": {
+      "Báltupiai": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "77": {
+    "wrd": "Justiniškės",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal pagrindinius kirčiavimo dėsnius arba išlaiko pamatinio žodžio priegaidę ir kirčio ženklą. 2. Žodžio trečias nuo galo skiemuo yra trumpasis, todėl kirčiuojamas kairiniu kirčio ženklu.",
+    "acc": {
+      "Justìniškės": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "78": {
+    "wrd": "Justiniškių",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal pagrindinius kirčiavimo dėsnius arba išlaiko pamatinio žodžio priegaidę ir kirčio ženklą. 2. Pirmosios kirčiuotės žodžiai visuose linksniuose kirčiuojami pastoviai kamiene. 3. Žodžio trečias nuo galo skiemuo yra trumpasis, todėl kirčiuojamas kairiniu kirčio ženklu.",
+    "acc": {
+      "Justìniškių": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "79": {
+    "wrd": "Viršuliškės",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal pagrindinius kirčiavimo dėsnius arba išlaiko pamatinio žodžio priegaidę ir kirčio ženklą. 2. Žodžio trečias nuo galo skiemuo yra trumpasis, todėl kirčiuojamas kairiniu kirčio ženklu.",
+    "acc": {
+      "Viršùliškės": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "80": {
+    "wrd": "Viršuliškėse",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal pagrindinius kirčiavimo dėsnius arba išlaiko pamatinio žodžio priegaidę ir kirčio ženklą. 2. Pirmosios kirčiuotės žodžiai visuose linksniuose kirčiuojami pastoviai kamiene. 3. Žodžio trečias nuo galo skiemuo yra trumpasis, todėl kirčiuojamas kairiniu kirčio ženklu.",
+    "acc": {
+      "Viršùliškėse": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "81": {
+    "wrd": "Baltupių",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal pagrindinius kirčiavimo dėsnius arba išlaiko pamatinio žodžio priegaidę ir kirčio ženklą. 2. Pirmosios kirčiuotės žodžiai visuose linksniuose kirčiuojami pastoviai kamiene. 3. Žodžio trečias nuo galo skiemuo išlaiko pamatinio žodžio „báltas“ tvirtapradę priegaidę ir kirčio ženklą.",
+    "acc": {
+      "Báltupių": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "82": {
+    "wrd": "Maišiagala",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal pagrindinius kirčiavimo dėsnius arba išlaiko pamatinio žodžio priegaidę ir kirčio ženklą. 2. Pirmosios kirčiuotės žodis, turintis tvirtapradę priegaidę.",
+    "acc": {
+      "Máišiagala": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "83": {
+    "wrd": "Plateliai",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal pagrindinius kirčiavimo dėsnius arba išlaiko pamatinio žodžio priegaidę ir kirčio ženklą. 2. Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "Plãteliai": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "84": {
+    "wrd": "Platelių",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal pagrindinius kirčiavimo dėsnius arba išlaiko pamatinio žodžio priegaidę ir kirčio ženklą. 2. Pirmosios kirčiuotės žodžiai visuose linksniuose kirčiuojami pastoviai kamiene. 3. Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "Plãtelių": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "85": {
+    "wrd": "Raseiniai",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu (il, im, in, ir, ul, um, un, ur) arba dešininiu kirčio ženklu.",
+    "acc": {
+      "Raséiniai": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "86": {
+    "wrd": "Šalčininkai",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal pagrindinius kirčiavimo dėsnius arba išlaiko pamatinio žodžio priegaidę ir kirčio ženklą. 2. Žodžio ketvirtas nuo galo skiemuo išlaiko pamatinio žodžio „šal̃tis“ tvirtagalę priegaidę ir kirčio ženklą.",
+    "acc": {
+      "Šal̃čininkai": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "87": {
+    "wrd": "Šalčininkuose",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal pagrindinius kirčiavimo dėsnius arba išlaiko pamatinio žodžio priegaidę ir kirčio ženklą. 2. Pirmosios kirčiuotės žodžiai visuose linksniuose kirčiuojami pastoviai kamiene. 3. Žodžio ketvirtas nuo galo skiemuo išlaiko pamatinio žodžio „šal̃tis“ tvirtagalę priegaidę ir kirčio ženklą.",
+    "acc": {
+      "Šal̃čininkuose": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "88": {
+    "wrd": "Airija",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal pagrindinius kirčiavimo dėsnius arba išlaiko pamatinio žodžio priegaidę ir kirčio ženklą. 2. Pirmosios kirčiuotės žodis, turintis tvirtagalę priegaidę.",
+    "acc": {
+      "Aĩrija": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "89": {
+    "wrd": "Trakai",
+    "exp": [
+      "2 kirčiuotė, Trakų raj."
+    ],
+    "aft": "1. Antrosios kirčiuotės žodžių antras nuo galo skiemuo kirčiuojamas kairiniu arba riestiniu kirčio ženklu. 2. Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "Trãkai": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "90": {
+    "wrd": "Trakų",
+    "exp": [
+      "2 kirčiuotė, Trakų raj."
+    ],
+    "aft": "1. Antrosios kirčiuotės žodžių daugiskaitos linksniai  kirčiuojami kamiene, išskyrus daugiskaitos galininko linksnį. 2. Antrosios kirčiuotės žodžių antras nuo galo skiemuo kirčiuojamas kairiniu arba riestiniu kirčio ženklu. 3. Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "Trãkų": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "91": {
+    "wrd": "Trakams",
+    "exp": [
+      "2 kirčiuotė, Trakų raj."
+    ],
+    "aft": "1. Antrosios kirčiuotės žodžių daugiskaitos linksniai  kirčiuojami kamiene, išskyrus daugiskaitos galininko linksnį. 2. Antrosios kirčiuotės žodžių antras nuo galo skiemuo kirčiuojamas kairiniu arba riestiniu kirčio ženklu. 3. Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "Trãkams": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "92": {
+    "wrd": "Trakus",
+    "exp": [
+      "2 kirčiuotė, Trakų raj."
+    ],
+    "aft": "Antrosios ir ketvirtosios kirčiuotės žodžiai daugiskaitos galininko linksnyje visada kirčiuojami galūnėje.",
+    "acc": {
+      "Trakùs": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "93": {
+    "wrd": "Trakuose",
+    "exp": [
+      "2 kirčiuotė, Trakų raj."
+    ],
+    "aft": "1. Antrosios kirčiuotės žodžių daugiskaitos linksniai  kirčiuojami kamiene, išskyrus daugiskaitos galininko linksnį. 2. Antrosios kirčiuotės žodžių antras nuo galo skiemuo kirčiuojamas kairiniu arba riestiniu kirčio ženklu. 3. Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "Trãkuose": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "94": {
+    "wrd": "Ignalina",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "Ignalinà": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "95": {
+    "wrd": "Varniai",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios kirčiuotės žodžių daugiskaitos linksniai  kirčiuojami kamiene, išskyrus daugiskaitos galininko linksnį. 2. Antrosios kirčiuotės žodžių antras nuo galo skiemuo kirčiuojamas kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "Var̃niai": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "96": {
+    "wrd": "Varniuose",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios kirčiuotės žodžių daugiskaitos linksniai  kirčiuojami kamiene, išskyrus daugiskaitos galininko linksnį. 2. Antrosios kirčiuotės žodžių antras nuo galo skiemuo kirčiuojamas kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "Var̃niuose": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "97": {
+    "wrd": "Anykščiai",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "Trečiosios kirčiuotės daiktavardžiai, turintys daugiskaitos vardininko galūnę „-iai“, visada kirčiuojami galūnėje.",
+    "acc": {
+      "Anykščiaĩ": {
+        "pos": 8,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "98": {
+    "wrd": "Anykščių",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "Trečiosios kirčiuotės žodžių daugiskaitos kilmininko linksnis visada kirčiuojamas galūnėje.",
+    "acc": {
+      "Anykščių̃": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "99": {
+    "wrd": "Anykščius",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1.Trečiosios kirčiuotės žodžių daugiskaitos galininko linksnis visada kirčiuojamas kamiene. 2. Trečiosios kirčiuotės žodžių antras nuo galo skiemuo kirčiuojamas kairiniu (il, im, in, ir, ul, um, un, ur)  arba dešininiu kirčio ženklu.",
+    "acc": {
+      "Anýkščius": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  }
+}
