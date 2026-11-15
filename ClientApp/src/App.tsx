@@ -19,6 +19,8 @@ function App() {
   const [showRegister, setShowRegister] = useState(false)
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [roomCode, setRoomCode] = useState<string | null>(null)
+  const [singlePlayer, setSinglePlayer] = useState(false)
+  const [isHost, setIsHost] = useState(false)
   const [joinCode, setJoinCode] = useState("")
   const [players, setPlayers] = useState<string[]>([])
   const [showNamePopup, setShowNamePopup] = useState(false)
@@ -27,6 +29,7 @@ function App() {
   const [authChecked, setAuthChecked] = useState(false)
   const [showProfile, setShowProfile] = useState(false)
   const [nameAction, setNameAction] = useState<"create" | "join" | null>(null)
+
   // The server keeps the login in a cookie
   useEffect(() => {
     fetch("/api/me")
@@ -41,7 +44,7 @@ function App() {
   }
 
   async function handleLogout() {
-    await fetch("/api/logout", { method: "POST"})
+    await fetch("/api/logout", { method: "POST" })
     setUsername(null)
     setShowProfile(false)
   }
@@ -55,23 +58,27 @@ function App() {
   }, [])
 
   useEffect(() => {
-    const handlePlayerJoined = (username: string) => {
-      setPlayers((players) => {
-        if (players.includes(username)) {
-          return players
+    const handlePlayerJoined = (playerName: string) => {
+      setPlayers((prev) => {
+        if (prev.includes(playerName)) {
+          return prev
         }
-
-        return [...players, username]
+        return [...prev, playerName]
       })
     }
 
+    const handlePlayerLeft = (playerName: string) => {
+      setPlayers((prev) => prev.filter((p) => p !== playerName))
+    }
+
     connection.on("PlayerJoined", handlePlayerJoined)
+    connection.on("PlayerLeft", handlePlayerLeft)
 
     return () => {
       connection.off("PlayerJoined", handlePlayerJoined)
+      connection.off("PlayerLeft", handlePlayerLeft)
     }
   }, [])
-
 
   async function createRoom() {
     if (!selectedCategory) return
@@ -90,24 +97,27 @@ function App() {
 
     setPlayers([username])
     setRoomCode(code)
+    setIsHost(true)
   }
+
   async function leaveRoom() {
     if (roomCode) {
       const name = username ?? joinUsername
-      try { 
+      try {
         await connection.invoke("LeaveRoom", roomCode, name)
       } catch (error) {
-        console.log(error) // still let the user leave if call fails
+        console.log(error)
       }
     }
 
     setRoomCode(null)
+    setSinglePlayer(false)
+    setIsHost(false)
     setSelectedCategory(null)
     setPlayers([])
     setJoinCode("")
     setNameAction(null)
     setShowNamePopup(false)
-    
   }
 
   async function handleJoinRoom(playerName: string) {
@@ -125,17 +135,9 @@ function App() {
     setSelectedCategory(room.category)
     setRoomCode(room.code)
     setPlayers(room.players)
+    setIsHost(false)
     setShowNamePopup(false)
   }
-
-  const handlePlayerLeft = (name: string) => {
-  setPlayers((players) => players.filter((p) => p !== name))
-  }
-
-  connection.on("PlayerLeft", handlePlayerLeft)
-
-  connection.off("PlayerLeft", handlePlayerLeft)
-
 
   async function handleNameSubmit() {
     if (joinUsername.trim() === "") return
@@ -155,20 +157,23 @@ function App() {
 
       setPlayers([joinUsername])
       setRoomCode(code)
+      setIsHost(true)
       setShowNamePopup(false)
     }
   }
 
-  if (roomCode && selectedCategory) {
+  if ((roomCode || singlePlayer) && selectedCategory) {
     return (
       <GameRoom
         category={selectedCategory}
         roomCode={roomCode}
         players={players}
+        isHost={isHost || singlePlayer}
         onLeave={leaveRoom}
       />
     )
   }
+
   if (username && showProfile) {
     return (
       <UserPage
@@ -199,12 +204,10 @@ function App() {
               <button onClick={handleLogout}>Atsijungti</button>
             </>
           ) : (
-
             <>
               <button onClick={() => setShowLogin(true)}>Prisijungti</button>
               <button onClick={() => setShowRegister(true)}>Registruotis</button>
             </>
-
           )}
         </div>
       </header>
@@ -223,7 +226,6 @@ function App() {
             value={joinCode}
             onChange={(e) => setJoinCode(e.target.value)}
           />
-
 
           <button onClick={() => {
             if (username) {
@@ -257,7 +259,7 @@ function App() {
             onClick={() => setSelectedCategory("Lietuvių kalba")}
           >
             <h2>Lietuvių kalba</h2>
-            <p>Kirčiavimas ir gal dar kažkas???</p>
+            <p>Žodžių kirčiavimas, priegaidės ir taisyklės</p>
           </div>
 
           <div className="category-card"
@@ -297,7 +299,6 @@ function App() {
 
         <Leaderboard />
 
-
       </main>
 
       {showLogin && (
@@ -315,7 +316,12 @@ function App() {
         <GameMode
           category={selectedCategory}
           onClose={() => setSelectedCategory(null)}
-          onCreateRoom={createRoom} />
+          onSinglePlayer={() => {
+            setIsHost(true)
+            setSinglePlayer(true)
+          }}
+          onCreateRoom={createRoom}
+        />
       )}
 
       {showNamePopup && (
@@ -348,7 +354,6 @@ function App() {
           </div>
         </div>
       )}
-
 
     </div>
   )

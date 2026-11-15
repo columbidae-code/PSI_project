@@ -1,10 +1,12 @@
 function GameMode({
     category,
     onClose,
+    onSinglePlayer,
     onCreateRoom
 }: {
     category: string
     onClose: () => void
+    onSinglePlayer: () => void
     onCreateRoom: () => void
 }) {
     return (
@@ -20,7 +22,10 @@ function GameMode({
 
                 <div className="game-mode-buttons">
 
-                    <button className="game-mode-button">
+                    <button
+                        className="game-mode-button"
+                        onClick={onSinglePlayer}
+                    >
                         Žaisti vienam
                     </button>
 

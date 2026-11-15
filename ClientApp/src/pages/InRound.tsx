@@ -1,33 +1,49 @@
-
 import { useEffect, useState } from 'react'
 
 type Session = { sessionId: string; playerId: string }
 type Question = {
-  questionId: string; questionNumber: number; totalQuestions: number
-  text: string; imageUrl: string | null; options: string[]
+  questionId: string
+  questionNumber: number
+  totalQuestions: number
+  text: string
+  imageUrl: string | null
+  options: string[]
   timeLimitSeconds: number
 }
-type Answer = { 
-  isCorrect: boolean; correctOptionIndex: number
-  pointsEarned: number; totalPoints: number
- }
-type Result = { 
-  correctAnswers: number; totalQuestions: number
-  totalPoints: number; saved: boolean
+type Answer = {
+  isCorrect: boolean
+  correctOptionIndex: number
+  pointsEarned: number
+  totalPoints: number
+}
+type Result = {
+  correctAnswers: number
+  totalQuestions: number
+  totalPoints: number
+  saved: boolean
 }
 
 async function api<T>(url: string, data?: object): Promise<T> {
-  const response = await fetch(url, data ? {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data)
-  } : undefined)
+  const response = await fetch(
+    url,
+    data
+      ? {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        }
+      : undefined
+  )
 
   if (!response.ok) throw new Error(await response.text())
   return response.json()
 }
 
-export default function InRound({ questionCount, questionTypes, onBack }: {
+export default function InRound({
+  questionCount,
+  questionTypes,
+  onBack,
+}: {
   questionCount: number
   questionTypes: string[]
   onBack: () => void
@@ -35,13 +51,13 @@ export default function InRound({ questionCount, questionTypes, onBack }: {
   const [session, setSession] = useState<Session | null>(null)
   const [question, setQuestion] = useState<Question | null>(null)
   const [answer, setAnswer] = useState<Answer | null>(null)
+  const [selectedOption, setSelectedOption] = useState<number | null>(null)
   const [result, setResult] = useState<Result | null>(null)
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
   const [deadline, setDeadline] = useState(0)
   const [now, setNow] = useState(() => Date.now())
 
-  // Re-render four times a second while a question is waiting for an answer
   useEffect(() => {
     if (!question || answer) return
     const id = setInterval(() => setNow(Date.now()), 250)
@@ -54,21 +70,24 @@ export default function InRound({ questionCount, questionTypes, onBack }: {
   }
 
   const secondsLeft = Math.max(0, Math.ceil((deadline - now) / 1000))
-  
+
   useEffect(() => {
     let active = true
 
     async function start() {
       try {
         const s = await api<Session>('/api/geoquestions/session', {
-          questionCount, questionTypes
+          questionCount,
+          questionTypes,
         })
         const q = await api<Question>(
-          `/api/geoquestions/session/${s.sessionId}/questions`, {}
+          `/api/geoquestions/session/${s.sessionId}/questions`,
+          {}
         )
         if (active) {
           setSession(s)
           setQuestion(q)
+          setSelectedOption(null)
           startTimer(q)
         }
       } catch (e) {
@@ -77,23 +96,31 @@ export default function InRound({ questionCount, questionTypes, onBack }: {
     }
 
     void start()
-    return () => { active = false }
+    return () => {
+      active = false
+    }
   }, [questionCount, questionTypes])
 
   async function choose(index: number) {
     if (!session || !question || answer || busy) return
     setBusy(true)
+    setSelectedOption(index)
     try {
-      setAnswer(await api<Answer>(
-        `/api/geoquestions/session/${session.sessionId}/answer`,
-        {
-          questionId: question.questionId,
-          playerId: session.playerId,
-          selectedOptionIndex: index
-        }
-      ))
-    } catch (e) { setError(String(e)) }
-    finally { setBusy(false) }
+      setAnswer(
+        await api<Answer>(
+          `/api/geoquestions/session/${session.sessionId}/answer`,
+          {
+            questionId: question.questionId,
+            playerId: session.playerId,
+            selectedOptionIndex: index,
+          }
+        )
+      )
+    } catch (e) {
+      setError(String(e))
+    } finally {
+      setBusy(false)
+    }
   }
 
   async function next() {
@@ -103,64 +130,111 @@ export default function InRound({ questionCount, questionTypes, onBack }: {
       const url = `/api/geoquestions/session/${session.sessionId}`
 
       if (question.questionNumber === question.totalQuestions) {
-        setResult(await api<Result>(
-          `${url}/result?playerId=${session.playerId}`
-        ))
+        setResult(await api<Result>(`${url}/result?playerId=${session.playerId}`))
       } else {
         const q = await api<Question>(`${url}/questions`, {})
         setQuestion(q)
-        startTimer(q)
         setAnswer(null)
+        setSelectedOption(null)
+        startTimer(q)
       }
-    } catch (e) { setError(String(e)) }
-    finally { setBusy(false) }
+    } catch (e) {
+      setError(String(e))
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  function getOptionClass(index: number): string {
+    const classes = ['geo-option-btn']
+    if (!answer) return classes.join(' ')
+
+    if (index === answer.correctOptionIndex) {
+      classes.push('geo-option-correct')
+    } else if (index === selectedOption && !answer.isCorrect) {
+      classes.push('geo-option-incorrect')
+    }
+    return classes.join(' ')
   }
 
   return (
-    <main>
-      <button onClick={onBack}>Grįžti į lobby</button>
+    <main className="acc-game-container">
+      <div className="acc-top-bar">
+        <button className="acc-back-btn" onClick={onBack}>
+          ← Grįžti į kambarį
+        </button>
+        {question && !result && (
+          <div className="acc-stats-bar">
+            <span>Klausimas: {question.questionNumber}/{question.totalQuestions}</span>
+            <span>Laikas: {secondsLeft} s</span>
+            {answer && <span>Taškai: {answer.totalPoints}</span>}
+          </div>
+        )}
+      </div>
 
-      {error && <p>Klaida: {error}</p>}
+      {error && <p className="acc-error">Klaida: {error}</p>}
 
       {result ? (
-        <>
-          <h2>Rezultatas: {result.correctAnswers}/{result.totalQuestions}</h2>
-          <h3>Taškai: {result.totalPoints}</h3>
+        <div className="acc-card">
+          <h2>Raundas baigtas!</h2>
+          <p className="acc-result-score">
+            Teisingai: <strong>{result.correctAnswers} / {result.totalQuestions}</strong>
+          </p>
+          <h3 className="acc-result-points">Iš viso taškų: {result.totalPoints}</h3>
           <p>
             {result.saved
               ? 'Rezultatas išsaugotas tavo profilyje.'
               : 'Prisijunk, kad rezultatas būtų išsaugotas.'}
           </p>
-        </>
+          <button className="start-game-button" onClick={onBack}>
+            Žaisti dar kartą
+          </button>
+        </div>
       ) : question ? (
-        <>
-          <h2>{question.questionNumber}/{question.totalQuestions}</h2>
-          <p>
-            Laiko liko: {secondsLeft} s
-            {answer && ` | Taškai: ${answer.totalPoints}`}
-          </p>
-          <h3>{question.text}</h3>
+        <div className="acc-card">
+          <h2 className="geo-question-text">{question.text}</h2>
 
-          {question.imageUrl &&
-            <img src={question.imageUrl} width={300} alt="Klausimas" />}
+          {question.imageUrl && (
+            <div className="geo-image-wrapper">
+              <img
+                src={question.imageUrl}
+                alt="Klausimas"
+                className="geo-question-image"
+              />
+            </div>
+          )}
 
-          {question.options.map((option, i) => (
-            <div key={i}>
-              <button disabled={!!answer || busy} onClick={() => choose(i)}>
+          <div className="geo-options-grid">
+            {question.options.map((option, i) => (
+              <button
+                key={i}
+                className={getOptionClass(i)}
+                disabled={!!answer || busy}
+                onClick={() => choose(i)}
+              >
                 {option}
               </button>
-            </div>
-          ))}
+            ))}
+          </div>
 
           {answer && (
-            <>
-              <p>{answer.isCorrect ? 'Teisingai!' : 'Neteisingai!'} +{answer.pointsEarned} points.</p>
-              <p>Teisingas: {question.options[answer.correctOptionIndex]}</p>
-              <button disabled={busy} onClick={next}>Toliau</button>
-            </>
+            <div className="geo-feedback">
+              <p className={answer.isCorrect ? 'geo-status-correct' : 'geo-status-wrong'}>
+                {answer.isCorrect
+                  ? `Teisingai! (+${answer.pointsEarned} tšk.)`
+                  : `Neteisingai! Teisingas atsakymas: ${question.options[answer.correctOptionIndex]}`}
+              </p>
+              <button className="start-game-button" disabled={busy} onClick={next}>
+                {question.questionNumber === question.totalQuestions
+                  ? 'Rezultatai'
+                  : 'Kitas klausimas'}
+              </button>
+            </div>
           )}
-        </>
-      ) : <p>Kraunama...</p>}
+        </div>
+      ) : (
+        <p>Kraunama...</p>
+      )}
     </main>
   )
 }

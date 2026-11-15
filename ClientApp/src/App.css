@@ -608,3 +608,311 @@ tr:nth-child(odd) {
 .start-game-button:hover {
   background-color: var(--ferra);
 }
+
+
+/* ACCENTUATION GAME */
+
+.acc-game-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background);
+}
+
+.acc-top-bar {
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.acc-back-btn {
+  padding: 10px 20px;
+  background-color: var(--white);
+  color: var(--ferra);
+  border: 2px solid var(--bloom);
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.acc-back-btn:hover {
+  background-color: var(--maverick);
+  border-color: var(--mulberry);
+}
+
+.acc-stats-bar {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  color: var(--ferra);
+  background-color: var(--white);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--bloom);
+}
+
+.acc-card {
+  width: 100%;
+  max-width: 950px;
+  padding: 45px 35px;
+  background-color: var(--white);
+  border: 2px solid var(--bloom);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(115, 70, 82, 0.08);
+}
+
+.acc-instruction {
+  color: var(--dark-gray);
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.acc-word {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+  margin: 25px 0;
+  user-select: none;
+  width: 100%;
+}
+
+.acc-letter {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 48px;
+  min-width: 24px;
+  height: 60px;
+  padding: 0 4px;
+  font-size: clamp(22px, 3.5vw, 40px);
+  font-weight: bold;
+  color: var(--ferra);
+  background-color: var(--background);
+  border: 2px solid var(--maverick);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.acc-letter:hover {
+  border-color: var(--mulberry);
+  transform: translateY(-2px);
+}
+
+.acc-letter-selected {
+  border-color: var(--mulberry);
+  background-color: #f9ebf0;
+  color: var(--mulberry);
+}
+
+/* Green: right letter & right accent */
+.acc-letter-correct {
+  background-color: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+/* Yellow: right letter, wrong accent */
+.acc-letter-halfcorrect {
+  background-color: #fff3cd;
+  border-color: #ffc107;
+  color: #856404;
+}
+
+/* Red: wrong letter */
+.acc-letter-incorrect {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+.acc-explanation {
+  font-size: 18px;
+  color: var(--ferra);
+  font-style: italic;
+  min-height: 28px;
+  margin-bottom: 20px;
+}
+
+.acc-rule-box {
+  margin: 25px auto;
+  padding: 20px;
+  background-color: #fdf6f9;
+  border-left: 5px solid var(--mulberry);
+  border-radius: 8px;
+  text-align: left;
+  color: var(--dark-gray);
+}
+
+.acc-rule-box h4 {
+  margin: 0 0 8px 0;
+  color: var(--ferra);
+}
+
+.acc-rule-box p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.acc-actions {
+  margin-top: 30px;
+}
+
+.acc-actions .start-game-button:disabled {
+  background-color: var(--maverick);
+  cursor: not-allowed;
+}
+
+.acc-room-settings {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--white);
+  border: 2px solid var(--bloom);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.acc-room-settings input[type="number"] {
+  width: 100px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 2px solid var(--bloom);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.acc-level-checkboxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.acc-level-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background-color: var(--background);
+  border: 1px solid var(--bloom);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.acc-room-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.acc-error {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+
+
+/* GEOGRAPHY GAME */
+
+.geo-question-text {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: var(--ferra);
+}
+
+.geo-image-wrapper {
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.geo-question-image {
+  max-width: 100%;
+  max-height: 260px;
+  border-radius: 12px;
+  border: 2px solid var(--maverick);
+  object-fit: contain;
+  background-color: var(--background);
+  padding: 8px;
+}
+
+.geo-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .geo-options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.geo-option-btn {
+  padding: 18px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ferra);
+  background-color: var(--background);
+  border: 2px solid var(--bloom);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.geo-option-btn:hover:not(:disabled) {
+  border-color: var(--mulberry);
+  background-color: #f9ebf0;
+  transform: translateY(-2px);
+}
+
+.geo-option-btn:disabled {
+  cursor: default;
+}
+
+.geo-option-correct {
+  background-color: #d4edda !important;
+  border-color: #28a745 !important;
+  color: #155724 !important;
+}
+
+.geo-option-incorrect {
+  background-color: #f8d7da !important;
+  border-color: #dc3545 !important;
+  color: #721c24 !important;
+}
+
+.geo-feedback {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid var(--light-gray);
+}
+
+.geo-status-correct {
+  font-size: 18px;
+  font-weight: bold;
+  color: #155724;
+  margin-bottom: 20px;
+}
+
+.geo-status-wrong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #721c24;
+  margin-bottom: 20px;
+}

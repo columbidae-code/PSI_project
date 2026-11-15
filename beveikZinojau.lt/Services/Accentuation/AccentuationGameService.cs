@@ -7,7 +7,8 @@ namespace beveikZinojau.lt.Services.Accentuation;
 
 public record AccentuationSessionCreateRequest(
     int QuestionCount,
-    List<int> Levels
+    List<int> Levels,
+    int? Seed = null
 );
 
 public record AccentuationSessionCreated(
@@ -109,7 +110,8 @@ public class AccentuationGameService
         AccentuationSession session = new(
             questionCount: request.QuestionCount,
             levels: selectedLevels,
-            userId: userId
+            userId: userId,
+            seed: request.Seed
         );
 
         cache.Set(
@@ -150,7 +152,7 @@ public class AccentuationGameService
         }
 
         // Shuffle candidates randomly
-        foreach (var candidate in candidates.OrderBy(_ => Random.Shared.Next()))
+        foreach (var candidate in candidates.OrderBy(_ => session.Rng.Next()))
         {
             var accentEntry = candidate.Word.Accents.FirstOrDefault();
             if (accentEntry.Value is null) continue;
@@ -392,12 +394,14 @@ public class AccentuationSession
     public int QuestionCount { get; }
     public IReadOnlyList<int> Levels { get; }
     public string? UserId { get; }
+    public Random Rng { get; }
 
-    public AccentuationSession(int questionCount, List<int> levels, string? userId)
+    public AccentuationSession(int questionCount, List<int> levels, string? userId, int? seed = null)
     {
         QuestionCount = questionCount;
         Levels = Array.AsReadOnly(levels.ToArray());
         UserId = userId;
+        Rng = new Random(seed ?? Random.Shared.Next());
     }
 
     public bool TryRecordQuestion(string questionKey, out int questionNumber)
