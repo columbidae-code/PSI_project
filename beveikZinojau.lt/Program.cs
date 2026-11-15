@@ -77,6 +77,7 @@ builder.Services.AddScoped<GeoGameService>();
 // Accentuation services
 builder.Services.AddSingleton<ParserService>();
 builder.Services.AddSingleton<IAccentuationRepository, JsonAccentuationRepository>();
+builder.Services.AddScoped<AccentuationGameService>();
 
 var app = builder.Build();
 
