@@ -88,6 +88,22 @@ public class GameHub : Hub
         };
     }
 
+    public async Task StartGame(
+    string roomCode,
+    int questionCount,
+    List<string> questionTypes,
+    List<int> levels)
+    {
+        int seed = Random.Shared.Next();
+
+        await Clients.Group(roomCode).SendAsync(
+            "GameStarted",
+            questionCount,
+            questionTypes,
+            levels,
+            seed
+        );
+    }
     public async Task LeaveRoom(
         string roomCode,
         string username)

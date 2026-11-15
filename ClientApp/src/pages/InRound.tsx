@@ -51,6 +51,7 @@ export default function InRound({
   const [session, setSession] = useState<Session | null>(null);
   const [question, setQuestion] = useState<Question | null>(null);
   const [answer, setAnswer] = useState<Answer | null>(null);
+  const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [result, setResult] = useState<Result | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -63,16 +64,15 @@ export default function InRound({
     "normal" | "skipped" | "timeout"
   >("normal");
 
-  // Re-render four times a second while a question is waiting for an answer
   useEffect(() => {
     if (!question || answer) return;
     const id = setInterval(() => setNow(Date.now()), 250);
     return () => clearInterval(id);
   }, [question, answer]);
 
-  function startTimer(q: Question) {
+  function startTimer(currentQuestion: Question) {
     setNow(Date.now());
-    setDeadline(Date.now() + q.timeLimitSeconds * 1000);
+    setDeadline(Date.now() + currentQuestion.timeLimitSeconds * 1000);
   }
 
   const secondsLeft = Math.max(0, Math.ceil((deadline - now) / 1000));
@@ -82,18 +82,18 @@ export default function InRound({
 
     async function start() {
       try {
-        const s = await api<Session>("/api/geoquestions/session", {
+        const newSession = await api<Session>("/api/geoquestions/session", {
           questionCount,
           questionTypes,
         });
-        const q = await api<Question>(
-          `/api/geoquestions/session/${s.sessionId}/questions`,
+        const firstQuestion = await api<Question>(
+          `/api/geoquestions/session/${newSession.sessionId}/questions`,
           {},
         );
         if (active) {
-          setSession(s);
-          setQuestion(q);
-          startTimer(q);
+          setSession(newSession);
+          setQuestion(firstQuestion);
+          startTimer(firstQuestion);
         }
       } catch (e) {
         if (active) setError(String(e));
@@ -123,8 +123,8 @@ export default function InRound({
           },
         );
 
+        setSelectedOption(index);
         setAnswer(checked);
-
         setAnswerStatus(
           index === null
             ? secondsLeft === 0
@@ -134,7 +134,6 @@ export default function InRound({
         );
 
         const newStreak = checked.isCorrect ? streak + 1 : 0;
-
         setStreak(newStreak);
         setBestStreak((previous) => Math.max(previous, newStreak));
       } catch (e) {
@@ -149,7 +148,6 @@ export default function InRound({
   useEffect(() => {
     if (!session || !question || answer || busy) return;
     if (deadline === 0 || secondsLeft > 0) return;
-
     if (timeoutSent.current === question.questionId) return;
 
     timeoutSent.current = question.questionId;
@@ -167,11 +165,12 @@ export default function InRound({
           await api<Result>(`${url}/result?playerId=${session.playerId}`),
         );
       } else {
-        const q = await api<Question>(`${url}/questions`, {});
-        setQuestion(q);
-        startTimer(q);
+        const nextQuestion = await api<Question>(`${url}/questions`, {});
+        setQuestion(nextQuestion);
         setAnswer(null);
+        setSelectedOption(null);
         setAnswerStatus("normal");
+        startTimer(nextQuestion);
       }
     } catch (e) {
       setError(String(e));
@@ -180,51 +179,85 @@ export default function InRound({
     }
   }
 
-  return (
-    <main>
-      <button onClick={onBack}>Grįžti į lobby</button>
+  function getOptionClass(index: number): string {
+    const classes = ["geo-option-btn"];
+    if (!answer) return classes.join(" ");
 
-      {error && <p>Klaida: {error}</p>}
+    if (index === answer.correctOptionIndex) {
+      classes.push("geo-option-correct");
+    } else if (index === selectedOption && !answer.isCorrect) {
+      classes.push("geo-option-incorrect");
+    }
+    return classes.join(" ");
+  }
+
+  return (
+    <main className="acc-game-container">
+      <div className="acc-top-bar">
+        <button className="acc-back-btn" onClick={onBack}>
+          ← Grįžti į kambarį
+        </button>
+        {question && !result && (
+          <div className="acc-stats-bar">
+            <span>
+              Klausimas: {question.questionNumber}/{question.totalQuestions}
+            </span>
+            <span>Laikas: {secondsLeft} s</span>
+            {answer && <span>Taškai: {answer.totalPoints}</span>}
+          </div>
+        )}
+      </div>
+
+      {error && <p className="acc-error">Klaida: {error}</p>}
 
       {result ? (
-        <>
-          <h2>
-            Rezultatas: {result.correctAnswers}/{result.totalQuestions}
-          </h2>
-          <h3>Taškai: {result.totalPoints}</h3>
+        <div className="acc-card">
+          <h2>Raundas baigtas!</h2>
+          <p className="acc-result-score">
+            Teisingai:{" "}
+            <strong>
+              {result.correctAnswers} / {result.totalQuestions}
+            </strong>
+          </p>
+          <h3 className="acc-result-points">Iš viso taškų: {result.totalPoints}</h3>
           <p>🔥 Geriausia teisingų atsakymų serija: {bestStreak}</p>
           <p>
             {result.saved
               ? "Rezultatas išsaugotas tavo profilyje."
               : "Prisijunk, kad rezultatas būtų išsaugotas."}
           </p>
-        </>
+          <button className="start-game-button" onClick={onBack}>
+            Žaisti dar kartą
+          </button>
+        </div>
       ) : question ? (
-        <>
-          <h2>
-            {question.questionNumber}/{question.totalQuestions}
-          </h2>
-          {streak >= 3 && <p>🔥 {streak} teisingi atsakymai iš eilės!</p>}
-          <p>
-            Laiko liko: {secondsLeft} s
-            {answer && ` | Taškai: ${answer.totalPoints}`}
-          </p>
-          <h3>{question.text}</h3>
+        <div className="acc-card">
+          <h2 className="geo-question-text">{question.text}</h2>
 
           {question.imageUrl && (
-            <img src={question.imageUrl} width={300} alt="Klausimas" />
+            <div className="geo-image-wrapper">
+              <img
+                src={question.imageUrl}
+                alt="Klausimas"
+                className="geo-question-image"
+              />
+            </div>
           )}
 
-          {question.options.map((option, i) => (
-            <div key={i}>
+          {streak >= 3 && <p>🔥 {streak} teisingi atsakymai iš eilės!</p>}
+          <div className="geo-options-grid">
+            {question.options.map((option, index) => (
               <button
+                key={index}
+                className={getOptionClass(index)}
                 disabled={!!answer || busy || secondsLeft === 0}
-                onClick={() => void choose(i)}
+                onClick={() => void choose(index)}
               >
                 {option}
               </button>
-            </div>
-          ))}
+            ))}
+          </div>
+
           {!answer && secondsLeft > 0 && (
             <div style={{ marginTop: "24px" }}>
               <button disabled={busy} onClick={() => void choose(null)}>
@@ -240,24 +273,32 @@ export default function InRound({
           )}
 
           {answer && (
-            <>
-              <p>
+            <div className="geo-feedback">
+              <p
+                className={
+                  answer.isCorrect ? "geo-status-correct" : "geo-status-wrong"
+                }
+              >
                 {answerStatus === "timeout"
                   ? "Laikas baigėsi!"
                   : answerStatus === "skipped"
                     ? "Klausimas praleistas!"
                     : answer.isCorrect
-                      ? "Teisingai!"
-                      : "Neteisingai!"}{" "}
-                +{answer.pointsEarned} taškų
+                      ? `Teisingai! (+${answer.pointsEarned} tšk.)`
+                      : `Neteisingai! Teisingas atsakymas: ${question.options[answer.correctOptionIndex]}`}
               </p>
-              <p>Teisingas: {question.options[answer.correctOptionIndex]}</p>
-              <button disabled={busy} onClick={next}>
-                Toliau
+              <button
+                className="start-game-button"
+                disabled={busy}
+                onClick={next}
+              >
+                {question.questionNumber === question.totalQuestions
+                  ? "Rezultatai"
+                  : "Kitas klausimas"}
               </button>
-            </>
+            </div>
           )}
-        </>
+        </div>
       ) : (
         <p>Kraunama...</p>
       )}

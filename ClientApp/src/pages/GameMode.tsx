@@ -2,14 +2,12 @@ function GameMode({
   category,
   onClose,
   onCreateRoom,
-  onPlaySolo,
-  soloAvailable,
+  onSinglePlayer,
 }: {
   category: string;
   onClose: () => void;
   onCreateRoom: () => void;
-  onPlaySolo: () => void;
-  soloAvailable: boolean;
+  onSinglePlayer: () => void;
 }) {
   return (
     <div className="popup-background">
@@ -22,14 +20,9 @@ function GameMode({
         <p>Kaip nori žaisti?</p>
 
         <div className="game-mode-buttons">
-          <button
-            className="game-mode-button"
-            disabled={!soloAvailable}
-            onClick={onPlaySolo}
-          >
+          <button className="game-mode-button" onClick={onSinglePlayer}>
             Žaisti vienam
           </button>
-
           <button className="game-mode-button" onClick={onCreateRoom}>
             Kurti kambarį
           </button>
