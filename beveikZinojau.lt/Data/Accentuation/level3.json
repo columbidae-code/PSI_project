@@ -1,0 +1,1952 @@
+{
+  "0": {
+    "wrd": "alkūnė",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "alkū́nė": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "1": {
+    "wrd": "agurkus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "agurkùs": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "2": {
+    "wrd": "antikiniu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, sidabrìnę→ sidabrinè, sidabrinès; bevar̃dį→ bevardžiù, bevardžiùs.",
+    "acc": {
+      "antikiniù": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "3": {
+    "wrd": "argumentus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "argumentùs": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "4": {
+    "wrd": "aiškius",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios ir trečiosios kirčiuotės žodžiai daugiskaitos galininko linksnyje kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, áiškų→ áiškiu, áiškius; paìlgą→ paìlga, paìlgas.",
+    "acc": {
+      "áiškius": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "5": {
+    "wrd": "aspektus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "aspektùs": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "6": {
+    "wrd": "aukštas",
+    "exp": [
+      "3 kirčiuotė, bdv., mot.g. dgs. gal."
+    ],
+    "aft": "1. Pirmosios ir trečiosios kirčiuotės žodžiai daugiskaitos galininko linksnyje kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, áiškų→ áiškiu, áiškius; paìlgą→ paìlga, paìlgas.",
+    "acc": {
+      "áukštas": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "7": {
+    "wrd": "automobiliu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė).",
+    "acc": {
+      "automobiliù": {
+        "pos": 10,
+        "act": "LEFT"
+      }
+    }
+  },
+  "8": {
+    "wrd": "autobusu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "autobusù": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "9": {
+    "wrd": "aikštė",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1.Trečiosios ir ketvirtosios kirčiuočių daiktavardžiai, vienaskaitos vardininke turintys galūnę „-ė“, visada kirčiuojami galūnėje. 2. Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "aikštė̃": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "10": {
+    "wrd": "aikštėje",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "Trečiosios ir ketvirtosios kirčiuočių vienaskaitos vietininkas visada kirčiuojamas galūnėje.",
+    "acc": {
+      "aikštėjè": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "11": {
+    "wrd": "aikštes",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios ir trečiosios kirčiuotės žodžiai daugiskaitos galininko linksnyje kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, kálną→ kálnu, kálnus; bùrną→ bùrna, bùrnas.",
+    "acc": {
+      "áikštes": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "12": {
+    "wrd": "aikščių",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "Trečiosios ir ketvirtosios kirčiuočių daugiskaitos kilmininkas visada kirčiuojamas galūnėje.",
+    "acc": {
+      "aikščių̃": {
+        "pos": 6,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "13": {
+    "wrd": "abejones",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "abejonès": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "14": {
+    "wrd": "auksines",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, sidabrìnę→ sidabrinè, sidabrinès; bevar̃dį→ bevardžiù, bevardžiùs.",
+    "acc": {
+      "auksinès": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "15": {
+    "wrd": "baltus",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios ir trečiosios kirčiuotės žodžiai daugiskaitos galininko linksnyje kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, áiškų→ áiškiu, áiškius; paìlgą→ paìlga, paìlgas.",
+    "acc": {
+      "báltus": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "16": {
+    "wrd": "bedarbiu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "bedarbiù": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "17": {
+    "wrd": "bažnyčia",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios kirčiuotės žodžiai niekada nekirčiuojami galūnėje. 2. Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "bažnýčia": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "18": {
+    "wrd": "bažnyčias",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios kirčiuotės žodžiai niekada nekirčiuojami galūnėje. 2. Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "bažnýčias": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "19": {
+    "wrd": "būklė",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios kirčiuotės žodžiai niekada nekirčiuojami galūnėje. 2. Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "bū́klė": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "20": {
+    "wrd": "bulves",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios kirčiuotės žodžiai niekada nekirčiuojami galūnėje. 2. Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "bùlves": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "21": {
+    "wrd": "vadovėliu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "vadovėliù": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "22": {
+    "wrd": "baltai",
+    "exp": [
+      "3 kirčiuotė, bdv. mot. g. vns. naud."
+    ],
+    "aft": "1. Moteriškosios giminės vienaskaitos naudininko linksnis visada kirčiuojamas kamiene, o vyriškosios giminės pirmosios ir antrosios kirčiuočių vienaskaitos naudininkai kirčiuojami kamiene, o trečiosios ir ketvirtosios kirčiuočių naudininkai kirčiuojami galūnėje (pvz., laimìngai (1), batúotam (2), alkanám (3a)). 2. Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu.",
+    "acc": {
+      "báltai": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "23": {
+    "wrd": "blogus",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, sidabrìnę→ sidabrinè, sidabrinès; bevar̃dį→ bevardžiù, bevardžiùs.",
+    "acc": {
+      "blogùs": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "24": {
+    "wrd": "centimetru",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "centimetrù": {
+        "pos": 9,
+        "act": "LEFT"
+      }
+    }
+  },
+  "25": {
+    "wrd": "čempionu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "čempionù": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "26": {
+    "wrd": "drabužius",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "drabužiùs": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "27": {
+    "wrd": "detalių",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba riestiniu kirčio ženklu. 2. Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "detãlių": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "28": {
+    "wrd": "detales",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "detalès": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "29": {
+    "wrd": "dievas",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Ketvirtosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "diẽvas": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "30": {
+    "wrd": "dievu",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "dievù": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "31": {
+    "wrd": "esminius",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, sidabrìnę→ sidabrinè, sidabrinès; bevar̃dį→ bevardžiù, bevardžiùs.",
+    "acc": {
+      "esminiùs": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "32": {
+    "wrd": "faktus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje.",
+    "acc": {
+      "faktùs": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "33": {
+    "wrd": "fortepijonu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "fortepijonù": {
+        "pos": 10,
+        "act": "LEFT"
+      }
+    }
+  },
+  "34": {
+    "wrd": "gyvybes",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios kirčiuotės žodžiai niekada nekirčiuojami galūnėje. 2. Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "gyvýbes": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "35": {
+    "wrd": "gatves",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "gatvès": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "36": {
+    "wrd": "geografu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "geografù": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "37": {
+    "wrd": "griovį",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Ketvirtosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "griõvį": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "38": {
+    "wrd": "gabiai",
+    "exp": [
+      "4 kirčiuotė, bdv. mot. g. vns. naud."
+    ],
+    "aft": "1. Moteriškosios giminės vienaskaitos naudininko linksnis visada kirčiuojamas kamiene, o vyriškosios giminės pirmosios ir antrosios kirčiuočių vienaskaitos naudininkai kirčiuojami kamiene, o trečiosios ir ketvirtosios kirčiuočių naudininkai kirčiuojami galūnėje (pvz., laimìngai (1), batúotam (2), alkanám (3a)). 2. Ilgieji kirčiuoti balsiai „a, e“ visada žymimi riestiniu kirčio ženklu.",
+    "acc": {
+      "gãbiai": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "39": {
+    "wrd": "idėja",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios kirčiuotės žodžiai niekada nekirčiuojami galūnėje. 2. Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "idė́ja": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "40": {
+    "wrd": "idėjas",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios kirčiuotės žodžiai niekada nekirčiuojami galūnėje. 2. Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "idė́jas": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "41": {
+    "wrd": "ilgus",
+    "exp": [
+      "3 kirčiuotė, bdv. vyr. g. dgs. gal."
+    ],
+    "aft": "1. Pirmosios ir trečiosios kirčiuotės žodžiai daugiskaitos galininko linksnyje kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, áiškų→ áiškiu, áiškius; paìlgą→ paìlga, paìlgas.",
+    "acc": {
+      "ìlgus": {
+        "pos": 0,
+        "act": "LEFT"
+      }
+    }
+  },
+  "42": {
+    "wrd": "internete",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios kirčiuotės daiktavardžiai, vienaskaitos vardininke turintys galūnę „-as“, vienaskaitos įnagininke turintys galūnę „-u“, vienaskaitos vietininke kirčiuojami galūnėje. Išimtis – dviskiemenės galūnės (pvz., ver̃šyje).",
+    "acc": {
+      "internetè": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "43": {
+    "wrd": "interesus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "interesùs": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "44": {
+    "wrd": "jaunimu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "jaunimù": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "45": {
+    "wrd": "jungiklius",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "jungikliùs": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "46": {
+    "wrd": "jaunuoliu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "jaunuoliù": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "47": {
+    "wrd": "juodus",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios ir trečiosios kirčiuotės žodžiai daugiskaitos galininko linksnyje kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, áiškų→ áiškiu, áiškius; paìlgą→ paìlga, paìlgas.",
+    "acc": {
+      "júodus": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "48": {
+    "wrd": "įdomia",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, sidabrìnę→ sidabrinè, sidabrinès; bevar̃dį→ bevardžiù, bevardžiùs.",
+    "acc": {
+      "įdomià": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "49": {
+    "wrd": "įdomias",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, sidabrìnę→ sidabrinè, sidabrinès; bevar̃dį→ bevardžiù, bevardžiùs.",
+    "acc": {
+      "įdomiàs": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "50": {
+    "wrd": "kokybei",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "kokýbei": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "51": {
+    "wrd": "koją",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "kóją": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "52": {
+    "wrd": "knygoje",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "knỹgoje": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "53": {
+    "wrd": "kilogramus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "kilogramùs": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "54": {
+    "wrd": "kiemą",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Ketvirtosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "kiẽmą": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "55": {
+    "wrd": "kraštine",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "kraštinè": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "56": {
+    "wrd": "kabinetą",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "kabinètą": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "57": {
+    "wrd": "kabinete",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "kabinetè": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "58": {
+    "wrd": "klausimai",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios kirčiuotės žodžiai niekada nekirčiuojami galūnėje. 2. Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "kláusimai": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "59": {
+    "wrd": "klausimų",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios kirčiuotės žodžiai niekada nekirčiuojami galūnėje. 2. Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "kláusimų": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "60": {
+    "wrd": "konkursas",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "konkùrsas": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "61": {
+    "wrd": "konkurse",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "konkùrse": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "62": {
+    "wrd": "kilometrus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "kilometrùs": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "63": {
+    "wrd": "kuprines",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "kuprinès": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "64": {
+    "wrd": "kontekste",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "kontekstè": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "65": {
+    "wrd": "katalogu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "katalogù": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "66": {
+    "wrd": "kitataučiu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "kitataučiù": {
+        "pos": 9,
+        "act": "LEFT"
+      }
+    }
+  },
+  "67": {
+    "wrd": "lysves",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios kirčiuotės žodžiai niekada nekirčiuojami galūnėje. 2. Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "lýsves": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "68": {
+    "wrd": "ligoniams",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "ligóniams": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "69": {
+    "wrd": "leidinius",
+    "exp": [
+      "3<sup>a</sup> kirčiuotė"
+    ],
+    "aft": "3a kirčiuotės žodžiai, jei kirčiuojami kamiene, turi dešininį kirčio ženklą trečiame nuo galo skiemenyje.",
+    "acc": {
+      "léidinius": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "70": {
+    "wrd": "lietuvius",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "lietuviùs": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "71": {
+    "wrd": "moksleiviu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "moksleiviù": {
+        "pos": 9,
+        "act": "LEFT"
+      }
+    }
+  },
+  "72": {
+    "wrd": "mergaites",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios kirčiuotės žodžiai niekada nekirčiuojami galūnėje. 2. Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "mergáites": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "73": {
+    "wrd": "miestą",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "miẽstą": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "74": {
+    "wrd": "miestus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "miestùs": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "75": {
+    "wrd": "ministru",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "ministrù": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "76": {
+    "wrd": "metodus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "metodùs": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "77": {
+    "wrd": "muzikinius",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, sidabrìnę→ sidabrinè, sidabrinès; bevar̃dį→ bevardžiù, bevardžiùs.",
+    "acc": {
+      "muzikiniùs": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "78": {
+    "wrd": "mėgintuvėlius",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→knygà, knygàs.",
+    "acc": {
+      "mėgintuvėliùs": {
+        "pos": 11,
+        "act": "LEFT"
+      }
+    }
+  },
+  "79": {
+    "wrd": "naudingų",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1.Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu. 2. Kirčiuota būdvardžių priesaga „-ìng-“ visada yra pirmosios kirčiuotės ir visada žymima kairiniu kirčio ženklu.",
+    "acc": {
+      "naudìngų": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "80": {
+    "wrd": "naujokus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "naujokùs": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "81": {
+    "wrd": "originale",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios kirčiuotės daiktavardžiai, vienaskaitos vardininke turintys galūnę „-as“, vienaskaitos įnagininke turintys galūnę „-u“, vienaskaitos vietininke kirčiuojami galūnėje. Išimtis – dviskiemenės galūnės (pvz., ver̃šyje).",
+    "acc": {
+      "originalè": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "82": {
+    "wrd": "oru",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1. Trečiosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu. 2. Pirmosios ir trečiosios kirčiuotės žodžiai vienaskaitos įnagininko linksnyje dažniausiai kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. Išimtis – žodžiai su dviskiemenėmis galūnėmis „-(i)umi, -imi“ (pvz., lietumì, širdimì). 3. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, kálną→ kálnu, kálnus; bùrną→ bùrna, bùrnas.",
+    "acc": {
+      "óru": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "83": {
+    "wrd": "poetu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "poetù": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "84": {
+    "wrd": "paukščius",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "paukščiùs": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "85": {
+    "wrd": "pratimu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "pratimù": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "86": {
+    "wrd": "produkte",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios kirčiuotės daiktavardžiai, vienaskaitos vardininke turintys galūnę „-as“, vienaskaitos įnagininke turintys galūnę „-u“, vienaskaitos vietininke kirčiuojami galūnėje. Išimtis – dviskiemenės galūnės (pvz., ver̃šyje).",
+    "acc": {
+      "produktè": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "87": {
+    "wrd": "protu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "protù": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "88": {
+    "wrd": "pirštai",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "pir̃štai": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "89": {
+    "wrd": "pirštus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "pirštùs": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "90": {
+    "wrd": "ponu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "ponù": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "91": {
+    "wrd": "ponias",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "poniàs": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "92": {
+    "wrd": "pėdas",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios ir trečiosios kirčiuotės žodžiai daugiskaitos galininko linksnyje kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, kálną→ kálnu, kálnus; bùrną→ bùrna, bùrnas.",
+    "acc": {
+      "pė́das": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "93": {
+    "wrd": "pilnus",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios ir trečiosios kirčiuotės žodžiai daugiskaitos galininko linksnyje kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, áiškų→ áiškiu, áiškius, paìlgą→ paìlga, paìlgas.",
+    "acc": {
+      "pìlnus": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "94": {
+    "wrd": "rezultatus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "rezultatùs": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "95": {
+    "wrd": "receptu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "receptù": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "96": {
+    "wrd": "ryšius",
+    "exp": [
+      "4,2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "ryšiùs": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "97": {
+    "wrd": "transporte",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "transpòrte": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "98": {
+    "wrd": "taisykles",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "taisyklès": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "99": {
+    "wrd": "universitete",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios kirčiuotės daiktavardžiai, vienaskaitos vardininke turintys galūnę „-as“, vienaskaitos įnagininke turintys galūnę „-u“, vienaskaitos vietininke kirčiuojami galūnėje. Išimtis – dviskiemenės galūnės (pvz., ver̃šyje).",
+    "acc": {
+      "universitetè": {
+        "pos": 11,
+        "act": "LEFT"
+      }
+    }
+  },
+  "100": {
+    "wrd": "įdomu",
+    "exp": [
+      "bdv. bevardė g."
+    ],
+    "aft": "Bevardės giminės nelyginamojo laipsnio būdvardžiai išlaiko vyriškosios giminės būdvardžių vienaskaitos vardininko kirčio vietą ir kirčio ženklą.",
+    "acc": {
+      "įdomù": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "101": {
+    "wrd": "reikšmes",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1. Trečiosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu. 2. Pirmosios ir trečiosios kirčiuotės žodžiai vienaskaitos įnagininko linksnyje dažniausiai kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. Išimtis – žodžiai su dviskiemenėmis galūnėmis „-(i)umi, -imi“ (pvz., lietumì, širdimì). 3. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, kálną→ kálnu, kálnus; bùrną→ bùrna, bùrnas.",
+    "acc": {
+      "réikšmes": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "102": {
+    "wrd": "raktus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "raktùs": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "103": {
+    "wrd": "receptus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "receptùs": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "104": {
+    "wrd": "rūgščius",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios ir trečiosios kirčiuotės žodžiai daugiskaitos galininko linksnyje kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, áiškų→ áiškiu, áiškius; paìlgą→ paìlga, paìlgas.",
+    "acc": {
+      "rū́gščius": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "105": {
+    "wrd": "suole",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "Trečiosios ir ketvirtosios kirčiuočių žodžių vienaskaitos vietininkas visada kirčiuojamas galūnėje kairiniu kirčio ženklu.",
+    "acc": {
+      "suolè": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "106": {
+    "wrd": "suolą",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "Trečiosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "súolą": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "107": {
+    "wrd": "sąsiuvinių",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Kirčiuotas priešdėlis „są́-“ visada žymimas dešininiu kirčio ženklu. 2. Pirmosios kirčiuotės žodžiai visuose linksniuose išlaiko tą pačią kirčio vietą ir tą patį kirčio ženklą.",
+    "acc": {
+      "są́siuvinių": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "108": {
+    "wrd": "svajones",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "svajonès": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "109": {
+    "wrd": "sode",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios kirčiuotės daiktavardžiai, vienaskaitos vardininke turintys galūnę „-as“, vienaskaitos įnagininke turintys galūnę „-u“, vienaskaitos vietininke kirčiuojami galūnėje. Išimtis – dviskiemenės galūnės (pvz., ver̃šyje).",
+    "acc": {
+      "sodè": {
+        "pos": 3,
+        "act": "LEFT"
+      }
+    }
+  },
+  "110": {
+    "wrd": "skolas",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "skolàs": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "111": {
+    "wrd": "sniegą",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Ketvirtosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "sniẽgą": {
+        "pos": 3,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "112": {
+    "wrd": "šakutes",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "šakutès": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "113": {
+    "wrd": "šaltus",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios ir trečiosios kirčiuotės žodžiai daugiskaitos galininko linksnyje kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, áiškų→ áiškiu, áiškius; paìlgą→ paìlga, paìlgas.",
+    "acc": {
+      "šáltus": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "114": {
+    "wrd": "spyną",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Ketvirtosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "spỹną": {
+        "pos": 2,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "115": {
+    "wrd": "spynas",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "spynàs": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "116": {
+    "wrd": "semestre",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios kirčiuotės daiktavardžiai, vienaskaitos vardininke turintys galūnę „-as“, vienaskaitos įnagininke turintys galūnę „-u“, vienaskaitos vietininke kirčiuojami galūnėje. Išimtis – dviskiemenės galūnės (pvz., ver̃šyje).",
+    "acc": {
+      "semestrè": {
+        "pos": 7,
+        "act": "LEFT"
+      }
+    }
+  },
+  "117": {
+    "wrd": "teorema",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Moteriškosios giminės daiktavardžiai, turintys vienaskaitos vardininko galūnę „-a“, dažniausiai kirčiuojami galūnėje kairiniu kirčio ženklu. Išimtis – pirmosios kirčiuotės daiktavardžiai.",
+    "acc": {
+      "teoremà": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "118": {
+    "wrd": "tankius",
+    "exp": [
+      "3 kirčiuotė, bdv. vyr. g. dgs. gal."
+    ],
+    "aft": "1. Pirmosios ir trečiosios kirčiuotės žodžiai daugiskaitos galininko linksnyje kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, áiškų→ áiškiu, áiškius; paìlgą→ paìlga, paìlgas.",
+    "acc": {
+      "tánkius": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "119": {
+    "wrd": "tankiu",
+    "exp": [
+      "3 kirčiuotė, bdv. vyr. g. vns. įn."
+    ],
+    "aft": "1. Trečiosios kirčiuotės būdvardžių vienaskaitos įnagininko linksnis visada kirčiuojamas kamiene. 2. Mišriųjų dvigarsių kirčiuotas pirmas dėmuo žymimas dešininiu (al, am, an, ar, el, em, en, er) arba kairiniu (il, im, in, ir, ul, um, un, ur) kirčio ženklu. 3. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė).                                           Pavyzdžiui, áiškų→ áiškiu, áiškius; paìlgą→ paìlga, paìlgas.",
+    "acc": {
+      "tánkiu": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "120": {
+    "wrd": "testus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "testùs": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "121": {
+    "wrd": "ugnį",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Ketvirtosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "ùgnį": {
+        "pos": 0,
+        "act": "LEFT"
+      }
+    }
+  },
+  "122": {
+    "wrd": "ūkiais",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "ū́kiais": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "123": {
+    "wrd": "uodams",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“  (pvz., akìms).",
+    "acc": {
+      "uodáms": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "124": {
+    "wrd": "uodui",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "Trečiosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "úodui": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "125": {
+    "wrd": "uogą",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "úogą": {
+        "pos": 0,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "126": {
+    "wrd": "uoslę",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Ketvirtosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba riestiniu kirčio ženklu.",
+    "acc": {
+      "uõslę": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "127": {
+    "wrd": "uždavinys",
+    "exp": [
+      "3<sup>4a</sup> kirčiuotė"
+    ],
+    "aft": "Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "uždavinỹs": {
+        "pos": 7,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "128": {
+    "wrd": "universitetus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "universitetùs": {
+        "pos": 11,
+        "act": "LEFT"
+      }
+    }
+  },
+  "129": {
+    "wrd": "vilniečius",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "vilniečiùs": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "130": {
+    "wrd": "vištiena",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "vištíena": {
+        "pos": 4,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "131": {
+    "wrd": "valgykloje",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "Antrosios kirčiuotės daiktavardžiai su dviskiemenėmis galūnėmis vienaskaitos įnagininko ir vietininko linksniuose kirčiuojami riestiniu kirčio ženklu (pvz., skaĩčiumi, skaĩčiuje)",
+    "acc": {
+      "valgỹkloje": {
+        "pos": 4,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "132": {
+    "wrd": "vadovu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "vadovù": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "133": {
+    "wrd": "vyšnias",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "vyšniàs": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "134": {
+    "wrd": "žodžius",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "žodžiùs": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "135": {
+    "wrd": "žirgus",
+    "exp": [
+      "3 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios ir trečiosios kirčiuotės žodžiai daugiskaitos galininko linksnyje kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė). Pavyzdžiui, kálną→ kálnu, kálnus; bùrną→ bùrna, bùrnas.",
+    "acc": {
+      "žìrgus": {
+        "pos": 1,
+        "act": "LEFT"
+      }
+    }
+  },
+  "136": {
+    "wrd": "žmona",
+    "exp": [
+      "3 kirčiuotė, vns. įn."
+    ],
+    "aft": "1. Pirmosios ir trečiosios kirčiuotės žodžiai daugiskaitos galininko linksnyje kirčiuojami antrame nuo galo skiemenyje kairiniu arba dešininiu kirčio ženklu. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba dešininiu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojamas kamienas (priešpaskutinio skiemens taisyklė).",
+    "acc": {
+      "žmóna": {
+        "pos": 2,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "137": {
+    "wrd": "žiūrovus",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių daugiskaitos galininkas visada kirčiuojamas galūnėje. 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "žiūrovùs": {
+        "pos": 6,
+        "act": "LEFT"
+      }
+    }
+  },
+  "138": {
+    "wrd": "žvilgsniu",
+    "exp": [
+      "2 kirčiuotė"
+    ],
+    "aft": "1. Antrosios ir ketvirtosios kirčiuočių vienaskaitos įnagininkas beveik visada kirčiuojamas galūnėje. Išimtis – antrosios kirčiuotės dviskiemenės galūnės (pvz., aliẽjumi). 2. Kai kirčiuotas priešpaskutinis vienaskaitos galininko skiemuo ir jis yra žymimas kairiniu arba riestiniu kirčio ženklu, tai vienaskaitos įnagininko ir daugiskaitos galininko linksniuose visada kirčiuojama galūnė (priešpaskutinio skiemens taisyklė). Pavyzdžiui, agùrką→ agurkù, agurkùs; knỹgą→ knygà, knygàs.",
+    "acc": {
+      "žvilgsniù": {
+        "pos": 8,
+        "act": "LEFT"
+      }
+    }
+  },
+  "139": {
+    "wrd": "lengviems",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“ (pvz., akìms).",
+    "acc": {
+      "lengvíems": {
+        "pos": 5,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "140": {
+    "wrd": "stiprioms",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Daugumos linksniuojamų žodžių vienaskaitos ir daugiskaitos naudininkų kirčiuota galūnė žymima dešininiu kirčio ženklu. Išimtis: linksniuojami žodžiai su galūne „-ìms“ (pvz., akìms).",
+    "acc": {
+      "stiprióms": {
+        "pos": 6,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "141": {
+    "wrd": "brangiausiais",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1. Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu. 2. Dvibalsių kirčiuotas pirmas dėmuo žymimas dešininiu (ai, au, ei, ie, uo) arba kairiniu (eu, oi, ou, ui) kirčio ženklu.",
+    "acc": {
+      "brangiáusiais": {
+        "pos": 6,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "142": {
+    "wrd": "drąsesnis",
+    "exp": [
+      "4 kirčiuotė"
+    ],
+    "aft": "Aukštesniojo laipsnio būdvardžiai visada turi kirčiuotą priesagą „-èsn-“ ir yra ketvirtosios kirčiuotės.",
+    "acc": {
+      "drąsèsnis": {
+        "pos": 4,
+        "act": "LEFT"
+      }
+    }
+  },
+  "143": {
+    "wrd": "malonu",
+    "exp": [
+      "bdv. bevardė g."
+    ],
+    "aft": "Bevardės giminės nelyginamojo laipsnio būdvardžiai išlaiko vyriškosios giminės būdvardžių vienaskaitos vardininko kirčio vietą ir kirčio ženklą.",
+    "acc": {
+      "malonù": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "144": {
+    "wrd": "brangu",
+    "exp": [
+      "bdv. bevardė g."
+    ],
+    "aft": "Bevardės giminės nelyginamojo laipsnio būdvardžiai išlaiko vyriškosios giminės būdvardžių vienaskaitos vardininko kirčio vietą ir kirčio ženklą.",
+    "acc": {
+      "brangù": {
+        "pos": 5,
+        "act": "LEFT"
+      }
+    }
+  },
+  "145": {
+    "wrd": "tobulas",
+    "exp": [
+      "3<sup>a</sup> kirčiuotė"
+    ],
+    "aft": "3a kirčiuotės žodžiai, jei kirčiuojami kamiene, turi dešininį kirčio ženklą trečiame nuo galo skiemenyje.",
+    "acc": {
+      "tóbulas": {
+        "pos": 1,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "146": {
+    "wrd": "artimą",
+    "exp": [
+      "3<sup>b</sup> kirčiuotė"
+    ],
+    "aft": "3b kirčiuotės žodžiai, jei kirčiuojami kamiene, turi riestinį arba kairinį kirčio ženklą trečiame nuo galo skiemenyje.",
+    "acc": {
+      "ar̃timą": {
+        "pos": 1,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "147": {
+    "wrd": "voverė",
+    "exp": [
+      "3<sup>a</sup> kirčiuotė"
+    ],
+    "aft": "1.Trečiosios ir ketvirtosios kirčiuočių daiktavardžiai, vienaskaitos vardininke turintys galūnę „-ė“, visada kirčiuojami galūnėje. 2. Ilgasis kirčiuotas žodžio galo skiemuo dažniausiai žymimas riestiniu kirčio ženklu.",
+    "acc": {
+      "voverė̃": {
+        "pos": 5,
+        "act": "ACUTE"
+      }
+    }
+  },
+  "148": {
+    "wrd": "pajūris",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "Pirmosios kirčiuotės žodžiai antrame nuo galo skiemenyje kirčiuojami kairiniu arba dešininiu kirčio ženklu.",
+    "acc": {
+      "pajū́ris": {
+        "pos": 3,
+        "act": "RIGHT"
+      }
+    }
+  },
+  "149": {
+    "wrd": "klausytojas",
+    "exp": [
+      "1 kirčiuotė"
+    ],
+    "aft": "1.Trečias ir tolimesni nuo galo skiemenys kirčiuojami pagal tarimą arba tikrinami pagal pamatinį žodį (klausyti). 2. Dauguma kirčiuotų veiksmažodžių bendraties priesagų (-áuti, -ė́ti, -ýti, -óti, -úoti) žymimos dešininiu kirčio ženklu. Išimtis – kirčiuota veiksmažodžių priesaga „-ìnti“  kuri žymima kairiniu kirčio ženklu.",
+    "acc": {
+      "klausýtojas": {
+        "pos": 5,
+        "act": "RIGHT"
+      }
+    }
+  }
+}
