@@ -17,19 +17,27 @@ namespace beveikZinojau.lt.Models
 
         public DateTime ServedAt { get; init; } = DateTime.UtcNow;
         public bool TryAnswer(
-            Guid playerId,
-            int enteredAnswer,
-            out bool isCorrect)
+        Guid playerId,
+        int? enteredAnswer,
+        out bool isCorrect,
+        out double answerSeconds,
+        double timeLimitSeconds)
         {
             lock (sync)
             {
                 if (!answeredPlayers.Add(playerId))
                 {
                     isCorrect = false;
+                    answerSeconds = 0;
+
                     return false;
                 }
 
-                isCorrect = enteredAnswer == CorrectAnswer;
+                double elapsed = Math.Max(0, (DateTime.UtcNow - ServedAt).TotalSeconds);
+
+                answerSeconds = Math.Min(elapsed, timeLimitSeconds);
+
+                isCorrect = enteredAnswer.HasValue && elapsed <= timeLimitSeconds && enteredAnswer.Value == CorrectAnswer;
                 return true;
             }
         }

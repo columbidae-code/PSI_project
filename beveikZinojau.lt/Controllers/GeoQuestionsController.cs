@@ -1,12 +1,13 @@
 using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
+using beveikZinojau.lt.Services.Geography;
+using beveikZinojau.lt.Services.ServiceHelpers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using System.Data;
 using System.Security.Claims;
 using System.Text.Json;
-using beveikZinojau.lt.Services.Geography;
 
 namespace beveikZinojau.lt.Controllers
 {
@@ -65,31 +66,14 @@ namespace beveikZinojau.lt.Controllers
         {
             var (answer, error) = answerService.CheckAnswer(sessionId, request);
 
-            return error switch
+            IActionResult? mapped = error switch
             {
-                GeoGameError.SessionNotFound =>
-                    NotFound("Session not found."),
-
-                GeoGameError.PlayerNotFound =>
-                    NotFound("Player not found."),
-
-                GeoGameError.QuestionNotFound =>
-                    NotFound("Question not found."),
-
-                GeoGameError.WrongSession =>
-                    BadRequest("Question belongs to another session."),
-
-                GeoGameError.MissingAnswer =>
-                    BadRequest("Select an answer."),
-
-                GeoGameError.InvalidOption =>
-                    BadRequest("Invalid option."),
-
-                GeoGameError.AlreadyAnswered =>
-                    Conflict("Player already answered this question."),
-
-                _ => Ok(answer)
+                GeoGameError.MissingAnswer => BadRequest("Select an answer."),
+                GeoGameError.InvalidOption => BadRequest("Invalid option."),
+                _ => GameErrorMapper.ToResult(error)
             };
+
+            return mapped ?? Ok(answer);
         }
 
 
@@ -100,19 +84,7 @@ namespace beveikZinojau.lt.Controllers
         {
             var (result, error) = resultService.GetResult(sessionId, playerId);
 
-            return error switch
-            {
-                GeoGameError.SessionNotFound =>
-                    NotFound("Session not found."),
-
-                GeoGameError.PlayerNotFound =>
-                    NotFound("Player not found."),
-
-                GeoGameError.RoundNotFinished =>
-                    Conflict("Round not finished."),
-
-                _ => Ok(result)
-            };
+            return GameErrorMapper.ToResult(error) ?? Ok(result);
         }
     }
 }

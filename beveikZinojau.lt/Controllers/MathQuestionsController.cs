@@ -3,6 +3,7 @@ using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
 using beveikZinojau.lt.Services.Geography;
 using beveikZinojau.lt.Services.MathGame;
+using beveikZinojau.lt.Services.ServiceHelpers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using System.Data;
@@ -61,31 +62,14 @@ namespace beveikZinojau.lt.Controllers
         {
             var (answer, error) = gameService.CheckAnswer(sessionId, request);
 
-            return error switch
+            IActionResult? mapped = error switch
             {
-                MathGameError.SessionNotFound =>
-                    NotFound("Session not found."),
-
-                MathGameError.PlayerNotFound =>
-                    NotFound("Player not found."),
-
-                MathGameError.QuestionNotFound =>
-                    NotFound("Question not found."),
-
-                MathGameError.WrongSession =>
-                    BadRequest("Question belongs to another session."),
-
-                MathGameError.MissingAnswer =>
-                    BadRequest("Select an answer."),
-
-                MathGameError.InvalidAnswer =>
-                    BadRequest("Invalid Answer."),
-
-                MathGameError.AlreadyAnswered =>
-                    Conflict("Player already answered this question."),
-
-                _ => Ok(answer)
+                MathGameError.MissingAnswer => BadRequest("Select an answer."),
+                MathGameError.InvalidAnswer => BadRequest("Invalid Answer."),
+                _ => GameErrorMapper.ToResult(error)
             };
+
+            return mapped ?? Ok(answer);
         }
 
 
@@ -96,19 +80,7 @@ namespace beveikZinojau.lt.Controllers
         {
             var (result, error) = gameService.GetResult(sessionId, playerId);
 
-            return error switch
-            {
-                MathGameError.SessionNotFound =>
-                    NotFound("Session not found."),
-
-                MathGameError.PlayerNotFound =>
-                    NotFound("Player not found."),
-
-                MathGameError.RoundNotFinished =>
-                    Conflict("Round not finished."),
-
-                _ => Ok(result)
-            };
+            return GameErrorMapper.ToResult(error) ?? Ok(result);
         }
 
     }

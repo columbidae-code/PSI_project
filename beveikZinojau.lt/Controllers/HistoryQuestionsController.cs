@@ -1,5 +1,6 @@
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Services.History;
+using beveikZinojau.lt.Services.ServiceHelpers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using System.Security.Claims;
@@ -51,28 +52,14 @@ namespace beveikZinojau.lt.Controllers
         {
             var (answer, error) = gameService.CheckAnswer(sessionId, request);
 
-            return error switch
+            IActionResult? mapped = error switch
             {
-                HistoryGameError.SessionNotFound =>
-                    NotFound("Session not found."),
-
-                HistoryGameError.PlayerNotFound =>
-                    NotFound("Player not found."),
-
-                HistoryGameError.QuestionNotFound =>
-                    NotFound("Question not found."),
-
-                HistoryGameError.WrongSession =>
-                    BadRequest("Question belongs to another session."),
-
                 HistoryGameError.InvalidSubmission =>
                     BadRequest("Invalid submission or incorrect number of event cards provided."),
-
-                HistoryGameError.AlreadyAnswered =>
-                    Conflict("Player already answered this question."),
-
-                _ => Ok(answer)
+                _ => GameErrorMapper.ToResult(error)
             };
+
+            return mapped ?? Ok(answer);
         }
 
         [HttpGet("session/{sessionId:guid}/result")]
@@ -82,19 +69,7 @@ namespace beveikZinojau.lt.Controllers
         {
             var (result, error) = gameService.GetResult(sessionId, playerId);
 
-            return error switch
-            {
-                HistoryGameError.SessionNotFound =>
-                    NotFound("Session not found."),
-
-                HistoryGameError.PlayerNotFound =>
-                    NotFound("Player not found."),
-
-                HistoryGameError.RoundNotFinished =>
-                    Conflict("Round not finished."),
-
-                _ => Ok(result)
-            };
+            return GameErrorMapper.ToResult(error) ?? Ok(result);
         }
     }
 }

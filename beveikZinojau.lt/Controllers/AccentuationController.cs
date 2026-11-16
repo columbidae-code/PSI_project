@@ -1,6 +1,7 @@
-using System.Security.Claims;
 using beveikZinojau.lt.Services.Accentuation;
+using beveikZinojau.lt.Services.ServiceHelpers;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace beveikZinojau.lt.Controllers;
 
@@ -45,17 +46,14 @@ public class AccentuationController : ControllerBase
     {
         var (answer, error) = gameService.CheckAnswer(sessionId, request);
 
-        return error switch
+        IActionResult? mapped = error switch
         {
-            AccentuationGameError.SessionNotFound => NotFound("Session not found."),
-            AccentuationGameError.PlayerNotFound => NotFound("Player not found."),
-            AccentuationGameError.QuestionNotFound => NotFound("Question not found."),
-            AccentuationGameError.WrongSession => BadRequest("Question belongs to another session."),
             AccentuationGameError.MissingAnswer => BadRequest("Select a letter and accent mark."),
             AccentuationGameError.InvalidOption => BadRequest("Invalid letter position or accent type."),
-            AccentuationGameError.AlreadyAnswered => Conflict("Player already answered this question."),
-            _ => Ok(answer)
+            _ => GameErrorMapper.ToResult(error)
         };
+
+        return mapped ?? Ok(answer);
     }
 
     [HttpGet("session/{sessionId:guid}/result")]
@@ -63,12 +61,6 @@ public class AccentuationController : ControllerBase
     {
         var (result, error) = gameService.GetResult(sessionId, playerId);
 
-        return error switch
-        {
-            AccentuationGameError.SessionNotFound => NotFound("Session not found."),
-            AccentuationGameError.PlayerNotFound => NotFound("Player not found."),
-            AccentuationGameError.RoundNotFinished => Conflict("Round not finished."),
-            _ => Ok(result)
-        };
+        return GameErrorMapper.ToResult(error) ?? Ok(result);
     }
 }
