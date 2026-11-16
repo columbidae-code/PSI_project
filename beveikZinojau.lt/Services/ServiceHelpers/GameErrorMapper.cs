@@ -7,7 +7,7 @@ namespace beveikZinojau.lt.Services.ServiceHelpers
 {
     public static class GameErrorMapper
     {
-        public static IActionResult? ToResult<TError>(TError error) where TError : struct, Enum
+        public static IActionResult? ToResult<T> (T error) where T : struct, Enum
         {
             return error.ToString() switch
             {
