@@ -2,11 +2,6 @@
 namespace beveikZinojau.lt.Models
 {   
     
-    public readonly record struct PlayerStats(
-        int Answered,
-        int Correct,
-        int Points,
-        double TotalAnswerTimeSeconds);
     public class GeoQuestionSession
     {
         private readonly object sync = new();
