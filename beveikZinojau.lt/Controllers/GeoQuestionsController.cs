@@ -13,13 +13,21 @@ namespace beveikZinojau.lt.Controllers
     [ApiController, Route("api/geoquestions")]
     public class GeoQuestionsController : ControllerBase
     {
-        private readonly IMemoryCache cache;
-        private readonly GeoGameService gameService;
+        private readonly GeoSessionService sessionService;
+        private readonly GeoQuestionService questionService;
+        private readonly GeoAnswerService answerService;
+        private readonly GeoResultService resultService;
 
-        public GeoQuestionsController(IMemoryCache cache, GeoGameService gameService)
+        public GeoQuestionsController(
+            GeoSessionService sessionService,
+            GeoQuestionService questionService,
+            GeoAnswerService answerService,
+            GeoResultService resultService)
         {
-            this.cache = cache;
-            this.gameService = gameService;
+            this.sessionService = sessionService;
+            this.questionService = questionService;
+            this.answerService = answerService;
+            this.resultService = resultService;
         }
 
         [HttpPost("session")]
@@ -28,7 +36,7 @@ namespace beveikZinojau.lt.Controllers
         {
 
             string? userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var (session, error) = gameService.CreateSession(request, userId);
+            var (session, error) = sessionService.CreateSession(request, userId);
 
             if (session is null)
                 return BadRequest(error);
@@ -39,7 +47,7 @@ namespace beveikZinojau.lt.Controllers
         [HttpPost("session/{sessionId:guid}/questions")]
         public IActionResult GetQuestion(Guid sessionId)
         {
-            var (question, sessionMissing) = gameService.GetQuestion(sessionId);
+            var (question, sessionMissing) = questionService.GetQuestion(sessionId);
 
             if (sessionMissing)
                 return NotFound("Session not found or expired.");
@@ -55,7 +63,7 @@ namespace beveikZinojau.lt.Controllers
     Guid sessionId,
     [FromBody] GeoAnswerRequest request)
         {
-            var (answer, error) = gameService.CheckAnswer(sessionId, request);
+            var (answer, error) = answerService.CheckAnswer(sessionId, request);
 
             return error switch
             {
@@ -90,7 +98,7 @@ namespace beveikZinojau.lt.Controllers
     Guid sessionId,
     [FromQuery] Guid playerId)
         {
-            var (result, error) = gameService.GetResult(sessionId, playerId);
+            var (result, error) = resultService.GetResult(sessionId, playerId);
 
             return error switch
             {
