@@ -5,39 +5,14 @@ using System.Globalization;
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
 using beveikZinojau.lt.Data;
-
-using beveikZinojau.lt.Services.Geography;
 using Microsoft.Extensions.Caching.Memory;
+using beveikZinojau.lt.Services.MathGame.MathRecords;
+using beveikZinojau.lt.Services.MathGame.MathEnum;
+using beveikZinojau.lt.Services.Geography.GeoGameRecords;
+
 
 namespace beveikZinojau.lt.Services.MathGame
 {
-    public enum MathGameError
-    {
-        None,
-        SessionNotFound,
-        PlayerNotFound,
-        QuestionNotFound,
-        WrongSession,
-        MissingAnswer,
-        InvalidAnswer,
-        AlreadyAnswered,
-        RoundNotFinished
-    }
-    public record MathQuestionIssued(
-    Guid QuestionId,
-    int QuestionNumber,
-    int TotalQuestions,
-    string Equation,
-    double TimeLimitSeconds,
-    string Text
-);
-
-    public record MathAnswerChecked(
-        bool IsCorrect,
-        int CorrectAnswer,
-        int PointsEarned,
-        int TotalPoints
-    );
 
     public class MathGameService
     {

@@ -1,4 +1,5 @@
-namespace beveikZinojau.lt.Services.Geography;
+namespace beveikZinojau.lt.Services.Geography.GeoGameRecords
+{
 
 public record GeoGameResult(
     int TotalQuestions,
@@ -8,3 +9,4 @@ public record GeoGameResult(
     int TotalPoints,
     bool Saved
 );
+}

@@ -1,4 +1,5 @@
-namespace beveikZinojau.lt.Services.Geography;
+namespace beveikZinojau.lt.Services.Geography.GeoGameRecords
+{
 
 public record GeoAnswerChecked(
     bool IsCorrect,
@@ -6,3 +7,4 @@ public record GeoAnswerChecked(
     int PointsEarned,
     int TotalPoints
 );
+}

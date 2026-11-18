@@ -1,4 +1,5 @@
-namespace beveikZinojau.lt.Services.Geography;
+namespace beveikZinojau.lt.Services.Geography.GeoGameRecords
+{
 
 public record GeoSessionCreated(
     Guid SessionId,
@@ -6,3 +7,4 @@ public record GeoSessionCreated(
     IReadOnlyList<string> QuestionTypes,
     Guid PlayerId
 );
+}

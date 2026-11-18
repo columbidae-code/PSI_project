@@ -3,6 +3,8 @@ using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
 using beveikZinojau.lt.Services.Geography;
 using beveikZinojau.lt.Services.MathGame;
+using beveikZinojau.lt.Services.MathGame.MathRecords;
+using beveikZinojau.lt.Services.MathGame.MathEnum;
 using beveikZinojau.lt.Services.ServiceHelpers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;

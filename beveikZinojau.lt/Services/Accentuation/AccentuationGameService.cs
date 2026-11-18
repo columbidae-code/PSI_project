@@ -2,71 +2,10 @@ using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
 using Microsoft.Extensions.Caching.Memory;
+using beveikZinojau.lt.Services.Accentuation.AccentuationGameEnum;
+using beveikZinojau.lt.Services.Accentuation.AccentuationGameRecords;
 
 namespace beveikZinojau.lt.Services.Accentuation;
-
-public record AccentuationSessionCreateRequest(
-    int QuestionCount,
-    List<int> Levels,
-    int? Seed = null
-);
-
-public record AccentuationSessionCreated(
-    Guid SessionId,
-    int QuestionCount,
-    IReadOnlyList<int> Levels,
-    Guid PlayerId
-);
-
-public record AccentuationQuestionIssued(
-    Guid QuestionId,
-    int QuestionNumber,
-    int TotalQuestions,
-    int Level,
-    double TimeLimitSeconds,
-    string Word,
-    string Explanation
-);
-
-public record AccentuationAnswerRequest(
-    Guid PlayerId,
-    Guid QuestionId,
-    int? SelectedPosition,
-    string? SelectedAccentType
-);
-
-public record AccentuationAnswerChecked(
-    string Status, // "correct", "halfcorrect", or "incorrect"
-    bool IsCorrect,
-    int CorrectPosition,
-    string CorrectAccentType,
-    string AccentedWord,
-    string Rule,
-    int PointsEarned,
-    int TotalPoints
-);
-
-public record AccentuationGameResult(
-    int TotalQuestions,
-    int CorrectAnswers,
-    int WrongAnswers,
-    double AccuracyPercent,
-    int TotalPoints,
-    bool Saved
-);
-
-public enum AccentuationGameError
-{
-    None,
-    SessionNotFound,
-    PlayerNotFound,
-    QuestionNotFound,
-    WrongSession,
-    MissingAnswer,
-    InvalidOption,
-    AlreadyAnswered,
-    RoundNotFinished
-}
 
 public class AccentuationGameService
 {
