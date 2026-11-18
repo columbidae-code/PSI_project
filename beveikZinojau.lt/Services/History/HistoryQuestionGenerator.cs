@@ -1,25 +1,8 @@
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
+using beveikZinojau.lt.Services.History.HistoryGameRecords;
 
 namespace beveikZinojau.lt.Services.History;
-
-public sealed record TimelineCardDto(
-    string Id,
-    string Title
-);
-
-public sealed record TimelineCardRevealedDto(
-    string Id,
-    string Title,
-    string DisplayDate,
-    int CorrectPosition
-);
-
-public sealed record GeneratedHistoryTimeline(
-    string SignatureKey,
-    IReadOnlyList<TimelineCardDto> ShuffledCards,
-    IReadOnlyList<HistoryEvent> CorrectChronologicalEvents
-);
 
 public sealed class HistoryQuestionGenerator
 {
