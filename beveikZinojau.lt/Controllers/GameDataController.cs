@@ -12,8 +12,8 @@ namespace beveikZinojau.lt.Controllers
     [ApiController, Route("api")]
     public class GameDataController : ControllerBase
     {
-        private GameService _gameDataService;
-        public GameDataController(GameService service)
+        private GameResultService _gameDataService;
+        public GameDataController(GameResultService service)
         {
             _gameDataService = service;
         }
