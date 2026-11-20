@@ -1,4 +1,5 @@
-namespace beveikZinojau.lt.Services.Geography;
+namespace beveikZinojau.lt.Services.Geography.GeoGameRecords
+{
 
 public record GeoQuestionIssued(
     Guid QuestionId,
@@ -10,3 +11,4 @@ public record GeoQuestionIssued(
     string? ImageUrl,
     string[] Options
 );
+}

@@ -1,5 +1,7 @@
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Services.History;
+using beveikZinojau.lt.Services.History.HistoryGameRecords;
+using beveikZinojau.lt.Services.History.HistoryGameEnum;
 using beveikZinojau.lt.Services.ServiceHelpers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;

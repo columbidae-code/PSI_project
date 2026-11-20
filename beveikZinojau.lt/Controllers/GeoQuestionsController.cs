@@ -1,13 +1,11 @@
-using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Models;
-using beveikZinojau.lt.Scoring;
 using beveikZinojau.lt.Services.Geography;
+using beveikZinojau.lt.Services.Geography.GeoGameEnum;
+using beveikZinojau.lt.Services.Geography.GeoGameRecords;
+
 using beveikZinojau.lt.Services.ServiceHelpers;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
-using System.Data;
 using System.Security.Claims;
-using System.Text.Json;
 
 namespace beveikZinojau.lt.Controllers
 {

@@ -1,5 +1,7 @@
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
+using beveikZinojau.lt.Services.Geography.GeoGameEnum;
+using beveikZinojau.lt.Services.Geography.GeoGameRecords;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace beveikZinojau.lt.Services.Geography;

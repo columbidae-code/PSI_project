@@ -1,67 +1,15 @@
 using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
+using beveikZinojau.lt.Services.History.HistoryGameRecords;
 using Microsoft.Extensions.Caching.Memory;
+using beveikZinojau.lt.Services.History.HistoryGameEnum;
+
+
 
 namespace beveikZinojau.lt.Services.History;
 
-public record HistorySessionCreateRequest(
-    int QuestionCount,
-    string Scope,        // "Pasaulis" or "All"
-    string Period,       // "Senovė", "Viduramžiai", "Naujieji amžiai", "Modernybė", or "All"
-    DifficultyLevel Difficulty
-);
 
-public record HistorySessionCreated(
-    Guid SessionId,
-    int QuestionCount,
-    string Scope,
-    string Period,
-    DifficultyLevel Difficulty,
-    Guid PlayerId
-);
-
-public record HistoryQuestionIssued(
-    Guid QuestionId,
-    int QuestionNumber,
-    int TotalQuestions,
-    double TimeLimitSeconds,
-    IReadOnlyList<TimelineCardDto> Cards
-);
-
-public record HistoryAnswerRequest(
-    Guid PlayerId,
-    Guid QuestionId,
-    IReadOnlyList<string> OrderedEventIds
-);
-
-public record HistoryAnswerChecked(
-    bool IsCorrect,
-    IReadOnlyList<TimelineCardRevealedDto> CorrectTimeline,
-    int PointsEarned,
-    int TotalPoints
-);
-
-public record HistoryGameResult(
-    int TotalQuestions,
-    int CorrectAnswers,
-    int WrongAnswers,
-    double AccuracyPercent,
-    int TotalPoints,
-    bool Saved
-);
-
-public enum HistoryGameError
-{
-    None,
-    SessionNotFound,
-    PlayerNotFound,
-    QuestionNotFound,
-    WrongSession,
-    InvalidSubmission,
-    AlreadyAnswered,
-    RoundNotFinished
-}
 
 public class HistoryGameService
 {

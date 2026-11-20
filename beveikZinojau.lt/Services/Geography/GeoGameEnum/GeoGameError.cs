@@ -1,4 +1,6 @@
-namespace beveikZinojau.lt.Services.Geography;
+namespace beveikZinojau.lt.Services.Geography.GeoGameEnum
+{
+
 
 public enum GeoGameError
 {
@@ -11,4 +13,5 @@ public enum GeoGameError
     InvalidOption,
     AlreadyAnswered,
     RoundNotFinished
+}
 }

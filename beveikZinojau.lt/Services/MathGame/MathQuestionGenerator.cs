@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using beveikZinojau.lt.Models;
+using beveikZinojau.lt.Services.MathGame.MathRecords;
 
 namespace beveikZinojau.lt.Services.MathGame
 {
-   public sealed record GeneratedMathQuestion(
-    GeoQuestionKey Key,
-    string QuestionType,
-    string Text,
-    int CorrectAnswer);
+   
 
 public sealed class MathQuestionGenerator
 {
