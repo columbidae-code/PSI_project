@@ -7,10 +7,10 @@ using System.Text;
 
 namespace beveikZinojau.lt.Services
 {
-    public class GameService
+    public class GameResultService
     {
         private readonly AppDbContext _db;
-        public GameService(AppDbContext db)
+        public GameResultService(AppDbContext db)
         {
             _db = db;
         }
