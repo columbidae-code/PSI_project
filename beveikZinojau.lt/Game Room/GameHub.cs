@@ -84,7 +84,7 @@ public class GameHub : Hub
         {
             room.Code,
             room.Category,
-            room.Players
+            room.GetCurrentPlayers
         };
     }
 
@@ -104,16 +104,12 @@ public class GameHub : Hub
             seed
         );
     }
-    public async Task LeaveRoom(
-        string roomCode,
-        string username)
+    public async Task LeaveRoom(string roomCode, string username)
     {
-        var room = _roomManager.GetRoom(roomCode);
+        roomCode = roomCode.ToUpper();
 
-        if (room == null)
+        if (!_roomManager.RemovePlayer(code: roomCode, username: username))
             return;
-
-        room.Players.Remove(username);
 
         await Groups.RemoveFromGroupAsync(
             connectionId: Context.ConnectionId,
