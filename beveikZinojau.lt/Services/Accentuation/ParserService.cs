@@ -1,6 +1,7 @@
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using beveikZinojau.lt.Models;
+using beveikZinojau.lt.Exceptions;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 
@@ -109,7 +110,10 @@ public class ParserService
                 }
                 else
                 {
-                    throw new InvalidOperationException($"Accent mark not found in word: '{word}' (file: {docxFilePath})");
+                    throw new InvalidGameDataException(
+                        docxFilePath,
+                        word,
+                        $"No recognized accent mark found at row {index + 1}.");
                 }
 
                 // Remove accent marks to get the unaccented word shown to players
