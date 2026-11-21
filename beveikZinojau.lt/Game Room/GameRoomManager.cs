@@ -1,32 +1,30 @@
+using System.Collections.Concurrent;
+
 public class GameRoomManager
 {
-    private readonly Dictionary<string, GameRoom> _rooms = new();
+    private readonly ConcurrentDictionary<string, GameRoom> _rooms = new();
 
     public GameRoom CreateRoom(string category)
     {
-        string code;
-
-        do
+        while (true)
         {
-            code = GenerateRoomCode();
+            string code = GenerateRoomCode();
+
+            var room = new GameRoom
+            {
+                Code = code,
+                Category = category
+            };
+
+            // only succeeds if code wasn't already taken
+            if (_rooms.TryAdd(code, room))
+                return room;
         }
-        while (_rooms.ContainsKey(code));
-
-        var room = new GameRoom
-        {
-            Code = code,
-            Category = category
-        };
-
-        _rooms.Add(code, room);
-
-        return room;
     }
 
     public GameRoom? GetRoom(string code)
     {
         _rooms.TryGetValue(code, out var room);
-
         return room;
     }
 
@@ -37,12 +35,17 @@ public class GameRoomManager
         if (room == null)
             return false;
 
-        if (room.Players.Contains(username))
+        return room.TryAddPlayer(username);
+    }
+
+    public bool RemovePlayer(string code, string username)
+    {
+        var room = GetRoom(code);
+
+        if (room == null)
             return false;
 
-        room.Players.Add(username);
-
-        return true;
+        return room.RemovePlayer(username);
     }
 
     private static string GenerateRoomCode()
