@@ -84,7 +84,7 @@ public class GameHub : Hub
         {
             room.Code,
             room.Category,
-            room.GetCurrentPlayers
+            Players = room.GetCurrentPlayers()
         };
     }
 

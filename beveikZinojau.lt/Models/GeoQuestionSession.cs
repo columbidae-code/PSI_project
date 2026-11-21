@@ -1,7 +1,7 @@
 
 namespace beveikZinojau.lt.Models
-{   
-    
+{
+
     public class GeoQuestionSession
     {
         private readonly object sync = new();
@@ -83,7 +83,7 @@ namespace beveikZinojau.lt.Models
                 if (!players.TryGetValue(playerId, out var progress))
                     return null;
 
-                return new PlayerStats (
+                return new PlayerStats(
                     progress.AnsweredQuestions,
                     progress.CorrectAnswers,
                     progress.Points,
@@ -93,23 +93,23 @@ namespace beveikZinojau.lt.Models
         //True only for the first caller
         public bool TryMarkSaved(Guid playerId)
         {
-            
-             PlayerProgress progress = players[playerId];
-
-             if (progress.Saved)
-                 return false;
-
-             progress.Saved = true;
-             return true;
-            
+            lock (sync)
+            {
+                if (!players.TryGetValue(playerId, out var progress) || progress.Saved)
+                    return false;
+                progress.Saved = true;
+                return true;
+            }
         }
 
         // Used when the database write failed so the save can be retried
         public void UnmarkSaved(Guid playerId)
         {
-           
-            players[playerId].Saved = false;
-            
+            lock (sync)
+            {
+                if (players.TryGetValue(playerId, out var progress))
+                    progress.Saved = false;
+            }
         }
         public bool IsFull
         {

@@ -5,22 +5,19 @@ namespace beveikZinojau.lt.Services.History;
 
 public class JsonHistoryRepository : IHistoryRepository
 {
-    private IReadOnlyList<HistoryEvent>? _cachedEvents;
+    private readonly Lazy<IReadOnlyList<HistoryEvent>> _cachedEvents = new(LoadEvents);
 
-    public IReadOnlyList<HistoryEvent> GetEvents()
+    public IReadOnlyList<HistoryEvent> GetEvents() => _cachedEvents.Value;
+
+    private static IReadOnlyList<HistoryEvent> LoadEvents()
     {
-        if (_cachedEvents is not null)
-            return _cachedEvents;
-
         string projectFolder = Directory.GetCurrentDirectory();
         string filePath = Path.Combine(projectFolder, "Data", "History", "history_events.json");
 
         using FileStream stream = File.OpenRead(filePath);
         var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
 
-        _cachedEvents = JsonSerializer.Deserialize<List<HistoryEvent>>(stream, options)
-                        ?? new List<HistoryEvent>();
-
-        return _cachedEvents;
+        return JsonSerializer.Deserialize<List<HistoryEvent>>(stream, options)
+               ?? new List<HistoryEvent>();
     }
 }
