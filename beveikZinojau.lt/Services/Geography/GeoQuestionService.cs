@@ -12,18 +12,20 @@ public class GeoQuestionService
     private readonly GeoSessionService sessions;
     private readonly GeoQuestionGenerator generator;
     private readonly CacheStore<StoredGeoQuestion> questions;
+    private readonly ICountryRepository countryRepository;
     public GeoQuestionService(
         GeoSessionService sessions,
         GeoQuestionGenerator generator,
-        IMemoryCache cache)
+        IMemoryCache cache,
+        ICountryRepository countryRepository)
     {
         this.sessions = sessions;
         this.generator = generator;
         questions = new(cache, "geo-question");
+        this.countryRepository = countryRepository;
     }
 
-    public (GeoQuestionIssued? Question, bool SessionMissing)
-    GetQuestion(Guid sessionId)
+    public async Task<(GeoQuestionIssued? Question, bool SessionMissing)> GetQuestionAsync(Guid sessionId)
     {
         var session = sessions.GetSession(sessionId);
 
@@ -33,8 +35,9 @@ public class GeoQuestionService
         if (session.IsFull)
             return (null, false);
 
-        foreach (GeneratedGeoQuestion generated in
-            generator.GenerateCandidates(session.QuestionTypes))
+        IReadOnlyList<Country> countries = await countryRepository.GetCountriesAsync();
+
+        foreach (GeneratedGeoQuestion generated in generator.GenerateCandidates(session.QuestionTypes, countries))
         {
             if (!session.TryRecordQuestion(generated.Key, out int number))
             {

@@ -6,20 +6,13 @@ namespace beveikZinojau.lt.Services.History;
 
 public sealed class HistoryQuestionGenerator
 {
-    private readonly IHistoryRepository historyRepository;
-
-    public HistoryQuestionGenerator(IHistoryRepository historyRepository)
-    {
-        this.historyRepository = historyRepository;
-    }
-
     public GeneratedHistoryTimeline? GenerateTimeline(
         string scope,
         string period,
-        DifficultyLevel difficulty)
+        DifficultyLevel difficulty,
+        IReadOnlyList<HistoryEvent> allEvents)
     {
         var rule = HistoryQuestionRules.For(difficulty);
-        IReadOnlyList<HistoryEvent> allEvents = historyRepository.GetEvents();
 
         // 1. Filter by scope ("Pasaulis" or "All") and period.
         var filtered = allEvents.Where(e =>

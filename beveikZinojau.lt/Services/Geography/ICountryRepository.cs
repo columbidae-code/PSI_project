@@ -4,5 +4,6 @@ namespace beveikZinojau.lt.Services.Geography;
 
 public interface ICountryRepository
 {
-    IReadOnlyList<Country> GetCountries();
+    Task<IReadOnlyList<Country>> GetCountriesAsync(
+        CancellationToken cancellationToken = default);
 }

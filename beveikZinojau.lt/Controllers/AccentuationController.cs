@@ -40,9 +40,11 @@ public class AccentuationController : ControllerBase
     }
 
     [HttpPost("session/{sessionId:guid}/questions")]
-    public IActionResult GetQuestion(Guid sessionId)
+    public async Task<IActionResult> GetQuestion(Guid sessionId)
     {
-        var (question, sessionMissing) = _questionService.GetQuestion(sessionId);
+        var (question, sessionMissing) = await _questionService.GetQuestionAsync(
+            sessionId,
+            HttpContext.RequestAborted);
 
         if (sessionMissing)
             return NotFound("Session not found or expired.");

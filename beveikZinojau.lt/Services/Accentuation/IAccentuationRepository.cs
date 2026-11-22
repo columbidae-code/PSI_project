@@ -4,5 +4,5 @@ namespace beveikZinojau.lt.Services.Accentuation;
 
 public interface IAccentuationRepository
 {
-    IReadOnlyList<AccentuationWord> GetWords(int level);
+    Task<IReadOnlyList<AccentuationEntry>> GetEntriesAsync(IReadOnlyCollection<int> levels,CancellationToken cancellationToken = default);
 }
