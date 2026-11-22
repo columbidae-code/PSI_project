@@ -26,7 +26,7 @@ namespace beveikZinojau.lt.Services.MathGame
 
         // Makes one random question of one of the given types
         public GeneratedMathQuestion Generate(IReadOnlyList<string> questionTypes)
-        {
+        {   
             string type = questionTypes[Random.Shared.Next(questionTypes.Count)];
 
             int firstOperand;

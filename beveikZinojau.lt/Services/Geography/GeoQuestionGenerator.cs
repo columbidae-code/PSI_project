@@ -6,7 +6,7 @@ namespace beveikZinojau.lt.Services.Geography;
 public sealed class GeoQuestionGenerator
 {
     public IEnumerable<GeneratedGeoQuestion> GenerateCandidates(IReadOnlyList<string> questionTypes, IReadOnlyList<Country> countries)
-    {
+    {   
         string[] shuffledTypes = questionTypes.ToArray();
         Random.Shared.Shuffle(shuffledTypes);
 
@@ -44,7 +44,7 @@ public sealed class GeoQuestionGenerator
             .Where(candidate => candidate.Region == country.Region).ToList();
         List<Country> sameContinent = candidates
             .Where(candidate => candidate.Continent == country.Continent).ToList();
-
+        Random random = new Random();
         string correctAnswer = type switch
         {
             "capital" => country.Capital!.Trim(),
@@ -93,6 +93,7 @@ public sealed class GeoQuestionGenerator
     private static void AddAnswerOptions(
         List<string> answers, IEnumerable<Country> candidates, string type)
     {
+        
         Country[] shuffled = candidates.ToArray();
         Random.Shared.Shuffle(shuffled);
 
