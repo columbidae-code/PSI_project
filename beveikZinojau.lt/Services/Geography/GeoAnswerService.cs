@@ -19,7 +19,7 @@ public class GeoAnswerService
         ScoringCalculator scoring)
     {
         this.sessions = sessions;
-        questions = new(cache, "geo-questions");
+        questions = new(cache, "geo-question");
         this.scoring = scoring;
     }
 

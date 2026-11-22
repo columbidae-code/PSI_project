@@ -67,7 +67,7 @@ public sealed class HistoryIntegrationTests
         Assert.NotNull(answer);
         Assert.True(answer.IsCorrect);
 
-        var resultAction = controller.GetResult(session.SessionId, session.PlayerId);
+        var resultAction = await controller.GetResult(session.SessionId, session.PlayerId);
         var result = Assert.IsType<OkObjectResult>(resultAction).Value as HistoryGameResult;
         Assert.NotNull(result);
         Assert.Equal(100, result.AccuracyPercent);
