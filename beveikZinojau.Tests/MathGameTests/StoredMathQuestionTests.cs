@@ -1,6 +1,6 @@
 ﻿using beveikZinojau.lt.Models;
 
-namespace beveikZinojau.Tests.MathTests
+namespace beveikZinojau.Tests.MathGameTests
 {
     public class StoredMathQuestionTests
     {
