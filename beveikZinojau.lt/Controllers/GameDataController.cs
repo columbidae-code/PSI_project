@@ -21,18 +21,18 @@ namespace beveikZinojau.lt.Controllers
         [HttpGet("leaderboard")]
         public async Task<IActionResult> GetLeaderboard()
         {
-            return Ok(_gameDataService.GetTopNUsers(10));
+            return Ok(await _gameDataService.GetTopNUsersAsync(10));
         }
         [HttpGet("stats/{username}")]
         public async Task<IActionResult> GetUserStats(string username)
         {
-              return Ok(_gameDataService.GetUserStats(username));
+              return Ok(await _gameDataService.GetUserStatsAsync(username));
         }
         [HttpGet("stats/{username}/summary")]
-        public IActionResult GetGameSummarySummary(string username)
+        public async Task<IActionResult> GetUserSummary(string username)
         {
 
-            return Ok(_gameDataService.GetUserSummary(username));
+            return Ok(await _gameDataService.GetUserSummaryAsync(username));
         }
 
     }

@@ -32,8 +32,7 @@ namespace beveikZinojau.lt.Services.MathGame
             this.scoring = scoring;
             this.statsTracker = statsTracker;
         }
-        public (GeoSessionCreated? Session, string? Error)
-            CreateSession(GeoSessionCreateRequest request, string? userId = null)
+        public (GeoSessionCreated? Session, string? Error) CreateSession(GeoSessionCreateRequest request, string? userId = null)
         {
             if (request.QuestionCount <= 0)
             {
@@ -66,8 +65,7 @@ namespace beveikZinojau.lt.Services.MathGame
                 playerId), null);
         }
 
-        public (MathQuestionIssued? Question, bool SessionMissing)
-            GetQuestion(Guid sessionId)
+        public (MathQuestionIssued? Question, bool SessionMissing) GetQuestion(Guid sessionId)
         {
             var session = sessions.Get(sessionId);
             if (session is null) return (null, true);
@@ -112,17 +110,16 @@ namespace beveikZinojau.lt.Services.MathGame
 
 
 
-        public (MathAnswerChecked? Answer, MathGameError Error)
-            CheckAnswer(Guid sessionId, MathAnswerRequest request)
+        public (MathAnswerChecked? Answer, MathGameError Error) CheckAnswer(Guid sessionId, MathAnswerRequest request)
         {
-            var session = sessions.Get(sessionId);
-            if (session is null) return (null, MathGameError.SessionNotFound);
+            var (session, sessionError) = sessions.GetOrError(sessionId, MathGameError.SessionNotFound);
+            if (session is null) return (null, sessionError);
 
             if (!session.HasPlayer(request.PlayerId))
                 return (null, MathGameError.PlayerNotFound);
 
-            var question = questions.Get(request.QuestionId);
-            if (question is null) return (null, MathGameError.QuestionNotFound);
+            var (question, questionError) = questions.GetOrError(request.QuestionId, MathGameError.QuestionNotFound);
+            if (question is null) return (null, questionError);
 
             if (question.SessionId != sessionId)
                 return (null, MathGameError.WrongSession);
@@ -163,11 +160,11 @@ namespace beveikZinojau.lt.Services.MathGame
             );
         }
 
-        public (GeoGameResult? Result, MathGameError Error)
-            GetResult(Guid sessionId, Guid playerId)
+        public async Task<(GeoGameResult? Result, MathGameError Error)>
+            GetResultAsync(Guid sessionId, Guid playerId)
         {
-            var session = sessions.Get(sessionId);
-            if (session is null) return (null, MathGameError.SessionNotFound);
+            var (session, sessionError) = sessions.GetOrError(sessionId, MathGameError.SessionNotFound);
+            if (session is null) return (null, sessionError);
 
             var stats = session.GetPlayerStats(playerId);
 
@@ -183,10 +180,10 @@ namespace beveikZinojau.lt.Services.MathGame
             {
                 try
                 {
-                    int categoryId = statsTracker.GetOrCreateCategoryId(
+                    int categoryId = await statsTracker.GetOrCreateCategoryIdAsync(
                         MathQuestionRules.CategoryName);
 
-                    statsTracker.RecordGame(new AppGameResults
+                    await statsTracker.RecordGameAsync(new AppGameResults
                     {
                         UserId = session.UserId,
                         CategoryId = categoryId,

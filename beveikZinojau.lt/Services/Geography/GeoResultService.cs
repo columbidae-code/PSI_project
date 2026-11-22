@@ -19,8 +19,8 @@ public class GeoResultService
         this.statsTracker = statsTracker;
     }
 
-    public (GeoGameResult? Result, GeoGameError Error)
-    GetResult(Guid sessionId, Guid playerId)
+    public async Task<(GeoGameResult? Result, GeoGameError Error)>
+    GetResultAsync(Guid sessionId, Guid playerId)
     {
         var session = sessions.GetSession(sessionId);
 
@@ -40,10 +40,10 @@ public class GeoResultService
         {
             try
             {
-                int categoryId = statsTracker.GetOrCreateCategoryId(
+                int categoryId = await statsTracker.GetOrCreateCategoryIdAsync(
                     GeoQuestionRules.CategoryName);
 
-                statsTracker.RecordGame(new AppGameResults
+                await statsTracker.RecordGameAsync(new AppGameResults
                 {
                     UserId = session.UserId,
                     CategoryId = categoryId,

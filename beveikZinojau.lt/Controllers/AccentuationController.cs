@@ -59,9 +59,9 @@ public class AccentuationController : ControllerBase
     }
 
     [HttpGet("session/{sessionId:guid}/result")]
-    public IActionResult GetResult(Guid sessionId, [FromQuery] Guid playerId)
+    public async Task<IActionResult> GetResult(Guid sessionId, [FromQuery] Guid playerId)
     {
-        var (result, error) = gameService.GetResult(sessionId, playerId);
+        var (result, error) = await gameService.GetResultAsync(sessionId, playerId);
 
         return GameErrorMapper.ToResult(error) ?? Ok(result);
     }

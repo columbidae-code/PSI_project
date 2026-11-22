@@ -121,18 +121,16 @@ public class HistoryGameService
         return (null, false);
     }
 
-    public (HistoryAnswerChecked? Answer, HistoryGameError Error) CheckAnswer(
-        Guid sessionId,
-        HistoryAnswerRequest request)
+    public (HistoryAnswerChecked? Answer, HistoryGameError Error) CheckAnswer( Guid sessionId, HistoryAnswerRequest request)
     {
-        var session = sessions.Get(sessionId);
-        if (session is null) return (null, HistoryGameError.SessionNotFound);
+        var (session, sessionError) = sessions.GetOrError(sessionId, HistoryGameError.SessionNotFound);
+        if (session is null) return (null, sessionError);
 
         if (!session.HasPlayer(request.PlayerId))
             return (null, HistoryGameError.PlayerNotFound);
 
-        var question = questions.Get(request.QuestionId);
-        if (question is null) return (null, HistoryGameError.QuestionNotFound);
+        var (question,questionError) = questions.GetOrError(request.QuestionId, HistoryGameError.QuestionNotFound);
+        if (question is null) return (null, questionError);
 
         if (question.SessionId != sessionId)
             return (null, HistoryGameError.WrongSession);
@@ -175,10 +173,10 @@ public class HistoryGameService
         );
     }
 
-    public (HistoryGameResult? Result, HistoryGameError Error) GetResult(Guid sessionId, Guid playerId)
+    public async Task<(HistoryGameResult? Result, HistoryGameError Error)> GetResultAsync(Guid sessionId, Guid playerId)
     {
-        var session = sessions.Get(sessionId);
-        if (session is null) return (null, HistoryGameError.SessionNotFound);
+        var (session, sessionError) = sessions.GetOrError(sessionId, HistoryGameError.SessionNotFound);
+        if (session is null) return (null,sessionError);
 
         var stats = session.GetPlayerStats(playerId);
 
@@ -194,10 +192,10 @@ public class HistoryGameService
         {
             try
             {
-                int categoryId = statsTracker.GetOrCreateCategoryId(
+                int categoryId = await statsTracker.GetOrCreateCategoryIdAsync(
                     HistoryQuestionRules.CategoryName);
 
-                statsTracker.RecordGame(new AppGameResults
+                await statsTracker.RecordGameAsync(new AppGameResults
                 {
                     UserId = session.UserId,
                     CategoryId = categoryId,

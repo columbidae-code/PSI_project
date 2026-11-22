@@ -128,3 +128,5 @@ app.MapControllers();
 app.MapHub<GameHub>("/gamehub");
 
 app.Run();
+
+public partial class Program { }
