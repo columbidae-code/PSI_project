@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Globalization;
+﻿using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
-using beveikZinojau.lt.Data;
-using Microsoft.Extensions.Caching.Memory;
-using beveikZinojau.lt.Services.MathGame.MathRecords;
-using beveikZinojau.lt.Services.MathGame.MathEnum;
 using beveikZinojau.lt.Services.Geography.GeoGameRecords;
+using beveikZinojau.lt.Services.MathGame.MathEnum;
+using beveikZinojau.lt.Services.MathGame.MathRecords;
+using beveikZinojau.lt.Services.ServiceHelpers;
+using Microsoft.Extensions.Caching.Memory;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Text;
 
 
 namespace beveikZinojau.lt.Services.MathGame
@@ -16,20 +17,22 @@ namespace beveikZinojau.lt.Services.MathGame
 
     public class MathGameService
     {
-        private readonly IMemoryCache cache;
+        private readonly CacheStore<GeoQuestionSession> sessions;
+        private readonly CacheStore<StoredMathQuestion> questions;
         private readonly MathQuestionGenerator generator;
         private readonly ScoringCalculator scoring;
         private readonly StatsTracker statsTracker;
 
         public MathGameService(IMemoryCache cache, MathQuestionGenerator generator, ScoringCalculator scoring, StatsTracker statsTracker)
         {
-            this.cache = cache;
+            sessions = new(cache, "math-session");
+            questions = new(cache, "math-question");
+
             this.generator = generator;
             this.scoring = scoring;
             this.statsTracker = statsTracker;
         }
-        public (GeoSessionCreated? Session, string? Error)
-            CreateSession(GeoSessionCreateRequest request, string? userId = null)
+        public (GeoSessionCreated? Session, string? Error) CreateSession(GeoSessionCreateRequest request, string? userId = null)
         {
             if (request.QuestionCount <= 0)
             {
@@ -48,12 +51,10 @@ namespace beveikZinojau.lt.Services.MathGame
 
                            return (null, "Unknown operation selected.");
             }
-            Guid sessionId = Guid.NewGuid();
 
             GeoQuestionSession session = new(questionCount: request.QuestionCount, questionTypes: selectedTypes, userId: userId);
 
-            cache.Set($"math-session:{sessionId}",
-                session, TimeSpan.FromMinutes(30));
+            Guid sessionId = sessions.Add(session);
 
             Guid playerId = session.AddPlayer();
 
@@ -64,14 +65,10 @@ namespace beveikZinojau.lt.Services.MathGame
                 playerId), null);
         }
 
-        public (MathQuestionIssued? Question, bool SessionMissing)
-            GetQuestion(Guid sessionId)
+        public (MathQuestionIssued? Question, bool SessionMissing) GetQuestion(Guid sessionId)
         {
-            if (!cache.TryGetValue<GeoQuestionSession>(
-                $"math-session:{sessionId}", out var session) || session is null)
-            {
-                return (null, true);
-            }
+            var session = sessions.Get(sessionId);
+            if (session is null) return (null, true);
 
             if (session.IsFull)
             {
@@ -90,7 +87,6 @@ namespace beveikZinojau.lt.Services.MathGame
                     continue;
                 }
 
-                Guid questionId = Guid.NewGuid();
 
                 StoredMathQuestion stored = new()
                 {
@@ -98,12 +94,8 @@ namespace beveikZinojau.lt.Services.MathGame
                     QuestionType = generated.QuestionType,
                     CorrectAnswer = generated.CorrectAnswer
                 };
+                Guid questionId = questions.Add(stored);
 
-                cache.Set(
-                    $"math-question:{questionId}",
-                    stored,
-                    TimeSpan.FromMinutes(30)
-                );
                 MathQuestionIssued question = new(
                     questionId,
                     number,
@@ -118,25 +110,16 @@ namespace beveikZinojau.lt.Services.MathGame
 
 
 
-        public (MathAnswerChecked? Answer, MathGameError Error)
-            CheckAnswer(Guid sessionId, MathAnswerRequest request)
+        public (MathAnswerChecked? Answer, MathGameError Error) CheckAnswer(Guid sessionId, MathAnswerRequest request)
         {
-            if (!cache.TryGetValue<GeoQuestionSession>(
-                $"math-session:{sessionId}", out var session)
-                || session is null)
-            {
-                return (null, MathGameError.SessionNotFound);
-            }
+            var (session, sessionError) = sessions.GetOrError(sessionId, MathGameError.SessionNotFound);
+            if (session is null) return (null, sessionError);
 
             if (!session.HasPlayer(request.PlayerId))
                 return (null, MathGameError.PlayerNotFound);
 
-            if (!cache.TryGetValue<StoredMathQuestion>(
-                $"math-question:{request.QuestionId}", out var question)
-                || question is null)
-            {
-                return (null, MathGameError.QuestionNotFound);
-            }
+            var (question, questionError) = questions.GetOrError(request.QuestionId, MathGameError.QuestionNotFound);
+            if (question is null) return (null, questionError);
 
             if (question.SessionId != sessionId)
                 return (null, MathGameError.WrongSession);
@@ -180,12 +163,8 @@ namespace beveikZinojau.lt.Services.MathGame
         public async Task<(GeoGameResult? Result, MathGameError Error)>
             GetResultAsync(Guid sessionId, Guid playerId)
         {
-            if (!cache.TryGetValue<GeoQuestionSession>(
-                $"math-session:{sessionId}", out var session)
-                || session is null)
-            {
-                return (null, MathGameError.SessionNotFound);
-            }
+            var (session, sessionError) = sessions.GetOrError(sessionId, MathGameError.SessionNotFound);
+            if (session is null) return (null, sessionError);
 
             var stats = session.GetPlayerStats(playerId);
 
