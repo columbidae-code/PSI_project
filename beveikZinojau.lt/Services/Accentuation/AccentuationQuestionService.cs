@@ -22,7 +22,9 @@ public class AccentuationQuestionService
         _questions = new(cache, "acc-question");
     }
 
-    public (AccentuationQuestionIssued? Question, bool SessionMissing) GetQuestion(Guid sessionId)
+    public async Task<(AccentuationQuestionIssued? Question, bool SessionMissing)> GetQuestionAsync(
+        Guid sessionId,
+        CancellationToken cancellationToken = default)
     {
         var session = _sessions.GetSession(sessionId);
 
@@ -32,22 +34,16 @@ public class AccentuationQuestionService
         if (session.IsFull)
             return (null, false);
 
-        var candidates = new List<(int Level, AccentuationWord Word)>();
-        foreach (int level in session.Levels)
-        {
-            foreach (var word in _repository.GetWords(level))
-            {
-                candidates.Add((level, word));
-            }
-        }
+        IReadOnlyList<AccentuationEntry> entries = await _repository.GetEntriesAsync(
+            session.Levels,
+            cancellationToken);
 
-        foreach (var candidate in candidates.OrderBy(_ => session.NextRandom()))
+        foreach (AccentuationEntry entry in entries.OrderBy(_ => session.NextRandom()))
         {
-            var accentEntry = candidate.Word.Accents.FirstOrDefault();
-            if (accentEntry.Value is null)
+            if (string.IsNullOrWhiteSpace(entry.AccentedWord))
                 continue;
 
-            string uniqueKey = $"{candidate.Level}:{accentEntry.Key}";
+            string uniqueKey = $"{entry.Level}:{entry.AccentedWord}";
 
             if (!session.TryRecordQuestion(uniqueKey, out int number))
             {
@@ -59,24 +55,24 @@ public class AccentuationQuestionService
             StoredAccentuationQuestion stored = new()
             {
                 SessionId = sessionId,
-                Level = candidate.Level,
-                Word = candidate.Word.Word,
-                AccentedWord = accentEntry.Key,
-                CorrectPosition = accentEntry.Value.Position,
-                CorrectAccentType = accentEntry.Value.AccentType,
-                Rule = candidate.Word.Rule
+                Level = entry.Level,
+                Word = entry.Word,
+                AccentedWord = entry.AccentedWord,
+                CorrectPosition = entry.Position,
+                CorrectAccentType = entry.AccentType,
+                Rule = entry.Rule
             };
 
             Guid questionId = _questions.Add(stored);
-            string explanation = candidate.Word.Explanations.FirstOrDefault() ?? string.Empty;
+            string explanation = entry.Explanations.FirstOrDefault() ?? string.Empty;
 
             AccentuationQuestionIssued issued = new(
                 questionId,
                 number,
                 session.QuestionCount,
-                candidate.Level,
+                entry.Level,
                 AccentuationQuestionRules.DefaultTimeLimitSeconds,
-                candidate.Word.Word,
+                entry.Word,
                 explanation
             );
 
