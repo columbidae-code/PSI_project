@@ -6,13 +6,13 @@ namespace beveikZinojau.lt.Services.History;
 
 public sealed class HistoryQuestionGenerator
 {
+        
     public GeneratedHistoryTimeline? GenerateTimeline(
         string scope,
         string period,
         DifficultyLevel difficulty,
         IReadOnlyList<HistoryEvent> allEvents)
     {   
-        Random random = new Random();
         var rule = HistoryQuestionRules.For(difficulty);
 
         // 1. Filter by scope ("Pasaulis" or "All") and period.
@@ -25,7 +25,7 @@ public sealed class HistoryQuestionGenerator
         // 2. Shuffle randomly, then prioritize "World" over "Lithuania" on identical dates
         //    so if World & Lithuania overlap on a date, the 2nd (Lithuania) date is excluded.
         var prioritized = filtered
-            .OrderBy(_ => random.Next())
+            .OrderBy(_ => Random.Shared.Next())
             .OrderBy(e => e.Scope.Equals("World", StringComparison.OrdinalIgnoreCase) ? 0 : 1)
             .ToList();
 
@@ -58,7 +58,7 @@ public sealed class HistoryQuestionGenerator
         var shuffled = chronological.ToArray();
         do
         {
-            random.Shuffle(shuffled);
+            Random.Shared.Shuffle(shuffled);
         } while (shuffled.Select(e => e.Id).SequenceEqual(chronological.Select(e => e.Id)));
 
         var cards = shuffled

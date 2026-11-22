@@ -7,9 +7,8 @@ public sealed class GeoQuestionGenerator
 {
     public IEnumerable<GeneratedGeoQuestion> GenerateCandidates(IReadOnlyList<string> questionTypes, IReadOnlyList<Country> countries)
     {   
-        Random random = new Random();
         string[] shuffledTypes = questionTypes.ToArray();
-        random.Shuffle(shuffledTypes);
+        Random.Shared.Shuffle(shuffledTypes);
 
         foreach (string type in shuffledTypes)
         {
@@ -23,7 +22,7 @@ public sealed class GeoQuestionGenerator
                 _ => false
             }).ToArray();
 
-            random.Shuffle(eligible);
+            Random.Shared.Shuffle(eligible);
 
             foreach (Country country in eligible)
             {
@@ -49,7 +48,7 @@ public sealed class GeoQuestionGenerator
         string correctAnswer = type switch
         {
             "capital" => country.Capital!.Trim(),
-            "neighbour" => country.Neighbours[random.Next(country.Neighbours.Count)],
+            "neighbour" => country.Neighbours[Random.Shared.Next(country.Neighbours.Count)],
             _ => country.Name.Trim()
         };
 
@@ -72,7 +71,7 @@ public sealed class GeoQuestionGenerator
             return null;
 
         string[] options = answers.ToArray();
-        random.Shuffle(options);
+        Random.Shared.Shuffle(options);
 
         (string text, string? imageUrl) = type switch
         {
@@ -94,9 +93,9 @@ public sealed class GeoQuestionGenerator
     private static void AddAnswerOptions(
         List<string> answers, IEnumerable<Country> candidates, string type)
     {
-        Random random = new Random();
+        
         Country[] shuffled = candidates.ToArray();
-        random.Shuffle(shuffled);
+        Random.Shared.Shuffle(shuffled);
 
         foreach (Country candidate in shuffled)
         {
