@@ -1,4 +1,4 @@
-﻿using beveikZinojau.lt.Data;
+using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Services;
 using beveikZinojau.lt.Services.ServiceHelpers;
 using Microsoft.AspNetCore.Mvc;

@@ -4,5 +4,5 @@ namespace beveikZinojau.lt.Services.History;
 
 public interface IHistoryRepository
 {
-    IReadOnlyList<HistoryEvent> GetEvents();
+    Task<IReadOnlyList<HistoryEvent>> GetEventsAsync(CancellationToken cancellationToken = default);
 }

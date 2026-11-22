@@ -33,8 +33,8 @@ namespace beveikZinojau.lt.Models
                 answerSeconds = Math.Min(elapsed, timeLimitSeconds);
 
                 // Check if submission matches the correct chronological order within time limit
-                if (orderedEventIds is null || 
-                    orderedEventIds.Count != CorrectEvents.Count || 
+                if (orderedEventIds is null ||
+                    orderedEventIds.Count != CorrectEvents.Count ||
                     elapsed > timeLimitSeconds)
                 {
                     isCorrect = false;
