@@ -160,7 +160,8 @@ namespace beveikZinojau.lt.Services.MathGame
             );
         }
 
-        public (GeoGameResult? Result, MathGameError Error) GetResult(Guid sessionId, Guid playerId)
+        public async Task<(GeoGameResult? Result, MathGameError Error)>
+            GetResultAsync(Guid sessionId, Guid playerId)
         {
             var (session, sessionError) = sessions.GetOrError(sessionId, MathGameError.SessionNotFound);
             if (session is null) return (null, sessionError);
@@ -179,10 +180,10 @@ namespace beveikZinojau.lt.Services.MathGame
             {
                 try
                 {
-                    int categoryId = statsTracker.GetOrCreateCategoryId(
+                    int categoryId = await statsTracker.GetOrCreateCategoryIdAsync(
                         MathQuestionRules.CategoryName);
 
-                    statsTracker.RecordGame(new AppGameResults
+                    await statsTracker.RecordGameAsync(new AppGameResults
                     {
                         UserId = session.UserId,
                         CategoryId = categoryId,

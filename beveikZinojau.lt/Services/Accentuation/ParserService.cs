@@ -1,6 +1,7 @@
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using beveikZinojau.lt.Models;
+using beveikZinojau.lt.Exceptions;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 
@@ -14,13 +15,15 @@ public class ParserService
     private const char TildeAccent = '\u0303'; // Tilde/Circumflex (riestinis)
 
     // Parses a .docx file and returns a dictionary with indexed words
-    public Dictionary<string, AccentuationWord> ParseDocx(string docxFilePath)
+    public async Task<Dictionary<string, AccentuationWord>> ParseDocxAsync(string docxFilePath)
     {
         var data = new Dictionary<string, AccentuationWord>();
         int index = 0;
 
         // Open the Word document in read only mode
-        using WordprocessingDocument doc = WordprocessingDocument.Open(docxFilePath, false);
+        byte[] fileBytes = await File.ReadAllBytesAsync(docxFilePath);
+        using MemoryStream memoryStream = new(fileBytes);
+        using WordprocessingDocument doc = WordprocessingDocument.Open(memoryStream, false);
         var body = doc.MainDocumentPart?.Document?.Body;
         if (body == null) return data;
 
@@ -109,7 +112,10 @@ public class ParserService
                 }
                 else
                 {
-                    throw new InvalidOperationException($"Accent mark not found in word: '{word}' (file: {docxFilePath})");
+                    throw new InvalidGameDataException(
+                        docxFilePath,
+                        word,
+                        $"No recognized accent mark found at row {index + 1}.");
                 }
 
                 // Remove accent marks to get the unaccented word shown to players
@@ -155,7 +161,7 @@ public class ParserService
     // Parses a .docx file and writes the data to a JSON file
     public async Task ParseDocxToJsonFileAsync(string docxFilePath, string outputJsonPath)
     {
-        var data = ParseDocx(docxFilePath);
+        var data = await ParseDocxAsync(docxFilePath);
 
         var options = new JsonSerializerOptions
         {

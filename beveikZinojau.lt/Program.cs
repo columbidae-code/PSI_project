@@ -1,6 +1,7 @@
 using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Services.MathGame;
 using beveikZinojau.lt.Services;
+using beveikZinojau.lt.Exceptions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using beveikZinojau.lt.Extensions;
@@ -94,7 +95,15 @@ var app = builder.Build();
 
 // Generate level1.json - level5.json from .docx files on startup if they don't exist yet
 var parser = app.Services.GetRequiredService<ParserService>();
-await parser.GenerateAllLevelsJsonAsync();
+try
+{
+    await parser.GenerateAllLevelsJsonAsync();
+}
+catch (InvalidGameDataException ex)
+{
+    app.Logger.LogCritical(ex, "Invalid game data; fix the source file before starting.");
+    throw;
+}
 
 // HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -119,3 +128,5 @@ app.MapControllers();
 app.MapHub<GameHub>("/gamehub");
 
 app.Run();
+
+public partial class Program { }

@@ -173,7 +173,7 @@ public class HistoryGameService
         );
     }
 
-    public (HistoryGameResult? Result, HistoryGameError Error) GetResult(Guid sessionId, Guid playerId)
+    public async Task<(HistoryGameResult? Result, HistoryGameError Error)> GetResultAsync(Guid sessionId, Guid playerId)
     {
         var (session, sessionError) = sessions.GetOrError(sessionId, HistoryGameError.SessionNotFound);
         if (session is null) return (null,sessionError);
@@ -192,10 +192,10 @@ public class HistoryGameService
         {
             try
             {
-                int categoryId = statsTracker.GetOrCreateCategoryId(
+                int categoryId = await statsTracker.GetOrCreateCategoryIdAsync(
                     HistoryQuestionRules.CategoryName);
 
-                statsTracker.RecordGame(new AppGameResults
+                await statsTracker.RecordGameAsync(new AppGameResults
                 {
                     UserId = session.UserId,
                     CategoryId = categoryId,

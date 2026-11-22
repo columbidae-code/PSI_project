@@ -87,7 +87,7 @@ public class AccentuationGameService
         }
 
         // Shuffle candidates randomly
-        foreach (var candidate in candidates.OrderBy(_ => session.Rng.Next()))
+        foreach (var candidate in candidates.OrderBy(_ => session.NextRandom()))
         {
             var accentEntry = candidate.Word.Accents.FirstOrDefault();
             if (accentEntry.Value is null) continue;
@@ -219,7 +219,7 @@ public class AccentuationGameService
         );
     }
 
-    public (AccentuationGameResult? Result, AccentuationGameError Error) GetResult(
+    public async Task<(AccentuationGameResult? Result, AccentuationGameError Error)> GetResultAsync(
         Guid sessionId,
         Guid playerId)
     {
@@ -240,9 +240,9 @@ public class AccentuationGameService
         {
             try
             {
-                int categoryId = statsTracker.GetOrCreateCategoryId(CategoryName);
+                int categoryId = await statsTracker.GetOrCreateCategoryIdAsync(CategoryName);
 
-                statsTracker.RecordGame(new AppGameResults
+                await statsTracker.RecordGameAsync(new AppGameResults
                 {
                     UserId = session.UserId,
                     CategoryId = categoryId,
@@ -316,14 +316,14 @@ public class AccentuationSession
     public int QuestionCount { get; }
     public IReadOnlyList<int> Levels { get; }
     public string? UserId { get; }
-    public Random Rng { get; }
+    private readonly Random _rng;
 
     public AccentuationSession(int questionCount, List<int> levels, string? userId, int? seed = null)
     {
         QuestionCount = questionCount;
         Levels = Array.AsReadOnly(levels.ToArray());
         UserId = userId;
-        Rng = new Random(seed ?? Random.Shared.Next());
+        _rng = new Random(seed ?? Random.Shared.Next());
     }
 
     public bool TryRecordQuestion(string questionKey, out int questionNumber)
@@ -410,6 +410,14 @@ public class AccentuationSession
         {
             lock (sync)
                 return generatedQuestions >= QuestionCount;
+        }
+    }
+
+    public int NextRandom()
+    {
+        lock (sync)
+        {
+            return _rng.Next();
         }
     }
 }
