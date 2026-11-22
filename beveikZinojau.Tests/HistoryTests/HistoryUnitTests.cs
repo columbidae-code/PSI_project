@@ -44,19 +44,19 @@ public sealed class HistoryUnitTests
     }
 
     [Fact]
-    public void GetQuestion_ReturnsMissingSession()
+    public async Task GetQuestion_ReturnsMissingSession()
     {
         using var cache = new MemoryCache(new MemoryCacheOptions());
         var service = CreateService(cache);
 
-        var (question, missing) = service.GetQuestion(Guid.NewGuid());
+        var (question, missing) = await service.GetQuestionAsync(Guid.NewGuid());
 
         Assert.Null(question);
         Assert.True(missing);
     }
 
     [Fact]
-    public void CheckAnswer_IsCorrectAndDuplicateAnswerIsRejected()
+    public async Task CheckAnswer_IsCorrectAndDuplicateAnswerIsRejected()
     {
         using var cache = new MemoryCache(new MemoryCacheOptions());
         var service = CreateService(cache);
@@ -66,7 +66,7 @@ public sealed class HistoryUnitTests
             "user-1");
         Assert.NotNull(created);
 
-        var (question, missing) = service.GetQuestion(created.SessionId);
+        var (question, missing) = await service.GetQuestionAsync(created.SessionId);
         Assert.False(missing);
         Assert.NotNull(question);
 
@@ -98,10 +98,13 @@ public sealed class HistoryUnitTests
     [Fact]
     public void Generator_FiltersAndDeduplicatesEvents()
     {
-        var generator = new HistoryQuestionGenerator(
-            new StubHistoryRepository(StubHistoryEvents));
+        var generator = new HistoryQuestionGenerator();
 
-        var timeline = generator.GenerateTimeline("World", "Senovė", DifficultyLevel.Easy);
+        var timeline = generator.GenerateTimeline(
+            "World",
+            "Senovė",
+            DifficultyLevel.Easy,
+            StubHistoryEvents);
 
         Assert.NotNull(timeline);
         Assert.Equal(4, timeline.ShuffledCards.Count);
@@ -116,8 +119,7 @@ public sealed class HistoryUnitTests
 
     private static HistoryGameService CreateService(IMemoryCache cache)
     {
-        var generator = new HistoryQuestionGenerator(
-            new StubHistoryRepository(StubHistoryEvents));
+        var generator = new HistoryQuestionGenerator();
         var scoring = new ScoringCalculator(new ScoringConfig
         {
             BasePoints = 100,
@@ -127,7 +129,12 @@ public sealed class HistoryUnitTests
             HardMultiplier = 2
         });
 
-        return new HistoryGameService(cache, generator, scoring, null!);
+        return new HistoryGameService(
+            cache,
+            generator,
+            scoring,
+            null!,
+            new StubHistoryRepository(StubHistoryEvents));
     }
 
     private static readonly IReadOnlyList<HistoryEvent> StubHistoryEvents =
@@ -140,6 +147,8 @@ public sealed class HistoryUnitTests
 
     private sealed class StubHistoryRepository(IReadOnlyList<HistoryEvent> events) : IHistoryRepository
     {
-        public IReadOnlyList<HistoryEvent> GetEvents() => events;
+        public Task<IReadOnlyList<HistoryEvent>> GetEventsAsync(
+            CancellationToken cancellationToken = default) =>
+            Task.FromResult(events);
     }
 }

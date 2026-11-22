@@ -33,6 +33,7 @@ public sealed class HistoryIntegrationTests
             UserName = "history-user",
             NormalizedUserName = "HISTORY-USER"
         });
+        context.HistoryEvents.AddRange(Events);
         await context.SaveChangesAsync();
 
         var service = CreateService(cache, context);
@@ -52,7 +53,7 @@ public sealed class HistoryIntegrationTests
         var session = Assert.IsType<OkObjectResult>(start).Value as HistorySessionCreated;
         Assert.NotNull(session);
 
-        var questionResult = controller.GetQuestion(session.SessionId);
+        var questionResult = await controller.GetQuestion(session.SessionId);
         var question = Assert.IsType<OkObjectResult>(questionResult).Value as HistoryQuestionIssued;
         Assert.NotNull(question);
 
@@ -78,7 +79,7 @@ public sealed class HistoryIntegrationTests
     }
 
     [Fact]
-    public void InvalidAnswerAndUnknownSessionUseDefinedErrors()
+    public async Task InvalidAnswerAndUnknownSessionUseDefinedErrors()
     {
         using var cache = new MemoryCache(new MemoryCacheOptions());
         var service = CreateService(cache, null);
@@ -88,7 +89,7 @@ public sealed class HistoryIntegrationTests
             "user-1");
         Assert.NotNull(created);
 
-        var (question, _) = service.GetQuestion(created.SessionId);
+        var (question, _) = await service.GetQuestionAsync(created.SessionId);
         Assert.NotNull(question);
 
         var (answer, error) = service.CheckAnswer(
@@ -106,8 +107,7 @@ public sealed class HistoryIntegrationTests
 
     private static HistoryGameService CreateService(IMemoryCache cache, AppDbContext? context)
     {
-        var generator = new HistoryQuestionGenerator(
-            new IntegrationHistoryRepository(Events));
+        var generator = new HistoryQuestionGenerator();
         var scoring = new ScoringCalculator(new ScoringConfig
         {
             BasePoints = 100,
@@ -118,7 +118,16 @@ public sealed class HistoryIntegrationTests
         });
         var statsTracker = context is null ? null : new StatsTracker(context);
 
-        return new HistoryGameService(cache, generator, scoring, statsTracker!);
+        IHistoryRepository repository = context is null
+            ? new IntegrationHistoryRepository(Events)
+            : new DbHistoryRepository(context);
+
+        return new HistoryGameService(
+            cache,
+            generator,
+            scoring,
+            statsTracker!,
+            repository);
     }
 
     private static readonly IReadOnlyList<HistoryEvent> Events =
@@ -134,6 +143,8 @@ public sealed class HistoryIntegrationTests
 
     private sealed class IntegrationHistoryRepository(IReadOnlyList<HistoryEvent> events) : IHistoryRepository
     {
-        public IReadOnlyList<HistoryEvent> GetEvents() => events;
+        public Task<IReadOnlyList<HistoryEvent>> GetEventsAsync(
+            CancellationToken cancellationToken = default) =>
+            Task.FromResult(events);
     }
 }

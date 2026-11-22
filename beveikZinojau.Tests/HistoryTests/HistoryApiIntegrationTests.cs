@@ -1,12 +1,15 @@
 using System.Net;
 using System.Net.Http.Json;
+using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Services.History;
 using beveikZinojau.lt.Services.History.HistoryGameRecords;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
-using Microsoft.Extensions.Configuration;
+using Microsoft.Data.Sqlite;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
@@ -17,7 +20,9 @@ public sealed class HistoryApiIntegrationTests
     [Fact]
     public async Task FullGame_WrongAnswer_ReturnsCompletedResult()
     {
-        using var factory = CreateFactory();
+        await using var connection = new SqliteConnection("DataSource=:memory:");
+        await connection.OpenAsync();
+        using var factory = await CreateFactory(connection);
         using var client = factory.CreateClient();
 
         var sessionResponse = await client.PostAsJsonAsync(
@@ -52,7 +57,10 @@ public sealed class HistoryApiIntegrationTests
             {
                 playerId = session.PlayerId,
                 questionId = question.QuestionId,
-                orderedEventIds = question.Cards.Select(card => card.Id).ToArray()
+                orderedEventIds = question.Cards
+                    .Select(card => card.Id)
+                    .Reverse()
+                    .ToArray()
             });
 
         Assert.Equal(HttpStatusCode.OK, answerResponse.StatusCode);
@@ -79,7 +87,9 @@ public sealed class HistoryApiIntegrationTests
     [Fact]
     public async Task InvalidSubmission_ReturnsBadRequest_AndUnknownSessionReturnsNotFound()
     {
-        using var factory = CreateFactory();
+        await using var connection = new SqliteConnection("DataSource=:memory:");
+        await connection.OpenAsync();
+        using var factory = await CreateFactory(connection);
         using var client = factory.CreateClient();
 
         var invalidSessionResponse = await client.PostAsJsonAsync(
@@ -134,28 +144,29 @@ public sealed class HistoryApiIntegrationTests
         Assert.Equal(HttpStatusCode.BadRequest, answerResponse.StatusCode);
     }
 
-    private static WebApplicationFactory<Program> CreateFactory()
+    private static async Task<WebApplicationFactory<Program>> CreateFactory(
+        SqliteConnection connection)
     {
-        return new WebApplicationFactory<Program>()
+        var factory = new WebApplicationFactory<Program>()
             .WithWebHostBuilder(builder =>
             {
-                builder.ConfigureAppConfiguration((_, configuration) =>
-                {
-                    configuration.AddInMemoryCollection(
-                        new Dictionary<string, string?>
-                        {
-                            ["ConnectionStrings:DefaultConnection"] =
-                                "Host=127.0.0.1;Port=1;Database=unused_test_db;Username=test;Password=test"
-                        });
-                });
-
                 builder.ConfigureTestServices(services =>
                 {
-                    services.RemoveAll<IHistoryRepository>();
-                    services.AddSingleton<IHistoryRepository>(
-                        new TestHistoryRepository(TestEvents));
+                    services.RemoveAll<
+                        IDbContextOptionsConfiguration<AppDbContext>>();
+                    services.RemoveAll<DbContextOptions<AppDbContext>>();
+                    services.AddDbContext<AppDbContext>(options =>
+                        options.UseSqlite(connection));
                 });
             });
+
+        using var scope = factory.Services.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+        await db.Database.EnsureCreatedAsync();
+        db.HistoryEvents.AddRange(TestEvents);
+        await db.SaveChangesAsync();
+
+        return factory;
     }
 
     private static readonly IReadOnlyList<HistoryEvent> TestEvents =
@@ -165,9 +176,4 @@ public sealed class HistoryApiIntegrationTests
         new HistoryEvent { Id = "event-3", Scope = "World", Period = "Naujieji amžiai", Title = "Third", DisplayDate = "1700", Year = 1700 },
         new HistoryEvent { Id = "event-4", Scope = "World", Period = "Modernybė", Title = "Fourth", DisplayDate = "2020", Year = 2020 }
     ];
-
-    private sealed class TestHistoryRepository(IReadOnlyList<HistoryEvent> events) : IHistoryRepository
-    {
-        public IReadOnlyList<HistoryEvent> GetEvents() => events;
-    }
 }
