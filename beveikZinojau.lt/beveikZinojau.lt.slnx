@@ -1,4 +1,4 @@
 <Solution>
   <Project Path="beveikZinojau.lt.csproj" />
-  <Project Path="beveikZinojau.Tests/beveikZinojau.Tests.csproj" />
+  <Project Path="../beveikZinojau.Tests/beveikZinojau.Tests.csproj" />
 </Solution>

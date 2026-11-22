@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using beveikZinojau.lt.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace beveikZinojau.lt.Scoring
 {
@@ -11,26 +12,26 @@ namespace beveikZinojau.lt.Scoring
         public StatsTracker(AppDbContext context)
         {
             _context = context;
-        }   
-         // Finds a category by name and creates it if it does not exist yet
-        public int GetOrCreateCategoryId(string categoryName)
+        }
+        // Finds a category by name and creates it if it does not exist yet
+        public async Task<int> GetOrCreateCategoryIdAsync(string categoryName)
         {
-            AppCategory? category = _context.Categories
-                .FirstOrDefault(c => c.CategoryName == categoryName);
+            AppCategory? category = await _context.Categories
+                .FirstOrDefaultAsync(c => c.CategoryName == categoryName);
 
             if (category == null)
             {
                 category = new AppCategory { CategoryName = categoryName };
                 _context.Categories.Add(category);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
 
             return category.Id;
         }
-public void RecordGame (AppGameResults results)
+        public async Task RecordGameAsync(AppGameResults results)
         {
             _context.GameResults.Add(results);
-            var userStats = _context.UserStats.FirstOrDefault(s => s.UserId == results.UserId && s.CategoryId == results.CategoryId);
+            var userStats = await _context.UserStats.FirstOrDefaultAsync(s => s.UserId == results.UserId && s.CategoryId == results.CategoryId);
             if (userStats == null)
             {
                 userStats = new AppUserStats
@@ -40,17 +41,17 @@ public void RecordGame (AppGameResults results)
                 };
                 _context.UserStats.Add(userStats);
             }
-            
-                userStats.TotalScore += results.Score;
-                userStats.GamesPlayed += 1;
-                userStats.GamesWon += results.Score > 0 ? 1 : 0;
-                userStats.GamesLost += results.Score <= 0 ? 1 : 0;
-                userStats.TotalQuestions += results.QuestionsAnswered;
-                userStats.CorrectAnswers += results.CorrectAnswers;
-                userStats.TotalAnswerTimeSeconds += results.TotalAnswerTimeSeconds;
 
-      
-            _context.SaveChanges();
+            userStats.TotalScore += results.Score;
+            userStats.GamesPlayed += 1;
+            userStats.GamesWon += results.Score > 0 ? 1 : 0;
+            userStats.GamesLost += results.Score <= 0 ? 1 : 0;
+            userStats.TotalQuestions += results.QuestionsAnswered;
+            userStats.CorrectAnswers += results.CorrectAnswers;
+            userStats.TotalAnswerTimeSeconds += results.TotalAnswerTimeSeconds;
+
+
+            await _context.SaveChangesAsync();
         }
     }
 }
