@@ -76,11 +76,11 @@ namespace beveikZinojau.lt.Controllers
 
 
         [HttpGet("session/{sessionId:guid}/result")]
-        public IActionResult GetResult(
+        public async Task<IActionResult> GetResult(
     Guid sessionId,
     [FromQuery] Guid playerId)
         {
-            var (result, error) = resultService.GetResult(sessionId, playerId);
+            var (result, error) = await resultService.GetResultAsync(sessionId, playerId);
 
             return GameErrorMapper.ToResult(error) ?? Ok(result);
         }

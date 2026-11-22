@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 
 namespace beveikZinojau.lt.Services
 {
@@ -16,19 +17,19 @@ namespace beveikZinojau.lt.Services
         }
 
 
-        public List<LeaderBoardEntry> GetTopNUsers(int NumberOfUsers)
+        public async Task<List<LeaderBoardEntry>> GetTopNUsersAsync(int NumberOfUsers)
         {
-            return _db.GameResults
+            return await _db.GameResults
                 .GroupBy(r => r.User.UserName)
                 .OrderByDescending(g => g.Sum(r => r.Score))
                 .Take(NumberOfUsers)
                 .Select(g => new LeaderBoardEntry(g.Key, g.Sum(r => r.Score)))
-                .ToList();
+                .ToListAsync();
         }
 
-        public List<StatisticsEntry> GetUserStats(string username)
+        public async Task<List<StatisticsEntry>> GetUserStatsAsync(string username)
         {
-            return _db.UserStats
+            return await _db.UserStats
                 .Where(s => s.User.UserName == username)
                 .Select(s => new StatisticsEntry(
                     Category: s.Category.CategoryName,
@@ -39,14 +40,14 @@ namespace beveikZinojau.lt.Services
                     TotalQuestions: s.TotalQuestions,
                     CorrectAnswers: s.CorrectAnswers,
                     TotalAnswerTimeSeconds: s.TotalAnswerTimeSeconds))
-                .ToList();
+                .ToListAsync();
         }
 
-        public PlayerSummary GetUserSummary(string username)
+        public async Task<PlayerSummary> GetUserSummaryAsync(string username)
         {
-            List<AppUserStats> stats = _db.UserStats
+            List<AppUserStats> stats = await _db.UserStats
                 .Where(s => s.User.UserName == username)
-                .ToList();
+                .ToListAsync();
 
             return PlayerSummary.FromStats(stats);
         }
