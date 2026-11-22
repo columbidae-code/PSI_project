@@ -3,6 +3,7 @@ using beveikZinojau.lt.Scoring;
 using beveikZinojau.lt.Services.Geography.GeoGameRecords;
 using beveikZinojau.lt.Services.ServiceHelpers;
 using Microsoft.Extensions.Caching.Memory;
+using beveikZinojau.lt.Exceptions;
 
 namespace beveikZinojau.lt.Services.Geography;
 
@@ -36,6 +37,15 @@ public class GeoQuestionService
             return (null, false);
 
         IReadOnlyList<Country> countries = await countryRepository.GetCountriesAsync();
+
+        if (countries.Count == 0)
+        {
+            throw new InvalidGameDataException(
+                "PostgreSQL Countries",
+                "Countries",
+                "No countries available to generate questions."
+            );
+        }
 
         foreach (GeneratedGeoQuestion generated in generator.GenerateCandidates(session.QuestionTypes, countries))
         {

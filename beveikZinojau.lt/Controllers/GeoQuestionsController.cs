@@ -2,6 +2,7 @@ using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Services.Geography;
 using beveikZinojau.lt.Services.Geography.GeoGameEnum;
 using beveikZinojau.lt.Services.Geography.GeoGameRecords;
+using beveikZinojau.lt.Exceptions;
 
 using beveikZinojau.lt.Services.ServiceHelpers;
 using Microsoft.AspNetCore.Mvc;
@@ -46,16 +47,26 @@ namespace beveikZinojau.lt.Controllers
         [HttpPost("session/{sessionId:guid}/questions")]
         public async Task<IActionResult> GetQuestion(Guid sessionId)
         {
-            var (question, sessionMissing) =
-                await questionService.GetQuestionAsync(sessionId);
+            try
+            {
+                var (question, sessionMissing) =
+                    await questionService.GetQuestionAsync(sessionId);
 
-            if (sessionMissing)
-                return NotFound("Session not found or expired.");
+                if (sessionMissing)
+                    return NotFound("Session not found or expired.");
 
-            if (question is null)
-                return Conflict("Round finished or no unused questions remain.");
+                if (question is null)
+                    return Conflict("Round finished or no unused questions remain.");
 
-            return Ok(question);
+                return Ok(question);
+            }
+            catch (InvalidGameDataException)
+            {
+                return StatusCode(
+                    StatusCodes.Status503ServiceUnavailable,
+                    "Geography data is unavailable."
+                );
+            }
         }
 
         [HttpPost("session/{sessionId:guid}/answer")]
