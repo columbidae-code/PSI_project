@@ -6,9 +6,10 @@ namespace beveikZinojau.lt.Services.Geography;
 public sealed class GeoQuestionGenerator
 {
     public IEnumerable<GeneratedGeoQuestion> GenerateCandidates(IReadOnlyList<string> questionTypes, IReadOnlyList<Country> countries)
-    {
+    {   
+        Random random = new Random();
         string[] shuffledTypes = questionTypes.ToArray();
-        Random.Shared.Shuffle(shuffledTypes);
+        random.Shuffle(shuffledTypes);
 
         foreach (string type in shuffledTypes)
         {
@@ -22,7 +23,7 @@ public sealed class GeoQuestionGenerator
                 _ => false
             }).ToArray();
 
-            Random.Shared.Shuffle(eligible);
+            random.Shuffle(eligible);
 
             foreach (Country country in eligible)
             {
@@ -44,11 +45,11 @@ public sealed class GeoQuestionGenerator
             .Where(candidate => candidate.Region == country.Region).ToList();
         List<Country> sameContinent = candidates
             .Where(candidate => candidate.Continent == country.Continent).ToList();
-
+        Random random = new Random();
         string correctAnswer = type switch
         {
             "capital" => country.Capital!.Trim(),
-            "neighbour" => country.Neighbours[Random.Shared.Next(country.Neighbours.Count)],
+            "neighbour" => country.Neighbours[random.Next(country.Neighbours.Count)],
             _ => country.Name.Trim()
         };
 
@@ -71,7 +72,7 @@ public sealed class GeoQuestionGenerator
             return null;
 
         string[] options = answers.ToArray();
-        Random.Shared.Shuffle(options);
+        random.Shuffle(options);
 
         (string text, string? imageUrl) = type switch
         {
@@ -93,8 +94,9 @@ public sealed class GeoQuestionGenerator
     private static void AddAnswerOptions(
         List<string> answers, IEnumerable<Country> candidates, string type)
     {
+        Random random = new Random();
         Country[] shuffled = candidates.ToArray();
-        Random.Shared.Shuffle(shuffled);
+        random.Shuffle(shuffled);
 
         foreach (Country candidate in shuffled)
         {

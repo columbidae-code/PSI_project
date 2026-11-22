@@ -8,6 +8,7 @@ public static class ServiceCollectionExtensions
         this IServiceCollection services,
         IConfiguration configuration)
     {
+        services.AddSingleton(Random.Shared);
         services.AddScoped<StatsTracker>();
 
         var scoringConfig = configuration

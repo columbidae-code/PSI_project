@@ -26,8 +26,9 @@ namespace beveikZinojau.lt.Services.MathGame
 
         // Makes one random question of one of the given types
         public GeneratedMathQuestion Generate(IReadOnlyList<string> questionTypes)
-        {
-            string type = questionTypes[Random.Shared.Next(questionTypes.Count)];
+        {   
+            Random random = new Random();
+            string type = questionTypes[random.Next(questionTypes.Count)];
 
             int firstOperand;
             int secondOperand;
@@ -36,14 +37,14 @@ namespace beveikZinojau.lt.Services.MathGame
             {
                 // Pick the answer first and build the question from it,
                 // so the division always comes out even (no 15 ÷ 12).
-                int answer = Random.Shared.Next(2, 13);
-                secondOperand = Random.Shared.Next(2, 10);
+                int answer = random.Next(2, 13);
+                secondOperand = random.Next(2, 10);
                 firstOperand = answer * secondOperand;
             }
             else
             {
-                firstOperand = Random.Shared.Next(10, 20);
-                secondOperand = Random.Shared.Next(10, 20);
+                firstOperand = random.Next(10, 20);
+                secondOperand = random.Next(10, 20);
             }
 
             int correctAnswer = Calculate(type, firstOperand, secondOperand);

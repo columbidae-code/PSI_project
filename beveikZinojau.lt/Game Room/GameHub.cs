@@ -3,17 +3,16 @@ using Microsoft.AspNetCore.SignalR;
 public class GameHub : Hub
 {
     private readonly GameRoomManager _roomManager;
-
-    public GameHub(GameRoomManager roomManager)
+    private readonly ILogger<GameHub> _logger;
+    public GameHub(GameRoomManager roomManager, ILogger<GameHub> logger)
     {
         _roomManager = roomManager;
+        _logger = logger;
     }
 
     public async Task<string> CreateRoom(string username, string category)
     {
-        Console.WriteLine(
-            $"Creating room for {username}"
-        );
+        _logger.LogInformation("Creating room for {Username}", username);
 
         var room = _roomManager.CreateRoom(category);
 
@@ -30,9 +29,7 @@ public class GameHub : Hub
                 username
             );
 
-        Console.WriteLine(
-            $"Room created: {room.Code}"
-        );
+        _logger.LogInformation("Room created: {RoomCode}", room.Code);
 
         return room.Code;
     }
@@ -41,15 +38,13 @@ public class GameHub : Hub
     {
         roomCode = roomCode.ToUpper();
 
-        Console.WriteLine(
-            $"{username} trying to join {roomCode}"
-        );
+        _logger.LogInformation("{Username} trying to join {RoomCode}", username, roomCode);
 
         var room = _roomManager.GetRoom(roomCode);
 
         if (room == null)
         {
-            Console.WriteLine("Room not found.");
+            _logger.LogWarning("Room {RoomCode} not found.", roomCode);
 
             return null;
         }
@@ -58,9 +53,11 @@ public class GameHub : Hub
 
         if (!added)
         {
-            Console.WriteLine(
-                "Player could not be added."
-            );
+            _logger.LogWarning(
+                "Player {Username} could not be added to room {RoomCode}.",
+                username,
+                roomCode
+             );
 
             return null;
         }
@@ -76,9 +73,7 @@ public class GameHub : Hub
                 username
             );
 
-        Console.WriteLine(
-            $"{username} joined {roomCode}"
-        );
+        _logger.LogInformation("{Username} joined {RoomCode}", username, roomCode);
 
         return new
         {
