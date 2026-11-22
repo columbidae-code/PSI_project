@@ -16,8 +16,8 @@ namespace beveikZinojau.lt.Data
 
         public long TotalScore { get; set; }
         public int GamesPlayed { get; set; }
-        public int GamesWon { get; set; }    
-        public int GamesLost { get; set; }        
+        public int GamesWon { get; set; }
+        public int GamesLost { get; set; }
         public int TotalQuestions { get; set; }
         public int CorrectAnswers { get; set; }
         public double TotalAnswerTimeSeconds { get; set; }

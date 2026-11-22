@@ -46,7 +46,7 @@ namespace beveikZinojau.lt.Services.MathGame
             if (selectedTypes.Any(type => !MathQuestionGenerator.IsSupported(type)))
             {
 
-                           return (null, "Unknown operation selected.");
+                return (null, "Unknown operation selected.");
             }
             Guid sessionId = Guid.NewGuid();
 
@@ -159,7 +159,7 @@ namespace beveikZinojau.lt.Services.MathGame
             MathQuestionRule rule = MathQuestionRules.For(question.QuestionType);
 
             if (!question.TryAnswer(request.PlayerId, enteredAnswer,
-                    out bool isCorrect, out double answerSeconds,rule.TimeLimitSeconds))
+                    out bool isCorrect, out double answerSeconds, rule.TimeLimitSeconds))
                 return (null, MathGameError.AlreadyAnswered);
 
 

@@ -5,16 +5,8 @@ namespace beveikZinojau.lt.Services.Geography;
 
 public sealed class GeoQuestionGenerator
 {
-    private readonly ICountryRepository countryRepository;
-
-    public GeoQuestionGenerator(ICountryRepository countryRepository)
+    public IEnumerable<GeneratedGeoQuestion> GenerateCandidates(IReadOnlyList<string> questionTypes, IReadOnlyList<Country> countries)
     {
-        this.countryRepository = countryRepository;
-    }
-
-    public IEnumerable<GeneratedGeoQuestion> GenerateCandidates(IReadOnlyList<string> questionTypes)
-    {
-        IReadOnlyList<Country> countries = countryRepository.GetCountries();
         string[] shuffledTypes = questionTypes.ToArray();
         Random.Shared.Shuffle(shuffledTypes);
 

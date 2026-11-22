@@ -72,7 +72,7 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddMemoryCache();
 
-builder.Services.AddSingleton<ICountryRepository, JsonCountryRepository>();
+builder.Services.AddScoped<ICountryRepository, DbCountryRepository>();
 builder.Services.AddSingleton<GeoQuestionGenerator>();
 builder.Services.AddScoped<GeoSessionService>();
 builder.Services.AddScoped<GeoQuestionService>();
@@ -82,28 +82,16 @@ builder.Services.AddScoped<GeoResultService>();
 builder.Services.AddSingleton<MathQuestionGenerator>();
 builder.Services.AddScoped<MathGameService>();
 
-builder.Services.AddSingleton<IHistoryRepository, JsonHistoryRepository>();
+builder.Services.AddScoped<IHistoryRepository, DbHistoryRepository>();
 builder.Services.AddSingleton<HistoryQuestionGenerator>();
 builder.Services.AddScoped<HistoryGameService>();
 
 // Accentuation services
 builder.Services.AddSingleton<ParserService>();
-builder.Services.AddSingleton<IAccentuationRepository, JsonAccentuationRepository>();
+builder.Services.AddScoped<IAccentuationRepository, DbAccentuationRepository>();
 builder.Services.AddScoped<AccentuationGameService>();
 
 var app = builder.Build();
-
-// Generate level1.json - level5.json from .docx files on startup if they don't exist yet
-var parser = app.Services.GetRequiredService<ParserService>();
-try
-{
-    await parser.GenerateAllLevelsJsonAsync();
-}
-catch (InvalidGameDataException ex)
-{
-    app.Logger.LogCritical(ex, "Invalid game data; fix the source file before starting.");
-    throw;
-}
 
 // HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

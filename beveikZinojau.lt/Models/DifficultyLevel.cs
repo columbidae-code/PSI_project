@@ -10,5 +10,5 @@ namespace beveikZinojau.lt.Models
         Medium,
         Hard
     }
-    
+
 }

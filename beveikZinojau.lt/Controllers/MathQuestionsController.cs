@@ -19,7 +19,7 @@ namespace beveikZinojau.lt.Controllers
     {
         private readonly MathGameService gameService;
 
-        public MathQuestionsController( MathGameService gameService)
+        public MathQuestionsController(MathGameService gameService)
         {
             this.gameService = gameService;
         }
