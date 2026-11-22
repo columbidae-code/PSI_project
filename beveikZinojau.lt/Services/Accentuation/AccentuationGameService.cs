@@ -144,7 +144,7 @@ public class AccentuationGameService
             return (null, AccentuationGameError.PlayerNotFound);
 
         var question = questions.Get(request.QuestionId);
-        if (session is null) return (null, AccentuationGameError.QuestionNotFound);
+        if (question is null) return (null, AccentuationGameError.QuestionNotFound);
 
         if (question.SessionId != sessionId)
             return (null, AccentuationGameError.WrongSession);
