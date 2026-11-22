@@ -17,7 +17,7 @@ namespace beveikZinojau.lt.Services
     {
         private readonly UserManager<AppUser> _userManager;
 
-        SignInManager<AppUser>  _signInManager;
+        SignInManager<AppUser> _signInManager;
 
 
         public AuthService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
@@ -39,7 +39,7 @@ namespace beveikZinojau.lt.Services
             if (request.Password.IsMissing())
             {
                 return AuthResponse.Fail("Password is required.");
-                
+
             }
 
 
@@ -80,15 +80,15 @@ namespace beveikZinojau.lt.Services
             request.Password,
             isPersistent: true,
             lockoutOnFailure: true);
-            
-                        if (result.IsLockedOut)
-                        {
-                            return AuthResponse.Fail("Too many failed attempts. Try again later.");
-                        }
 
-                        if (!result.Succeeded)
-                        {
-                            return AuthResponse.Fail("Invalid username or password");
+            if (result.IsLockedOut)
+            {
+                return AuthResponse.Fail("Too many failed attempts. Try again later.");
+            }
+
+            if (!result.Succeeded)
+            {
+                return AuthResponse.Fail("Invalid username or password");
             }
             return AuthResponse.Ok("Login successful", user.UserName);
 

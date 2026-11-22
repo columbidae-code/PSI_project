@@ -34,9 +34,10 @@ namespace beveikZinojau.lt.Controllers
         }
 
         [HttpPost("session/{sessionId:guid}/questions")]
-        public IActionResult GetQuestion(Guid sessionId)
+        public async Task<IActionResult> GetQuestion(Guid sessionId)
         {
-            var (question, sessionMissing) = gameService.GetQuestion(sessionId);
+            var (question, sessionMissing) =
+                await gameService.GetQuestionAsync(sessionId);
 
             if (sessionMissing)
                 return NotFound("Session not found or expired.");

@@ -2,7 +2,7 @@
 
 namespace beveikZinojau.lt.Data
 {
-    public class AppGame 
+    public class AppGame
     {
 
         public long Id { get; set; }

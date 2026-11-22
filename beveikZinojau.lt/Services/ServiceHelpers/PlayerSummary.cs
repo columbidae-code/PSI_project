@@ -20,7 +20,8 @@ namespace beveikZinojau.lt.Services.ServiceHelpers
 
         public double AverageAnswerTimeSeconds => Divide(TotalAnswerTimeSeconds, TotalQuestions);
 
-        public static PlayerSummary FromStats(IReadOnlyCollection<AppUserStats> stats){
+        public static PlayerSummary FromStats(IReadOnlyCollection<AppUserStats> stats)
+        {
             return new PlayerSummary(
                 stats.Sum(s => s.TotalScore),
                 stats.Sum(s => s.GamesPlayed),

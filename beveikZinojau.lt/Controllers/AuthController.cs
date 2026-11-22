@@ -11,7 +11,7 @@ namespace beveikZinojau.lt.Controllers
 {
 
 
-    [ApiController,Route("api")]
+    [ApiController, Route("api")]
     public class AuthController : ControllerBase
     {
 
@@ -31,7 +31,8 @@ namespace beveikZinojau.lt.Controllers
             if (result.Success == false)
             {
                 return BadRequest(result);
-            } else
+            }
+            else
             {
                 return Ok(result);
             }

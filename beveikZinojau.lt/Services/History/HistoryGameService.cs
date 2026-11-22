@@ -19,18 +19,21 @@ public class HistoryGameService
     private readonly HistoryQuestionGenerator generator;
     private readonly ScoringCalculator scoring;
     private readonly StatsTracker statsTracker;
+    private readonly IHistoryRepository repository;
 
     public HistoryGameService(
         IMemoryCache cache,
         HistoryQuestionGenerator generator,
         ScoringCalculator scoring,
-        StatsTracker statsTracker)
+        StatsTracker statsTracker,
+        IHistoryRepository repository)
     {
         sessions = new(cache, "history-session");
         questions = new(cache, "history-question");
         this.generator = generator;
         this.scoring = scoring;
         this.statsTracker = statsTracker;
+        this.repository = repository;
     }
 
     public (HistorySessionCreated? Session, string? Error) CreateSession(
@@ -68,7 +71,7 @@ public class HistoryGameService
         ), null);
     }
 
-    public (HistoryQuestionIssued? Question, bool SessionMissing) GetQuestion(Guid sessionId)
+    public async Task<(HistoryQuestionIssued? Question, bool SessionMissing)> GetQuestionAsync(Guid sessionId)
     {
         var session = sessions.Get(sessionId);
         if (session is null) return (null, true);
@@ -78,9 +81,16 @@ public class HistoryGameService
             return (null, false);
         }
 
+        IReadOnlyList<HistoryEvent> events = await repository.GetEventsAsync();
+
         for (int attempt = 0; attempt < 200; attempt++)
         {
-            var generated = generator.GenerateTimeline(session.Scope, session.Period, session.Difficulty);
+            var generated = generator.GenerateTimeline(
+                session.Scope,
+                session.Period,
+                session.Difficulty,
+                events
+            );
 
             if (generated is null)
             {
