@@ -89,7 +89,10 @@ builder.Services.AddScoped<HistoryGameService>();
 // Accentuation services
 builder.Services.AddSingleton<ParserService>();
 builder.Services.AddSingleton<IAccentuationRepository, JsonAccentuationRepository>();
-builder.Services.AddScoped<AccentuationGameService>();
+builder.Services.AddScoped<AccentuationSessionService>();
+builder.Services.AddScoped<AccentuationQuestionService>();
+builder.Services.AddScoped<AccentuationAnswerService>();
+builder.Services.AddScoped<AccentuationResultService>();
 
 var app = builder.Build();
 

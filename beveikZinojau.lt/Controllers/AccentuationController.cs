@@ -1,6 +1,6 @@
 using beveikZinojau.lt.Services.Accentuation;
-using beveikZinojau.lt.Services.Accentuation.AccentuationGameRecords;
 using beveikZinojau.lt.Services.Accentuation.AccentuationGameEnum;
+using beveikZinojau.lt.Services.Accentuation.AccentuationGameRecords;
 using beveikZinojau.lt.Services.ServiceHelpers;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -10,18 +10,28 @@ namespace beveikZinojau.lt.Controllers;
 [ApiController, Route("api/accentuation")]
 public class AccentuationController : ControllerBase
 {
-    private readonly AccentuationGameService gameService;
+    private readonly AccentuationSessionService _sessionService;
+    private readonly AccentuationQuestionService _questionService;
+    private readonly AccentuationAnswerService _answerService;
+    private readonly AccentuationResultService _resultService;
 
-    public AccentuationController(AccentuationGameService gameService)
+    public AccentuationController(
+        AccentuationSessionService sessionService,
+        AccentuationQuestionService questionService,
+        AccentuationAnswerService answerService,
+        AccentuationResultService resultService)
     {
-        this.gameService = gameService;
+        _sessionService = sessionService;
+        _questionService = questionService;
+        _answerService = answerService;
+        _resultService = resultService;
     }
 
     [HttpPost("session")]
     public IActionResult StartSession([FromBody] AccentuationSessionCreateRequest request)
     {
         string? userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        var (session, error) = gameService.CreateSession(request, userId);
+        var (session, error) = _sessionService.CreateSession(request, userId);
 
         if (session is null)
             return BadRequest(error);
@@ -32,7 +42,7 @@ public class AccentuationController : ControllerBase
     [HttpPost("session/{sessionId:guid}/questions")]
     public IActionResult GetQuestion(Guid sessionId)
     {
-        var (question, sessionMissing) = gameService.GetQuestion(sessionId);
+        var (question, sessionMissing) = _questionService.GetQuestion(sessionId);
 
         if (sessionMissing)
             return NotFound("Session not found or expired.");
@@ -46,7 +56,7 @@ public class AccentuationController : ControllerBase
     [HttpPost("session/{sessionId:guid}/answer")]
     public IActionResult CheckAnswer(Guid sessionId, [FromBody] AccentuationAnswerRequest request)
     {
-        var (answer, error) = gameService.CheckAnswer(sessionId, request);
+        var (answer, error) = _answerService.CheckAnswer(sessionId, request);
 
         IActionResult? mapped = error switch
         {
@@ -61,7 +71,7 @@ public class AccentuationController : ControllerBase
     [HttpGet("session/{sessionId:guid}/result")]
     public async Task<IActionResult> GetResult(Guid sessionId, [FromQuery] Guid playerId)
     {
-        var (result, error) = await gameService.GetResultAsync(sessionId, playerId);
+        var (result, error) = await _resultService.GetResultAsync(sessionId, playerId);
 
         return GameErrorMapper.ToResult(error) ?? Ok(result);
     }
