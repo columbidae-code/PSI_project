@@ -137,14 +137,14 @@ public class AccentuationGameService
         Guid sessionId,
         AccentuationAnswerRequest request)
     {
-        var session = sessions.Get(sessionId);
-        if (session is null) return (null, AccentuationGameError.SessionNotFound);
+        var (session, sessionError) = sessions.GetOrError(sessionId, AccentuationGameError.SessionNotFound);
+        if (session is null) return (null, sessionError);
 
         if (!session.HasPlayer(request.PlayerId))
             return (null, AccentuationGameError.PlayerNotFound);
 
-        var question = questions.Get(request.QuestionId);
-        if (question is null) return (null, AccentuationGameError.QuestionNotFound);
+        var (question, questionError) = questions.GetOrError(request.QuestionId, AccentuationGameError.QuestionNotFound);
+        if (question is null) return (null, questionError);
 
         if (question.SessionId != sessionId)
             return (null, AccentuationGameError.WrongSession);
@@ -223,8 +223,8 @@ public class AccentuationGameService
         Guid sessionId,
         Guid playerId)
     {
-        var session = sessions.Get(sessionId);
-        if (session is null) return (null, AccentuationGameError.SessionNotFound);
+        var (session, sessionError) = sessions.GetOrError(sessionId, AccentuationGameError.SessionNotFound);
+        if (session is null) return (null, sessionError);
 
 
         var stats = session.GetPlayerStats(playerId);

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace beveikZinojau.lt.Services.ServiceHelpers
@@ -31,6 +32,16 @@ namespace beveikZinojau.lt.Services.ServiceHelpers
         {
 
             return cache.TryGetValue($"{prefix}:{id}", out T? value) ? value : null;
+        }
+
+        public (T? Item, TError error) GetOrError<TError>(Guid Id, TError notFound) where TError : struct, Enum
+        {
+            T? item = Get(Id);
+            if(item is null)
+            {
+                return (null, notFound);
+            }
+            return (item, default);
         }
     }
 }

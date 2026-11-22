@@ -1,5 +1,6 @@
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
+using beveikZinojau.lt.Services.ServiceHelpers;
 using beveikZinojau.lt.Services.Geography.GeoGameEnum;
 using beveikZinojau.lt.Services.Geography.GeoGameRecords;
 using Microsoft.Extensions.Caching.Memory;
@@ -9,7 +10,7 @@ namespace beveikZinojau.lt.Services.Geography;
 public class GeoAnswerService
 {
     private readonly GeoSessionService sessions;
-    private readonly IMemoryCache cache;
+    private readonly CacheStore<StoredGeoQuestion> questions;
     private readonly ScoringCalculator scoring;
 
     public GeoAnswerService(
@@ -18,12 +19,11 @@ public class GeoAnswerService
         ScoringCalculator scoring)
     {
         this.sessions = sessions;
-        this.cache = cache;
+        questions = new(cache, "geo-questions");
         this.scoring = scoring;
     }
 
-    public (GeoAnswerChecked? Answer, GeoGameError Error)
-    CheckAnswer(Guid sessionId, GeoAnswerRequest request)
+    public (GeoAnswerChecked? Answer, GeoGameError Error)CheckAnswer(Guid sessionId, GeoAnswerRequest request)
     {
         var session = sessions.GetSession(sessionId);
 
@@ -33,12 +33,8 @@ public class GeoAnswerService
         if (!session.HasPlayer(request.PlayerId))
             return (null, GeoGameError.PlayerNotFound);
 
-        if (!cache.TryGetValue<StoredGeoQuestion>(
-            $"geo-question:{request.QuestionId}", out var question)
-            || question is null)
-        {
-            return (null, GeoGameError.QuestionNotFound);
-        }
+        var (question, questionError) = questions.GetOrError(request.QuestionId, GeoGameError.QuestionNotFound);
+        if(question is null) return(null, questionError);
 
         if (question.SessionId != sessionId)
             return (null, GeoGameError.WrongSession);
