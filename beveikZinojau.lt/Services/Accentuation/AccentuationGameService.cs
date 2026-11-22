@@ -69,9 +69,14 @@ public class AccentuationGameService
         ), null);
     }
 
-    public (AccentuationQuestionIssued? Question, bool SessionMissing) GetQuestion(Guid sessionId)
+
+    public async Task<(AccentuationQuestionIssued? Question, bool SessionMissing)>
+        GetQuestionAsync(
+            Guid sessionId,
+            CancellationToken cancellationToken = default)
     {
-        if (!cache.TryGetValue<AccentuationSession>($"acc-session:{sessionId}", out var session)
+        if (!cache.TryGetValue<AccentuationSession>(
+            $"acc-session:{sessionId}", out var session)
             || session is null)
         {
             return (null, true);
@@ -80,28 +85,20 @@ public class AccentuationGameService
         if (session.IsFull)
             return (null, false);
 
-        // Gather all words from the selected levels
-        var candidates = new List<(int Level, AccentuationWord Word)>();
-        foreach (int level in session.Levels)
-        {
-            foreach (var word in repository.GetWords(level))
-            {
-                candidates.Add((level, word));
-            }
-        }
+        // Viena asinchroninė DB užklausa visiems pasirinktiems lygiams
+        IReadOnlyList<AccentuationEntry> candidates =
+            await repository.GetEntriesAsync(session.Levels, cancellationToken);
 
-        // Shuffle candidates randomly
+        // Atsitiktinai parenkame dar nepanaudotą žodį
         foreach (var candidate in candidates.OrderBy(_ => session.NextRandom()))
         {
-            var accentEntry = candidate.Word.Accents.FirstOrDefault();
-            if (accentEntry.Value is null) continue;
-
-            string uniqueKey = $"{candidate.Level}:{accentEntry.Key}";
+            string uniqueKey = $"{candidate.Level}:{candidate.AccentedWord}";
 
             if (!session.TryRecordQuestion(uniqueKey, out int number))
             {
                 if (session.IsFull)
                     break;
+
                 continue;
             }
 
@@ -111,11 +108,11 @@ public class AccentuationGameService
             {
                 SessionId = sessionId,
                 Level = candidate.Level,
-                Word = candidate.Word.Word,
-                AccentedWord = accentEntry.Key,
-                CorrectPosition = accentEntry.Value.Position,
-                CorrectAccentType = accentEntry.Value.AccentType,
-                Rule = candidate.Word.Rule
+                Word = candidate.Word,
+                AccentedWord = candidate.AccentedWord,
+                CorrectPosition = candidate.Position,
+                CorrectAccentType = candidate.AccentType,
+                Rule = candidate.Rule
             };
 
             cache.Set(
@@ -124,7 +121,8 @@ public class AccentuationGameService
                 TimeSpan.FromMinutes(30)
             );
 
-            string explanation = candidate.Word.Explanations.FirstOrDefault() ?? string.Empty;
+            string explanation =
+                candidate.Explanations.FirstOrDefault() ?? string.Empty;
 
             AccentuationQuestionIssued issued = new(
                 questionId,
@@ -132,7 +130,7 @@ public class AccentuationGameService
                 session.QuestionCount,
                 candidate.Level,
                 DefaultTimeLimitSeconds,
-                candidate.Word.Word,
+                candidate.Word,
                 explanation
             );
 
@@ -141,6 +139,7 @@ public class AccentuationGameService
 
         return (null, false);
     }
+
 
     public (AccentuationAnswerChecked? Answer, AccentuationGameError Error) CheckAnswer(
         Guid sessionId,

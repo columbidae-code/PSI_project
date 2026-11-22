@@ -7,7 +7,7 @@ namespace beveikZinojau.lt.Exceptions
         public string record;
         public string reason;
 
-        public InvalidGameDataException(string source, string record, string reason) 
+        public InvalidGameDataException(string source, string record, string reason)
             : base($"Invalid game data for record '{record}' from source '{source}': {reason}")
         {
             this.source = source;

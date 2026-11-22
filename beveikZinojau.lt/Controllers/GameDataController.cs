@@ -26,7 +26,7 @@ namespace beveikZinojau.lt.Controllers
         [HttpGet("stats/{username}")]
         public async Task<IActionResult> GetUserStats(string username)
         {
-              return Ok(_gameDataService.GetUserStats(username));
+            return Ok(_gameDataService.GetUserStats(username));
         }
         [HttpGet("stats/{username}/summary")]
         public IActionResult GetGameSummarySummary(string username)
