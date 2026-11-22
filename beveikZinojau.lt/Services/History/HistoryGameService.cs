@@ -1,9 +1,10 @@
 using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
-using beveikZinojau.lt.Services.History.HistoryGameRecords;
-using Microsoft.Extensions.Caching.Memory;
 using beveikZinojau.lt.Services.History.HistoryGameEnum;
+using beveikZinojau.lt.Services.History.HistoryGameRecords;
+using beveikZinojau.lt.Services.ServiceHelpers;
+using Microsoft.Extensions.Caching.Memory;
 
 
 
@@ -13,7 +14,8 @@ namespace beveikZinojau.lt.Services.History;
 
 public class HistoryGameService
 {
-    private readonly IMemoryCache cache;
+    private readonly CacheStore<HistorySession> sessions;
+    private readonly CacheStore<StoredHistoryQuestion> questions;
     private readonly HistoryQuestionGenerator generator;
     private readonly ScoringCalculator scoring;
     private readonly StatsTracker statsTracker;
@@ -24,7 +26,8 @@ public class HistoryGameService
         ScoringCalculator scoring,
         StatsTracker statsTracker)
     {
-        this.cache = cache;
+        sessions = new(cache, "history-session");
+        questions = new(cache, "history-question");
         this.generator = generator;
         this.scoring = scoring;
         this.statsTracker = statsTracker;
@@ -42,7 +45,6 @@ public class HistoryGameService
         string scope = string.IsNullOrWhiteSpace(request.Scope) ? "All" : request.Scope.Trim();
         string period = string.IsNullOrWhiteSpace(request.Period) ? "All" : request.Period.Trim();
 
-        Guid sessionId = Guid.NewGuid();
 
         HistorySession session = new(
             questionCount: request.QuestionCount,
@@ -52,11 +54,7 @@ public class HistoryGameService
             userId: userId
         );
 
-        cache.Set(
-            $"history-session:{sessionId}",
-            session,
-            TimeSpan.FromMinutes(30)
-        );
+        Guid sessionId = sessions.Add(session);
 
         Guid playerId = session.AddPlayer();
 
@@ -72,12 +70,8 @@ public class HistoryGameService
 
     public (HistoryQuestionIssued? Question, bool SessionMissing) GetQuestion(Guid sessionId)
     {
-        if (!cache.TryGetValue<HistorySession>(
-            $"history-session:{sessionId}", out var session)
-            || session is null)
-        {
-            return (null, true);
-        }
+        var session = sessions.Get(sessionId);
+        if (session is null) return (null, true);
 
         if (session.IsFull)
         {
@@ -101,7 +95,6 @@ public class HistoryGameService
                 continue;
             }
 
-            Guid questionId = Guid.NewGuid();
 
             StoredHistoryQuestion stored = new()
             {
@@ -110,11 +103,7 @@ public class HistoryGameService
                 CorrectEvents = generated.CorrectChronologicalEvents
             };
 
-            cache.Set(
-                $"history-question:{questionId}",
-                stored,
-                TimeSpan.FromMinutes(30)
-            );
+            Guid questionId = questions.Add(stored);
 
             HistoryTimelineRule rule = HistoryQuestionRules.For(session.Difficulty);
 
@@ -136,22 +125,14 @@ public class HistoryGameService
         Guid sessionId,
         HistoryAnswerRequest request)
     {
-        if (!cache.TryGetValue<HistorySession>(
-            $"history-session:{sessionId}", out var session)
-            || session is null)
-        {
-            return (null, HistoryGameError.SessionNotFound);
-        }
+        var session = sessions.Get(sessionId);
+        if (session is null) return (null, HistoryGameError.SessionNotFound);
 
         if (!session.HasPlayer(request.PlayerId))
             return (null, HistoryGameError.PlayerNotFound);
 
-        if (!cache.TryGetValue<StoredHistoryQuestion>(
-            $"history-question:{request.QuestionId}", out var question)
-            || question is null)
-        {
-            return (null, HistoryGameError.QuestionNotFound);
-        }
+        var question = questions.Get(request.QuestionId);
+        if (question is null) return (null, HistoryGameError.QuestionNotFound);
 
         if (question.SessionId != sessionId)
             return (null, HistoryGameError.WrongSession);
@@ -196,12 +177,8 @@ public class HistoryGameService
 
     public (HistoryGameResult? Result, HistoryGameError Error) GetResult(Guid sessionId, Guid playerId)
     {
-        if (!cache.TryGetValue<HistorySession>(
-            $"history-session:{sessionId}", out var session)
-            || session is null)
-        {
-            return (null, HistoryGameError.SessionNotFound);
-        }
+        var session = sessions.Get(sessionId);
+        if (session is null) return (null, HistoryGameError.SessionNotFound);
 
         var stats = session.GetPlayerStats(playerId);
 

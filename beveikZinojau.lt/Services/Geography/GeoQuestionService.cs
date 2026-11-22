@@ -1,16 +1,17 @@
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
 using beveikZinojau.lt.Services.Geography.GeoGameRecords;
+using beveikZinojau.lt.Services.ServiceHelpers;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace beveikZinojau.lt.Services.Geography;
 
 public class GeoQuestionService
 {
+
     private readonly GeoSessionService sessions;
     private readonly GeoQuestionGenerator generator;
-    private readonly IMemoryCache cache;
-
+    private readonly CacheStore<StoredGeoQuestion> questions;
     public GeoQuestionService(
         GeoSessionService sessions,
         GeoQuestionGenerator generator,
@@ -18,7 +19,7 @@ public class GeoQuestionService
     {
         this.sessions = sessions;
         this.generator = generator;
-        this.cache = cache;
+        questions = new(cache, "geo-question");
     }
 
     public (GeoQuestionIssued? Question, bool SessionMissing)
@@ -43,7 +44,6 @@ public class GeoQuestionService
                 continue;
             }
 
-            Guid questionId = Guid.NewGuid();
 
             StoredGeoQuestion stored = new()
             {
@@ -53,11 +53,8 @@ public class GeoQuestionService
                 CorrectOptionIndex = generated.CorrectOptionIndex
             };
 
-            cache.Set(
-                $"geo-question:{questionId}",
-                stored,
-                TimeSpan.FromMinutes(30)
-            );
+            Guid questionId = questions.Add(stored);
+
 
             GeoQuestionIssued question = new(
                 questionId,

@@ -1,9 +1,10 @@
 using beveikZinojau.lt.Data;
 using beveikZinojau.lt.Models;
 using beveikZinojau.lt.Scoring;
-using Microsoft.Extensions.Caching.Memory;
 using beveikZinojau.lt.Services.Accentuation.AccentuationGameEnum;
 using beveikZinojau.lt.Services.Accentuation.AccentuationGameRecords;
+using beveikZinojau.lt.Services.ServiceHelpers;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace beveikZinojau.lt.Services.Accentuation;
 
@@ -12,7 +13,8 @@ public class AccentuationGameService
     public const string CategoryName = "Accentuation";
     private const double DefaultTimeLimitSeconds = 30.0;
 
-    private readonly IMemoryCache cache;
+    private readonly CacheStore<AccentuationSession> sessions;
+    private readonly CacheStore<StoredAccentuationQuestion> questions;
     private readonly IAccentuationRepository repository;
     private readonly ScoringCalculator scoring;
     private readonly StatsTracker statsTracker;
@@ -23,7 +25,8 @@ public class AccentuationGameService
         ScoringCalculator scoring,
         StatsTracker statsTracker)
     {
-        this.cache = cache;
+        sessions = new(cache, "acc-session");
+        questions = new(cache, "acc-question");
         this.repository = repository;
         this.scoring = scoring;
         this.statsTracker = statsTracker;
@@ -44,7 +47,6 @@ public class AccentuationGameService
         if (selectedLevels.Count == 0)
             return (null, "Select at least one valid level (1-5).");
 
-        Guid sessionId = Guid.NewGuid();
 
         AccentuationSession session = new(
             questionCount: request.QuestionCount,
@@ -53,11 +55,8 @@ public class AccentuationGameService
             seed: request.Seed
         );
 
-        cache.Set(
-            $"acc-session:{sessionId}",
-            session,
-            TimeSpan.FromMinutes(30)
-        );
+        Guid sessionId = sessions.Add(session);
+
 
         Guid playerId = session.AddPlayer();
 
@@ -71,11 +70,8 @@ public class AccentuationGameService
 
     public (AccentuationQuestionIssued? Question, bool SessionMissing) GetQuestion(Guid sessionId)
     {
-        if (!cache.TryGetValue<AccentuationSession>($"acc-session:{sessionId}", out var session)
-            || session is null)
-        {
-            return (null, true);
-        }
+        var session = sessions.Get(sessionId);
+        if (session is null) return (null, true);
 
         if (session.IsFull)
             return (null, false);
@@ -105,7 +101,6 @@ public class AccentuationGameService
                 continue;
             }
 
-            Guid questionId = Guid.NewGuid();
 
             StoredAccentuationQuestion stored = new()
             {
@@ -118,11 +113,7 @@ public class AccentuationGameService
                 Rule = candidate.Word.Rule
             };
 
-            cache.Set(
-                $"acc-question:{questionId}",
-                stored,
-                TimeSpan.FromMinutes(30)
-            );
+            Guid questionId = questions.Add(stored);
 
             string explanation = candidate.Word.Explanations.FirstOrDefault() ?? string.Empty;
 
@@ -146,20 +137,14 @@ public class AccentuationGameService
         Guid sessionId,
         AccentuationAnswerRequest request)
     {
-        if (!cache.TryGetValue<AccentuationSession>($"acc-session:{sessionId}", out var session)
-            || session is null)
-        {
-            return (null, AccentuationGameError.SessionNotFound);
-        }
+        var session = sessions.Get(sessionId);
+        if (session is null) return (null, AccentuationGameError.SessionNotFound);
 
         if (!session.HasPlayer(request.PlayerId))
             return (null, AccentuationGameError.PlayerNotFound);
 
-        if (!cache.TryGetValue<StoredAccentuationQuestion>($"acc-question:{request.QuestionId}", out var question)
-            || question is null)
-        {
-            return (null, AccentuationGameError.QuestionNotFound);
-        }
+        var question = questions.Get(request.QuestionId);
+        if (session is null) return (null, AccentuationGameError.QuestionNotFound);
 
         if (question.SessionId != sessionId)
             return (null, AccentuationGameError.WrongSession);
@@ -238,11 +223,9 @@ public class AccentuationGameService
         Guid sessionId,
         Guid playerId)
     {
-        if (!cache.TryGetValue<AccentuationSession>($"acc-session:{sessionId}", out var session)
-            || session is null)
-        {
-            return (null, AccentuationGameError.SessionNotFound);
-        }
+        var session = sessions.Get(sessionId);
+        if (session is null) return (null, AccentuationGameError.SessionNotFound);
+
 
         var stats = session.GetPlayerStats(playerId);
         if (stats is null)
