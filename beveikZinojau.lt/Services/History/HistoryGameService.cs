@@ -194,7 +194,7 @@ public class HistoryGameService
         );
     }
 
-    public (HistoryGameResult? Result, HistoryGameError Error) GetResult(Guid sessionId, Guid playerId)
+    public async Task<(HistoryGameResult? Result, HistoryGameError Error)> GetResultAsync(Guid sessionId, Guid playerId)
     {
         if (!cache.TryGetValue<HistorySession>(
             $"history-session:{sessionId}", out var session)
@@ -217,10 +217,10 @@ public class HistoryGameService
         {
             try
             {
-                int categoryId = statsTracker.GetOrCreateCategoryId(
+                int categoryId = await statsTracker.GetOrCreateCategoryIdAsync(
                     HistoryQuestionRules.CategoryName);
 
-                statsTracker.RecordGame(new AppGameResults
+                await statsTracker.RecordGameAsync(new AppGameResults
                 {
                     UserId = session.UserId,
                     CategoryId = categoryId,

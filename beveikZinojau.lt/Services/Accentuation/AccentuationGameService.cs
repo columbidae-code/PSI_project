@@ -234,7 +234,7 @@ public class AccentuationGameService
         );
     }
 
-    public (AccentuationGameResult? Result, AccentuationGameError Error) GetResult(
+    public async Task<(AccentuationGameResult? Result, AccentuationGameError Error)> GetResultAsync(
         Guid sessionId,
         Guid playerId)
     {
@@ -257,9 +257,9 @@ public class AccentuationGameService
         {
             try
             {
-                int categoryId = statsTracker.GetOrCreateCategoryId(CategoryName);
+                int categoryId = await statsTracker.GetOrCreateCategoryIdAsync(CategoryName);
 
-                statsTracker.RecordGame(new AppGameResults
+                await statsTracker.RecordGameAsync(new AppGameResults
                 {
                     UserId = session.UserId,
                     CategoryId = categoryId,
