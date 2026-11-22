@@ -49,7 +49,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connectionString));
 // Container services
 builder.Services.AddControllers();
-builder.Services.AddScoped<GameService>();
+builder.Services.AddScoped<GameResultService>();
 builder.Services.AddScoped<AuthService>();
 
 builder.Services.AddSignalR();
