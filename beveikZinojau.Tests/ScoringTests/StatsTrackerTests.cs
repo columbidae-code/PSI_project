@@ -35,7 +35,7 @@ namespace beveikZinojau.Tests.ScoringTests
 
         //helpers
 
-        
+
         private AppUser AddUser(string name)
         {
             AppUser user = new AppUser { UserName = name };
@@ -75,9 +75,9 @@ namespace beveikZinojau.Tests.ScoringTests
         //GetOrCreateCategoryId
 
         [Fact]
-        public void GetOrCreateCategoryId_NewCategory_CreatesCategory()
+        public async Task GetOrCreateCategoryId_NewCategory_CreatesCategory()
         {
-            int id = tracker.GetOrCreateCategoryId("Math");
+            int id = await tracker.GetOrCreateCategoryIdAsync("Math");
 
             AppCategory? saved = db.Categories.Find(id);
             Assert.NotNull(saved);
@@ -85,20 +85,20 @@ namespace beveikZinojau.Tests.ScoringTests
         }
 
         [Fact]
-        public void GetOrCreateCategoryId_ExistingCategory_ReturnsSameIdWithoutDuplicate()
+        public async Task GetOrCreateCategoryId_ExistingCategory_ReturnsSameIdWithoutDuplicate()
         {
-            int first = tracker.GetOrCreateCategoryId("Math");
-            int second = tracker.GetOrCreateCategoryId("Math");
+            int first = await tracker.GetOrCreateCategoryIdAsync("Math");
+            int second = await tracker.GetOrCreateCategoryIdAsync("Math");
 
             Assert.Equal(first, second);
             Assert.Equal(1, db.Categories.Count());
         }
 
         [Fact]
-        public void GetOrCreateCategoryId_DifferentNames_ReturnDifferentIds()
+        public async Task GetOrCreateCategoryId_DifferentNames_ReturnDifferentIds()
         {
-            int math = tracker.GetOrCreateCategoryId("Math");
-            int history = tracker.GetOrCreateCategoryId("History");
+            int math = await tracker.GetOrCreateCategoryIdAsync("Math");
+            int history = await tracker.GetOrCreateCategoryIdAsync("History");
 
             Assert.NotEqual(math, history);
             Assert.Equal(2, db.Categories.Count());
@@ -107,12 +107,12 @@ namespace beveikZinojau.Tests.ScoringTests
         //RecordGame
 
         [Fact]
-        public void RecordGame_FirstGame_SavesResultAndCreatesStats()
+        public async Task RecordGame_FirstGame_SavesResultAndCreatesStats()
         {
             AppUser user = AddUser("User1");
-            int categoryId = tracker.GetOrCreateCategoryId("Math");
+            int categoryId = await tracker.GetOrCreateCategoryIdAsync("Math");
 
-            tracker.RecordGame(MakeResult(user.Id, categoryId, score: 80, answered: 10, correct: 7, seconds: 25.5));
+            await tracker.RecordGameAsync(MakeResult(user.Id, categoryId, score: 80, answered: 10, correct: 7, seconds: 25.5));
 
             Assert.Equal(1, db.GameResults.Count());
             Assert.Equal(1, db.UserStats.Count());
@@ -128,13 +128,13 @@ namespace beveikZinojau.Tests.ScoringTests
         }
 
         [Fact]
-        public void RecordGame_SecondGameSameCategory_AddsToExistingTotals()
+        public async Task RecordGame_SecondGameSameCategory_AddsToExistingTotals()
         {
             AppUser user = AddUser("User1");
-            int categoryId = tracker.GetOrCreateCategoryId("Math");
+            int categoryId = await tracker.GetOrCreateCategoryIdAsync("Math");
 
-            tracker.RecordGame(MakeResult(user.Id, categoryId, score: 80, answered: 10, correct: 7, seconds: 25.5));
-            tracker.RecordGame(MakeResult(user.Id, categoryId, score: 40, answered: 5, correct: 3, seconds: 10.0));
+            await tracker.RecordGameAsync(MakeResult(user.Id, categoryId, score: 80, answered: 10, correct: 7, seconds: 25.5));
+            await tracker.RecordGameAsync(MakeResult(user.Id, categoryId, score: 40, answered: 5, correct: 3, seconds: 10.0));
 
             Assert.Equal(2, db.GameResults.Count());
             Assert.Equal(1, db.UserStats.Count());
@@ -153,12 +153,12 @@ namespace beveikZinojau.Tests.ScoringTests
         [InlineData(1, 1, 0)]
         [InlineData(0, 0, 1)]
         [InlineData(-5, 0, 1)]
-        public void RecordGame_Score_DecidesWinOrLoss(int score, int expectedWins, int expectedLosses)
+        public async Task RecordGame_Score_DecidesWinOrLoss(int score, int expectedWins, int expectedLosses)
         {
             AppUser user = AddUser("User1");
-            int categoryId = tracker.GetOrCreateCategoryId("Math");
+            int categoryId = await tracker.GetOrCreateCategoryIdAsync("Math");
 
-            tracker.RecordGame(MakeResult(user.Id, categoryId, score));
+            await tracker.RecordGameAsync(MakeResult(user.Id, categoryId, score));
 
             AppUserStats stats = GetStats(user.Id, categoryId);
             Assert.Equal(expectedWins, stats.GamesWon);
@@ -166,14 +166,14 @@ namespace beveikZinojau.Tests.ScoringTests
         }
 
         [Fact]
-        public void RecordGame_DifferentCategories_CreatesSeparateStatsRows()
+        public async Task RecordGame_DifferentCategories_CreatesSeparateStatsRows()
         {
             AppUser user = AddUser("User1");
-            int math = tracker.GetOrCreateCategoryId("Math");
-            int history = tracker.GetOrCreateCategoryId("History");
+            int math = await tracker.GetOrCreateCategoryIdAsync("Math");
+            int history = await tracker.GetOrCreateCategoryIdAsync("History");
 
-            tracker.RecordGame(MakeResult(user.Id, math, score: 50));
-            tracker.RecordGame(MakeResult(user.Id, history, score: 30));
+            await tracker.RecordGameAsync(MakeResult(user.Id, math, score: 50));
+            await tracker.RecordGameAsync(MakeResult(user.Id, history, score: 30));
 
             Assert.Equal(2, db.UserStats.Count());
             Assert.Equal(50L, GetStats(user.Id, math).TotalScore);
@@ -181,14 +181,14 @@ namespace beveikZinojau.Tests.ScoringTests
         }
 
         [Fact]
-        public void RecordGame_DifferentUsers_CreatesSeparateStatsRows()
+        public async Task RecordGame_DifferentUsers_CreatesSeparateStatsRows()
         {
             AppUser first = AddUser("User1");
             AppUser second = AddUser("User2");
-            int categoryId = tracker.GetOrCreateCategoryId("Math");
+            int categoryId = await tracker.GetOrCreateCategoryIdAsync("Math");
 
-            tracker.RecordGame(MakeResult(first.Id, categoryId, score: 50));
-            tracker.RecordGame(MakeResult(second.Id, categoryId, score: 70));
+            await tracker.RecordGameAsync(MakeResult(first.Id, categoryId, score: 50));
+            await tracker.RecordGameAsync(MakeResult(second.Id, categoryId, score: 70));
 
             Assert.Equal(2, db.UserStats.Count());
             Assert.Equal(50L, GetStats(first.Id, categoryId).TotalScore);

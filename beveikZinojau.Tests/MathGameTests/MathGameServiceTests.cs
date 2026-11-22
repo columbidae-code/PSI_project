@@ -504,47 +504,46 @@ namespace beveikZinojau.Tests.MathTests
         }
 
         // GetResult
-  
 
         [Fact]
-        public void GetResult_UnknownSession_ReturnsSessionNotFound()
+        public async Task GetResult_UnknownSession_ReturnsSessionNotFound()
         {
-            var (result, error) = service.GetResult(Guid.NewGuid(), Guid.NewGuid());
+            var (result, error) = await service.GetResultAsync(Guid.NewGuid(), Guid.NewGuid());
 
             Assert.Null(result);
             Assert.Equal(MathGameError.SessionNotFound, error);
         }
 
         [Fact]
-        public void GetResult_UnknownPlayer_ReturnsPlayerNotFound()
+        public async Task GetResult_UnknownPlayer_ReturnsPlayerNotFound()
         {
             var (sessionId, _) = StartSession(questionCount: 3);
 
-            var (result, error) = service.GetResult(sessionId, Guid.NewGuid());
+            var (result, error) = await service.GetResultAsync(sessionId, Guid.NewGuid());
 
             Assert.Null(result);
             Assert.Equal(MathGameError.PlayerNotFound, error);
         }
 
         [Fact]
-        public void GetResult_RoundNotFinished_ReturnsRoundNotFinished()
+        public async Task GetResult_RoundNotFinished_ReturnsRoundNotFinished()
         {
             var (sessionId, playerId) = StartSession(questionCount: 3);
             PlayRound(sessionId, playerId, questionCount: 1, answerCorrectly: true);
 
-            var (result, error) = service.GetResult(sessionId, playerId);
+            var (result, error) = await service.GetResultAsync(sessionId, playerId);
 
             Assert.Null(result);
             Assert.Equal(MathGameError.RoundNotFinished, error);
         }
 
         [Fact]
-        public void GetResult_AllAnswersCorrect_ShowsFullScore()
+        public async Task GetResult_AllAnswersCorrect_ShowsFullScore()
         {
             var (sessionId, playerId) = StartSession(questionCount: 3);
             PlayRound(sessionId, playerId, questionCount: 3, answerCorrectly: true);
 
-            var (result, error) = service.GetResult(sessionId, playerId);
+            var (result, error) = await service.GetResultAsync(sessionId, playerId);
 
             Assert.Equal(MathGameError.None, error);
             Assert.NotNull(result);
@@ -556,12 +555,12 @@ namespace beveikZinojau.Tests.MathTests
         }
 
         [Fact]
-        public void GetResult_AllAnswersWrong_ShowsZeroScore()
+        public async Task GetResult_AllAnswersWrong_ShowsZeroScore()
         {
             var (sessionId, playerId) = StartSession(questionCount: 3);
             PlayRound(sessionId, playerId, questionCount: 3, answerCorrectly: false);
 
-            var (result, error) = service.GetResult(sessionId, playerId);
+            var (result, error) = await service.GetResultAsync(sessionId, playerId);
 
             Assert.Equal(MathGameError.None, error);
             Assert.NotNull(result);
@@ -572,12 +571,12 @@ namespace beveikZinojau.Tests.MathTests
         }
 
         [Fact]
-        public void GetResult_GuestPlayer_IsNotSavedToDatabase()
+        public async Task GetResult_GuestPlayer_IsNotSavedToDatabase()
         {
             var (sessionId, playerId) = StartSession(questionCount: 3, userId: null);
             PlayRound(sessionId, playerId, questionCount: 3, answerCorrectly: true);
 
-            var (result, _) = service.GetResult(sessionId, playerId);
+            var (result, _) = await service.GetResultAsync(sessionId, playerId);
 
             Assert.NotNull(result);
             Assert.False(result.Saved);
@@ -586,13 +585,13 @@ namespace beveikZinojau.Tests.MathTests
         }
 
         [Fact]
-        public void GetResult_LoggedInUser_SavesGameAndStats()
+        public async Task GetResult_LoggedInUser_SavesGameAndStats()
         {
             AppUser user = AddUser("User1");
             var (sessionId, playerId) = StartSession(questionCount: 3, userId: user.Id);
             PlayRound(sessionId, playerId, questionCount: 3, answerCorrectly: true);
 
-            var (result, error) = service.GetResult(sessionId, playerId);
+            var (result, error) = await service.GetResultAsync(sessionId, playerId);
 
             Assert.Equal(MathGameError.None, error);
             Assert.NotNull(result);
@@ -612,14 +611,14 @@ namespace beveikZinojau.Tests.MathTests
         }
 
         [Fact]
-        public void GetResult_CalledTwice_SavesOnlyOnce()
+        public async Task GetResult_CalledTwice_SavesOnlyOnce()
         {
             AppUser user = AddUser("User1");
             var (sessionId, playerId) = StartSession(questionCount: 3, userId: user.Id);
             PlayRound(sessionId, playerId, questionCount: 3, answerCorrectly: true);
 
-            service.GetResult(sessionId, playerId);
-            service.GetResult(sessionId, playerId);
+            await service.GetResultAsync(sessionId, playerId);
+            await service.GetResultAsync(sessionId, playerId);
 
             Assert.Equal(1, db.GameResults.Count());
             Assert.Equal(1, db.UserStats.First().GamesPlayed);
@@ -629,13 +628,13 @@ namespace beveikZinojau.Tests.MathTests
         [InlineData("add", DifficultyLevel.Easy)]
         [InlineData("mul", DifficultyLevel.Medium)]
         [InlineData("div", DifficultyLevel.Hard)]
-        public void GetResult_SavedGame_UsesDifficultyOfTheQuestionType(string type, DifficultyLevel expected)
+        public async Task GetResult_SavedGame_UsesDifficultyOfTheQuestionType(string type, DifficultyLevel expected)
         {
             AppUser user = AddUser("User1");
             var (sessionId, playerId) = StartSession(questionCount: 2, questionType: type, userId: user.Id);
             PlayRound(sessionId, playerId, questionCount: 2, answerCorrectly: true);
 
-            service.GetResult(sessionId, playerId);
+            await service.GetResultAsync(sessionId, playerId);
 
             AppGameResults saved = db.GameResults.First();
             Assert.Equal(expected, saved.Difficulty);
